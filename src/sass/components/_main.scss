@@ -1,0 +1,27 @@
+body {
+	background: rgba(255, 0, 0, 0.1);
+}
+
+.app {
+	padding: 30px;
+	h1, p {
+		font-family: 'Roboto';
+		opacity: 0;
+	}
+	p {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		color: #6C6EA0;
+		span {
+			font-style: italic;
+			font-weight: bold;
+		}
+	}
+	h1 {
+		color: #FF1053;
+		font-size: 3rem;
+		letter-spacing: 0.05rem;
+		margin-bottom: 0.2em;
+		font-weight: bold;
+	}
+}

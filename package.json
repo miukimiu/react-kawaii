@@ -1,0 +1,69 @@
+{
+  "name": "react-kawaii",
+  "version": "0.0.1",
+  "description": "Cute react ui components",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heldrida/reaclux-boilerplate.git"
+  },
+  "author": "Helder O.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heldrida/reaclux-boilerplate/issues"
+  },
+  "homepage": "https://github.com/heldrida/reaclux-boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.4.1",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-git": "^1.12.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "html-webpack-plugin": "^2.22.0",
+    "jsdom": "^9.5.0",
+    "lodash": "^4.15.0",
+    "mocha": "^3.0.2",
+    "mocha-jsdom": "^1.1.0",
+    "node-sass": "^3.8.0",
+    "open": "0.0.5",
+    "popmotion": "^5.0.18",
+    "react": "^15.3.1",
+    "react-addons-test-utils": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-hot-loader": "^3.0.0-alpha.8",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.1.1",
+    "redux-mock-store": "^1.2.0",
+    "redux-thunk": "^2.1.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "testdom": "^2.0.0",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0",
+    "zombie": "^4.2.1",
+    "@kadira/storybook": "^2.21.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

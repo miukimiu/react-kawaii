@@ -1,0 +1,27 @@
+/**
+ * Usage:
+ *
+ *		@include placeholder {
+ *	    	font-style:italic;
+ *	    	color: white;
+ *	    	font-weight:100;
+ *		}
+ *
+ */
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
