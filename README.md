@@ -15,6 +15,7 @@ If you want to develop a component
 5. `npm run storybook`
 
 If you want to develop or preview the demo page
+
 1. `npm i` (in order to install the boilerplate)
 2. `gulp build`
 3. `gulp dev`
