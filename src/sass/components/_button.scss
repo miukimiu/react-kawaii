@@ -1,0 +1,158 @@
+@import "../helpers/mixins";
+
+$color-primary: #4392D4;
+$color-primary-darker: #1B66A6;
+$color-white: #fff;
+$color-disabled: #cacaca;
+$color-text-disabled: #9a9a9a;
+$level-1: 0 0 15px 0 rgba(145,145,145,0.40);
+
+/************************
+Transitions
+************************/
+$transition-hover-element: all 0.5s linear;
+
+
+/************************
+Shadows Levels
+************************/
+$level-1: 0 0 15px 0 rgba(145,145,145,0.40);
+$level-2: 0 0 15px 0 rgba(125,125,125,0.70); // level-2 also has a mixin for color
+$level-3: 0 0 50px 0 rgba(125,125,125,0.50);
+
+
+/* Button reset */
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+/********
+*** Base Button Style
+*******/
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  display: inline-flex;
+  padding: 12px 30px;
+  border-radius: 20px;
+  color: $color-white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+
+  transform-style: flat;
+  transition: $transition-hover-element;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    min-width: 150px;
+
+    &:disabled {
+      background: $color-disabled;
+    }
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+      @include level-2(darken($color-primary, 10%));
+    }
+  }
+  &--secondary {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      @include level-2($color-primary);
+    }
+    &:disabled {
+      background: $color-disabled;
+    }
+  }
+  &--default {
+    color: $color-primary;
+    padding: 12px 20px;
+
+    &:hover {
+      color: $color-white;
+      box-shadow: $level-1;
+      background: $color-primary;
+      @include level-2($color-primary);
+    }
+    &:disabled {
+      color: $color-text-disabled;
+    }
+  }
+  i {
+    margin-left: 5px;
+  }
+}
+
+/********
+*** Floating button
+*******/
+.btn-floating {
+  background-color: $color-primary;
+  display: inline-flex;
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  position: relative;
+  -webkit-user-drag: none;
+  font-weight: bold;
+  color: $color-white;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: $transition-hover-element;
+
+  &--primary {
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+  &--secondary {
+    background-color: $color-primary-darker;
+    color: $color-white;
+
+    &:hover {
+      background-color: darken($color-primary-darker, 10%);
+    }
+  }
+  &--default {
+    background: red;
+    color: $color-primary-darker;
+
+
+    &:hover {
+      color: darken($color-primary-darker, 10%);
+      background: lighten(red, 5%);
+    }
+  }
+}

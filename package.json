@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/heldrida/reaclux-boilerplate#readme",
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.5",
@@ -30,6 +31,8 @@
     "enzyme": "^2.4.1",
     "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-git": "^1.12.0",
     "gulp-mocha": "^3.0.1",
     "gulp-plumber": "^1.1.0",
@@ -60,8 +63,7 @@
     "testdom": "^2.0.0",
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0",
-    "zombie": "^4.2.1",
-    "@kadira/storybook": "^2.21.0"
+    "zombie": "^4.2.1"
   },
   "dependencies": {
     "express": "^4.14.0"

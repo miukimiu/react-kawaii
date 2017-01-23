@@ -7,7 +7,7 @@ class App extends Component {
 
 		// todo: study popmotion and do this properly
 		const h1 = document.querySelector('.app h1');
-		const p = document.querySelector('.app p') 
+		const p = document.querySelector('.app p')
 
 		const tw1 = motion.tween({
 			ease: motion.easing.cubicBezier(0, .42, 0, 1),
@@ -51,7 +51,7 @@ class App extends Component {
 
 
 		setTimeout(() => {
-	
+
 			tl.start();
 
 		}, 800);
@@ -62,7 +62,7 @@ class App extends Component {
 
 		return (
 			<div className="app">
-				<h1>Reaclux Boilerplate</h1>
+				<h1>React Kawaii built with Reaclux Boilerplate</h1>
 				<p>A React Redux Webpack Gulp Sass Mocha Enzyme Zombie Chai Boilerplate by <span>Punkbit</span></p>
 			</div>
 		);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
+import Button from '../src/js/components/Button';
 import Welcome from './Welcome';
 
 storiesOf('Welcome', module)
@@ -10,7 +10,7 @@ storiesOf('Welcome', module)
 
 storiesOf('Button', module)
   .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+    <Button onClick={action('clicked')} type="primary">Hello Button</Button>
   ))
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>

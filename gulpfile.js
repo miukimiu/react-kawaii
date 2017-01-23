@@ -11,11 +11,24 @@ var gulp = require('gulp'),
 	port = 3000,
 	open = require('open'),
 	git = require('gulp-git'),
-	config = require('./config');
+	config = require('./config'),
+	gulp = require('gulp'),
+	clean = require('gulp-clean'),
+	ghPages = require('gulp-gh-pages');
 
 gulp.task('html', function () {
     return gulp.src('src/index.html')
 				.pipe(gulp.dest('dist'));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
+gulp.task('clean-scripts', function () {
+  return gulp.src('dist/*.js', {read: false})
+    .pipe(clean());
 });
 
 gulp.task("webpack:server", function(callback) {
@@ -48,7 +61,7 @@ gulp.task("webpack:server", function(callback) {
 
 });
 
-gulp.task("build", ['test', 'html'], function () {
+gulp.task("build", ['clean-scripts', 'test', 'html'], function () {
     // run webpack
     webpack(webpackProductionConfig, function (err, stats) {
         if(err) throw new gutil.PluginError("webpack", err);
@@ -74,15 +87,15 @@ gulp.task('preview', function (cb) {
 });
 
 // todo: decide if called push or remote
-// so far I decided to call it deploy (because the boilerplate, hopes the dev 
+// so far I decided to call it deploy (because the boilerplate, hopes the dev
 // sitcks with a PaaS / Heroku kind of)
-gulp.task('deploy', function(){
-	config.git.remoteList.forEach(function (v, k) {
-		git.push(v, ['master'], null, function (err) {
-			if (err) throw err;
-		});
-	});
-});
+// gulp.task('deploy', function(){
+// 	config.git.remoteList.forEach(function (v, k) {
+// 		git.push(v, ['master'], null, function (err) {
+// 			if (err) throw err;
+// 		});
+// 	});
+// });
 
 gulp.task('unit_test', function () {
 	return gulp.src('./test/unit_tests/**/*.spec.js', { read: false })
