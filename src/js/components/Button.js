@@ -1,6 +1,5 @@
 import React from 'react';
-// include the stylesheet entry point
-require('../../sass/components/_button.scss');
+import '../../sass/components/_button.scss';
 
 const Button = ({ children, onClick, type, disabled }) => (
 
