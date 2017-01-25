@@ -23,5 +23,5 @@ storiesOf('Buttons', module)
     <Button onClick={action('clicked')} type="flat">Button flat</Button>
   ))
   .add('floating', () => (
-    <Button onClick={action('clicked')} type="floating">Button floating</Button>
+    <Button onClick={action('clicked')} type="floating"></Button>
   ));

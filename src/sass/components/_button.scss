@@ -94,8 +94,19 @@ button {
       color: $color-text-disabled;
     }
   }
-  i {
-    margin-left: 5px;
+  &--floating {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 0;
+    background: $color-primary;
+    transition: all .4s ease,transform .4s cubic-bezier(.175,.885,.32,1.275),background-color .4s ease;
+
+
+
+    &:hover {
+      transform: scale(1.08);
+    }
   }
 }
 
