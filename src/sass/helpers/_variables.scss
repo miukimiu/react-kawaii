@@ -8,6 +8,8 @@ $color-primary-darker: #6C48C6;
 $color-white: #fff;
 $color-disabled: #cacaca;
 $color-text-disabled: #9a9a9a;
+$color-default: #8C96A9;
+$color-default-darker: darken($color-default, 5%);
 
 /************************
 Transitions

@@ -56,8 +56,8 @@ button {
       @include level-2(darken($color-primary, 10%));
     }
   }
-  &--primary {
-    background-color: $color-primary;
+  &--default {
+    background-color: $color-default;
     min-width: 150px;
 
     &:disabled {
@@ -65,8 +65,8 @@ button {
     }
 
     &:hover {
-      background-color: $color-primary-darker;
-      @include level-2(darken($color-primary, 10%));
+      background-color: $color-default-darker;
+      @include level-2(darken($color-default-darker, 10%));
     }
   }
   &--ghost {
