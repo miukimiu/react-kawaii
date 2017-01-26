@@ -1,6 +1,9 @@
 import React from 'react';
+import 'babel-polyfill';
+
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from '../src/js/components/Button';
+import Affix from '../src/js/components/Affix';
 import Welcome from './Welcome';
 import '../src/sass/storybook.scss';
 
@@ -25,3 +28,10 @@ storiesOf('Buttons', module)
   .add('floating', () => (
     <Button onClick={action('clicked')} type="floating"></Button>
   ));
+
+storiesOf('Affix', module)
+.add('primary', () => (
+  <Affix className="main__close" offset={100}>
+    <Button onClick={action('clicked')} type="default">Affix me after 100px height</Button>
+  </Affix>
+))
