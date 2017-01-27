@@ -3,7 +3,7 @@ import 'babel-polyfill';
 
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from '../src/js/components/Button';
-import Affix from '../src/js/components/Affix';
+// import Affix from '../src/js/components/Affix';
 import Welcome from './Welcome';
 import '../src/sass/storybook.scss';
 
