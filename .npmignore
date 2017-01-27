@@ -29,3 +29,5 @@ node_modules
 
 _PROJECT
 npm-debug.log
+
+dist

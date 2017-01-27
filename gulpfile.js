@@ -15,7 +15,9 @@ var gulp = require('gulp'),
 	chalk = require('chalk'),
 	figlet = require('figlet'),
 	clean = require('gulp-clean'),
+	ghPages = require('gulp-gh-pages');
 	nullCompiler = require('./nullCompiler');
+
 
 
 gulp.task('html', function () {
@@ -59,13 +61,19 @@ gulp.task("build-production", function () {
 // todo: decide if called push or remote
 // so far I decided to call it deploy (because the boilerplate, hopes the dev
 // sitcks with a PaaS / Heroku kind of)
-gulp.task('deploy', function(){
-	config.git.remoteList.forEach(function (v, k) {
-		git.push(v, ['master'], null, function (err) {
-			if (err) throw err;
-		});
-	});
+// gulp.task('deploy', function(){
+// 	config.git.remoteList.forEach(function (v, k) {
+// 		git.push(v, ['master'], null, function (err) {
+// 			if (err) throw err;
+// 		});
+// 	});
+// });
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/production/*')
+    .pipe(ghPages());
 });
+
 
 gulp.task('unit_test', function () {
 	return gulp.src('./test/unit_tests/**/*.spec.js', { read: false })

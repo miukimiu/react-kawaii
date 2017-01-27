@@ -1,0 +1,2 @@
+# To avoid corrupting fixtures
+test/fixtures/ binary

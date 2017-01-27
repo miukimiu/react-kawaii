@@ -4,8 +4,9 @@ import App from './containers/app';
 
 const routes = () => {
   return (
-	<Route path='/' component={ App }>
-	</Route>
+    <Route path='/react-kawaii/' component={ App }>
+      <Redirect from="/" to="/react-kawaii/" />
+  	</Route>
   );
 };
 
