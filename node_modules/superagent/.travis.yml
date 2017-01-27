@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+node_js:
+  - "7.1"
+  - "6.9"
+  - "4.6"
+
+env:
+  global:
+    - SAUCE_USERNAME='shtylman-superagent'
+    - SAUCE_ACCESS_KEY='39a45464-cb1d-4b8d-aa1f-83c7c04fa673'
+
+matrix:
+  include:
+    - node_js: "4.6"
+      env: BROWSER=1

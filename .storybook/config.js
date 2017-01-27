@@ -1,5 +1,4 @@
 import { configure } from '@kadira/storybook';
-import 'babel-polyfill';
 
 function loadStories() {
   require('../stories');
