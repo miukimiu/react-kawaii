@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [0.8.9] - 2017-01-31
+
+### Fixed
+- Updated `partitionObjectByKey` Flow annotations for Flow 0.38.
+
 
 ## [0.8.8] - 2016-12-20
 

@@ -1,10 +1,10 @@
 {
   "name": "reactatouille-boilerplate",
-  "version": "0.7.3",
-  "description": "Reactatouille-Boilerplate built using Redux Webpack Gulp Sass Mocha Enzyme Chai Boilerplate.",
+  "version": "0.7.51",
+  "description": "Reactatouille-Boilerplate built using Redux Webpack2 Gulp Sass Mocha Enzyme Chai gsap Boilerplate.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register,css:nullCompiler.js  ./test/**/*.spec.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -15,7 +15,7 @@
   "keywords": [
     "gulp",
     "react",
-    "webpack",
+    "webpack2",
     "boilerplate",
     "ES6",
     "ES2015",
@@ -23,7 +23,8 @@
     "mocha",
     "hmr",
     "express",
-    "sass"
+    "sass",
+    "gsap"
   ],
   "author": "Punkbit",
   "license": "WTFPL",
@@ -44,7 +45,7 @@
     "compression-webpack-plugin": "^0.3.2",
     "css-loader": "^0.26.1",
     "enzyme": "^2.4.1",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.1",
     "figlet": "^1.2.0",
     "file-loader": "^0.9.0",
     "gsap": "^1.19.1",
@@ -60,8 +61,10 @@
     "lodash": "^4.15.0",
     "mocha": "^3.0.2",
     "mocha-jsdom": "^1.1.0",
+    "mock-require": "^2.0.1",
     "node-sass": "^4.3.0",
     "open": "0.0.5",
+    "proxyquire": "^1.7.11",
     "react": "^15.3.1",
     "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
@@ -78,7 +81,7 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "testdom": "^2.0.0",
-    "webpack": "^1.9.11",
+    "webpack": "^2.2.0",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-dev-server": "^1.9.0",
     "webpack-hot-middleware": "^2.15.0"

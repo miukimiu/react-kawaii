@@ -5,19 +5,19 @@ request the caniuse data to check browsers compatibilities
 ## Installation
 
 ```console
-$ npm install caniuse-api
+$ npm install caniuse-api --save
 ```
 
 ## Usage
 
 ```js
-var caniuse = require('caniuse-api')
+const caniuse = require('caniuse-api')
 
 caniuse.getSupport('border-radius')
 caniuse.isSupported('border-radius', 'ie 8, ie 9')
 caniuse.setBrowserScope('> 5%, last 1 version')
 caniuse.getSupport('border-radius')
-...
+// ...
 ```
 
 ## API

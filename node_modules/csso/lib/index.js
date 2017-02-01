@@ -60,6 +60,16 @@ function buildCompressOptions(options) {
     return options;
 }
 
+function runHandler(ast, options, handlers) {
+    if (!Array.isArray(handlers)) {
+        handlers = [handlers];
+    }
+
+    handlers.forEach(function(fn) {
+        fn(ast, options);
+    });
+}
+
 function minify(context, source, options) {
     options = options || {};
 
@@ -75,10 +85,24 @@ function minify(context, source, options) {
         })
     );
 
+    // before compress handlers
+    if (options.beforeCompress) {
+        debugOutput('beforeCompress', options, Date.now(),
+            runHandler(ast, options, options.beforeCompress)
+        );
+    }
+
     // compress
     var compressResult = debugOutput('compress', options, Date.now(),
         compress(ast, buildCompressOptions(options))
     );
+
+    // after compress handlers
+    if (options.afterCompress) {
+        debugOutput('afterCompress', options, Date.now(),
+            runHandler(compressResult, options, options.afterCompress)
+        );
+    }
 
     // translate
     if (options.sourceMap) {

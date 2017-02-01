@@ -10,7 +10,7 @@ fs.mkdirpSync("/a/test/dir");
 fs.writeFileSync("/a/test/dir/file.txt", "Hello World");
 fs.readFileSync("/a/test/dir/file.txt"); // returns Buffer("Hello World")
 
-// Async variantes too
+// Async variants too
 fs.unlink("/a/test/dir/file.txt", function(err) {
 	// ...
 });

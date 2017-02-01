@@ -68,10 +68,12 @@
     };
 
     Supports.prototype.prefixed = function(str) {
-      var decl, j, k, len, len1, prefixer, prop, ref1, ref2, rule, value;
+      var decl, j, k, len, len1, prefixer, ref1, ref2, rule, value;
       rule = this.virtual(str);
-      prop = rule.first.prop;
-      prefixer = this.prefixer().add[prop];
+      if (this.disabled(rule.first)) {
+        return rule.nodes;
+      }
+      prefixer = this.prefixer().add[rule.first.prop];
       if (prefixer != null) {
         if (typeof prefixer.process === "function") {
           prefixer.process(rule.first);
@@ -80,7 +82,7 @@
       ref1 = rule.nodes;
       for (j = 0, len = ref1.length; j < len; j++) {
         decl = ref1[j];
-        ref2 = this.prefixer().values('add', prop);
+        ref2 = this.prefixer().values('add', rule.first.prop);
         for (k = 0, len1 = ref2.length; k < len1; k++) {
           value = ref2[k];
           value.process(decl);
@@ -220,6 +222,28 @@
       ast = this.add(ast, rule.params);
       ast = this.cleanBrackets(ast);
       return rule.params = brackets.stringify(ast);
+    };
+
+    Supports.prototype.disabled = function(node) {
+      var other;
+      if (this.all.options.grid === false) {
+        if (node.prop === 'display' && node.value.indexOf('grid') !== -1) {
+          return true;
+        }
+        if (node.prop.indexOf('grid') !== -1 || node.prop === 'justify-items') {
+          return true;
+        }
+      }
+      if (this.all.options.flexbox === false) {
+        if (node.prop === 'display' && node.value.indexOf('flex') !== -1) {
+          return true;
+        }
+        other = ['order', 'justify-content', 'align-items', 'align-content'];
+        if (node.prop.indexOf('flex') !== -1 || other.indexOf(node.prop) !== -1) {
+          return true;
+        }
+      }
+      return false;
     };
 
     return Supports;

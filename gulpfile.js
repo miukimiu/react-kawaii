@@ -15,9 +15,8 @@ var gulp = require('gulp'),
 	chalk = require('chalk'),
 	figlet = require('figlet'),
 	clean = require('gulp-clean'),
-	ghPages = require('gulp-gh-pages');
+    ghPages = require('gulp-gh-pages');
 	nullCompiler = require('./nullCompiler');
-
 
 
 gulp.task('html', function () {
@@ -69,6 +68,7 @@ gulp.task("build-production", function () {
 // 	});
 // });
 
+
 gulp.task('deploy', function() {
   return gulp.src('./dist/production/*')
     .pipe(ghPages());
@@ -85,9 +85,12 @@ gulp.task('unit_test', function () {
 				.once('error', function () {
 					process.exit(1);
 				})
-				.once('end', function () {
-
-				});
+				// TODO: this exists gulp completely it seems
+				// so there's an NPM TEST script instead for Travis CI
+				// maybe find better solution in the future
+				// .once('end', function () {
+				// 	process.exit(1);
+				// })
 });
 
 // gulp.task('end2end_test', function () {

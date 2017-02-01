@@ -1,3 +1,8 @@
+# 1.5.3 - 2017-02-01
+
+- Removed unused dependency
+  ([#54](https://github.com/Nyalab/caniuse-api/pull/54) - @wtgtybhertgeghgtwtg)
+
 # 1.5.2 - 2016-09-05
 
 - Fixed: no more generation `postinstall` hook ``\o/``.

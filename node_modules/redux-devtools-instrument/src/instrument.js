@@ -23,7 +23,7 @@ export const ActionTypes = {
  * Action creators to change the History state.
  */
 export const ActionCreators = {
-  performAction(action) {
+  performAction(action, shouldStringifyType) {
     if (!isPlainObject(action)) {
       throw new Error(
         'Actions must be plain objects. ' +
@@ -38,7 +38,11 @@ export const ActionCreators = {
       );
     }
 
-    return { type: ActionTypes.PERFORM_ACTION, action, timestamp: Date.now() };
+    return {
+      type: ActionTypes.PERFORM_ACTION,
+      action: shouldStringifyType ? { ...action, type: action.type.toString() } : action,
+      timestamp: Date.now()
+    };
   },
 
   reset() {
@@ -142,7 +146,7 @@ function recomputeStates(
   actionsById,
   stagedActionIds,
   skippedActionIds,
-  shouldCatchErrors
+  options
 ) {
   // Optimization: exit early and return the same reference
   // if we know nothing could have changed.
@@ -157,7 +161,11 @@ function recomputeStates(
   const nextComputedStates = computedStates.slice(0, minInvalidatedStateIndex);
   for (let i = minInvalidatedStateIndex; i < stagedActionIds.length; i++) {
     const actionId = stagedActionIds[i];
-    const action = actionsById[actionId].action;
+    let action = actionsById[actionId].action;
+    if (options.stringifyActionTypes) {
+      const sType = action.type.match(/^Symbol\((.+)\)$/);
+      if (sType) action = { ...action, type: Symbol.for(sType[1]) };
+    }
 
     const previousEntry = nextComputedStates[i - 1];
     const previousState = previousEntry ? previousEntry.state : committedState;
@@ -167,6 +175,7 @@ function recomputeStates(
     if (shouldSkip) {
       entry = previousEntry;
     } else {
+      const shouldCatchErrors = options;
       if (shouldCatchErrors && previousEntry && previousEntry.error) {
         entry = {
           state: previousState,
@@ -185,8 +194,8 @@ function recomputeStates(
 /**
  * Lifts an app's action into an action on the lifted store.
  */
-export function liftAction(action) {
-  return ActionCreators.performAction(action);
+export function liftAction(action, shouldStringifyType) {
+  return ActionCreators.performAction(action, shouldStringifyType);
 }
 
 /**
@@ -523,7 +532,7 @@ export function liftReducerWith(reducer, initialCommittedState, monitorReducer, 
             actionsById,
             stagedActionIds,
             skippedActionIds,
-            options.shouldCatchErrors
+            options
           );
 
           commitExcessActions(stagedActionIds.length - options.maxAge);
@@ -550,7 +559,7 @@ export function liftReducerWith(reducer, initialCommittedState, monitorReducer, 
       actionsById,
       stagedActionIds,
       skippedActionIds,
-      options.shouldCatchErrors
+      options
     );
     monitorState = monitorReducer(monitorState, liftedAction);
     return {
@@ -580,7 +589,7 @@ export function unliftState(liftedState) {
 /**
  * Provides an app's view into the lifted store.
  */
-export function unliftStore(liftedStore, liftReducer) {
+export function unliftStore(liftedStore, liftReducer, options) {
   let lastDefinedState;
 
   function getState() {
@@ -597,7 +606,7 @@ export function unliftStore(liftedStore, liftReducer) {
     liftedStore,
 
     dispatch(action) {
-      liftedStore.dispatch(liftAction(action));
+      liftedStore.dispatch(liftAction(action, options.stringifyActionTypes));
       return action;
     },
 
@@ -668,6 +677,6 @@ export default function instrument(monitorReducer = () => null, options = {}) {
       );
     }
 
-    return unliftStore(liftedStore, liftReducer);
+    return unliftStore(liftedStore, liftReducer, options);
   };
 }

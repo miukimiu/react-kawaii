@@ -16,7 +16,7 @@ var partitionObject = require('./partitionObject');
  * `whitelistObjectKeys`, but eventually keeping all the keys. Returns a tuple
  * of objects `[first, second]`.
  */
-function partitionObjectByKey(source: Object, whitelist: Set<string>): Array<Object> {
+function partitionObjectByKey(source: Object, whitelist: Set<string>): [Object, Object] {
   return partitionObject(source, (_, key) => whitelist.has(key));
 }
 

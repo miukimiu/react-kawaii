@@ -1,20 +1,24 @@
 "use strict";
 
-var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
-
-exports.contains = contains;
-exports.parseCaniuseData = parseCaniuseData;
-exports.cleanBrowsersList = cleanBrowsersList;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.contains = contains;
+exports.parseCaniuseData = parseCaniuseData;
+exports.cleanBrowsersList = cleanBrowsersList;
 
-var uniq = _interopRequire(require("lodash.uniq"));
+var _lodash = require("lodash.uniq");
 
-var browserslist = _interopRequire(require("browserslist"));
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _browserslist = require("browserslist");
+
+var _browserslist2 = _interopRequireDefault(_browserslist);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function contains(str, substr) {
-  return !! ~str.indexOf(substr);
+  return !!~str.indexOf(substr);
 }
 
 function parseCaniuseData(feature, browsers) {
@@ -49,7 +53,7 @@ function parseCaniuseData(feature, browsers) {
 }
 
 function cleanBrowsersList(browserList) {
-  return uniq(browserslist(browserList).map(function (browser) {
+  return (0, _lodash2.default)((0, _browserslist2.default)(browserList).map(function (browser) {
     return browser.split(" ")[0];
   }));
 }

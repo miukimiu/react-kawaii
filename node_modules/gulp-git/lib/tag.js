@@ -16,7 +16,7 @@ module.exports = function (version, message, opt, cb) {
     message = '';
   }
   if (!cb || typeof cb !== 'function') cb = function () {};
-  if (!message) message = '\'\''; else message = escape([message]);
+  if (!message) opt.lightWeight = true; else message = escape([message]);
   if (!opt) opt = {};
   if (!opt.cwd) opt.cwd = process.cwd();
   if (!opt.args) opt.args = ' ';
@@ -27,7 +27,9 @@ module.exports = function (version, message, opt, cb) {
 
   var cmd = 'git tag';
   if (version !== '') {
-    cmd += ' ' + signedarg + ' -m ' + message + ' ';
+    if (!opt.lightWeight) {
+      cmd += ' ' + signedarg + ' -m ' + message + ' ';
+    }
     cmd += opt.args + ' ' + escape([version]);
   }
   var templ = gutil.template(cmd, {file: message});

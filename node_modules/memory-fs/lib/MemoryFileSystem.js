@@ -62,7 +62,7 @@ MemoryFileSystem.prototype.meta = function(_path) {
 	var current = this.data;
 	for(var i = 0; i < path.length - 1; i++) {
 		if(!isDir(current[path[i]]))
-			return null;
+			return;
 		current = current[path[i]];
 	}
 	return current[path[i]];
@@ -214,7 +214,7 @@ MemoryFileSystem.prototype.writeFileSync = function(_path, content, encoding) {
 };
 
 MemoryFileSystem.prototype.join = require("./join");
-
+MemoryFileSystem.prototype.pathToArray = pathToArray;
 MemoryFileSystem.prototype.normalize = normalize;
 
 // stream functions
@@ -273,33 +273,47 @@ MemoryFileSystem.prototype.createWriteStream = function(path, options) {
 
 // async functions
 
-["stat", "readdir", "mkdirp", "mkdir", "rmdir", "unlink", "readlink"].forEach(function(fn) {
+["stat", "readdir", "mkdirp", "rmdir", "unlink", "readlink"].forEach(function(fn) {
 	MemoryFileSystem.prototype[fn] = function(path, callback) {
 		try {
 			var result = this[fn + "Sync"](path);
 		} catch(e) {
-			return callback(e);
+			setImmediate(function() {
+				callback(e);
+			});
+
+			return;
 		}
-		return callback(null, result);
+		setImmediate(function() {
+			callback(null, result);
+		});
+	};
+});
+
+["mkdir", "readFile"].forEach(function(fn) {
+	MemoryFileSystem.prototype[fn] = function(path, optArg, callback) {
+		if(!callback) {
+			callback = optArg;
+			optArg = undefined;
+		}
+		try {
+			var result = this[fn + "Sync"](path, optArg);
+		} catch(e) {
+			setImmediate(function() {
+				callback(e);
+			});
+
+			return;
+		}
+		setImmediate(function() {
+			callback(null, result);
+		});
 	};
 });
 
 MemoryFileSystem.prototype.exists = function(path, callback) {
 	return callback(this.existsSync(path));
 }
-
-MemoryFileSystem.prototype.readFile = function(path, optArg, callback) {
-	if(!callback) {
-		callback = optArg;
-		optArg = undefined;
-	}
-	try {
-		var result = this.readFileSync(path, optArg);
-	} catch(e) {
-		return callback(e);
-	}
-	return callback(null, result);
-};
 
 MemoryFileSystem.prototype.writeFile = function (path, content, encoding, callback) {
 	if(!callback) {

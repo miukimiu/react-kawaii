@@ -5,8 +5,9 @@ var CompressionPlugin = require("compression-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+	context: path.resolve(__dirname, 'src'),
 	entry: [
-		'./src/js/index.js'
+		'./js/index.js'
 	],
 	output: {
 		path: __dirname + '/dist/production',
@@ -14,11 +15,34 @@ module.exports = {
 	    publicPath: '/assets'
 	},
 	module: {
-		loaders: [
-			{ test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader'] },
-			{ test: /\.scss$/, loader: ExtractTextPlugin.extract('style','css!sass') },
-			{ test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader: 'file-loader?name=/fonts/[name].[ext]' },
-			{ test: /\.(jpg|png|gif|svg)$/i, loader: 'file-loader?name=/images/[name].[ext]'}
+		rules: [
+			{
+				test: /\.(js|jsx)$/,
+				exclude: /node_modules/,
+				use: [
+					'babel-loader'
+				]
+			},
+			{
+				test: /\.scss$/,
+				use: ExtractTextPlugin.extract({
+					fallbackLoader: "style-loader",
+					loader: ["css-loader", "sass-loader"]
+				})
+			},
+			// { test: /\.scss$/, loader: ExtractTextPlugin.extract('style','css!sass') },
+			{
+				test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+				use: [
+					'file-loader?name=[path][name].[ext]&outputPath=/assets/fonts/&publicPath=/assets/fonts/'
+				]
+			},
+			{
+				test: /\.(jpg|png|gif|svg)$/i,
+				use: [
+					'file-loader?name=[path][name].[ext]?[hash]&outputPath=/assets/&publicPath=/assets/'
+				]
+			}
 		]
 	},
 	plugins: [
@@ -35,12 +59,11 @@ module.exports = {
 		}),
 		new webpack.optimize.AggressiveMergingPlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
-		new webpack.optimize.DedupePlugin(),
 		new webpack.optimize.UglifyJsPlugin({
 			mangle: true,
 			compress: {
 				warnings: false, // Suppress uglification warnings
-				pure_getters: true,
+				pure_getters: false, // if true, causes issue with gsap `https://greensock.com/forums/topic/14387-webpack-gsap-error/`
 				unsafe: true,
 				unsafe_comps: true,
 				screw_ie8: true,

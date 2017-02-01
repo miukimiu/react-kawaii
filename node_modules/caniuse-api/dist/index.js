@@ -1,66 +1,57 @@
 "use strict";
 
-var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.getBrowserScope = exports.setBrowserScope = exports.getLatestStableBrowsers = exports.find = exports.isSupported = exports.getSupport = undefined;
 
-var memoize = _interopRequire(require("lodash.memoize"));
+var _lodash = require("lodash.memoize");
 
-var browserslist = _interopRequire(require("browserslist"));
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _browserslist = require("browserslist");
+
+var _browserslist2 = _interopRequireDefault(_browserslist);
 
 var _utils = require("./utils");
 
-var contains = _utils.contains;
-var parseCaniuseData = _utils.parseCaniuseData;
-var cleanBrowsersList = _utils.cleanBrowsersList;
+var _data = require("caniuse-db/data.json");
 
-var db = _interopRequire(require("caniuse-db/data.json"));
+var _data2 = _interopRequireDefault(_data);
 
-var features = db.data;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var features = _data2.default.data;
 
 var featuresList = Object.keys(features);
 
 var browsers;
 function setBrowserScope(browserList) {
-  browsers = cleanBrowsersList(browserList);
+  browsers = (0, _utils.cleanBrowsersList)(browserList);
 }
 
 function getBrowserScope() {
   return browsers;
 }
 
-var parse = memoize(parseCaniuseData, function (feature, browsers) {
+var parse = (0, _lodash2.default)(_utils.parseCaniuseData, function (feature, browsers) {
   return feature.title + browsers;
 });
 
-function getSupport(_x) {
-  var _again = true;
-
-  _function: while (_again) {
-    _again = false;
-    var query = _x;
-    feature = res = undefined;
-
-    var feature = undefined;
-    try {
-      feature = features[query];
-    } catch (e) {
-      var res = find(query);
-      if (res.length === 1) {
-        _x = res[0];
-        _again = true;
-        continue _function;
-      }
-      throw new ReferenceError("Please provide a proper feature name. Cannot find " + query);
-    }
-    return parse(feature, browsers);
+function getSupport(query) {
+  var feature = void 0;
+  try {
+    feature = features[query];
+  } catch (e) {
+    var res = find(query);
+    if (res.length === 1) return getSupport(res[0]);
+    throw new ReferenceError("Please provide a proper feature name. Cannot find " + query);
   }
+  return parse(feature, browsers);
 }
 
 function isSupported(feature, browsers) {
-  var data = undefined;
+  var data = void 0;
   try {
     data = features[feature];
   } catch (e) {
@@ -72,7 +63,7 @@ function isSupported(feature, browsers) {
     }
   }
 
-  return browserslist(browsers).map(function (browser) {
+  return (0, _browserslist2.default)(browsers).map(function (browser) {
     return browser.split(" ");
   }).every(function (browser) {
     return data.stats[browser[0]] && data.stats[browser[0]][browser[1]] === "y";
@@ -90,12 +81,12 @@ function find(query) {
   }
 
   return featuresList.filter(function (file) {
-    return contains(file, query);
+    return (0, _utils.contains)(file, query);
   });
 }
 
 function getLatestStableBrowsers() {
-  return browserslist.queries.lastVersions.select(1);
+  return _browserslist2.default.queries.lastVersions.select(1);
 }
 
 setBrowserScope();

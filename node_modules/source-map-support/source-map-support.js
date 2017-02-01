@@ -100,17 +100,21 @@ function retrieveSourceMapURL(source) {
   var fileData;
 
   if (isInBrowser()) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', source, false);
-    xhr.send(null);
-    fileData = xhr.readyState === 4 ? xhr.responseText : null;
+     try {
+       var xhr = new XMLHttpRequest();
+       xhr.open('GET', source, false);
+       xhr.send(null);
+       fileData = xhr.readyState === 4 ? xhr.responseText : null;
 
-    // Support providing a sourceMappingURL via the SourceMap header
-    var sourceMapHeader = xhr.getResponseHeader("SourceMap") ||
-                          xhr.getResponseHeader("X-SourceMap");
-    if (sourceMapHeader) {
-      return sourceMapHeader;
-    }
+       // Support providing a sourceMappingURL via the SourceMap header
+       var sourceMapHeader = xhr.getResponseHeader("SourceMap") ||
+                             xhr.getResponseHeader("X-SourceMap");
+       if (sourceMapHeader) {
+         return sourceMapHeader;
+       }
+     } catch (e) {
+       return null;
+     }
   }
 
   // Get the URL of the source map

@@ -44,10 +44,16 @@ module.exports = function Shared(context) {
 					options.log(stats.toString(options.stats));
 				}
 				if(!options.noInfo && !options.quiet) {
-					options.log("webpack: bundle is now VALID.");
+					var msg = "Compiled successfully.";
+					if(stats.hasErrors()) {
+						msg = "Failed to compile.";
+					} else if(stats.hasWarnings()) {
+						msg = "Compiled with warnings.";
+					}
+					options.log("webpack: " + msg);
 				}
 			} else {
-				options.log("webpack: bundle is now INVALID.");
+				options.log("webpack: Compiling...");
 			}
 		},
 		handleRangeHeaders: function handleRangeHeaders(content, req, res) {

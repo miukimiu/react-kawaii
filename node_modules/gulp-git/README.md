@@ -701,7 +701,7 @@ gulp.task('pull', function(){
 
 (MIT License)
 
-Copyright (c) 2015 Steve Lacy <me@slacy.me> slacy.me - Fractal <contact@wearefractal.com> wearefractal.com
+Copyright (c) 2015 Steve Lacy <me@slacy.me> slacy.me
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

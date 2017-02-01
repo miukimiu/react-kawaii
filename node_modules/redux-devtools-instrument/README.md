@@ -50,6 +50,7 @@ export default function configureStore(initialState) {
     - **pauseActionType** *string* - if specified, whenever `pauseRecording(false)` lifted action is dispatched and there are actions in the history log, will add this action type. If not specified, will commit when paused.
     - **shouldStartLocked** *boolean* - if specified as `true`, it will not allow any non-monitor actions to be dispatched till `lockChanges(false)` is dispatched. Default is `false`.
     - **shouldHotReload** *boolean* - if set to `false`, will not recompute the states on hot reloading (or on replacing the reducers). Default to `true`.
+    - **stringifyActionTypes** *boolean* - if set to `true`, will stringify action types to support ES6 Symbols for the monitors and `persistState`. Default to `false`.
 
 ### License
 
