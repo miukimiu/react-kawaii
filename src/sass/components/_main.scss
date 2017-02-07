@@ -6,13 +6,20 @@ body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	justify-content: center;
-	img {
-		width: 75%;
-		max-width: 300px;
-		height: auto;
-		align-self: center;
-		align-items: baseline;
-		opacity: 0;
-	}
+	flex-direction: column;
+
+	.main {
+        display: flex;
+        flex: 1;
+    }
+    .main__content {
+        position: relative;
+        flex: 1;
+        padding: 0 $space;
+    }
+
+    .main__nav {
+      flex: 0 0 12em;
+      border: 1px solid $color-light-gray-2;
+    }
 }

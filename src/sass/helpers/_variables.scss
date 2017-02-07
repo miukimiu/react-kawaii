@@ -1,17 +1,6 @@
 $ns-app: "";
 
 /************************
-Colors
-************************/
-$color-primary: #8057E5;
-$color-primary-darker: #6C48C6;
-$color-white: #fff;
-$color-disabled: #cacaca;
-$color-text-disabled: #9a9a9a;
-$color-default: #8C96A9;
-$color-default-darker: darken($color-default, 5%);
-
-/************************
 Transitions
 ************************/
 $transition-hover-element: all 0.5s linear;
@@ -23,3 +12,8 @@ Shadows Levels
 $level-1: 0 0 15px 0 rgba(145,145,145,0.40);
 $level-2: 0 0 15px 0 rgba(125,125,125,0.70); // level-2 also has a mixin for color
 $level-3: 0 0 50px 0 rgba(125,125,125,0.50);
+
+/************************
+Space - The grid works with rem
+************************/
+$space: 1.25rem;

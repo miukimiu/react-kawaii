@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { TweenLite } from "gsap";
-
-const img = require('../../images/logo-reactatouille-boilerplate.png')
 
 class App extends Component {
-
-	componentDidMount() {
-
-		TweenLite.fromTo(this.refs.logo, 0.8, { opacity: 0, x: 50 }, { opacity: 1, x: 0, ease: Bounce.easeOut })
-
-	}
 
 	render() {
 
 		return (
 			<div className="app">
-				<img ref='logo' src={ img } alt='' />
+                <div className="main">
+                    <nav className="main__nav">nav</nav>
+                    <main className="main__content page--triangle">
+                        <div className="hero">
+                            <h1 className="h1--light">React Kawaii</h1>
+                            <h3 className="h3--light">Cute react ui components</h3>
+                        </div>
+                    </main>
+                </div>
 			</div>
 		);
 
