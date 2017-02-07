@@ -37,7 +37,7 @@ storiesOf('Affix', module)
     </Affix>
     ))
 
-storiesOf('Affix', module)
+storiesOf('Loadings', module)
     .add('primary', () => (
       <LoadingGooey />
     ))
