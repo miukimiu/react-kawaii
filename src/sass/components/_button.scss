@@ -2,6 +2,10 @@
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
+
+// local varibles
+$btn-width: 180px;
+
 /* Button reset */
 button {
     background: none;
@@ -46,20 +50,20 @@ button {
 
   &--primary {
     background-color: $color-primary;
-    min-width: 150px;
+    min-width: $btn-width;
 
     &:disabled {
       background: $color-disabled;
     }
 
     &:hover {
-      background-color: darken($color-primary, 10%);
-      @include level-2(darken($color-primary, 10%));
+      background-color: $color-primary-darker;
+      box-shadow: $level-2;
     }
   }
   &--default {
     background-color: $color-default;
-    min-width: 150px;
+    min-width: $btn-width
 
     &:disabled {
       background: $color-disabled;
@@ -67,15 +71,16 @@ button {
 
     &:hover {
       background-color: $color-default-darker;
-      @include level-2(darken($color-default-darker, 10%));
+      box-shadow: $level-2;
     }
   }
   &--ghost {
-    color: $color-primary-darker;
-    border: 1px solid $color-primary-darker;
+    min-width: $btn-width;
+    color: $color-primary;
+    border: 1px solid $color-primary;
 
     &:hover {
-      @include level-2($color-primary);
+      box-shadow: $level-2;
     }
     &:disabled {
       background: $color-disabled;
@@ -89,7 +94,7 @@ button {
       color: $color-white;
       box-shadow: $level-1;
       background: $color-primary;
-      @include level-2($color-primary);
+      box-shadow: $level-2;
     }
     &:disabled {
       color: $color-text-disabled;
@@ -102,8 +107,6 @@ button {
     padding: 0;
     background: $color-primary;
     transition: all .4s ease,transform .4s cubic-bezier(.175,.885,.32,1.275),background-color .4s ease;
-
-
 
     &:hover {
       transform: scale(1.08);
@@ -139,24 +142,23 @@ button {
     background-color: $color-primary;
 
     &:hover {
-      background-color: darken($color-primary, 10%);
+      background-color: $color-primary-darker;
     }
   }
   &--secondary {
-    background-color: $color-primary-darker;
+    background-color: $color-primary;
     color: $color-white;
 
     &:hover {
-      background-color: darken($color-primary-darker, 10%);
+      background-color: $color-primary-darker;
     }
   }
   &--default {
     background: red;
-    color: $color-primary-darker;
-
+    color: $color-primary;
 
     &:hover {
-      color: darken($color-primary-darker, 10%);
+      color: $color-primary-darker;
       background: lighten(red, 5%);
     }
   }
