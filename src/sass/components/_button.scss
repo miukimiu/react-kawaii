@@ -40,7 +40,6 @@ button {
   font-size: 13px;
   font-weight: 400;
   cursor: pointer;
-
   transform-style: flat;
   transition: $transition-hover-element;
 
@@ -49,7 +48,7 @@ button {
   }
 
   &--primary {
-    background-color: $color-primary;
+    background: $color-primary;
     min-width: $btn-width;
 
     &:disabled {
@@ -139,7 +138,7 @@ button {
   transition: $transition-hover-element;
 
   &--primary {
-    background-color: $color-primary;
+    background: $color-primary;
 
     &:hover {
       background-color: $color-primary-darker;
