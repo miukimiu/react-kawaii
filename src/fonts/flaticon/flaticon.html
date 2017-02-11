@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<!--
+  Flaticon icon font: Flaticon
+  Creation date: 22/06/2016 15:41
+-->
+<html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    body {
+        font-family: 'Varela Round', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        color: #222;
+    }
+    a {
+        color: #333;
+        border-bottom: 1px solid #a9fd00;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .wrapper {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 1em;
+    }
+    .title {
+        font-size: 1.25em;
+        text-align: center;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+    header {
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+        padding: 1em;
+    }
+    header .logo {
+        width: 210px;
+        height: 38px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em;
+        border: none;
+    }
+    header strong {
+        font-size: 1.95em;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .demo {
+        margin: 2em auto;
+        line-height: 1.25em;
+    }
+    .demo ul li {
+        margin-bottom: 1em;
+    }
+    .demo ul li .num {
+        color: #222;
+        border-radius: 20px;
+        display: inline-block;
+        width: 26px;
+        padding: 3px;
+        height: 26px;
+        text-align: center;
+        margin-right: 0.5em;
+        border: 1px solid #222;
+    }
+    .demo ul li code {
+        background-color: #222;
+        border-radius: 4px;
+        padding: 0.25em 0.5em;
+        display: inline-block;
+        color: #fff;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+        font-weight: lighter;
+        margin-top: 1em;
+        font-size: 0.8em;
+        word-break: break-all;
+    }
+    .demo ul li code.big {
+        padding: 1em;
+        font-size: 0.9em;
+    }
+    .demo ul li code .red {
+        color: #EF3159;
+    }
+    .demo ul li code .green {
+        color: #ACFF65;
+    }
+    .demo ul li code .yellow {
+        color: #FFFF99;
+    }
+    .demo ul li code .blue {
+        color: #99D3FF;
+    }
+    .demo ul li code .purple {
+        color: #A295FF;
+    }
+    .demo ul li code .dots {
+        margin-top: 0.5em;
+        display: block;
+    }
+    #glyphs {
+        border-bottom: 1px solid #ccc;
+        padding: 2em 0;
+        text-align: center;
+    }
+    .glyph {
+        display: inline-block;
+        width: 9em;
+        margin: 1em;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #222;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 0.65em;
+        background-color: #222;
+        color: #fff;
+        border-radius: 4px 4px 0 0;
+        padding: 0.5em;
+        color: #FFFF99;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    }
+    .author-name {
+        font-size: 0.6em;
+        background-color: #fcfcfd;
+        border: 1px solid #DEDEE4;
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        padding: 0.5em;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#a9fd00;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .attribution .title {
+        margin-top: 2em;
+    }
+    .attribution textarea {
+        background-color: #fcfcfd;
+        padding: 1em;
+        border: none;
+        box-shadow: none;
+        border: 1px solid #DEDEE4;
+        border-radius: 4px;
+        resize: none;
+        width: 100%;
+        height: 150px;
+        font-size: 0.8em;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+        -webkit-appearance: none;
+    }
+    .iconsuse {
+        margin: 2em auto;
+        text-align: center;
+        max-width: 1200px;
+    }
+    .iconsuse:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .iconsuse .image {
+        float: left;
+        width: 25%;
+        padding: 0 1em;
+    }
+    .iconsuse .image p {
+        margin-bottom: 1em;
+    }
+    .iconsuse .image span {
+        display: block;
+        font-size: 0.65em;
+        background-color: #222;
+        color: #fff;
+        border-radius: 4px;
+        padding: 0.5em;
+        color: #FFFF99;
+        margin-top: 1em;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    }
+    #footer {
+        text-align: center;
+        background-color: #4C5B5C;
+        color: #7c9192;
+        padding: 1em;
+    }
+    #footer a {
+        border: none;
+        color: #a9fd00;
+        font-weight: normal;
+    }
+    @media (max-width: 960px) {
+        .iconsuse .image {
+            width: 50%;
+        }
+    }
+    @media (max-width: 560px) {
+        .iconsuse .image {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body class="characters-off">
+
+    <header>
+        <a href="http://www.flaticon.com" target="_blank" class="logo">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 560.875 102.036" enable-background="new 0 0 560.875 102.036" xml:space="preserve">
+                <defs>
+                </defs>
+                <g>
+                    <g class="letters">
+                        <path fill="#ffffff" d="M141.596,29.675c0-3.777,2.985-6.767,6.764-6.767h34.438c3.426,0,6.15,2.728,6.15,6.15
+                        c0,3.43-2.724,6.149-6.15,6.149h-27.674v13.091h23.719c3.429,0,6.151,2.724,6.151,6.15c0,3.43-2.723,6.149-6.151,6.149h-23.719
+                        v17.574c0,3.773-2.986,6.761-6.764,6.761c-3.779,0-6.764-2.989-6.764-6.761V29.675z"></path>
+                        <path fill="#ffffff" d="M193.844,29.149c0-3.781,2.985-6.767,6.764-6.767c3.776,0,6.763,2.985,6.763,6.767v42.957h25.039
+                        c3.426,0,6.149,2.726,6.149,6.153c0,3.425-2.723,6.15-6.149,6.15h-31.802c-3.779,0-6.764-2.986-6.764-6.768V29.149z"></path>
+                        <path fill="#ffffff" d="M241.891,75.71l21.438-48.407c1.492-3.341,4.215-5.357,7.906-5.357h0.792
+                        c3.686,0,6.323,2.017,7.815,5.357l21.439,48.407c0.436,0.967,0.701,1.845,0.701,2.723c0,3.602-2.809,6.501-6.414,6.501
+                        c-3.161,0-5.269-1.845-6.499-4.655l-4.132-9.661h-27.059l-4.301,10.102c-1.144,2.631-3.426,4.214-6.237,4.214
+                        c-3.517,0-6.24-2.81-6.24-6.325C241.1,77.64,241.451,76.677,241.891,75.71z M279.932,58.666l-8.521-20.297l-8.526,20.297H279.932
+                        z"></path>
+                        <path fill="#ffffff" d="M314.864,35.387H301.86c-3.429,0-6.239-2.813-6.239-6.238c0-3.429,2.811-6.24,6.239-6.24h39.533
+                        c3.426,0,6.237,2.811,6.237,6.24c0,3.425-2.811,6.238-6.237,6.238h-13.001v42.785c0,3.773-2.99,6.761-6.764,6.761
+                        c-3.779,0-6.764-2.989-6.764-6.761V35.387z"></path>
+                        <path fill="#A9FD00" d="M352.615,29.149c0-3.781,2.985-6.767,6.767-6.767c3.774,0,6.761,2.985,6.761,6.767v49.024
+                        c0,3.773-2.987,6.761-6.761,6.761c-3.781,0-6.767-2.989-6.767-6.761V29.149z"></path>
+                        <path fill="#A9FD00" d="M374.132,53.836v-0.179c0-17.481,13.178-31.801,32.065-31.801c9.22,0,15.459,2.458,20.557,6.238
+                        c1.402,1.054,2.637,2.985,2.637,5.357c0,3.692-2.985,6.59-6.681,6.59c-1.845,0-3.071-0.702-4.044-1.319
+                        c-3.776-2.813-7.729-4.393-12.562-4.393c-10.364,0-17.831,8.611-17.831,19.154v0.173c0,10.542,7.291,19.329,17.831,19.329
+                        c5.715,0,9.492-1.756,13.359-4.834c1.049-0.874,2.458-1.491,4.039-1.491c3.429,0,6.325,2.813,6.325,6.236
+                        c0,2.106-1.056,3.78-2.282,4.834c-5.539,4.834-12.036,7.733-21.878,7.733C387.572,85.464,374.132,71.493,374.132,53.836z"></path>
+                        <path fill="#A9FD00" d="M433.009,53.836v-0.179c0-17.481,13.79-31.801,32.766-31.801c18.981,0,32.592,14.143,32.592,31.628v0.173
+                        c0,17.483-13.785,31.807-32.769,31.807C446.625,85.464,433.009,71.32,433.009,53.836z M484.224,53.836v-0.179
+                        c0-10.539-7.725-19.326-18.626-19.326c-10.893,0-18.449,8.611-18.449,19.154v0.173c0,10.542,7.73,19.329,18.626,19.329
+                        C476.676,72.986,484.224,64.378,484.224,53.836z"></path>
+                        <path fill="#A9FD00" d="M506.233,29.321c0-3.774,2.99-6.763,6.767-6.763h1.401c3.252,0,5.183,1.583,7.029,3.953l26.093,34.265
+                        V29.059c0-3.692,2.99-6.677,6.681-6.677c3.683,0,6.671,2.985,6.671,6.677v48.934c0,3.78-2.987,6.765-6.764,6.765h-0.436
+                        c-3.257,0-5.188-1.581-7.034-3.953l-27.056-35.492v32.944c0,3.687-2.985,6.676-6.678,6.676c-3.683,0-6.673-2.989-6.673-6.676
+                        V29.321z"></path>
+                    </g>
+                    <g class="insignia">
+                        <path fill="#ffffff" d="M48.372,56.137h12.517l11.156-18.537H37.186L25.688,18.539h57.825L94.668,0H9.271
+                        C5.925,0,2.842,1.801,1.198,4.716c-1.644,2.907-1.593,6.482,0.134,9.343l50.38,83.501c1.678,2.781,4.689,4.476,7.938,4.476
+                        c3.246,0,6.257-1.695,7.935-4.476l2.898-4.804L48.372,56.137z"></path>
+                        <g class="i">
+                            <path fill="#A9FD00" d="M93.575,18.539h0.031v0.004l21.652,0.004l2.705-4.488c1.727-2.861,1.778-6.436,0.133-9.343
+                            C116.454,1.801,113.371,0,110.026,0h-5.294L93.575,18.539z"></path>
+                            <polygon fill="#A9FD00" points="88.291,27.356 64.725,66.486 75.519,84.404 109.942,27.356"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <strong>Font Demo</strong>
+    </header>
+
+
+    <section class="demo wrapper">
+
+        <p class="title">Instructions</p>
+
+        <ul>
+            <li>
+                <span class="num">1</span>Copy the "Fonts" files and CSS files to your website CSS folder.
+            </li>
+            <li>
+                <span class="num">2</span>Add the CSS link to your website source code on header.
+                <code class="big">
+                    &lt;<span class="red">head</span>&gt;
+                    <br/><span class="dots">...</span>
+                    <br/>&lt;<span class="red">link</span> <span class="green">rel</span>=<span class="yellow">"stylesheet"</span> <span class="green">type</span>=<span class="yellow">"text/css"</span> <span class="green">href</span>=<span class="yellow">"your_website_domain/css_root/flaticon.css"</span>&gt;
+                    <br/><span class="dots">...</span>
+                    <br/>&lt;/<span class="red">head</span>&gt;
+                </code>
+            </li>
+
+            <li>
+                <p>
+                    <span class="num">3</span>Use the icon class on <code>"<span class="blue">display</span>:<span class="purple"> inline</span>"</code> elements:
+                    <br />
+                    Use example: <code>&lt;<span class="red">i</span> <span class="green">class</span>=<span class="yellow">&quot;flaticon-airplane49&quot;</span>&gt;&lt;/<span class="red">i</span>&gt;</code> or <code>&lt;<span class="red">span</span> <span class="green">class</span>=<span class="yellow">&quot;flaticon-airplane49&quot;</span>&gt;&lt;/<span class="red">span</span>&gt;</code>
+            </li>
+        </ul>
+
+    </section>
+
+
+
+
+   <section id="glyphs">          
+    
+      
+        <div class="glyph"><div class="glyph-icon flaticon-add"></div>
+            <div class="class-name">.flaticon-add</div>
+            <div class="author-name">Author: <a data-file="add" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-add-1"></div>
+            <div class="class-name">.flaticon-add-1</div>
+            <div class="author-name">Author: <a data-file="add-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-add-2"></div>
+            <div class="class-name">.flaticon-add-2</div>
+            <div class="author-name">Author: <a data-file="add-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-add-3"></div>
+            <div class="class-name">.flaticon-add-3</div>
+            <div class="author-name">Author: <a data-file="add-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-agenda"></div>
+            <div class="class-name">.flaticon-agenda</div>
+            <div class="author-name">Author: <a data-file="agenda" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-alarm"></div>
+            <div class="class-name">.flaticon-alarm</div>
+            <div class="author-name">Author: <a data-file="alarm" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-alarm-1"></div>
+            <div class="class-name">.flaticon-alarm-1</div>
+            <div class="author-name">Author: <a data-file="alarm-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-alarm-clock"></div>
+            <div class="class-name">.flaticon-alarm-clock</div>
+            <div class="author-name">Author: <a data-file="alarm-clock" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-alarm-clock-1"></div>
+            <div class="class-name">.flaticon-alarm-clock-1</div>
+            <div class="author-name">Author: <a data-file="alarm-clock-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-albums"></div>
+            <div class="class-name">.flaticon-albums</div>
+            <div class="author-name">Author: <a data-file="albums" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-app"></div>
+            <div class="class-name">.flaticon-app</div>
+            <div class="author-name">Author: <a data-file="app" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-archive"></div>
+            <div class="class-name">.flaticon-archive</div>
+            <div class="author-name">Author: <a data-file="archive" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-archive-1"></div>
+            <div class="class-name">.flaticon-archive-1</div>
+            <div class="author-name">Author: <a data-file="archive-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-archive-2"></div>
+            <div class="class-name">.flaticon-archive-2</div>
+            <div class="author-name">Author: <a data-file="archive-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-archive-3"></div>
+            <div class="class-name">.flaticon-archive-3</div>
+            <div class="author-name">Author: <a data-file="archive-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-attachment"></div>
+            <div class="class-name">.flaticon-attachment</div>
+            <div class="author-name">Author: <a data-file="attachment" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-back"></div>
+            <div class="class-name">.flaticon-back</div>
+            <div class="author-name">Author: <a data-file="back" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery"></div>
+            <div class="class-name">.flaticon-battery</div>
+            <div class="author-name">Author: <a data-file="battery" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-1"></div>
+            <div class="class-name">.flaticon-battery-1</div>
+            <div class="author-name">Author: <a data-file="battery-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-2"></div>
+            <div class="class-name">.flaticon-battery-2</div>
+            <div class="author-name">Author: <a data-file="battery-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-3"></div>
+            <div class="class-name">.flaticon-battery-3</div>
+            <div class="author-name">Author: <a data-file="battery-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-4"></div>
+            <div class="class-name">.flaticon-battery-4</div>
+            <div class="author-name">Author: <a data-file="battery-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-5"></div>
+            <div class="class-name">.flaticon-battery-5</div>
+            <div class="author-name">Author: <a data-file="battery-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-6"></div>
+            <div class="class-name">.flaticon-battery-6</div>
+            <div class="author-name">Author: <a data-file="battery-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-7"></div>
+            <div class="class-name">.flaticon-battery-7</div>
+            <div class="author-name">Author: <a data-file="battery-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-8"></div>
+            <div class="class-name">.flaticon-battery-8</div>
+            <div class="author-name">Author: <a data-file="battery-8" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-battery-9"></div>
+            <div class="class-name">.flaticon-battery-9</div>
+            <div class="author-name">Author: <a data-file="battery-9" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-binoculars"></div>
+            <div class="class-name">.flaticon-binoculars</div>
+            <div class="author-name">Author: <a data-file="binoculars" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-blueprint"></div>
+            <div class="class-name">.flaticon-blueprint</div>
+            <div class="author-name">Author: <a data-file="blueprint" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bluetooth"></div>
+            <div class="class-name">.flaticon-bluetooth</div>
+            <div class="author-name">Author: <a data-file="bluetooth" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bluetooth-1"></div>
+            <div class="class-name">.flaticon-bluetooth-1</div>
+            <div class="author-name">Author: <a data-file="bluetooth-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bookmark"></div>
+            <div class="class-name">.flaticon-bookmark</div>
+            <div class="author-name">Author: <a data-file="bookmark" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bookmark-1"></div>
+            <div class="class-name">.flaticon-bookmark-1</div>
+            <div class="author-name">Author: <a data-file="bookmark-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-briefcase"></div>
+            <div class="class-name">.flaticon-briefcase</div>
+            <div class="author-name">Author: <a data-file="briefcase" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-broken-link"></div>
+            <div class="class-name">.flaticon-broken-link</div>
+            <div class="author-name">Author: <a data-file="broken-link" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calculator"></div>
+            <div class="class-name">.flaticon-calculator</div>
+            <div class="author-name">Author: <a data-file="calculator" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calculator-1"></div>
+            <div class="class-name">.flaticon-calculator-1</div>
+            <div class="author-name">Author: <a data-file="calculator-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar"></div>
+            <div class="class-name">.flaticon-calendar</div>
+            <div class="author-name">Author: <a data-file="calendar" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-1"></div>
+            <div class="class-name">.flaticon-calendar-1</div>
+            <div class="author-name">Author: <a data-file="calendar-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-2"></div>
+            <div class="class-name">.flaticon-calendar-2</div>
+            <div class="author-name">Author: <a data-file="calendar-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-3"></div>
+            <div class="class-name">.flaticon-calendar-3</div>
+            <div class="author-name">Author: <a data-file="calendar-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-4"></div>
+            <div class="class-name">.flaticon-calendar-4</div>
+            <div class="author-name">Author: <a data-file="calendar-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-5"></div>
+            <div class="class-name">.flaticon-calendar-5</div>
+            <div class="author-name">Author: <a data-file="calendar-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-6"></div>
+            <div class="class-name">.flaticon-calendar-6</div>
+            <div class="author-name">Author: <a data-file="calendar-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-calendar-7"></div>
+            <div class="class-name">.flaticon-calendar-7</div>
+            <div class="author-name">Author: <a data-file="calendar-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-checked"></div>
+            <div class="class-name">.flaticon-checked</div>
+            <div class="author-name">Author: <a data-file="checked" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-checked-1"></div>
+            <div class="class-name">.flaticon-checked-1</div>
+            <div class="author-name">Author: <a data-file="checked-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-clock"></div>
+            <div class="class-name">.flaticon-clock</div>
+            <div class="author-name">Author: <a data-file="clock" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-clock-1"></div>
+            <div class="class-name">.flaticon-clock-1</div>
+            <div class="author-name">Author: <a data-file="clock-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-close"></div>
+            <div class="class-name">.flaticon-close</div>
+            <div class="author-name">Author: <a data-file="close" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud"></div>
+            <div class="class-name">.flaticon-cloud</div>
+            <div class="author-name">Author: <a data-file="cloud" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud-computing"></div>
+            <div class="class-name">.flaticon-cloud-computing</div>
+            <div class="author-name">Author: <a data-file="cloud-computing" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud-computing-1"></div>
+            <div class="class-name">.flaticon-cloud-computing-1</div>
+            <div class="author-name">Author: <a data-file="cloud-computing-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud-computing-2"></div>
+            <div class="class-name">.flaticon-cloud-computing-2</div>
+            <div class="author-name">Author: <a data-file="cloud-computing-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud-computing-3"></div>
+            <div class="class-name">.flaticon-cloud-computing-3</div>
+            <div class="author-name">Author: <a data-file="cloud-computing-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud-computing-4"></div>
+            <div class="class-name">.flaticon-cloud-computing-4</div>
+            <div class="author-name">Author: <a data-file="cloud-computing-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cloud-computing-5"></div>
+            <div class="class-name">.flaticon-cloud-computing-5</div>
+            <div class="author-name">Author: <a data-file="cloud-computing-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-command"></div>
+            <div class="class-name">.flaticon-command</div>
+            <div class="author-name">Author: <a data-file="command" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-compact-disc"></div>
+            <div class="class-name">.flaticon-compact-disc</div>
+            <div class="author-name">Author: <a data-file="compact-disc" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-compact-disc-1"></div>
+            <div class="class-name">.flaticon-compact-disc-1</div>
+            <div class="author-name">Author: <a data-file="compact-disc-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-compact-disc-2"></div>
+            <div class="class-name">.flaticon-compact-disc-2</div>
+            <div class="author-name">Author: <a data-file="compact-disc-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-compass"></div>
+            <div class="class-name">.flaticon-compass</div>
+            <div class="author-name">Author: <a data-file="compass" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-compose"></div>
+            <div class="class-name">.flaticon-compose</div>
+            <div class="author-name">Author: <a data-file="compose" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls"></div>
+            <div class="class-name">.flaticon-controls</div>
+            <div class="author-name">Author: <a data-file="controls" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-1"></div>
+            <div class="class-name">.flaticon-controls-1</div>
+            <div class="author-name">Author: <a data-file="controls-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-2"></div>
+            <div class="class-name">.flaticon-controls-2</div>
+            <div class="author-name">Author: <a data-file="controls-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-3"></div>
+            <div class="class-name">.flaticon-controls-3</div>
+            <div class="author-name">Author: <a data-file="controls-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-4"></div>
+            <div class="class-name">.flaticon-controls-4</div>
+            <div class="author-name">Author: <a data-file="controls-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-5"></div>
+            <div class="class-name">.flaticon-controls-5</div>
+            <div class="author-name">Author: <a data-file="controls-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-6"></div>
+            <div class="class-name">.flaticon-controls-6</div>
+            <div class="author-name">Author: <a data-file="controls-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-7"></div>
+            <div class="class-name">.flaticon-controls-7</div>
+            <div class="author-name">Author: <a data-file="controls-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-8"></div>
+            <div class="class-name">.flaticon-controls-8</div>
+            <div class="author-name">Author: <a data-file="controls-8" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-controls-9"></div>
+            <div class="class-name">.flaticon-controls-9</div>
+            <div class="author-name">Author: <a data-file="controls-9" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-database"></div>
+            <div class="class-name">.flaticon-database</div>
+            <div class="author-name">Author: <a data-file="database" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-database-1"></div>
+            <div class="class-name">.flaticon-database-1</div>
+            <div class="author-name">Author: <a data-file="database-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-database-2"></div>
+            <div class="class-name">.flaticon-database-2</div>
+            <div class="author-name">Author: <a data-file="database-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-database-3"></div>
+            <div class="class-name">.flaticon-database-3</div>
+            <div class="author-name">Author: <a data-file="database-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-diamond"></div>
+            <div class="class-name">.flaticon-diamond</div>
+            <div class="author-name">Author: <a data-file="diamond" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-diploma"></div>
+            <div class="class-name">.flaticon-diploma</div>
+            <div class="author-name">Author: <a data-file="diploma" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-dislike"></div>
+            <div class="class-name">.flaticon-dislike</div>
+            <div class="author-name">Author: <a data-file="dislike" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-dislike-1"></div>
+            <div class="class-name">.flaticon-dislike-1</div>
+            <div class="author-name">Author: <a data-file="dislike-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-divide"></div>
+            <div class="class-name">.flaticon-divide</div>
+            <div class="author-name">Author: <a data-file="divide" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-divide-1"></div>
+            <div class="class-name">.flaticon-divide-1</div>
+            <div class="author-name">Author: <a data-file="divide-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-division"></div>
+            <div class="class-name">.flaticon-division</div>
+            <div class="author-name">Author: <a data-file="division" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-document"></div>
+            <div class="class-name">.flaticon-document</div>
+            <div class="author-name">Author: <a data-file="document" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-download"></div>
+            <div class="class-name">.flaticon-download</div>
+            <div class="author-name">Author: <a data-file="download" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-edit"></div>
+            <div class="class-name">.flaticon-edit</div>
+            <div class="author-name">Author: <a data-file="edit" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-edit-1"></div>
+            <div class="class-name">.flaticon-edit-1</div>
+            <div class="author-name">Author: <a data-file="edit-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-eject"></div>
+            <div class="class-name">.flaticon-eject</div>
+            <div class="author-name">Author: <a data-file="eject" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-eject-1"></div>
+            <div class="class-name">.flaticon-eject-1</div>
+            <div class="author-name">Author: <a data-file="eject-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-equal"></div>
+            <div class="class-name">.flaticon-equal</div>
+            <div class="author-name">Author: <a data-file="equal" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-equal-1"></div>
+            <div class="class-name">.flaticon-equal-1</div>
+            <div class="author-name">Author: <a data-file="equal-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-equal-2"></div>
+            <div class="class-name">.flaticon-equal-2</div>
+            <div class="author-name">Author: <a data-file="equal-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-error"></div>
+            <div class="class-name">.flaticon-error</div>
+            <div class="author-name">Author: <a data-file="error" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-exit"></div>
+            <div class="class-name">.flaticon-exit</div>
+            <div class="author-name">Author: <a data-file="exit" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-exit-1"></div>
+            <div class="class-name">.flaticon-exit-1</div>
+            <div class="author-name">Author: <a data-file="exit-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-exit-2"></div>
+            <div class="class-name">.flaticon-exit-2</div>
+            <div class="author-name">Author: <a data-file="exit-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-eyeglasses"></div>
+            <div class="class-name">.flaticon-eyeglasses</div>
+            <div class="author-name">Author: <a data-file="eyeglasses" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fast-forward"></div>
+            <div class="class-name">.flaticon-fast-forward</div>
+            <div class="author-name">Author: <a data-file="fast-forward" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fast-forward-1"></div>
+            <div class="class-name">.flaticon-fast-forward-1</div>
+            <div class="author-name">Author: <a data-file="fast-forward-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fax"></div>
+            <div class="class-name">.flaticon-fax</div>
+            <div class="author-name">Author: <a data-file="fax" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-file"></div>
+            <div class="class-name">.flaticon-file</div>
+            <div class="author-name">Author: <a data-file="file" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-file-1"></div>
+            <div class="class-name">.flaticon-file-1</div>
+            <div class="author-name">Author: <a data-file="file-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-file-2"></div>
+            <div class="class-name">.flaticon-file-2</div>
+            <div class="author-name">Author: <a data-file="file-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-film"></div>
+            <div class="class-name">.flaticon-film</div>
+            <div class="author-name">Author: <a data-file="film" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fingerprint"></div>
+            <div class="class-name">.flaticon-fingerprint</div>
+            <div class="author-name">Author: <a data-file="fingerprint" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flag"></div>
+            <div class="class-name">.flaticon-flag</div>
+            <div class="author-name">Author: <a data-file="flag" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flag-1"></div>
+            <div class="class-name">.flaticon-flag-1</div>
+            <div class="author-name">Author: <a data-file="flag-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flag-2"></div>
+            <div class="class-name">.flaticon-flag-2</div>
+            <div class="author-name">Author: <a data-file="flag-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flag-3"></div>
+            <div class="class-name">.flaticon-flag-3</div>
+            <div class="author-name">Author: <a data-file="flag-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flag-4"></div>
+            <div class="class-name">.flaticon-flag-4</div>
+            <div class="author-name">Author: <a data-file="flag-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-focus"></div>
+            <div class="class-name">.flaticon-focus</div>
+            <div class="author-name">Author: <a data-file="focus" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder"></div>
+            <div class="class-name">.flaticon-folder</div>
+            <div class="author-name">Author: <a data-file="folder" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-1"></div>
+            <div class="class-name">.flaticon-folder-1</div>
+            <div class="author-name">Author: <a data-file="folder-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-10"></div>
+            <div class="class-name">.flaticon-folder-10</div>
+            <div class="author-name">Author: <a data-file="folder-10" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-11"></div>
+            <div class="class-name">.flaticon-folder-11</div>
+            <div class="author-name">Author: <a data-file="folder-11" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-12"></div>
+            <div class="class-name">.flaticon-folder-12</div>
+            <div class="author-name">Author: <a data-file="folder-12" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-13"></div>
+            <div class="class-name">.flaticon-folder-13</div>
+            <div class="author-name">Author: <a data-file="folder-13" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-14"></div>
+            <div class="class-name">.flaticon-folder-14</div>
+            <div class="author-name">Author: <a data-file="folder-14" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-15"></div>
+            <div class="class-name">.flaticon-folder-15</div>
+            <div class="author-name">Author: <a data-file="folder-15" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-16"></div>
+            <div class="class-name">.flaticon-folder-16</div>
+            <div class="author-name">Author: <a data-file="folder-16" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-17"></div>
+            <div class="class-name">.flaticon-folder-17</div>
+            <div class="author-name">Author: <a data-file="folder-17" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-18"></div>
+            <div class="class-name">.flaticon-folder-18</div>
+            <div class="author-name">Author: <a data-file="folder-18" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-19"></div>
+            <div class="class-name">.flaticon-folder-19</div>
+            <div class="author-name">Author: <a data-file="folder-19" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-2"></div>
+            <div class="class-name">.flaticon-folder-2</div>
+            <div class="author-name">Author: <a data-file="folder-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-3"></div>
+            <div class="class-name">.flaticon-folder-3</div>
+            <div class="author-name">Author: <a data-file="folder-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-4"></div>
+            <div class="class-name">.flaticon-folder-4</div>
+            <div class="author-name">Author: <a data-file="folder-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-5"></div>
+            <div class="class-name">.flaticon-folder-5</div>
+            <div class="author-name">Author: <a data-file="folder-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-6"></div>
+            <div class="class-name">.flaticon-folder-6</div>
+            <div class="author-name">Author: <a data-file="folder-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-7"></div>
+            <div class="class-name">.flaticon-folder-7</div>
+            <div class="author-name">Author: <a data-file="folder-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-8"></div>
+            <div class="class-name">.flaticon-folder-8</div>
+            <div class="author-name">Author: <a data-file="folder-8" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-folder-9"></div>
+            <div class="class-name">.flaticon-folder-9</div>
+            <div class="author-name">Author: <a data-file="folder-9" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-forbidden"></div>
+            <div class="class-name">.flaticon-forbidden</div>
+            <div class="author-name">Author: <a data-file="forbidden" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-funnel"></div>
+            <div class="class-name">.flaticon-funnel</div>
+            <div class="author-name">Author: <a data-file="funnel" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-garbage"></div>
+            <div class="class-name">.flaticon-garbage</div>
+            <div class="author-name">Author: <a data-file="garbage" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-garbage-1"></div>
+            <div class="class-name">.flaticon-garbage-1</div>
+            <div class="author-name">Author: <a data-file="garbage-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-garbage-2"></div>
+            <div class="class-name">.flaticon-garbage-2</div>
+            <div class="author-name">Author: <a data-file="garbage-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-gift"></div>
+            <div class="class-name">.flaticon-gift</div>
+            <div class="author-name">Author: <a data-file="gift" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-help"></div>
+            <div class="class-name">.flaticon-help</div>
+            <div class="author-name">Author: <a data-file="help" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hide"></div>
+            <div class="class-name">.flaticon-hide</div>
+            <div class="author-name">Author: <a data-file="hide" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hold"></div>
+            <div class="class-name">.flaticon-hold</div>
+            <div class="author-name">Author: <a data-file="hold" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-home"></div>
+            <div class="class-name">.flaticon-home</div>
+            <div class="author-name">Author: <a data-file="home" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-home-1"></div>
+            <div class="class-name">.flaticon-home-1</div>
+            <div class="author-name">Author: <a data-file="home-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-home-2"></div>
+            <div class="class-name">.flaticon-home-2</div>
+            <div class="author-name">Author: <a data-file="home-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hourglass"></div>
+            <div class="class-name">.flaticon-hourglass</div>
+            <div class="author-name">Author: <a data-file="hourglass" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hourglass-1"></div>
+            <div class="class-name">.flaticon-hourglass-1</div>
+            <div class="author-name">Author: <a data-file="hourglass-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hourglass-2"></div>
+            <div class="class-name">.flaticon-hourglass-2</div>
+            <div class="author-name">Author: <a data-file="hourglass-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hourglass-3"></div>
+            <div class="class-name">.flaticon-hourglass-3</div>
+            <div class="author-name">Author: <a data-file="hourglass-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-house"></div>
+            <div class="class-name">.flaticon-house</div>
+            <div class="author-name">Author: <a data-file="house" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-id-card"></div>
+            <div class="class-name">.flaticon-id-card</div>
+            <div class="author-name">Author: <a data-file="id-card" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-id-card-1"></div>
+            <div class="class-name">.flaticon-id-card-1</div>
+            <div class="author-name">Author: <a data-file="id-card-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-id-card-2"></div>
+            <div class="class-name">.flaticon-id-card-2</div>
+            <div class="author-name">Author: <a data-file="id-card-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-id-card-3"></div>
+            <div class="class-name">.flaticon-id-card-3</div>
+            <div class="author-name">Author: <a data-file="id-card-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-id-card-4"></div>
+            <div class="class-name">.flaticon-id-card-4</div>
+            <div class="author-name">Author: <a data-file="id-card-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-id-card-5"></div>
+            <div class="class-name">.flaticon-id-card-5</div>
+            <div class="author-name">Author: <a data-file="id-card-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-idea"></div>
+            <div class="class-name">.flaticon-idea</div>
+            <div class="author-name">Author: <a data-file="idea" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-incoming"></div>
+            <div class="class-name">.flaticon-incoming</div>
+            <div class="author-name">Author: <a data-file="incoming" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-infinity"></div>
+            <div class="class-name">.flaticon-infinity</div>
+            <div class="author-name">Author: <a data-file="infinity" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-info"></div>
+            <div class="class-name">.flaticon-info</div>
+            <div class="author-name">Author: <a data-file="info" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-internet"></div>
+            <div class="class-name">.flaticon-internet</div>
+            <div class="author-name">Author: <a data-file="internet" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-key"></div>
+            <div class="class-name">.flaticon-key</div>
+            <div class="author-name">Author: <a data-file="key" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-lamp"></div>
+            <div class="class-name">.flaticon-lamp</div>
+            <div class="author-name">Author: <a data-file="lamp" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-layers"></div>
+            <div class="class-name">.flaticon-layers</div>
+            <div class="author-name">Author: <a data-file="layers" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-layers-1"></div>
+            <div class="class-name">.flaticon-layers-1</div>
+            <div class="author-name">Author: <a data-file="layers-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-like"></div>
+            <div class="class-name">.flaticon-like</div>
+            <div class="author-name">Author: <a data-file="like" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-like-1"></div>
+            <div class="class-name">.flaticon-like-1</div>
+            <div class="author-name">Author: <a data-file="like-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-like-2"></div>
+            <div class="class-name">.flaticon-like-2</div>
+            <div class="author-name">Author: <a data-file="like-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-link"></div>
+            <div class="class-name">.flaticon-link</div>
+            <div class="author-name">Author: <a data-file="link" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-list"></div>
+            <div class="class-name">.flaticon-list</div>
+            <div class="author-name">Author: <a data-file="list" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-list-1"></div>
+            <div class="class-name">.flaticon-list-1</div>
+            <div class="author-name">Author: <a data-file="list-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-lock"></div>
+            <div class="class-name">.flaticon-lock</div>
+            <div class="author-name">Author: <a data-file="lock" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-lock-1"></div>
+            <div class="class-name">.flaticon-lock-1</div>
+            <div class="author-name">Author: <a data-file="lock-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked"></div>
+            <div class="class-name">.flaticon-locked</div>
+            <div class="author-name">Author: <a data-file="locked" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked-1"></div>
+            <div class="class-name">.flaticon-locked-1</div>
+            <div class="author-name">Author: <a data-file="locked-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked-2"></div>
+            <div class="class-name">.flaticon-locked-2</div>
+            <div class="author-name">Author: <a data-file="locked-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked-3"></div>
+            <div class="class-name">.flaticon-locked-3</div>
+            <div class="author-name">Author: <a data-file="locked-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked-4"></div>
+            <div class="class-name">.flaticon-locked-4</div>
+            <div class="author-name">Author: <a data-file="locked-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked-5"></div>
+            <div class="class-name">.flaticon-locked-5</div>
+            <div class="author-name">Author: <a data-file="locked-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-locked-6"></div>
+            <div class="class-name">.flaticon-locked-6</div>
+            <div class="author-name">Author: <a data-file="locked-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-login"></div>
+            <div class="class-name">.flaticon-login</div>
+            <div class="author-name">Author: <a data-file="login" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-magic-wand"></div>
+            <div class="class-name">.flaticon-magic-wand</div>
+            <div class="author-name">Author: <a data-file="magic-wand" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-magnet"></div>
+            <div class="class-name">.flaticon-magnet</div>
+            <div class="author-name">Author: <a data-file="magnet" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-magnet-1"></div>
+            <div class="class-name">.flaticon-magnet-1</div>
+            <div class="author-name">Author: <a data-file="magnet-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-magnet-2"></div>
+            <div class="class-name">.flaticon-magnet-2</div>
+            <div class="author-name">Author: <a data-file="magnet-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-map"></div>
+            <div class="class-name">.flaticon-map</div>
+            <div class="author-name">Author: <a data-file="map" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-map-1"></div>
+            <div class="class-name">.flaticon-map-1</div>
+            <div class="author-name">Author: <a data-file="map-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-map-2"></div>
+            <div class="class-name">.flaticon-map-2</div>
+            <div class="author-name">Author: <a data-file="map-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-map-location"></div>
+            <div class="class-name">.flaticon-map-location</div>
+            <div class="author-name">Author: <a data-file="map-location" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-megaphone"></div>
+            <div class="class-name">.flaticon-megaphone</div>
+            <div class="author-name">Author: <a data-file="megaphone" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-megaphone-1"></div>
+            <div class="class-name">.flaticon-megaphone-1</div>
+            <div class="author-name">Author: <a data-file="megaphone-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-menu"></div>
+            <div class="class-name">.flaticon-menu</div>
+            <div class="author-name">Author: <a data-file="menu" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-menu-1"></div>
+            <div class="class-name">.flaticon-menu-1</div>
+            <div class="author-name">Author: <a data-file="menu-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-menu-2"></div>
+            <div class="class-name">.flaticon-menu-2</div>
+            <div class="author-name">Author: <a data-file="menu-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-menu-3"></div>
+            <div class="class-name">.flaticon-menu-3</div>
+            <div class="author-name">Author: <a data-file="menu-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-menu-4"></div>
+            <div class="class-name">.flaticon-menu-4</div>
+            <div class="author-name">Author: <a data-file="menu-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-microphone"></div>
+            <div class="class-name">.flaticon-microphone</div>
+            <div class="author-name">Author: <a data-file="microphone" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-microphone-1"></div>
+            <div class="class-name">.flaticon-microphone-1</div>
+            <div class="author-name">Author: <a data-file="microphone-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-minus"></div>
+            <div class="class-name">.flaticon-minus</div>
+            <div class="author-name">Author: <a data-file="minus" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-minus-1"></div>
+            <div class="class-name">.flaticon-minus-1</div>
+            <div class="author-name">Author: <a data-file="minus-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-more"></div>
+            <div class="class-name">.flaticon-more</div>
+            <div class="author-name">Author: <a data-file="more" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-more-1"></div>
+            <div class="class-name">.flaticon-more-1</div>
+            <div class="author-name">Author: <a data-file="more-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-more-2"></div>
+            <div class="class-name">.flaticon-more-2</div>
+            <div class="author-name">Author: <a data-file="more-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-multiply"></div>
+            <div class="class-name">.flaticon-multiply</div>
+            <div class="author-name">Author: <a data-file="multiply" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-multiply-1"></div>
+            <div class="class-name">.flaticon-multiply-1</div>
+            <div class="author-name">Author: <a data-file="multiply-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-music-player"></div>
+            <div class="class-name">.flaticon-music-player</div>
+            <div class="author-name">Author: <a data-file="music-player" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-music-player-1"></div>
+            <div class="class-name">.flaticon-music-player-1</div>
+            <div class="author-name">Author: <a data-file="music-player-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-music-player-2"></div>
+            <div class="class-name">.flaticon-music-player-2</div>
+            <div class="author-name">Author: <a data-file="music-player-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-music-player-3"></div>
+            <div class="class-name">.flaticon-music-player-3</div>
+            <div class="author-name">Author: <a data-file="music-player-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-mute"></div>
+            <div class="class-name">.flaticon-mute</div>
+            <div class="author-name">Author: <a data-file="mute" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-muted"></div>
+            <div class="class-name">.flaticon-muted</div>
+            <div class="author-name">Author: <a data-file="muted" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-navigation"></div>
+            <div class="class-name">.flaticon-navigation</div>
+            <div class="author-name">Author: <a data-file="navigation" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-navigation-1"></div>
+            <div class="class-name">.flaticon-navigation-1</div>
+            <div class="author-name">Author: <a data-file="navigation-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-network"></div>
+            <div class="class-name">.flaticon-network</div>
+            <div class="author-name">Author: <a data-file="network" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-newspaper"></div>
+            <div class="class-name">.flaticon-newspaper</div>
+            <div class="author-name">Author: <a data-file="newspaper" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-next"></div>
+            <div class="class-name">.flaticon-next</div>
+            <div class="author-name">Author: <a data-file="next" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-note"></div>
+            <div class="class-name">.flaticon-note</div>
+            <div class="author-name">Author: <a data-file="note" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notebook"></div>
+            <div class="class-name">.flaticon-notebook</div>
+            <div class="author-name">Author: <a data-file="notebook" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notebook-1"></div>
+            <div class="class-name">.flaticon-notebook-1</div>
+            <div class="author-name">Author: <a data-file="notebook-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notebook-2"></div>
+            <div class="class-name">.flaticon-notebook-2</div>
+            <div class="author-name">Author: <a data-file="notebook-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notebook-3"></div>
+            <div class="class-name">.flaticon-notebook-3</div>
+            <div class="author-name">Author: <a data-file="notebook-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notebook-4"></div>
+            <div class="class-name">.flaticon-notebook-4</div>
+            <div class="author-name">Author: <a data-file="notebook-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notebook-5"></div>
+            <div class="class-name">.flaticon-notebook-5</div>
+            <div class="author-name">Author: <a data-file="notebook-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notepad"></div>
+            <div class="class-name">.flaticon-notepad</div>
+            <div class="author-name">Author: <a data-file="notepad" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notepad-1"></div>
+            <div class="class-name">.flaticon-notepad-1</div>
+            <div class="author-name">Author: <a data-file="notepad-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notepad-2"></div>
+            <div class="class-name">.flaticon-notepad-2</div>
+            <div class="author-name">Author: <a data-file="notepad-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notification"></div>
+            <div class="class-name">.flaticon-notification</div>
+            <div class="author-name">Author: <a data-file="notification" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-paper-plane"></div>
+            <div class="class-name">.flaticon-paper-plane</div>
+            <div class="author-name">Author: <a data-file="paper-plane" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-paper-plane-1"></div>
+            <div class="class-name">.flaticon-paper-plane-1</div>
+            <div class="author-name">Author: <a data-file="paper-plane-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pause"></div>
+            <div class="class-name">.flaticon-pause</div>
+            <div class="author-name">Author: <a data-file="pause" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pause-1"></div>
+            <div class="class-name">.flaticon-pause-1</div>
+            <div class="author-name">Author: <a data-file="pause-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-percent"></div>
+            <div class="class-name">.flaticon-percent</div>
+            <div class="author-name">Author: <a data-file="percent" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-percent-1"></div>
+            <div class="class-name">.flaticon-percent-1</div>
+            <div class="author-name">Author: <a data-file="percent-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-perspective"></div>
+            <div class="class-name">.flaticon-perspective</div>
+            <div class="author-name">Author: <a data-file="perspective" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-photo-camera"></div>
+            <div class="class-name">.flaticon-photo-camera</div>
+            <div class="author-name">Author: <a data-file="photo-camera" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-photo-camera-1"></div>
+            <div class="class-name">.flaticon-photo-camera-1</div>
+            <div class="author-name">Author: <a data-file="photo-camera-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-photos"></div>
+            <div class="class-name">.flaticon-photos</div>
+            <div class="author-name">Author: <a data-file="photos" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-picture"></div>
+            <div class="class-name">.flaticon-picture</div>
+            <div class="author-name">Author: <a data-file="picture" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-picture-1"></div>
+            <div class="class-name">.flaticon-picture-1</div>
+            <div class="author-name">Author: <a data-file="picture-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-picture-2"></div>
+            <div class="class-name">.flaticon-picture-2</div>
+            <div class="author-name">Author: <a data-file="picture-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pin"></div>
+            <div class="class-name">.flaticon-pin</div>
+            <div class="author-name">Author: <a data-file="pin" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-placeholder"></div>
+            <div class="class-name">.flaticon-placeholder</div>
+            <div class="author-name">Author: <a data-file="placeholder" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-placeholder-1"></div>
+            <div class="class-name">.flaticon-placeholder-1</div>
+            <div class="author-name">Author: <a data-file="placeholder-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-placeholder-2"></div>
+            <div class="class-name">.flaticon-placeholder-2</div>
+            <div class="author-name">Author: <a data-file="placeholder-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-placeholder-3"></div>
+            <div class="class-name">.flaticon-placeholder-3</div>
+            <div class="author-name">Author: <a data-file="placeholder-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-placeholders"></div>
+            <div class="class-name">.flaticon-placeholders</div>
+            <div class="author-name">Author: <a data-file="placeholders" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-play-button"></div>
+            <div class="class-name">.flaticon-play-button</div>
+            <div class="author-name">Author: <a data-file="play-button" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-play-button-1"></div>
+            <div class="class-name">.flaticon-play-button-1</div>
+            <div class="author-name">Author: <a data-file="play-button-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-plus"></div>
+            <div class="class-name">.flaticon-plus</div>
+            <div class="author-name">Author: <a data-file="plus" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-power"></div>
+            <div class="class-name">.flaticon-power</div>
+            <div class="author-name">Author: <a data-file="power" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-previous"></div>
+            <div class="class-name">.flaticon-previous</div>
+            <div class="author-name">Author: <a data-file="previous" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-price-tag"></div>
+            <div class="class-name">.flaticon-price-tag</div>
+            <div class="author-name">Author: <a data-file="price-tag" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-print"></div>
+            <div class="class-name">.flaticon-print</div>
+            <div class="author-name">Author: <a data-file="print" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-push-pin"></div>
+            <div class="class-name">.flaticon-push-pin</div>
+            <div class="author-name">Author: <a data-file="push-pin" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-radar"></div>
+            <div class="class-name">.flaticon-radar</div>
+            <div class="author-name">Author: <a data-file="radar" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-reading"></div>
+            <div class="class-name">.flaticon-reading</div>
+            <div class="author-name">Author: <a data-file="reading" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-record"></div>
+            <div class="class-name">.flaticon-record</div>
+            <div class="author-name">Author: <a data-file="record" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-repeat"></div>
+            <div class="class-name">.flaticon-repeat</div>
+            <div class="author-name">Author: <a data-file="repeat" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-repeat-1"></div>
+            <div class="class-name">.flaticon-repeat-1</div>
+            <div class="author-name">Author: <a data-file="repeat-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-restart"></div>
+            <div class="class-name">.flaticon-restart</div>
+            <div class="author-name">Author: <a data-file="restart" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-resume"></div>
+            <div class="class-name">.flaticon-resume</div>
+            <div class="author-name">Author: <a data-file="resume" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-rewind"></div>
+            <div class="class-name">.flaticon-rewind</div>
+            <div class="author-name">Author: <a data-file="rewind" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-rewind-1"></div>
+            <div class="class-name">.flaticon-rewind-1</div>
+            <div class="author-name">Author: <a data-file="rewind-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-route"></div>
+            <div class="class-name">.flaticon-route</div>
+            <div class="author-name">Author: <a data-file="route" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-save"></div>
+            <div class="class-name">.flaticon-save</div>
+            <div class="author-name">Author: <a data-file="save" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-search"></div>
+            <div class="class-name">.flaticon-search</div>
+            <div class="author-name">Author: <a data-file="search" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-search-1"></div>
+            <div class="class-name">.flaticon-search-1</div>
+            <div class="author-name">Author: <a data-file="search-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-send"></div>
+            <div class="class-name">.flaticon-send</div>
+            <div class="author-name">Author: <a data-file="send" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-server"></div>
+            <div class="class-name">.flaticon-server</div>
+            <div class="author-name">Author: <a data-file="server" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-server-1"></div>
+            <div class="class-name">.flaticon-server-1</div>
+            <div class="author-name">Author: <a data-file="server-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-server-2"></div>
+            <div class="class-name">.flaticon-server-2</div>
+            <div class="author-name">Author: <a data-file="server-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-server-3"></div>
+            <div class="class-name">.flaticon-server-3</div>
+            <div class="author-name">Author: <a data-file="server-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings"></div>
+            <div class="class-name">.flaticon-settings</div>
+            <div class="author-name">Author: <a data-file="settings" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-1"></div>
+            <div class="class-name">.flaticon-settings-1</div>
+            <div class="author-name">Author: <a data-file="settings-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-2"></div>
+            <div class="class-name">.flaticon-settings-2</div>
+            <div class="author-name">Author: <a data-file="settings-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-3"></div>
+            <div class="class-name">.flaticon-settings-3</div>
+            <div class="author-name">Author: <a data-file="settings-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-4"></div>
+            <div class="class-name">.flaticon-settings-4</div>
+            <div class="author-name">Author: <a data-file="settings-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-5"></div>
+            <div class="class-name">.flaticon-settings-5</div>
+            <div class="author-name">Author: <a data-file="settings-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-6"></div>
+            <div class="class-name">.flaticon-settings-6</div>
+            <div class="author-name">Author: <a data-file="settings-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-7"></div>
+            <div class="class-name">.flaticon-settings-7</div>
+            <div class="author-name">Author: <a data-file="settings-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-8"></div>
+            <div class="class-name">.flaticon-settings-8</div>
+            <div class="author-name">Author: <a data-file="settings-8" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-settings-9"></div>
+            <div class="class-name">.flaticon-settings-9</div>
+            <div class="author-name">Author: <a data-file="settings-9" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-share"></div>
+            <div class="class-name">.flaticon-share</div>
+            <div class="author-name">Author: <a data-file="share" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-share-1"></div>
+            <div class="class-name">.flaticon-share-1</div>
+            <div class="author-name">Author: <a data-file="share-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-share-2"></div>
+            <div class="class-name">.flaticon-share-2</div>
+            <div class="author-name">Author: <a data-file="share-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-shuffle"></div>
+            <div class="class-name">.flaticon-shuffle</div>
+            <div class="author-name">Author: <a data-file="shuffle" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-shuffle-1"></div>
+            <div class="class-name">.flaticon-shuffle-1</div>
+            <div class="author-name">Author: <a data-file="shuffle-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-shutdown"></div>
+            <div class="class-name">.flaticon-shutdown</div>
+            <div class="author-name">Author: <a data-file="shutdown" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-sign"></div>
+            <div class="class-name">.flaticon-sign</div>
+            <div class="author-name">Author: <a data-file="sign" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-sign-1"></div>
+            <div class="class-name">.flaticon-sign-1</div>
+            <div class="author-name">Author: <a data-file="sign-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-skip"></div>
+            <div class="class-name">.flaticon-skip</div>
+            <div class="author-name">Author: <a data-file="skip" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone"></div>
+            <div class="class-name">.flaticon-smartphone</div>
+            <div class="author-name">Author: <a data-file="smartphone" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-1"></div>
+            <div class="class-name">.flaticon-smartphone-1</div>
+            <div class="author-name">Author: <a data-file="smartphone-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-10"></div>
+            <div class="class-name">.flaticon-smartphone-10</div>
+            <div class="author-name">Author: <a data-file="smartphone-10" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-11"></div>
+            <div class="class-name">.flaticon-smartphone-11</div>
+            <div class="author-name">Author: <a data-file="smartphone-11" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-2"></div>
+            <div class="class-name">.flaticon-smartphone-2</div>
+            <div class="author-name">Author: <a data-file="smartphone-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-3"></div>
+            <div class="class-name">.flaticon-smartphone-3</div>
+            <div class="author-name">Author: <a data-file="smartphone-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-4"></div>
+            <div class="class-name">.flaticon-smartphone-4</div>
+            <div class="author-name">Author: <a data-file="smartphone-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-5"></div>
+            <div class="class-name">.flaticon-smartphone-5</div>
+            <div class="author-name">Author: <a data-file="smartphone-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-6"></div>
+            <div class="class-name">.flaticon-smartphone-6</div>
+            <div class="author-name">Author: <a data-file="smartphone-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-7"></div>
+            <div class="class-name">.flaticon-smartphone-7</div>
+            <div class="author-name">Author: <a data-file="smartphone-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-8"></div>
+            <div class="class-name">.flaticon-smartphone-8</div>
+            <div class="author-name">Author: <a data-file="smartphone-8" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-smartphone-9"></div>
+            <div class="class-name">.flaticon-smartphone-9</div>
+            <div class="author-name">Author: <a data-file="smartphone-9" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker"></div>
+            <div class="class-name">.flaticon-speaker</div>
+            <div class="author-name">Author: <a data-file="speaker" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-1"></div>
+            <div class="class-name">.flaticon-speaker-1</div>
+            <div class="author-name">Author: <a data-file="speaker-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-2"></div>
+            <div class="class-name">.flaticon-speaker-2</div>
+            <div class="author-name">Author: <a data-file="speaker-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-3"></div>
+            <div class="class-name">.flaticon-speaker-3</div>
+            <div class="author-name">Author: <a data-file="speaker-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-4"></div>
+            <div class="class-name">.flaticon-speaker-4</div>
+            <div class="author-name">Author: <a data-file="speaker-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-5"></div>
+            <div class="class-name">.flaticon-speaker-5</div>
+            <div class="author-name">Author: <a data-file="speaker-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-6"></div>
+            <div class="class-name">.flaticon-speaker-6</div>
+            <div class="author-name">Author: <a data-file="speaker-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-7"></div>
+            <div class="class-name">.flaticon-speaker-7</div>
+            <div class="author-name">Author: <a data-file="speaker-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-speaker-8"></div>
+            <div class="class-name">.flaticon-speaker-8</div>
+            <div class="author-name">Author: <a data-file="speaker-8" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-spotlight"></div>
+            <div class="class-name">.flaticon-spotlight</div>
+            <div class="author-name">Author: <a data-file="spotlight" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-star"></div>
+            <div class="class-name">.flaticon-star</div>
+            <div class="author-name">Author: <a data-file="star" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-star-1"></div>
+            <div class="class-name">.flaticon-star-1</div>
+            <div class="author-name">Author: <a data-file="star-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stop"></div>
+            <div class="class-name">.flaticon-stop</div>
+            <div class="author-name">Author: <a data-file="stop" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stop-1"></div>
+            <div class="class-name">.flaticon-stop-1</div>
+            <div class="author-name">Author: <a data-file="stop-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stopwatch"></div>
+            <div class="class-name">.flaticon-stopwatch</div>
+            <div class="author-name">Author: <a data-file="stopwatch" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stopwatch-1"></div>
+            <div class="class-name">.flaticon-stopwatch-1</div>
+            <div class="author-name">Author: <a data-file="stopwatch-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stopwatch-2"></div>
+            <div class="class-name">.flaticon-stopwatch-2</div>
+            <div class="author-name">Author: <a data-file="stopwatch-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stopwatch-3"></div>
+            <div class="class-name">.flaticon-stopwatch-3</div>
+            <div class="author-name">Author: <a data-file="stopwatch-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stopwatch-4"></div>
+            <div class="class-name">.flaticon-stopwatch-4</div>
+            <div class="author-name">Author: <a data-file="stopwatch-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-street"></div>
+            <div class="class-name">.flaticon-street</div>
+            <div class="author-name">Author: <a data-file="street" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-street-1"></div>
+            <div class="class-name">.flaticon-street-1</div>
+            <div class="author-name">Author: <a data-file="street-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-substract"></div>
+            <div class="class-name">.flaticon-substract</div>
+            <div class="author-name">Author: <a data-file="substract" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-substract-1"></div>
+            <div class="class-name">.flaticon-substract-1</div>
+            <div class="author-name">Author: <a data-file="substract-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-success"></div>
+            <div class="class-name">.flaticon-success</div>
+            <div class="author-name">Author: <a data-file="success" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch"></div>
+            <div class="class-name">.flaticon-switch</div>
+            <div class="author-name">Author: <a data-file="switch" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-1"></div>
+            <div class="class-name">.flaticon-switch-1</div>
+            <div class="author-name">Author: <a data-file="switch-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-2"></div>
+            <div class="class-name">.flaticon-switch-2</div>
+            <div class="author-name">Author: <a data-file="switch-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-3"></div>
+            <div class="class-name">.flaticon-switch-3</div>
+            <div class="author-name">Author: <a data-file="switch-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-4"></div>
+            <div class="class-name">.flaticon-switch-4</div>
+            <div class="author-name">Author: <a data-file="switch-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-5"></div>
+            <div class="class-name">.flaticon-switch-5</div>
+            <div class="author-name">Author: <a data-file="switch-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-6"></div>
+            <div class="class-name">.flaticon-switch-6</div>
+            <div class="author-name">Author: <a data-file="switch-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-switch-7"></div>
+            <div class="class-name">.flaticon-switch-7</div>
+            <div class="author-name">Author: <a data-file="switch-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tabs"></div>
+            <div class="class-name">.flaticon-tabs</div>
+            <div class="author-name">Author: <a data-file="tabs" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tabs-1"></div>
+            <div class="class-name">.flaticon-tabs-1</div>
+            <div class="author-name">Author: <a data-file="tabs-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-target"></div>
+            <div class="class-name">.flaticon-target</div>
+            <div class="author-name">Author: <a data-file="target" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-television"></div>
+            <div class="class-name">.flaticon-television</div>
+            <div class="author-name">Author: <a data-file="television" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-television-1"></div>
+            <div class="class-name">.flaticon-television-1</div>
+            <div class="author-name">Author: <a data-file="television-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-time"></div>
+            <div class="class-name">.flaticon-time</div>
+            <div class="author-name">Author: <a data-file="time" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-trash"></div>
+            <div class="class-name">.flaticon-trash</div>
+            <div class="author-name">Author: <a data-file="trash" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-umbrella"></div>
+            <div class="class-name">.flaticon-umbrella</div>
+            <div class="author-name">Author: <a data-file="umbrella" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-unlink"></div>
+            <div class="class-name">.flaticon-unlink</div>
+            <div class="author-name">Author: <a data-file="unlink" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-unlocked"></div>
+            <div class="class-name">.flaticon-unlocked</div>
+            <div class="author-name">Author: <a data-file="unlocked" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-unlocked-1"></div>
+            <div class="class-name">.flaticon-unlocked-1</div>
+            <div class="author-name">Author: <a data-file="unlocked-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-unlocked-2"></div>
+            <div class="class-name">.flaticon-unlocked-2</div>
+            <div class="author-name">Author: <a data-file="unlocked-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-upload"></div>
+            <div class="class-name">.flaticon-upload</div>
+            <div class="author-name">Author: <a data-file="upload" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user"></div>
+            <div class="class-name">.flaticon-user</div>
+            <div class="author-name">Author: <a data-file="user" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-1"></div>
+            <div class="class-name">.flaticon-user-1</div>
+            <div class="author-name">Author: <a data-file="user-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-2"></div>
+            <div class="class-name">.flaticon-user-2</div>
+            <div class="author-name">Author: <a data-file="user-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-3"></div>
+            <div class="class-name">.flaticon-user-3</div>
+            <div class="author-name">Author: <a data-file="user-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-4"></div>
+            <div class="class-name">.flaticon-user-4</div>
+            <div class="author-name">Author: <a data-file="user-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-5"></div>
+            <div class="class-name">.flaticon-user-5</div>
+            <div class="author-name">Author: <a data-file="user-5" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-6"></div>
+            <div class="class-name">.flaticon-user-6</div>
+            <div class="author-name">Author: <a data-file="user-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-user-7"></div>
+            <div class="class-name">.flaticon-user-7</div>
+            <div class="author-name">Author: <a data-file="user-7" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-users"></div>
+            <div class="class-name">.flaticon-users</div>
+            <div class="author-name">Author: <a data-file="users" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-users-1"></div>
+            <div class="class-name">.flaticon-users-1</div>
+            <div class="author-name">Author: <a data-file="users-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-video-camera"></div>
+            <div class="class-name">.flaticon-video-camera</div>
+            <div class="author-name">Author: <a data-file="video-camera" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-video-camera-1"></div>
+            <div class="class-name">.flaticon-video-camera-1</div>
+            <div class="author-name">Author: <a data-file="video-camera-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-video-player"></div>
+            <div class="class-name">.flaticon-video-player</div>
+            <div class="author-name">Author: <a data-file="video-player" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-video-player-1"></div>
+            <div class="class-name">.flaticon-video-player-1</div>
+            <div class="author-name">Author: <a data-file="video-player-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-video-player-2"></div>
+            <div class="class-name">.flaticon-video-player-2</div>
+            <div class="author-name">Author: <a data-file="video-player-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-view"></div>
+            <div class="class-name">.flaticon-view</div>
+            <div class="author-name">Author: <a data-file="view" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-view-1"></div>
+            <div class="class-name">.flaticon-view-1</div>
+            <div class="author-name">Author: <a data-file="view-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-view-2"></div>
+            <div class="class-name">.flaticon-view-2</div>
+            <div class="author-name">Author: <a data-file="view-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-volume-control"></div>
+            <div class="class-name">.flaticon-volume-control</div>
+            <div class="author-name">Author: <a data-file="volume-control" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-volume-control-1"></div>
+            <div class="class-name">.flaticon-volume-control-1</div>
+            <div class="author-name">Author: <a data-file="volume-control-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-warning"></div>
+            <div class="class-name">.flaticon-warning</div>
+            <div class="author-name">Author: <a data-file="warning" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wifi"></div>
+            <div class="class-name">.flaticon-wifi</div>
+            <div class="author-name">Author: <a data-file="wifi" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wifi-1"></div>
+            <div class="class-name">.flaticon-wifi-1</div>
+            <div class="author-name">Author: <a data-file="wifi-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-windows"></div>
+            <div class="class-name">.flaticon-windows</div>
+            <div class="author-name">Author: <a data-file="windows" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-windows-1"></div>
+            <div class="class-name">.flaticon-windows-1</div>
+            <div class="author-name">Author: <a data-file="windows-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-windows-2"></div>
+            <div class="class-name">.flaticon-windows-2</div>
+            <div class="author-name">Author: <a data-file="windows-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-windows-3"></div>
+            <div class="class-name">.flaticon-windows-3</div>
+            <div class="author-name">Author: <a data-file="windows-3" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-windows-4"></div>
+            <div class="class-name">.flaticon-windows-4</div>
+            <div class="author-name">Author: <a data-file="windows-4" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wireless-internet"></div>
+            <div class="class-name">.flaticon-wireless-internet</div>
+            <div class="author-name">Author: <a data-file="wireless-internet" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-worldwide"></div>
+            <div class="class-name">.flaticon-worldwide</div>
+            <div class="author-name">Author: <a data-file="worldwide" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-worldwide-1"></div>
+            <div class="class-name">.flaticon-worldwide-1</div>
+            <div class="author-name">Author: <a data-file="worldwide-1" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-zoom-in"></div>
+            <div class="class-name">.flaticon-zoom-in</div>
+            <div class="author-name">Author: <a data-file="zoom-in" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-zoom-out"></div>
+            <div class="class-name">.flaticon-zoom-out</div>
+            <div class="author-name">Author: <a data-file="zoom-out" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a> </div> 
+        </div>        
+        
+
+    </section>
+
+
+
+    <section class="attribution wrapper"   style="text-align:center;">
+
+      <div class="title">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. <div><p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="locked-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a></p>  </div>
+      </div>
+      <div class="title">Copy the Attribution License:</div>
+
+    <textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;. <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="locked-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a></p>  
+     </textarea>
+
+    </section>
+
+    <section class="iconsuse">
+
+          <div class="title">Examples:</div>            
+             
+            <div class="image">
+                <p>
+                    <i class="glyph-icon flaticon-add"></i> 
+                    <span>&lt;i class=&quot;flaticon-add&quot;&gt;&lt;/i&gt;</span>
+                </p>
+            </div>
+            
+            <div class="image">
+                <p>
+                    <i class="glyph-icon flaticon-add-1"></i> 
+                    <span>&lt;i class=&quot;flaticon-add-1&quot;&gt;&lt;/i&gt;</span>
+                </p>
+            </div>
+            
+            <div class="image">
+                <p>
+                    <i class="glyph-icon flaticon-add-2"></i> 
+                    <span>&lt;i class=&quot;flaticon-add-2&quot;&gt;&lt;/i&gt;</span>
+                </p>
+            </div>
+            
+            <div class="image">
+                <p>
+                    <i class="glyph-icon flaticon-add-3"></i> 
+                    <span>&lt;i class=&quot;flaticon-add-3&quot;&gt;&lt;/i&gt;</span>
+                </p>
+            </div>
+                       
+        </div>
+                            
+    </section>
+
+<div id="footer">
+    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
