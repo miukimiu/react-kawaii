@@ -1,3 +1,4 @@
+@import "../base/colors";
 @import "../helpers/mixins";
 @import "../helpers/variables";
 
@@ -25,7 +26,7 @@ button {
   position: relative;
   display: inline-flex;
   padding: 12px 30px;
-  border-radius: 20px;
+  border-radius: 50px;
   color: $color-white;
   text-align: center;
   justify-content: center;
