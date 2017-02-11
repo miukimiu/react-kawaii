@@ -99,18 +99,6 @@ button {
       color: $color-text-disabled;
     }
   }
-  &--floating {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    padding: 0;
-    background: $color-primary;
-    transition: all .5s ease,transform .5s cubic-bezier(.175,.885,.32,1.275),background-color .4s ease;
-
-    &:hover {
-      transform: scale(1.08);
-    }
-  }
 }
 
 /********
@@ -122,7 +110,6 @@ button {
   position: relative;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   cursor: pointer;
   outline: none;
   padding: 0;
@@ -135,8 +122,11 @@ button {
   align-items: center;
   width: 50px;
   height: 50px;
-  transition: $transition-hover-element;
+  transition: all .5s ease,transform .5s cubic-bezier(.175,.885,.32,1.275),background-color .4s ease;
 
+  &:hover {
+    transform: scale(1.08);
+  }
   &--primary {
     background: $color-primary;
 
