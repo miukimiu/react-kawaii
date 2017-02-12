@@ -5,7 +5,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from '../src/js/components/Button';
 import FloatingButton from '../src/js/components/FloatingButton'
 import LoadingGooey from '../src/js/components/LoadingGooey';
-// import Affix from '../src/js/components/Affix';
+import IconKawaii from '../src/js/components/IconKawaii';
 import Welcome from './Welcome';
 import '../src/sass/storybook.scss';
 
@@ -31,14 +31,12 @@ storiesOf('Buttons', module)
     <FloatingButton onClick={action('clicked')} type="primary" icon="fi flaticon-add"></FloatingButton>
   ));
 
-storiesOf('Affix', module)
-    .add('primary', () => (
-    <Affix className="main__close" offset={100}>
-      <Button onClick={action('clicked')} type="default">Affix me after 100px height</Button>
-    </Affix>
-    ))
-
 storiesOf('Loadings', module)
     .add('primary', () => (
       <LoadingGooey />
+    ))
+
+storiesOf('Icon Kawaii', module)
+    .add('Moon', () => (
+      <IconKawaii mood="happy" size={200}/>
     ))
