@@ -38,5 +38,5 @@ storiesOf('Loadings', module)
 
 storiesOf('Icon Kawaii', module)
     .add('Moon', () => (
-      <IconKawaii mood="happy" size={200}/>
+      <IconKawaii mood="joy" size={200}/>
     ))
