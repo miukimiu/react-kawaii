@@ -1,0 +1,32 @@
+{
+  "name": "react-codemirror",
+  "version": "0.2.6",
+  "description": "React Codemirror",
+  "main": "dist/react-codemirror.min.js",
+  "homepage": "https://github.com/JedWatson/react-codemirror",
+  "authors": [
+    "Jed Watson"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "codemirror",
+    "editor",
+    "code"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}

@@ -43,6 +43,7 @@
     "chai": "^3.5.0",
     "chalk": "^1.1.3",
     "cheerio": "^0.22.0",
+    "component-playground": "^1.3.2",
     "compression-webpack-plugin": "^0.3.2",
     "css-loader": "^0.26.1",
     "enzyme": "^2.4.1",
