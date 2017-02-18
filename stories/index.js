@@ -5,7 +5,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from '../src/js/components/Button';
 import FloatingButton from '../src/js/components/FloatingButton'
 import LoadingGooey from '../src/js/components/LoadingGooey';
-import IconKawaii from '../src/js/components/IconKawaii';
+import KawaiiPlanet from '../src/js/components/KawaiiPlanet';
 import Welcome from './Welcome';
 import '../src/sass/storybook.scss';
 
@@ -38,5 +38,5 @@ storiesOf('Loadings', module)
 
 storiesOf('Icon Kawaii', module)
     .add('Moon', () => (
-      <IconKawaii mood="joy" size={200}/>
+      <KawaiiPlanet eyes="cross" size={200}/>
     ))
