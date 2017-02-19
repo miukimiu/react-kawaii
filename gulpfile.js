@@ -70,7 +70,7 @@ gulp.task("build-production", function () {
 
 
 gulp.task('deploy', function() {
-  return gulp.src('./dist/production/**')
+  return gulp.src('./styleguide/**')
     .pipe(ghPages());
 });
 
