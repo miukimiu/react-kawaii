@@ -1,0 +1,97 @@
+/**
+ * Usage:
+ *
+ *		@include placeholder {
+ *	    	font-style:italic;
+ *	    	color: white;
+ *	    	font-weight:100;
+ *		}
+ *
+ */
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+/************************
+Buttons
+************************/
+@mixin button-bg($bg) {
+  background: transparent;
+  border: 1px solid $color-white;
+
+  &:hover {
+    background:rgba($bg, .3);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:rgba($bg, .3);
+  }
+}
+
+@mixin hover-link($color) {
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: $color;
+    transition: color 0.3s linear;
+  }
+}
+
+@mixin radius($rad) {
+  border-radius: $rad;
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+}
+@mixin level-2($color) {
+  box-shadow: 0 0 20px 3px rgba($color, 0.3)
+}
+@mixin level-3($color) {
+  box-shadow: 0 0 50px 0 rgba( darken($color, 10%), 0.5);
+}
+
+/************************
+Breakpoints
+************************/
+@mixin tablet-down {
+  @media only screen and (max-width: $tablet - 1) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media only screen and (min-width: $ipad) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media only screen and (min-width: $desktop + 1) {
+    @content;
+  }
+}

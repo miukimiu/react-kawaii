@@ -1,0 +1,153 @@
+@import "../base/colors";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+// local varibles
+$btn-width: 180px;
+
+/* Button reset */
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+/********
+*** Base Button Style
+*******/
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  display: inline-flex;
+  padding: 12px 30px;
+  border-radius: 50px;
+  color: $color-white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  transform-style: flat;
+  transition: $transition-hover-element;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &--primary {
+    background: $color-primary;
+    min-width: $btn-width;
+
+    &:disabled {
+      background: $color-disabled;
+    }
+
+    &:hover {
+      background-color: $color-primary-darker;
+      box-shadow: $level-2;
+    }
+  }
+  &--default {
+    background-color: $color-default;
+    min-width: $btn-width
+
+    &:disabled {
+      background: $color-disabled;
+    }
+
+    &:hover {
+      background-color: $color-default-darker;
+      box-shadow: $level-2;
+    }
+  }
+  &--ghost {
+    min-width: $btn-width;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      box-shadow: $level-2;
+    }
+    &:disabled {
+      background: $color-disabled;
+    }
+  }
+  &--flat{
+    color: $color-primary;
+    padding: 12px 20px;
+
+    &:hover {
+      color: $color-white;
+      box-shadow: $level-1;
+      background: $color-primary;
+      box-shadow: $level-2;
+    }
+    &:disabled {
+      color: $color-text-disabled;
+    }
+  }
+}
+
+/********
+*** Floating button
+*******/
+.btn-floating {
+  background-color: $color-primary;
+  display: inline-flex;
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  position: relative;
+  -webkit-user-drag: none;
+  font-weight: bold;
+  color: $color-white;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease,transform .5s cubic-bezier(.175,.885,.32,1.275),background-color .4s ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+  &--primary {
+    background: $color-primary;
+
+    &:hover {
+      background-color: $color-primary-darker;
+    }
+  }
+  &--secondary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-primary-darker;
+    }
+  }
+  &--default {
+    background: red;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-darker;
+      background: lighten(red, 5%);
+    }
+  }
+}
