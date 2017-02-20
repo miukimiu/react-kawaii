@@ -10,11 +10,11 @@ module.exports = {
                  path.resolve(__dirname, 'styleguide'),
              ];
 
-             // Supply your own renderers and styles below
-             webpackConfig.resolve.alias['rsg-components/StyleGuide/StyleGuideRenderer'] =
-                 path.join(__dirname, 'styleguide/components/StyleGuide');
-             webpackConfig.resolve.alias['rsg-components/ReactComponent/ReactComponentRenderer'] =
-                 path.join(__dirname, 'styleguide/components/ReactComponent');
+     // Supply your own renderers and styles below
+     webpackConfig.resolve.alias['rsg-components/StyleGuide/StyleGuideRenderer'] =
+         path.join(__dirname, 'styleguide/components/StyleGuide');
+     webpackConfig.resolve.alias['rsg-components/ReactComponent/ReactComponentRenderer'] =
+         path.join(__dirname, 'styleguide/components/ReactComponent');
 
    webpackConfig.module.loaders.push(
      // Babel loader will use your project’s .babelrc
