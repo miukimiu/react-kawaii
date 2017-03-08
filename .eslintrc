@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": {
+      "webpack": "styleguide.config.js"
+    }
+  },
+
+  "rules": {
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+  },
+}

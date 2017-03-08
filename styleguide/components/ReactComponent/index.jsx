@@ -1,6 +1,6 @@
 import { Component, PropTypes } from 'react';
 
-const ReactComponentRenderer = ({ name, pathLine, description, props, examples, sidebar }) => {
+const ReactComponentRenderer = ({ name, description, props, examples, sidebar }) => {
     return (
         <div className="rk-component__root" id={name}>
             <div className="meta">
@@ -8,13 +8,6 @@ const ReactComponentRenderer = ({ name, pathLine, description, props, examples, 
                     <a className="anchor" href={'#' + name}>
                         <h2 className="rk-component___heading">{name}</h2>
                     </a>
-                    <p className="pathLine">
-                        {sidebar ? (
-                            <a className="isolatedLink" href={'#!/' + name} title="Open isolated">⇢ Open isolated</a>
-                        ) : (
-                            <a  href="/" title="Back" className="">← back</a>
-                        )}
-                    </p>
                     <div className="rk-component__description">
                         {description}
                     </div>
