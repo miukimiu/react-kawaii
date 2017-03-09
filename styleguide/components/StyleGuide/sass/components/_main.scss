@@ -33,14 +33,11 @@ body {
       color: $color-typo;
       padding: 0 15px;
     }
+    .ReactStyleguidist-colors__link {
+      color: $color-primary;
 
-    a {
-      .ReactStyleguidist-colors__link {
-        color: $color-primary;
-
-        &:hover {
-          color: $color-primary-darker;
-        }
+      &:hover {
+        color: $color-primary-darker;
       }
     }
   }
