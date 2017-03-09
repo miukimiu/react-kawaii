@@ -11,7 +11,8 @@ const ReactComponentRenderer = ({ name, description, props, examples, sidebar })
                     </div>
                 </header>
                 <div className="rk-component__props">
-                    {props}
+                  <h3 className="h3">Props</h3>
+                  {props}
                 </div>
             </div>
             <div className="rk-component__examples">
