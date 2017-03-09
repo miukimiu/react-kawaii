@@ -26,12 +26,12 @@
     "sass",
     "gsap"
   ],
-  "author": "Punkbit",
+  "author": "Miukimiu",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/heldrida/reactatouille-boilerplate/issues"
+    "url": "https://github.com/miukimiu/react-kawaii/issues"
   },
-  "homepage": "https://github.com/heldrida/reactatouille-boilerplate#readme",
+  "homepage": "https://github.com/miukimiu/react-kawaii#readme",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-eslint": "^7.1.1",

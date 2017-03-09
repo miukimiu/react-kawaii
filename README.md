@@ -1,23 +1,23 @@
 # React Kawaii
 
-Cute react ui components.
+React Kawaii is a library of cute SVG illustrations.  Perfect if you want to give some cuteness and life to your react application.
 
 ## Getting Started
+
+
+
+## Development
 
 So you want to help developing some cute UI components?
 
 If you want to develop a component
 
 1. `npm i` (in order to install the boileiplate)
-2. `npm i -g getstorybook` (if you don't have already installed globally)
-3. `cd react-kawaii` (or the folder name that you gave)
-4. `npm run storybook`
+2. `npm run styleguide-server`
 
-If you want to develop or preview the demo page
+If you want to build
 
-1. `npm i` (in order to install the boilerplate)
-2. `gulp build`
-3. `gulp dev`
+1. `npm run styleguide-build`
 
 ### Prerequisities
 
@@ -28,7 +28,7 @@ NodeJS + NPM
 ## Built With
 
 * Reaclux Boilerplate
-* React Storybook
+* React StyleGuidist
 * ReactJS
 * Webpack
 * SASS
