@@ -1,12 +1,10 @@
 {
-  "name": "reactatouille-boilerplate",
-  "version": "0.7.51",
-  "description": "Reactatouille-Boilerplate built using Redux Webpack2 Gulp Sass Mocha Enzyme Chai gsap Boilerplate.",
-  "main": "gulpfile.js",
+  "name": "react-kawaii",
+  "version": "0.0.1",
+  "description": "React Kawaii is a library of cute SVG illustrations.  Perfect if you want to give some cuteness and life to your react application.",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register,css:nullCompiler.js  ./test/**/*.spec.js",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "styleguide-server": "styleguidist server",
     "styleguide-build": "styleguidist build"
   },
@@ -35,7 +33,6 @@
   },
   "homepage": "https://github.com/heldrida/reactatouille-boilerplate#readme",
   "devDependencies": {
-    "@kadira/storybook": "^2.21.0",
     "babel-core": "^6.13.2",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.5",

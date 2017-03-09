@@ -7,9 +7,6 @@ const s = require('./Playground.css');
 const PlaygroundRenderer = ({
   code,
   showCode,
-  name,
-  index,
-  singleExample,
   evalInContext,
   onChange,
   onCodeToggle,
