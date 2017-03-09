@@ -5,9 +5,7 @@ const ReactComponentRenderer = ({ name, description, props, examples, sidebar })
         <div className="rk-component__root" id={name}>
             <div className="meta">
                 <header className="rk-component__header">
-                    <a className="anchor" href={'#' + name}>
-                        <h2 className="rk-component___heading">{name}</h2>
-                    </a>
+                    <h2 className="h2">{name}</h2>
                     <div className="rk-component__description">
                         {description}
                     </div>

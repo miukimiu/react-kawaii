@@ -42,6 +42,13 @@ module.exports = {
            'css-loader',
            'sass-loader'
        ]
+   },
+   {
+     test: /\.(jpg|png|gif|svg)$/i,
+     include: dirs,
+     use: [
+       'file-loader?name=[name].[ext]?[hash]/'
+     ]
    }
  );
    return webpackConfig;

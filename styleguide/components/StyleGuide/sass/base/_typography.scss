@@ -13,6 +13,8 @@ h5 {
 .h3,
 .h4,
 .h5 {
+  padding-bottom: $space;
+
   &--light {
       color: $color-white;
   }
@@ -46,5 +48,6 @@ h4 {
 p {
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 1;
+	line-height: 1.2;
+  padding: ($space) 0 0;
 }

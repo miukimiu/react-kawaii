@@ -14,7 +14,7 @@ const StyleGuideRenderer = ({ title, components, toc, sidebar }) => (
                         {toc}
                     </nav>
                 }
-                <div className="main__content page--triangle">
+                <div className="main__content">
 
                     {components}
 
