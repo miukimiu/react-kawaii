@@ -12,7 +12,7 @@ So you want to help developing some cute UI components?
 
 If you want to develop a component
 
-1. `npm i` (in order to install the boileiplate)
+1. `npm i`
 2. `npm run styleguide-server`
 
 If you want to build
