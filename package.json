@@ -1,6 +1,6 @@
 {
   "name": "react-kawaii",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Kawaii is a library of cute SVG illustrations.  Perfect if you want to give some cuteness and life to your react application.",
   "main": "lib/index.js",
   "scripts": {

@@ -4,7 +4,7 @@ React Kawaii is a library of cute SVG illustrations.  Perfect if you want to giv
 
 ## Getting Started
 
-
+`npm i -s react-kawaii`
 
 ## Development
 
