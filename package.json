@@ -1,16 +1,18 @@
 {
   "name": "react-kawaii",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Kawaii is a library of cute SVG illustrations.  Perfect if you want to give some cuteness and life to your react application.",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register,css:nullCompiler.js  ./test/**/*.spec.js",
     "styleguide-server": "styleguidist server",
-    "styleguide-build": "styleguidist build"
+    "styleguide-build": "styleguidist build",
+    "build": "babel src -d lib/",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heldrida/reactatouille-boilerplate.git"
+    "url": "git+https://github.com/miukimiu/react-kawaii.git"
   },
   "keywords": [
     "gulp",
@@ -33,6 +35,8 @@
   },
   "homepage": "https://github.com/miukimiu/react-kawaii#readme",
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.23.0",
     "babel-core": "^6.13.2",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.5",
