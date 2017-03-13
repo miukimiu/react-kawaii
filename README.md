@@ -2,7 +2,7 @@
 
 # ![React Kawaii Example](https://github.com/miukimiu/react-kawaii/blob/master/docs/kawaii-example.png?raw=true)
 
-React Kawaii is a library of cute SVG illustrations (react components). Perfect if you want to give some cuteness and personality to your react application.
+React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.
 
 [![Version](https://img.shields.io/npm/v/react-kawaii.svg?style=flat-square)](https://www.npmjs.com/package/react-kawaii)
 
