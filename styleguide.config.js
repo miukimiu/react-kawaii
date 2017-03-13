@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   title: 'react kawaii',
-  components: './src/components/**/*.js',
+  components: './src/components/**/*.jsx',
 
   updateWebpackConfig(webpackConfig) {
     const dirs = [
@@ -32,27 +32,27 @@ module.exports = {
   webpackConfig.module.loaders.push(
     // Babel loader will use your project’s .babelrc
     {
-      test: /\.(js|jsx)$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
       include: dirs,
       use: [
          'babel-loader'
       ]
     },
-  {
+    {
       test: /\.css$/,
       include: dirs,
       loader: 'style!css?modules&importLoaders=1'
-   },
-   {
-    test: /\.scss$/,
-    exclude: /node_modules/,
-    use: [
-      'style-loader',
-      'css-loader',
-      'sass-loader'
-    ]
-   },
+    },
+    {
+      test: /\.scss$/,
+      exclude: /node_modules/,
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader'
+      ]
+    },
    {
      test: /\.(jpg|png|gif|svg)$/i,
      include: dirs,
