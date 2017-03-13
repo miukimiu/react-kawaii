@@ -39,7 +39,7 @@ Available components:
 ### Prerequisities
 
 ```
-NodeJS + NPM
+React
 ```
 
 ## Contributors
