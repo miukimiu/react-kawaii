@@ -1,8 +1,8 @@
 # React Kawaii
 
-React Kawaii is a library of cute SVG illustrations.  Perfect if you want to give some cuteness and life to your react application.
+React Kawaii is a library of cute SVG illustrations (react components). Perfect if you want to give some cuteness and personality to your react application.
 
-## Getting Started
+## Install
 
 `npm i -s react-kawaii`
 
@@ -19,25 +19,24 @@ If you want to build
 
 1. `npm run styleguide-build`
 
+## Document
+
+See https://miukimiu.github.io/react-kawaii/ and try to edit sample code.
+
+### Components
+
+All the components are SVG illustrations. You can pick different moods:  sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii.
+
+Available components:
+- [x] KawaiiPlanet - A cute Planet.
+- [x] More Kawaaii components available soon...
+
+
 ### Prerequisities
 
 ```
 NodeJS + NPM
 ```
-
-## Built With
-
-* Reaclux Boilerplate
-* React StyleGuidist
-* ReactJS
-* Webpack
-* SASS
-* ES2015
-* GULP
-* MOCHA
-* CHAI
-* ENZYME
-* ZOMBIEJS
 
 ## Contributors
 
