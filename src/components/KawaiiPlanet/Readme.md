@@ -7,5 +7,5 @@ On this example the *KawaiiPlanet* has the mood <b>blissful</b>. You can see the
 One this example the KawaiiPlanet has the mood <b>sad</b> and the color
 
 ```example
-<KawaiiPlanet size="200" mood="sad" />
+<KawaiiPlanet size="200" mood="sad" color="#83D1FB" />
 ```

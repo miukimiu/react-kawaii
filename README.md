@@ -10,6 +10,16 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 
 `npm i -s react-kawaii`
 
+### How to use
+
+ ```javascript
+import {KawaiiPlanet} from 'react-kawaii';
+
+const Example = () => (
+  <KawaiiPlanet size="200" mood="sad" color="#83D1FB" />
+)
+ ```
+
 ## Development
 
 So you want to help developing some cute UI components?
