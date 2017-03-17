@@ -16,7 +16,7 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 import {KawaiiPlanet} from 'react-kawaii';
 
 const Example = () => (
-  <KawaiiPlanet size="200" mood="sad" color="#83D1FB" />
+  <KawaiiPlanet size={200} mood="sad" color="#83D1FB" />
 )
  ```
 
