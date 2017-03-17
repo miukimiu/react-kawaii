@@ -27,9 +27,8 @@ Temporary Items
 
 node_modules
 dist
-styleguide
-lib
 .publish
+styleguide
 *.tgz
 
 _PROJECT
