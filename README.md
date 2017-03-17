@@ -26,12 +26,14 @@ So you want to help developing some cute UI components?
 
 If you want to develop a component
 
-`npm i`
-`npm run styleguide-server`
+- `npm i`
+
+- `npm run styleguide-server`
+
 
 If you want to build
 
-`npm run styleguide-build`
+- `npm run styleguide-build`
 
 ## Document
 
