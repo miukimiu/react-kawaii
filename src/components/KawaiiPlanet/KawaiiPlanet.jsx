@@ -9,11 +9,11 @@ const KawaiiPlanet = ({size, mood, color}) => (
     </defs>
     <g id="kawaii-planet" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" transform="translate(115.000000, 94.000000)">
       <g id="kawaii-planet__body-color" transform="translate(8.000000, 8.000000)">
-        <mask id="mask-2" fill="white">
+        <mask id="kawaii-planet__mask-2" fill="white">
           <use xlinkHref="#kawaii-planet__path-1"></use>
         </mask>
         <use id="kp-body-color-" fill={color} xlinkHref="#kawaii-planet__path-1"></use>
-        <mask id="mask-4" fill="white">
+        <mask id="kawaii-planet__mask-4" fill="white">
           <use xlinkHref="#kawaii-planet__path-3"></use>
         </mask>
         <use id="kp-body-color-darker" fill="#111111" opacity="0.233908582" xlinkHref="#kawaii-planet__path-3"></use>
@@ -22,11 +22,11 @@ const KawaiiPlanet = ({size, mood, color}) => (
         <g id="kawaii-planet__mouth" transform="translate(18.000000, 16.000000)">
           {(mood === 'blissful' || mood === 'lovestruck') && (
             <g id="kp-mouth__joy" transform="translate(0.000000, 1.000000)">
-              <mask id="mask-6" fill="white">
+              <mask id="kawaii-planet__mask-6" fill="white">
                 <use xlinkHref="#kawaii-planet__path-5"></use>
               </mask>
               <use id="Combined-Shape" fill="#000000" xlinkHref="#kawaii-planet__path-5"></use>
-              <path d="M9.59865983,9.95467851 C9.59865983,9.95467851 9.59865983,9.95467851 9.59865983,9.95467851 L9,9.95467851 C9,9.66740582 9.14222222,9.38631493 9.39022222,9.18340586 C9.63866667,8.98013316 10.3333333,8 15,8 C19.6666667,8 20.3608889,8.98013316 20.6093333,9.18340586 C20.8577778,9.38631493 21,9.66740582 21,9.95467851 C20.9968889,10.8943148 20.6071111,11.7924965 19.9791111,12.5666783 C19.348,13.3394055 18.4662222,13.9986781 17.3862222,14.4183144 C16.6671111,14.6964962 15.856,14.8641326 15,14.8637689 C13.7128889,14.8637689 12.54,14.4881326 11.6017778,13.9234054 C10.6604444,13.3561327 9.93066667,12.6004964 9.47777778,11.7543147 C9.17733333,11.1895875 9.00044444,10.5808603 9,9.95467851 L9.59865983,9.95467851 Z" id="tongue" fill="#E74144" mask="url(#mask-6)" transform="translate(15.000000, 11.431885) scale(1, -1) translate(-15.000000, -11.431885) "></path>
+              <path d="M9.59865983,9.95467851 C9.59865983,9.95467851 9.59865983,9.95467851 9.59865983,9.95467851 L9,9.95467851 C9,9.66740582 9.14222222,9.38631493 9.39022222,9.18340586 C9.63866667,8.98013316 10.3333333,8 15,8 C19.6666667,8 20.3608889,8.98013316 20.6093333,9.18340586 C20.8577778,9.38631493 21,9.66740582 21,9.95467851 C20.9968889,10.8943148 20.6071111,11.7924965 19.9791111,12.5666783 C19.348,13.3394055 18.4662222,13.9986781 17.3862222,14.4183144 C16.6671111,14.6964962 15.856,14.8641326 15,14.8637689 C13.7128889,14.8637689 12.54,14.4881326 11.6017778,13.9234054 C10.6604444,13.3561327 9.93066667,12.6004964 9.47777778,11.7543147 C9.17733333,11.1895875 9.00044444,10.5808603 9,9.95467851 L9.59865983,9.95467851 Z" id="kawaii-planet__tongue" fill="#E74144" mask="url(#kawaii-planet__mask-6)" transform="translate(15.000000, 11.431885) scale(1, -1) translate(-15.000000, -11.431885) "></path>
             </g>
           )}
           {mood === 'happy' && (
@@ -76,7 +76,7 @@ const KawaiiPlanet = ({size, mood, color}) => (
 
 KawaiiPlanet.propTypes = {
   /**
-    * Size
+    * Size of the width
     */
   size: React.PropTypes.number,
   /**
