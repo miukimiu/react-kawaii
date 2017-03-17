@@ -1,7 +1,7 @@
 import React from 'react';
 
 const KawaiiIceCream = ({size, mood, color}) => (
-  <svg width={size} height={size * 2} viewBox="209 278 119 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+  <svg width={size} height={size * 1.83} viewBox="209 278 119 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <defs>
           <path d="M1.45656876,3.14684877 C1.45656876,3.14684877 1.45656876,3.14684877 1.45656876,3.14684877 L0,3.14685315 C0,2.31818182 0.346033696,1.50734266 0.949429952,0.922027972 C1.55390756,0.335664336 2.38979521,0 3.2440659,0 L25.9525272,0 C26.8067979,0 27.6416041,0.335664336 28.2460818,0.922027972 C28.8505594,1.50734266 29.1965931,2.31818182 29.1965931,3.14685315 C29.1890236,5.85734266 28.240675,8.44825175 26.7127199,10.6814685 C25.1771954,12.9104895 23.0317865,14.8122378 20.4040931,16.0227273 C18.6544603,16.8251748 16.6809868,17.3087413 14.5982965,17.3076923 C11.4666916,17.3076923 8.61299495,16.2241259 6.33025392,14.5951049 C4.0399434,12.9587413 2.264358,10.779021 1.16245695,8.33811189 C0.431460764,6.70909091 0.0010813553,4.95314685 0,3.14685315 L1.45656896,3.14685315 Z" id="kawaii-iceCream__path-1"></path>
       </defs>
@@ -69,9 +69,9 @@ const KawaiiIceCream = ({size, mood, color}) => (
 
 KawaiiIceCream.propTypes = {
   /**
-  * Size in pixels
+  * Size
   */
-  size: React.PropTypes.string,
+  size: React.PropTypes.number,
   /**
   * One of: 'sad', 'shocked', 'happy', 'blissful', 'lovestruck'
   */
@@ -83,7 +83,7 @@ KawaiiIceCream.propTypes = {
 };
 
 KawaiiIceCream.defaultProps = {
-  size: '150px',
+  size: 120,
   mood: 'blissful',
   color: '#FDA7DC',
 };

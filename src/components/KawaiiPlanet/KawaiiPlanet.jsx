@@ -76,9 +76,9 @@ const KawaiiPlanet = ({size, mood, color}) => (
 
 KawaiiPlanet.propTypes = {
   /**
-    * Size in pixels
+    * Size
     */
-  size: React.PropTypes.string,
+  size: React.PropTypes.number,
   /**
     * One of: 'sad', 'shocked', 'happy', 'blissful', 'lovestruck'
     */
@@ -90,7 +90,7 @@ KawaiiPlanet.propTypes = {
 };
 
 KawaiiPlanet.defaultProps = {
-  size: '150px',
+  size: 150,
   mood: 'blissful',
   color: '#83D1FB'
 }
