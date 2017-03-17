@@ -8,7 +8,7 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 
 ## Install
 
-`npm i -s react-kawaii`
+`npm install --save-dev react-kawaii`
 
 ### How to use
 
