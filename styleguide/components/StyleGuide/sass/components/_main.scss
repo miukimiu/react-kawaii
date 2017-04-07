@@ -40,6 +40,10 @@ body {
       }
     }
   }
+  .main__nav__buttons {
+    display: inline-flex;
+    padding: 15px 15px 0;
+  }
 }
 .footer {
   display: flex;

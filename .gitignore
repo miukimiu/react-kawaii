@@ -29,7 +29,7 @@ node_modules
 dist
 dist/*
 .publish
-styleguide
+styleguide/build/*
 *.tgz
 
 _PROJECT
