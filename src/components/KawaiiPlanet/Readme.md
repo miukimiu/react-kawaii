@@ -3,9 +3,3 @@ On this example the *KawaiiPlanet* has the mood <b>blissful</b>. You can see the
 ```
 <KawaiiPlanet size={220} mood="blissful" color="#83D1FB"/>
 ```
-
-One this example the KawaiiPlanet has the mood <b>sad</b> and the color
-
-```example
-<KawaiiPlanet size={220} mood="sad" color="#FCCB7E" />
-```
