@@ -72,10 +72,7 @@ KawaiiIceCream.propTypes = {
   * Size of the width
   */
   size: React.PropTypes.number,
-  /**
-  * One of: 'sad', 'shocked', 'happy', 'blissful', 'lovestruck'
-  */
-  mood: React.PropTypes.string,
+  mood: React.PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
   * Hex color
   */
