@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   title: 'react kawaii',
   components: './src/components/**/*.jsx',
+  skipComponentsWithoutExample: true,
 
   updateWebpackConfig(webpackConfig) {
     const dirs = [
