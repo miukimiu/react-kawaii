@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+$paleYellow: #FCCB7E;
+
+.wrapper {
+  position: relative;
+
+  .speech {
+    box-sizing: content-box;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    background: $paleYellow;
+    padding: 0 8px;
+    animation: fadeInOpacity .2s ease-in 1;
+
+    &:before {
+      display: block;
+      width: 35px;
+      height: 20px;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      background: $paleYellow;
+      transform: rotateZ(-14.32394487827058deg)  translateX(-5px) skewX(-36deg);
+    }
+
+    .text {
+      position: relative;
+      z-index: 2;
+      font-size: 20px;
+      font-family: "Open Sans", Helvetica, sans-serif;;
+      color: #fff;
+    }
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

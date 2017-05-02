@@ -12,13 +12,13 @@ const PlaygroundRenderer = ({
   onCodeToggle,
 }) => (
   <div className={s.root}>
-    <div className={s.preview + ' rsg--example-preview'}>
+    <div className={`${s.preview} rsg--example-preview`}>
       <Preview code={code} evalInContext={evalInContext} />
     </div>
     {showCode ? (
       <div>
-          <Editor code={code} onChange={onChange} />
-          <button type="button" className={s.hideCode} onClick={onCodeToggle}>
+        <Editor code={code} onChange={onChange} />
+        <button type="button" className={s.hideCode} onClick={onCodeToggle}>
               Hide code
           </button>
       </div>
@@ -33,12 +33,9 @@ const PlaygroundRenderer = ({
 PlaygroundRenderer.propTypes = {
   code: PropTypes.string.isRequired,
   showCode: PropTypes.bool.isRequired,
-  name: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired,
   evalInContext: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   onCodeToggle: PropTypes.func.isRequired,
-  singleExample: PropTypes.bool,
 };
 
 export default PlaygroundRenderer;

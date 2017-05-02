@@ -8,7 +8,9 @@
     "styleguide-server": "styleguidist server",
     "styleguide-build": "styleguidist build",
     "build": "babel src -d lib/",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "lint": "eslint src/**/*.jsx",
+    "lint:fix": "eslint --fix src/**/*.jsx"
   },
   "repository": {
     "type": "git",
