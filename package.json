@@ -15,7 +15,7 @@
   },
   "lint-staged": {
     "*.jsx": [
-      "eslint --fix src/**/*.jsx"
+      "eslint --fix src/**/*.jsx",
       "prettier --write",
       "git add"
     ]
