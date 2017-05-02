@@ -1,4 +1,0 @@
-{
-  "plugins": ["transform-decorators-legacy", "transform-runtime", "transform-es3-property-literals", "transform-es3-member-expression-literals"],
-  "presets": ["es2015-loose", "stage-0", "react"]
-}
