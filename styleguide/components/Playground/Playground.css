@@ -9,6 +9,8 @@
 	margin-bottom: 3px;
 	padding: 15px;
 	overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .codeToggle {
