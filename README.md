@@ -59,3 +59,5 @@ React
 
 * [miukimiu](https://github.com/miukimiu)
 * [aliciacatalina](https://github.com/aliciacatalina)
+* [SaraVieira](https://github.com/SaraVieira)
+
