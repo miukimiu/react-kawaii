@@ -16,7 +16,7 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 import {KawaiiPlanet} from 'react-kawaii';
 
 const Example = () => (
-  <KawaiiPlanet size={200} mood="sad" color="#83D1FB" />
+  <KawaiiIceCream size={200} mood="blissful" color="#FDA7DC" hoverText="Hello World!"/>
 )
  ```
 
@@ -41,7 +41,7 @@ See https://miukimiu.github.io/react-kawaii/ and try to edit sample code.
 
 ### Components
 
-All the components are SVG illustrations. You can pick different moods:  sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii and the size.
+All the components are SVG illustrations. You can pick different moods:  sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii, the size and a text.
 
 Available components:
 - [x] KawaiiPlanet - A cute planet.
@@ -60,4 +60,3 @@ React
 * [miukimiu](https://github.com/miukimiu)
 * [aliciacatalina](https://github.com/aliciacatalina)
 * [SaraVieira](https://github.com/SaraVieira)
-

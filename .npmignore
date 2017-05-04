@@ -30,7 +30,26 @@ dist
 dist/*
 styleguide
 .publish
+test
 *.tgz
 
 _PROJECT
 npm-debug.log
+
+#dotfiles
+.babelrc
+.eslintignore
+.eslintrc
+.editorconfig
+.gitignore
+
+#js
+config.js
+gulpfile.js
+nullCompiler.js
+server.js
+styleguide.config.js
+webpack.config.js
+
+#others
+yarn.lock
