@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import paths from "./paths";
+import Face from "../Face";
 import SpeechBuble from "../SpeechBubble";
 import "./style.scss";
 
@@ -30,9 +31,6 @@ class KawaiiIceCream extends Component {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <defs>
-            <path d={paths.defs} id="kawaii-iceCream__path-1" />
-          </defs>
           <g
             id="kawaii-iceCream"
             stroke="none"
@@ -59,109 +57,10 @@ class KawaiiIceCream extends Component {
                 opacity="0.2"
               />
             </g>
-            <g
-              id="kawaii-iceCream__face"
+            <Face
+              mood={this.props.mood}
               transform="translate(22.000000, 81.000000)"
-            >
-              <g
-                id="kawaii-iceCream__mouth"
-                transform="translate(18.000000, 16.000000)"
-              >
-                {(this.props.mood === "blissful" ||
-                  this.props.mood === "lovestruck") &&
-                  <g
-                    id="kawaii-iceCream__mouth__joy"
-                    transform="translate(0.000000, 1.000000)"
-                  >
-                    <mask id="kawaii-iceCream__mask-2" fill="white">
-                      <use xlinkHref="#kawaii-iceCream__path-1" />
-                    </mask>
-                    <use
-                      id="Combined-Shape"
-                      fill="#000000"
-                      xlinkHref="#kawaii-iceCream__path-1"
-                    />
-                    <path
-                      d={paths.tongue}
-                      id="kawaii-iceCream__tongue"
-                      fill="#E74144"
-                      mask="url(#kawaii-iceCream__mask-2)"
-                      transform="translate(15.000000, 11.431885) scale(1, -1)
-                          translate(-15.000000, -11.431885)"
-                    />
-                  </g>}
-                {this.props.mood === "happy" &&
-                  <path
-                    d={paths.happy}
-                    id="kawaii-iceCream__mouth__happy"
-                    fill="#000000"
-                  />}
-                {this.props.mood === "shocked" &&
-                  <circle
-                    id="kawaii-iceCream__mouth__shocked"
-                    fill="#000000"
-                    cx="15.5"
-                    cy="14.5"
-                    r="7.5"
-                  />}
-                {this.props.mood === "sad" &&
-                  <path
-                    d={paths.sad}
-                    id="kawaii-iceCream__mouth__sad"
-                    fill="#000000"
-                    transform="translate(14.999999, 5.500000) scale(1, -1)
-                        translate(-14.999999, -5.500000)"
-                  />}
-              </g>
-              <g
-                id="kawaii-iceCream__blush"
-                transform="translate(0.000000, 15.000000)"
-                fill="#000000"
-                opacity="0.2"
-              >
-                <circle id="Oval" cx="3" cy="3" r="3" />
-                <circle id="Oval" cx="63" cy="3" r="3" />
-              </g>
-              <g
-                id="kawaii-iceCream__eyes"
-                transform="translate(2.000000, 0.000000)"
-                fill="#000000"
-              >
-                {this.props.mood === "blissful" &&
-                  <g
-                    id="kawaii-iceCream__eyes__arc"
-                    transform="translate(1.000000, 0.000000)"
-                  >
-                    <path d={paths.bliss1} id="Fill-5" />
-                    <path d={paths.bliss2} id="Fill-5" />
-                  </g>}
-                {(this.props.mood === "happy" || this.props.mood === "sad") &&
-                  <g
-                    id="kawaii-iceCream__eyes__circle"
-                    transform="translate(3.000000, 2.000000)"
-                  >
-                    <circle id="Oval-3" cx="4.5" cy="4.5" r="4.5" />
-                    <circle id="Oval-3" cx="51.5" cy="4.5" r="4.5" />
-                  </g>}
-                {this.props.mood === "lovestruck" &&
-                  <g
-                    id="kawaii-iceCream__eyes__heart"
-                    transform="translate(0.000000, 2.000000)"
-                    fillRule="nonzero"
-                  >
-                    <path d={paths.lovestruck1} id="Shape" />
-                    <path d={paths.lovestruck2} id="Shape" />
-                  </g>}
-                {this.props.mood === "shocked" &&
-                  <g
-                    id="kawaii-iceCream__eyes__cross"
-                    transform="translate(3.000000, 0.000000)"
-                  >
-                    <path d={paths.shocked1} id="Combined-Shape" />
-                    <path d={paths.shocked2} id="Combined-Shape" />
-                  </g>}
-              </g>
-            </g>
+            />
           </g>
         </svg>
         {this.state.hover &&
