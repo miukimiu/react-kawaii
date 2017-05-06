@@ -25,7 +25,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-node_modules
+# Ignore installed and generated dependencies
+node_modules/
 dist
 dist/*
 .publish
