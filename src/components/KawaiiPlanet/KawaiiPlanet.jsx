@@ -78,7 +78,7 @@ class KawaiiPlanet extends Component {
             classNames="planetSpeech"
             color={this.props.color}
             size={this.props.size}
-            hoverText={this.props.text}
+            text={this.props.text}
           />}
 
         {this.props.showTextOnHover &&
@@ -88,7 +88,7 @@ class KawaiiPlanet extends Component {
             classNames="planetSpeech"
             color={this.props.color}
             size={this.props.size}
-            hoverText={this.props.text}
+            text={this.props.text}
           />}
       </div>
     );
@@ -125,9 +125,8 @@ KawaiiPlanet.defaultProps = {
   size: 150,
   mood: "blissful",
   color: "#83D1FB",
-  hoverText: null,
   showTextOnHover: true,
-  text: "Kawaii"
+  text: null
 };
 
 export default KawaiiPlanet;
