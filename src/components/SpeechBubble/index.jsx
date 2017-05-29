@@ -24,14 +24,14 @@ const SpeechBuble = props => (
         fontSize: props.size / 11
       }}
     >
-      {props.hoverText}
+      {props.text}
     </span>
   </div>
 );
 
 SpeechBuble.propTypes = {
   size: React.PropTypes.number,
-  hoverText: React.PropTypes.string,
+  text: React.PropTypes.string,
   color: React.PropTypes.string,
   classNames: React.PropTypes.string,
   rectangular: React.PropTypes.bool
@@ -39,9 +39,8 @@ SpeechBuble.propTypes = {
 
 SpeechBuble.defaultProps = {
   size: 150,
-  mood: "blissful",
   color: "#83D1FB",
-  hoverText: null,
+  text: null,
   classNames: null,
   rectangular: true
 };
