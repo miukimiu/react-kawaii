@@ -63,12 +63,22 @@ class KawaiiIceCream extends Component {
             />
           </g>
         </svg>
-        {this.state.hover &&
-          this.props.hoverText &&
+        {!this.props.showTextOnHover &&
+          this.props.text &&
           <SpeechBuble
-            color="#FCCB7E"
+            color={this.props.color}
             size={this.props.size}
-            hoverText={this.props.hoverText}
+            hoverText={this.props.text}
+            rectangular={false}
+          />}
+
+        {this.props.showTextOnHover &&
+          this.props.text &&
+          this.state.hover &&
+          <SpeechBuble
+            color={this.props.color}
+            size={this.props.size}
+            hoverText={this.props.text}
             rectangular={false}
           />}
       </div>
@@ -95,14 +105,19 @@ KawaiiIceCream.propTypes = {
   /**
    * Set the text to show on the speech bubble on hover
    */
-  hoverText: React.PropTypes.string
+  text: React.PropTypes.string,
+  /**
+   * Set as true to show the speech bubble on hover, as false to show text by default
+   */
+  showTextOnHover: React.PropTypes.bool
 };
 
 KawaiiIceCream.defaultProps = {
   size: 120,
   mood: "blissful",
   color: "#FDA7DC",
-  hoverText: null
+  showTextOnHover: true,
+  text: "Kawaii"
 };
 
 export default KawaiiIceCream;
