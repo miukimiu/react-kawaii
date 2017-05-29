@@ -72,13 +72,23 @@ class KawaiiPlanet extends Component {
             />
           </g>
         </svg>
-        {this.state.hover &&
-          this.props.hoverText &&
+        {!this.props.showTextOnHover &&
+          this.props.text &&
           <SpeechBuble
             classNames="planetSpeech"
             color={this.props.color}
             size={this.props.size}
-            hoverText={this.props.hoverText}
+            hoverText={this.props.text}
+          />}
+
+        {this.props.showTextOnHover &&
+          this.props.text &&
+          this.state.hover &&
+          <SpeechBuble
+            classNames="planetSpeech"
+            color={this.props.color}
+            size={this.props.size}
+            hoverText={this.props.text}
           />}
       </div>
     );
@@ -98,9 +108,13 @@ KawaiiPlanet.propTypes = {
     "lovestruck"
   ]),
   /**
-   * Set the text to show on the speech bubble on hover
+   * Set the text to show on the speech bubble
    */
-  hoverText: React.PropTypes.string,
+  text: React.PropTypes.string,
+  /**
+   * Set as true to show the speech bubble on hover, as false to show text by default
+   */
+  showTextOnHover: React.PropTypes.bool,
   /**
     * Hex color
     */
@@ -111,7 +125,9 @@ KawaiiPlanet.defaultProps = {
   size: 150,
   mood: "blissful",
   color: "#83D1FB",
-  hoverText: null
+  hoverText: null,
+  showTextOnHover: true,
+  text: "Kawaii"
 };
 
 export default KawaiiPlanet;
