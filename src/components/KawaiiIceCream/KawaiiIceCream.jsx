@@ -1,89 +1,56 @@
-import React, { Component } from "react";
+import React from "react";
 import paths from "./paths";
-import Face from "../Face";
-import SpeechBuble from "../SpeechBubble";
-import "./style.scss";
+import Face from "../common/Face";
+import KawaiiElementWrapper from "../common/KawaiiElementWrapper";
 
-class KawaiiIceCream extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { hover: false };
-    this.mouseOver = this.mouseOver.bind(this);
-  }
-
-  mouseOver() {
-    this.setState({ hover: !this.state.hover });
-  }
-
-  render() {
-    return (
-      <div
-        style={{ width: this.props.size, height: this.props.size * 1.83 }}
-        className="kawaiiElementWrapper"
-        onMouseOver={this.mouseOver}
-        onMouseOut={this.mouseOver}
+const KawaiiIceCream = props => (
+  <KawaiiElementWrapper
+    style={{ width: props.size, height: props.size * 1.83 }}
+    showTextOnHover={props.showTextOnHover}
+    text={props.text}
+    width={props.size}
+    height={props.size * 1.83}
+    color={props.color}
+  >
+    <svg
+      width={props.size}
+      height={props.size * 1.83}
+      viewBox="209 278 119 220"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        id="kawaii-iceCream"
+        stroke="none"
+        strokeWidth="1"
+        fill="none"
+        fillRule="evenodd"
+        transform="translate(218.000000, 278.000000)"
       >
-        <svg
-          width={this.props.size}
-          height={this.props.size * 1.83}
-          viewBox="209 278 119 220"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <g
-            id="kawaii-iceCream"
-            stroke="none"
-            strokeWidth="1"
-            fill="none"
-            fillRule="evenodd"
-            transform="translate(218.000000, 278.000000)"
-          >
-            <g id="kawaii-iceCream__body" fillRule="nonzero">
-              <path
-                d={paths.stick}
-                id="kawaii-iceCream__body__stick"
-                fill="#FCCB7E"
-              />
-              <path
-                d={paths.body}
-                id="kawaii-iceCream__body__color"
-                fill={this.props.color}
-              />
-              <path
-                d={paths.bodyShadow}
-                id="kawaii-iceCream__body__shadow"
-                fill="#111111"
-                opacity="0.2"
-              />
-            </g>
-            <Face
-              mood={this.props.mood}
-              transform="translate(22.000000, 81.000000)"
-            />
-          </g>
-        </svg>
-        {!this.props.showTextOnHover &&
-          this.props.text &&
-          <SpeechBuble
-            color={this.props.color}
-            size={this.props.size}
-            text={this.props.text}
-            rectangular={false}
-          />}
-        {this.props.showTextOnHover &&
-          this.props.text &&
-          this.state.hover &&
-          <SpeechBuble
-            color={this.props.color}
-            size={this.props.size}
-            text={this.props.text}
-            rectangular={false}
-          />}
-      </div>
-    );
-  }
-}
+        <g id="kawaii-iceCream__body" fillRule="nonzero">
+          <path
+            d={paths.stick}
+            id="kawaii-iceCream__body__stick"
+            fill="#FCCB7E"
+          />
+          <path
+            d={paths.body}
+            id="kawaii-iceCream__body__color"
+            fill={props.color}
+          />
+          <path
+            d={paths.bodyShadow}
+            id="kawaii-iceCream__body__shadow"
+            fill="#111111"
+            opacity="0.2"
+          />
+        </g>
+        <Face mood={props.mood} transform="translate(22.000000, 81.000000)" />
+      </g>
+    </svg>
+  </KawaiiElementWrapper>
+);
 
 KawaiiIceCream.propTypes = {
   /**
