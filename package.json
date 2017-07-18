@@ -10,15 +10,7 @@
     "build": "webpack -p --progress",
     "prepublish": "npm run build",
     "lint": "eslint src/**/*.jsx",
-    "lint:fix": "eslint --fix src/**/*.jsx",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.jsx": [
-      "eslint --fix src/**/*.jsx",
-      "prettier --write",
-      "git add"
-    ]
+    "lint:fix": "eslint --fix src/**/*.jsx"
   },
   "repository": {
     "type": "git",

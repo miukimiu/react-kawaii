@@ -1,5 +1,5 @@
-import React from "react";
-import paths from "./paths";
+import React from 'react';
+import paths from './paths';
 
 const Face = ({ mood, ...rest }) => (
   <g id="kawaii-face" {...rest}>
@@ -7,7 +7,7 @@ const Face = ({ mood, ...rest }) => (
       <path d={paths.defs} id="kawaii-face__path-1" />
     </defs>
     <g id="kawaii-face__mouth" transform="translate(18.000000, 16.000000)">
-      {(mood === "blissful" || mood === "lovestruck") &&
+      {(mood === 'blissful' || mood === 'lovestruck') &&
         <g
           id="kawaii-face__mouth__joy"
           transform="translate(0.000000, 1.000000)"
@@ -29,9 +29,9 @@ const Face = ({ mood, ...rest }) => (
             translate(-15.000000, -11.431885)"
           />
         </g>}
-      {mood === "happy" &&
+      {mood === 'happy' &&
         <path d={paths.happy} id="kawaii-face__mouth__happy" fill="#000000" />}
-      {mood === "shocked" &&
+      {mood === 'shocked' &&
         <circle
           id="kawaii-face__mouth__shocked"
           fill="#000000"
@@ -39,7 +39,7 @@ const Face = ({ mood, ...rest }) => (
           cy="14.5"
           r="7.5"
         />}
-      {mood === "sad" &&
+      {mood === 'sad' &&
         <path
           d={paths.sad}
           id="kawaii-face__mouth__sad"
@@ -61,7 +61,7 @@ const Face = ({ mood, ...rest }) => (
       transform="translate(2.000000, 0.000000)"
       fill="#000000"
     >
-      {mood === "blissful" &&
+      {mood === 'blissful' &&
         <g
           id="kawaii-face__eyes__arc"
           transform="translate(1.000000, 0.000000)"
@@ -69,7 +69,7 @@ const Face = ({ mood, ...rest }) => (
           <path d={paths.bliss1} id="Fill-5" />
           <path d={paths.bliss2} id="Fill-5" />
         </g>}
-      {(mood === "happy" || mood === "sad") &&
+      {(mood === 'happy' || mood === 'sad') &&
         <g
           id="kawaii-face__eyes__circle"
           transform="translate(3.000000, 2.000000)"
@@ -77,7 +77,7 @@ const Face = ({ mood, ...rest }) => (
           <circle id="Oval-3" cx="4.5" cy="4.5" r="4.5" />
           <circle id="Oval-3" cx="51.5" cy="4.5" r="4.5" />
         </g>}
-      {mood === "lovestruck" &&
+      {mood === 'lovestruck' &&
         <g
           id="kawaii-face__eyes__heart"
           transform="translate(0.000000, 2.000000)"
@@ -86,7 +86,7 @@ const Face = ({ mood, ...rest }) => (
           <path d={paths.lovestruck1} id="Shape" />
           <path d={paths.lovestruck2} id="Shape" />
         </g>}
-      {mood === "shocked" &&
+      {mood === 'shocked' &&
         <g
           id="kawaii-face__eyes__cross"
           transform="translate(3.000000, 0.000000)"
@@ -100,16 +100,16 @@ const Face = ({ mood, ...rest }) => (
 
 Face.propTypes = {
   mood: React.PropTypes.oneOf([
-    "sad",
-    "shocked",
-    "happy",
-    "blissful",
-    "lovestruck"
-  ])
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
+  ]),
 };
 
 Face.defaultProps = {
-  mood: "blissful"
+  mood: 'blissful',
 };
 
 export default Face;

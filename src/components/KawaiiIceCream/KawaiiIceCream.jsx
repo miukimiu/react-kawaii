@@ -1,7 +1,7 @@
-import React from "react";
-import paths from "./paths";
-import Face from "../common/Face";
-import KawaiiElementWrapper from "../common/KawaiiElementWrapper";
+import React from 'react';
+import paths from './paths';
+import Face from '../common/Face';
+import KawaiiElementWrapper from '../common/KawaiiElementWrapper';
 
 const KawaiiIceCream = props => (
   <KawaiiElementWrapper
@@ -58,11 +58,11 @@ KawaiiIceCream.propTypes = {
   */
   size: React.PropTypes.number,
   mood: React.PropTypes.oneOf([
-    "sad",
-    "shocked",
-    "happy",
-    "blissful",
-    "lovestruck"
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
   ]),
   /**
   * Hex color
@@ -75,15 +75,15 @@ KawaiiIceCream.propTypes = {
   /**
    * Set as true to show the speech bubble on hover, as false to show text by default
    */
-  showTextOnHover: React.PropTypes.bool
+  showTextOnHover: React.PropTypes.bool,
 };
 
 KawaiiIceCream.defaultProps = {
   size: 120,
-  mood: "blissful",
-  color: "#FDA7DC",
+  mood: 'blissful',
+  color: '#FDA7DC',
   showTextOnHover: true,
-  text: null
+  text: null,
 };
 
 export default KawaiiIceCream;
