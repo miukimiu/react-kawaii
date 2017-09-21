@@ -23,7 +23,6 @@ const KawaiiPlanet = props => (
       <defs>
         <path d={paths.path1} id="kawaii-planet__path-1" />
         <path d={paths.path2} id="kawaii-planet__path-3" />
-        <path d={paths.path3} id="kawaii-planet__path-5" />
       </defs>
       <g
         id="kawaii-planet"

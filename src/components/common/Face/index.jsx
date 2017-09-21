@@ -32,12 +32,13 @@ const Face = ({ mood, ...rest }) => (
       {mood === 'happy' &&
         <path d={paths.happy} id="kawaii-face__mouth__happy" fill="#000000" />}
       {mood === 'shocked' &&
-        <circle
+        <ellipse
           id="kawaii-face__mouth__shocked"
+          cx="15"
+          cy="14"
+          rx="9"
+          ry="10"
           fill="#000000"
-          cx="15.5"
-          cy="14.5"
-          r="7.5"
         />}
       {mood === 'sad' &&
         <path
@@ -69,13 +70,13 @@ const Face = ({ mood, ...rest }) => (
           <path d={paths.bliss1} id="Fill-5" />
           <path d={paths.bliss2} id="Fill-5" />
         </g>}
-      {(mood === 'happy' || mood === 'sad') &&
+      {(mood === 'happy' || mood === 'sad' || mood === 'shocked') &&
         <g
           id="kawaii-face__eyes__circle"
-          transform="translate(3.000000, 2.000000)"
+          transform="translate(1.000000, 2.000000)"
         >
           <circle id="Oval-3" cx="4.5" cy="4.5" r="4.5" />
-          <circle id="Oval-3" cx="51.5" cy="4.5" r="4.5" />
+          <circle id="Oval-3" cx="56.5" cy="4.5" r="4.5" />
         </g>}
       {mood === 'lovestruck' &&
         <g
@@ -85,14 +86,6 @@ const Face = ({ mood, ...rest }) => (
         >
           <path d={paths.lovestruck1} id="Shape" />
           <path d={paths.lovestruck2} id="Shape" />
-        </g>}
-      {mood === 'shocked' &&
-        <g
-          id="kawaii-face__eyes__cross"
-          transform="translate(3.000000, 0.000000)"
-        >
-          <path d={paths.shocked1} id="Combined-Shape" />
-          <path d={paths.shocked2} id="Combined-Shape" />
         </g>}
     </g>
   </g>

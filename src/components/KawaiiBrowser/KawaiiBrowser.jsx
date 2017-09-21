@@ -84,7 +84,7 @@ const KawaiiBrowser = props => (
             </g>
             <Face
               mood={props.mood}
-              transform="translate(63.732394, 63.281690)"
+              transform="translate(67.000000, 63.000000)"
             />
           </g>
         </g>
