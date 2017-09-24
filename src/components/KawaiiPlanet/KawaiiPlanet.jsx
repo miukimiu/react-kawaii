@@ -1,7 +1,7 @@
-import React from "react";
-import paths from "./paths";
-import Face from "../common/Face";
-import KawaiiElementWrapper from "../common/KawaiiElementWrapper";
+import React from 'react';
+import paths from './paths';
+import Face from '../common/Face';
+import KawaiiElementWrapper from '../common/KawaiiElementWrapper';
 
 const KawaiiPlanet = props => (
   <KawaiiElementWrapper
@@ -23,7 +23,6 @@ const KawaiiPlanet = props => (
       <defs>
         <path d={paths.path1} id="kawaii-planet__path-1" />
         <path d={paths.path2} id="kawaii-planet__path-3" />
-        <path d={paths.path3} id="kawaii-planet__path-5" />
       </defs>
       <g
         id="kawaii-planet"
@@ -67,11 +66,11 @@ KawaiiPlanet.propTypes = {
     */
   size: React.PropTypes.number,
   mood: React.PropTypes.oneOf([
-    "sad",
-    "shocked",
-    "happy",
-    "blissful",
-    "lovestruck"
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
   ]),
   /**
    * Set the text to show on the speech bubble
@@ -84,15 +83,15 @@ KawaiiPlanet.propTypes = {
   /**
     * Hex color
     */
-  color: React.PropTypes.string
+  color: React.PropTypes.string,
 };
 
 KawaiiPlanet.defaultProps = {
   size: 150,
-  mood: "blissful",
-  color: "#83D1FB",
+  mood: 'blissful',
+  color: '#83D1FB',
   showTextOnHover: true,
-  text: null
+  text: null,
 };
 
 export default KawaiiPlanet;

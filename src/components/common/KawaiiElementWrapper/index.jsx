@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import SpeechBuble from "../SpeechBubble";
-import "./style.scss";
+import React, { Component } from 'react';
+import SpeechBuble from '../SpeechBubble';
+import './style.scss';
 
 class KawaiiElementWrapper extends Component {
   constructor(props) {
@@ -69,15 +69,15 @@ KawaiiElementWrapper.propTypes = {
   /**
    * Set as true to show the speech bubble on hover, as false to show text by default
    */
-  showTextOnHover: React.PropTypes.bool
+  showTextOnHover: React.PropTypes.bool,
 };
 
 KawaiiElementWrapper.defaultProps = {
   size: 120,
-  mood: "blissful",
-  color: "#FDA7DC",
+  mood: 'blissful',
+  color: '#FDA7DC',
   showTextOnHover: true,
-  text: null
+  text: null,
 };
 
 export default KawaiiElementWrapper;

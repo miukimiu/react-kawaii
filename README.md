@@ -44,9 +44,10 @@ See https://miukimiu.github.io/react-kawaii/ and try to edit sample code.
 All the components are SVG illustrations. You can pick different moods:  sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii, the size and a text.
 
 Available components:
-- [x] KawaiiPlanet - A cute planet.
+- [x] KawaiiBrowser - A cute browser.
 - [x] KawaiiIceCream - A cute ice-cream.
-- [x] More Kawaaii components available soon...
+- [x] KawaiiPlanet - A cute planet.
+- [x] More Kawaii components coming soon...
 
 
 ### Prerequisities

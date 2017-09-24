@@ -1,5 +1,5 @@
-import React from "react";
-import "./style.scss";
+import React from 'react';
+import './style.scss';
 
 const SpeechBuble = props => (
   <div
@@ -8,20 +8,20 @@ const SpeechBuble = props => (
       top: props.rectangular ? props.height / 7 : props.height / 3.5,
       width: props.width * 0.65,
       minHeight: props.width / 3.3,
-      background: props.color
+      background: props.color,
     }}
     className={`speech ${props.classNames}`}
   >
     <div
       className="after"
       style={{
-        background: props.color
+        background: props.color,
       }}
     />
     <span
       className="text"
       style={{
-        fontSize: props.width / 11
+        fontSize: props.width / 11,
       }}
     >
       {props.text}
@@ -35,15 +35,15 @@ SpeechBuble.propTypes = {
   text: React.PropTypes.string,
   color: React.PropTypes.string,
   classNames: React.PropTypes.string,
-  rectangular: React.PropTypes.bool
+  rectangular: React.PropTypes.bool,
 };
 
 SpeechBuble.defaultProps = {
   width: 150,
-  color: "#83D1FB",
+  color: '#83D1FB',
   text: null,
   classNames: null,
-  rectangular: true
+  rectangular: true,
 };
 
 export default SpeechBuble;
