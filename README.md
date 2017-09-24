@@ -1,6 +1,6 @@
 # React Kawaii
 
-# ![React Kawaii Example](https://github.com/miukimiu/react-kawaii/blob/master/docs/react-kawaii-example.gif)
+# ![React Kawaii Example](https://github.com/miukimiu/react-kawaii/blob/master/docs/react-kawaii-example.gif?raw=true)
 
 React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.
 
@@ -48,13 +48,6 @@ Available components:
 - [x] KawaiiIceCream - A cute ice-cream.
 - [x] KawaiiPlanet - A cute planet.
 - [x] More Kawaii components coming soon...
-
-
-### Prerequisities
-
-```
-React
-```
 
 ## Contributors
 
