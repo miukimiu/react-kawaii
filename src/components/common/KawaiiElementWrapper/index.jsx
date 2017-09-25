@@ -21,11 +21,6 @@ class KawaiiElementWrapper extends Component {
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOver}
         hoverState={this.state.hover}
-        showTextOnHover={this.props.showTextOnHover}
-        text={this.props.text}
-        width={this.props.width}
-        height={this.props.height}
-        color={this.props.color}
       >
         {this.props.children}
         {!this.props.showTextOnHover &&

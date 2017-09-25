@@ -75,8 +75,8 @@ const Face = ({ mood, ...rest }) => (
           id="kawaii-face__eyes__circle"
           transform="translate(1.000000, 2.000000)"
         >
-          <circle id="Oval-3" cx="4.5" cy="4.5" r="4.5" />
-          <circle id="Oval-3" cx="56.5" cy="4.5" r="4.5" />
+          <circle cx="4.5" cy="4.5" r="4.5" />
+          <circle cx="56.5" cy="4.5" r="4.5" />
         </g>}
       {mood === 'lovestruck' &&
         <g
