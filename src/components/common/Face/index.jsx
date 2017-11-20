@@ -54,8 +54,8 @@ const Face = ({ mood, ...rest }) => (
       fill="#000000"
       opacity="0.2"
     >
-      <circle id="Oval" cx="3" cy="3" r="3" />
-      <circle id="Oval" cx="63" cy="3" r="3" />
+      <circle cx="3" cy="3" r="3" />
+      <circle cx="63" cy="3" r="3" />
     </g>
     <g
       id="kawaii-face__eyes"

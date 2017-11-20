@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-const SpeechBuble = props => (
+const SpeechBubble = props => (
   <div
     style={{
       left: props.width,
@@ -29,7 +29,7 @@ const SpeechBuble = props => (
   </div>
 );
 
-SpeechBuble.propTypes = {
+SpeechBubble.propTypes = {
   width: React.PropTypes.number.isRequired,
   height: React.PropTypes.number.isRequired,
   text: React.PropTypes.string,
@@ -38,7 +38,7 @@ SpeechBuble.propTypes = {
   rectangular: React.PropTypes.bool,
 };
 
-SpeechBuble.defaultProps = {
+SpeechBubble.defaultProps = {
   width: 150,
   color: '#83D1FB',
   text: null,
@@ -46,4 +46,4 @@ SpeechBuble.defaultProps = {
   rectangular: true,
 };
 
-export default SpeechBuble;
+export default SpeechBubble;

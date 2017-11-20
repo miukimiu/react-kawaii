@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SpeechBuble from '../SpeechBubble';
+import SpeechBubble from '../SpeechBubble';
 import './style.scss';
 
 class KawaiiElementWrapper extends Component {
@@ -25,7 +25,7 @@ class KawaiiElementWrapper extends Component {
         {this.props.children}
         {!this.props.showTextOnHover &&
           this.props.text &&
-          <SpeechBuble
+          <SpeechBubble
             color={this.props.color}
             width={this.props.width}
             height={this.props.height}
@@ -35,7 +35,7 @@ class KawaiiElementWrapper extends Component {
         {this.props.showTextOnHover &&
           this.props.text &&
           this.state.hover &&
-          <SpeechBuble
+          <SpeechBubble
             classNames="planetSpeech"
             color={this.props.color}
             width={this.props.width}
