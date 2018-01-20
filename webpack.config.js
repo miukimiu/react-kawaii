@@ -8,39 +8,31 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'index.js',
-     library: ["react-kawaii"],
-     libraryTarget: 'umd',
-     publicPath: '/lib/',
+    library: ['react-kawaii'],
+    libraryTarget: 'umd',
+    publicPath: '/lib/',
   },
   module: {
     rules: [{
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader',
-        ],
+        use: ['babel-loader'],
       },
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-        use: [
-          'file-loader'
-        ]
+        use: ['file-loader'],
       },
       {
         test: /\.(jpg|png|gif|svg)$/i,
         use: [
           'file-loader?name=[path][name].[ext]?[hash]&outputPath=/assets/&publicPath=/assets/'
-        ]
-      }
+        ],
+      },
     ]
   },
   resolve: {
@@ -50,10 +42,8 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
       options: {
         context: __dirname,
-        postcss: [
-          autoprefixer,
-        ],
+        postcss: [autoprefixer],
       },
     }),
-  ]
+  ],
 };
