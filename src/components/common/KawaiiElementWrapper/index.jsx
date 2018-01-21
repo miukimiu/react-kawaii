@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SpeechBuble from '../SpeechBubble';
-import './style.scss';
+import './style.css';
 
 class KawaiiElementWrapper extends Component {
   constructor(props) {
