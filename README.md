@@ -28,14 +28,14 @@ If you want to develop a component
 
 - `npm i`
 
-- `npm run styleguide-server`
+- `npm run styleguide`
 
 
 If you want to build
 
-- `npm run styleguide-build`
+- `npm run styleguide:build`
 
-## Document
+## Documentation
 
 See https://miukimiu.github.io/react-kawaii/ and try to edit sample code.
 
