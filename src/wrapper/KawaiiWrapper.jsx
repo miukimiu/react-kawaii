@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SpeechBuble from '../SpeechBubble';
 import './style.css';
 
-class KawaiiElementWrapper extends Component {
+class KawaiiWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = { hover: false };
@@ -17,7 +17,7 @@ class KawaiiElementWrapper extends Component {
     return (
       <div
         style={this.props.style}
-        className="kawaiiElementWrapper"
+        className="KawaiiWrapper"
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOver}
         hoverState={this.state.hover}
@@ -53,7 +53,7 @@ class KawaiiElementWrapper extends Component {
   }
 }
 
-KawaiiElementWrapper.propTypes = {
+KawaiiWrapper.propTypes = {
   width: React.PropTypes.number.isRequired,
   height: React.PropTypes.number.isRequired,
   style: React.PropTypes.string.isRequired,
@@ -72,7 +72,7 @@ KawaiiElementWrapper.propTypes = {
   showTextOnHover: React.PropTypes.bool,
 };
 
-KawaiiElementWrapper.defaultProps = {
+KawaiiWrapper.defaultProps = {
   size: 120,
   mood: 'blissful',
   color: '#FDA7DC',
@@ -80,4 +80,4 @@ KawaiiElementWrapper.defaultProps = {
   text: null,
 };
 
-export default KawaiiElementWrapper;
+export default KawaiiWrapper;

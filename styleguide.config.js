@@ -13,9 +13,9 @@ module.exports = {
     {
       name: 'Components',
       components: () => [
-        './src/components/KawaiiBrowser/KawaiiBrowser.jsx',
-        './src/components/KawaiiIceCream/KawaiiIceCream.jsx',
-        './src/components/KawaiiPlanet/KawaiiPlanet.jsx',
+        './src/browser/KawaiiBrowser.jsx',
+        './src/iceCream/KawaiiIceCream.jsx',
+        './src/planet/KawaiiPlanet.jsx',
       ],
     },
   ],

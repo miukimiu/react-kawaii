@@ -1,10 +1,10 @@
 import React from 'react';
 import paths from './paths';
-import Face from '../common/Face';
-import KawaiiElementWrapper from '../common/KawaiiElementWrapper';
+import KawaiiFace from '../face/KawaiiFace';
+import KawaiiWrapper from '../wrapper/KawaiiWrapper';
 
 const KawaiiBrowser = props => (
-  <KawaiiElementWrapper
+  <KawaiiWrapper
     style={{ width: props.size, height: props.size * 0.69 }}
     showTextOnHover={props.showTextOnHover}
     text={props.text}
@@ -82,7 +82,7 @@ const KawaiiBrowser = props => (
                 />
               </g>
             </g>
-            <Face
+            <KawaiiFace
               mood={props.mood}
               transform="translate(67.000000, 63.000000)"
             />
@@ -91,7 +91,7 @@ const KawaiiBrowser = props => (
       </g>
 
     </svg>
-  </KawaiiElementWrapper>
+  </KawaiiWrapper>
 );
 
 KawaiiBrowser.propTypes = {

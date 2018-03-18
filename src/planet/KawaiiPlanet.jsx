@@ -1,10 +1,10 @@
 import React from 'react';
 import paths from './paths';
-import Face from '../common/Face';
-import KawaiiElementWrapper from '../common/KawaiiElementWrapper';
+import KawaiiFace from '../face/KawaiiFace';
+import KawaiiWrapper from '../wrapper/KawaiiWrapper';
 
 const KawaiiPlanet = props => (
-  <KawaiiElementWrapper
+  <KawaiiWrapper
     style={{ width: props.size, height: props.size }}
     showTextOnHover={props.showTextOnHover}
     text={props.text}
@@ -54,16 +54,19 @@ const KawaiiPlanet = props => (
             xlinkHref="#kawaii-planet__path-3"
           />
         </g>
-        <Face mood={props.mood} transform="translate(42.000000, 65.000000)" />
+        <KawaiiFace
+          mood={props.mood}
+          transform="translate(42.000000, 65.000000)"
+        />
       </g>
     </svg>
-  </KawaiiElementWrapper>
+  </KawaiiWrapper>
 );
 
 KawaiiPlanet.propTypes = {
   /**
-    * Size of the width
-    */
+  * Size of the width
+  **/
   size: React.PropTypes.number,
   mood: React.PropTypes.oneOf([
     'sad',

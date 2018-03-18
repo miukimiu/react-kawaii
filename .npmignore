@@ -28,6 +28,7 @@ Temporary Items
 node_modules
 dist
 dist/*
+lib
 styleguide
 .publish
 test

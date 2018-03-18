@@ -1,6 +1,6 @@
-import KawaiiBrowser from './components/KawaiiBrowser/KawaiiBrowser';
-import KawaiiIceCream from './components/KawaiiIceCream/KawaiiIceCream';
-import KawaiiPlanet from './components/KawaiiPlanet/KawaiiPlanet';
+import KawaiiBrowser from './browser/KawaiiBrowser';
+import KawaiiIceCream from './iceCream/KawaiiIceCream';
+import KawaiiPlanet from './planet/KawaiiPlanet';
 
 export {
   KawaiiBrowser,

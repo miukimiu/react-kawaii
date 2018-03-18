@@ -1,7 +1,7 @@
 import React from 'react';
 import paths from './paths';
 
-const Face = ({ mood, ...rest }) => (
+const KawaiiFace = ({ mood, ...rest }) => (
   <g id="kawaii-face" {...rest}>
     <defs>
       <path d={paths.defs} id="kawaii-face__path-1" />
@@ -91,7 +91,7 @@ const Face = ({ mood, ...rest }) => (
   </g>
 );
 
-Face.propTypes = {
+KawaiiFace.propTypes = {
   mood: React.PropTypes.oneOf([
     'sad',
     'shocked',
@@ -101,8 +101,8 @@ Face.propTypes = {
   ]),
 };
 
-Face.defaultProps = {
+KawaiiFace.defaultProps = {
   mood: 'blissful',
 };
 
-export default Face;
+export default KawaiiFace;

@@ -1,10 +1,10 @@
 import React from 'react';
 import paths from './paths';
-import Face from '../common/Face';
-import KawaiiElementWrapper from '../common/KawaiiElementWrapper';
+import KawaiiFace from '../face/KawaiiFace';
+import KawaiiWrapper from '../wrapper/KawaiiWrapper';
 
 const KawaiiIceCream = props => (
-  <KawaiiElementWrapper
+  <KawaiiWrapper
     style={{ width: props.size, height: props.size * 1.83 }}
     showTextOnHover={props.showTextOnHover}
     text={props.text}
@@ -46,10 +46,10 @@ const KawaiiIceCream = props => (
             opacity="0.2"
           />
         </g>
-        <Face mood={props.mood} transform="translate(22.000000, 81.000000)" />
+        <KawaiiFace mood={props.mood} transform="translate(22.000000, 81.000000)" />
       </g>
     </svg>
-  </KawaiiElementWrapper>
+  </KawaiiWrapper>
 );
 
 KawaiiIceCream.propTypes = {
