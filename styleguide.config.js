@@ -13,9 +13,13 @@ module.exports = {
     {
       name: 'Components',
       components: () => [
-        './src/browser/KawaiiBrowser.jsx',
-        './src/iceCream/KawaiiIceCream.jsx',
-        './src/planet/KawaiiPlanet.jsx',
+        './src/browser/Browser.jsx',
+        './src/creditCard/CreditCard.jsx',
+        './src/ghost/Ghost.jsx',
+        './src/iceCream/IceCream.jsx',
+        './src/mug/Mug.jsx',
+        './src/planet/Planet.jsx',
+        './src/speechBubble/SpeechBubble.jsx',
       ],
     },
   ],

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
 const SpeechBuble = props => (
@@ -30,12 +31,12 @@ const SpeechBuble = props => (
 );
 
 SpeechBuble.propTypes = {
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
-  text: React.PropTypes.string,
-  color: React.PropTypes.string,
-  classNames: React.PropTypes.string,
-  rectangular: React.PropTypes.bool,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  text: PropTypes.string,
+  color: PropTypes.string,
+  classNames: PropTypes.string,
+  rectangular: PropTypes.bool,
 };
 
 SpeechBuble.defaultProps = {

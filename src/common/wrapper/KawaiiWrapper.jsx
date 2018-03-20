@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SpeechBuble from '../SpeechBubble';
+import PropTypes from 'prop-types';
+import SpeechBuble from '../speechBubble/SpeechBubble';
 import './style.css';
 
 class KawaiiWrapper extends Component {
@@ -29,47 +30,49 @@ class KawaiiWrapper extends Component {
       >
         {this.props.children}
         {!this.props.showTextOnHover &&
-          this.props.text &&
-          <SpeechBuble
-            color={this.props.color}
-            width={this.props.width}
-            height={this.props.height}
-            text={this.props.text}
-            rectangular={false}
-          />}
+          this.props.text && (
+            <SpeechBuble
+              color={this.props.color}
+              width={this.props.width}
+              height={this.props.height}
+              text={this.props.text}
+              rectangular={false}
+            />
+          )}
         {this.props.showTextOnHover &&
           this.props.text &&
-          this.state.hover &&
-          <SpeechBuble
-            classNames="planetSpeech"
-            color={this.props.color}
-            width={this.props.width}
-            height={this.props.height}
-            text={this.props.text}
-            rectangular={false}
-          />}
+          this.state.hover && (
+            <SpeechBuble
+              classNames="planetSpeech"
+              color={this.props.color}
+              width={this.props.width}
+              height={this.props.height}
+              text={this.props.text}
+              rectangular={false}
+            />
+          )}
       </div>
     );
   }
 }
 
 KawaiiWrapper.propTypes = {
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
-  style: React.PropTypes.string.isRequired,
-  children: React.PropTypes.element.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  style: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
   /**
-  * Hex color
-  */
-  color: React.PropTypes.string,
+   * Hex color
+   */
+  color: PropTypes.string,
   /**
    * Set the text to show on the speech bubble
    */
-  text: React.PropTypes.string,
+  text: PropTypes.string,
   /**
    * Set as true to show the speech bubble on hover, as false to show text by default
    */
-  showTextOnHover: React.PropTypes.bool,
+  showTextOnHover: PropTypes.bool,
 };
 
 KawaiiWrapper.defaultProps = {

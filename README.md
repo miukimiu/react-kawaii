@@ -18,13 +18,11 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 
 ### How to use
 
- ```javascript
-import {KawaiiPlanet} from 'react-kawaii';
+```javascript
+import { Planet } from 'react-kawaii';
 
-const Example = () => (
-  <KawaiiPlanet size={200} mood="blissful" color="#FDA7DC" text="Hello World!" />
-)
- ```
+const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" text="Hello World!" />;
+```
 
 ## Development
 
@@ -32,14 +30,13 @@ So you want to help developing some cute UI components?
 
 If you want to develop a component
 
-- `npm i`
+* `npm i`
 
-- `npm run styleguide`
-
+* `npm run styleguide`
 
 If you want to build
 
-- `npm run styleguide:build`
+* `npm run styleguide:build`
 
 ## Documentation
 
@@ -47,13 +44,18 @@ See https://miukimiu.github.io/react-kawaii/ and try to edit sample code.
 
 ### Components
 
-All the components are SVG illustrations. You can pick different moods:  sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii, the size and a text.
+All the components are SVG illustrations. You can pick different moods: sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii, the size and a text.
 
 Available components:
-- [x] KawaiiBrowser - A cute browser.
-- [x] KawaiiIceCream - A cute ice-cream.
-- [x] KawaiiPlanet - A cute planet.
-- [x] More Kawaii components coming soon...
+
+* [x] Browser - A cute browser.
+* [x] CreditCard - A cute credit card.
+* [x] Ghost - A cute ghost.
+* [x] IceCream - A cute ice-cream.
+* [x] Mug - A cute mug.
+* [x] Planet - A cute planet.
+* [x] SpeechBubble - A cute speech bubble.
+* [x] More Kawaii components coming soon...
 
 ## Contributors
 
