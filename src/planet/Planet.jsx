@@ -2,19 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
-import KawaiiWrapper from '../common/wrapper/KawaiiWrapper';
-import * as Constants from '../constants';
-
-const { KAWAII_MOODS } = Constants;
+import Wrapper from '../common/wrapper/Wrapper';
 
 const Planet = ({ size, text, showTextOnHover, color, mood }) => (
-  <KawaiiWrapper
+  <Wrapper
     style={{ width: size, height: size }}
     showTextOnHover={showTextOnHover}
     text={text}
     width={size}
     height={size}
     color={color}
+    speechBubbleTop={size / 3.5}
   >
     <svg
       width={size}
@@ -51,7 +49,7 @@ const Planet = ({ size, text, showTextOnHover, color, mood }) => (
         <Face mood={mood} transform="translate(34 57)" />
       </g>
     </svg>
-  </KawaiiWrapper>
+  </Wrapper>
 );
 
 Planet.propTypes = {
@@ -59,7 +57,7 @@ Planet.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf([KAWAII_MOODS]),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
    * Set the text to show on the speech bubble
    */

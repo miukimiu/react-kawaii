@@ -2,19 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
-import KawaiiWrapper from '../common/wrapper/KawaiiWrapper';
-import * as Constants from '../constants';
-
-const { KAWAII_MOODS } = Constants;
+import Wrapper from '../common/wrapper/Wrapper';
 
 const CreditCard = ({ size, text, showTextOnHover, color, mood }) => (
-  <KawaiiWrapper
+  <Wrapper
     style={{ width: size * 1.38, height: size }}
     showTextOnHover={showTextOnHover}
     text={text}
     width={size * 1.38}
     height={size}
     color={color}
+    speechBubbleTop={size / 4}
   >
     <svg
       width={size * 1.38}
@@ -41,7 +39,7 @@ const CreditCard = ({ size, text, showTextOnHover, color, mood }) => (
         <Face mood={mood} transform="translate(66 73)" />
       </g>
     </svg>
-  </KawaiiWrapper>
+  </Wrapper>
 );
 
 CreditCard.propTypes = {
@@ -49,7 +47,7 @@ CreditCard.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf([KAWAII_MOODS]),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
    * Set the text to show on the speech bubble
    */

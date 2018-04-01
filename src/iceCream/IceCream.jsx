@@ -2,16 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
-import KawaiiWrapper from '../common/wrapper/KawaiiWrapper';
+import Wrapper from '../common/wrapper/Wrapper';
 
 const IceCream = ({ size, text, showTextOnHover, color, mood }) => (
-  <KawaiiWrapper
+  <Wrapper
     style={{ width: size * 0.5, height: size }}
     showTextOnHover={showTextOnHover}
     text={text}
     width={size * 0.5}
     height={size}
     color={color}
+    speechBubbleTop={size / 3.5}
   >
     <svg
       width={size * 0.5}
@@ -35,7 +36,7 @@ const IceCream = ({ size, text, showTextOnHover, color, mood }) => (
         <Face mood={mood} transform="translate(22.000000, 81.000000)" />
       </g>
     </svg>
-  </KawaiiWrapper>
+  </Wrapper>
 );
 
 IceCream.propTypes = {

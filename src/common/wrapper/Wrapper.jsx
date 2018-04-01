@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SpeechBuble from '../speechBubble/SpeechBubble';
 import './style.css';
 
-class KawaiiWrapper extends Component {
+class Wrapper extends Component {
   constructor(props) {
     super(props);
     this.state = { hover: false };
@@ -18,7 +18,7 @@ class KawaiiWrapper extends Component {
     return (
       <div
         style={this.props.style}
-        className="KawaiiWrapper"
+        className="Wrapper"
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOver}
         hoverState={this.state.hover}
@@ -36,7 +36,7 @@ class KawaiiWrapper extends Component {
               width={this.props.width}
               height={this.props.height}
               text={this.props.text}
-              rectangular={false}
+              speechBubbleTop={this.props.speechBubbleTop}
             />
           )}
         {this.props.showTextOnHover &&
@@ -48,7 +48,7 @@ class KawaiiWrapper extends Component {
               width={this.props.width}
               height={this.props.height}
               text={this.props.text}
-              rectangular={false}
+              speechBubbleTop={this.props.speechBubbleTop}
             />
           )}
       </div>
@@ -56,7 +56,7 @@ class KawaiiWrapper extends Component {
   }
 }
 
-KawaiiWrapper.propTypes = {
+Wrapper.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   style: PropTypes.string.isRequired,
@@ -73,9 +73,10 @@ KawaiiWrapper.propTypes = {
    * Set as true to show the speech bubble on hover, as false to show text by default
    */
   showTextOnHover: PropTypes.bool,
+  speechBubbleTop: PropTypes.number.isRequired,
 };
 
-KawaiiWrapper.defaultProps = {
+Wrapper.defaultProps = {
   size: 120,
   mood: 'blissful',
   color: '#FDA7DC',
@@ -83,4 +84,4 @@ KawaiiWrapper.defaultProps = {
   text: null,
 };
 
-export default KawaiiWrapper;
+export default Wrapper;

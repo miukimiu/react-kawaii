@@ -48,13 +48,13 @@ All the components are SVG illustrations. You can pick different moods: sad, sho
 
 Available components:
 
-* [x] Browser - A cute browser.
-* [x] CreditCard - A cute credit card.
-* [x] Ghost - A cute ghost.
-* [x] IceCream - A cute ice-cream.
-* [x] Mug - A cute mug.
-* [x] Planet - A cute planet.
-* [x] SpeechBubble - A cute speech bubble.
+* [x] Browser - A cute browser
+* [x] CreditCard - A cute credit card
+* [x] Ghost - A cute ghost
+* [x] IceCream - A cute ice-cream
+* [x] Mug - A cute mug
+* [x] Planet - A cute planet
+* [x] SpeechBubble - A cute speech bubble
 * [x] More Kawaii components coming soon...
 
 ## Contributors

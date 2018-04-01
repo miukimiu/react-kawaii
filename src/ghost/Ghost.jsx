@@ -2,19 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
-import KawaiiWrapper from '../common/wrapper/KawaiiWrapper';
-import * as Constants from '../constants';
-
-const { KAWAII_MOODS } = Constants;
+import Wrapper from '../common/wrapper/Wrapper';
 
 const Ghost = ({ size, text, showTextOnHover, color, mood }) => (
-  <KawaiiWrapper
+  <Wrapper
     style={{ width: size * 0.77, height: size }}
     showTextOnHover={showTextOnHover}
     text={text}
     width={size * 0.77}
     height={size}
     color={color}
+    speechBubbleTop={size / 3.5}
   >
     <svg
       width={size * 0.77}
@@ -36,7 +34,7 @@ const Ghost = ({ size, text, showTextOnHover, color, mood }) => (
         <Face mood={mood} transform="translate(34 57)" />
       </g>
     </svg>
-  </KawaiiWrapper>
+  </Wrapper>
 );
 
 Ghost.propTypes = {
@@ -44,7 +42,7 @@ Ghost.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf([KAWAII_MOODS]),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
    * Set the text to show on the speech bubble
    */

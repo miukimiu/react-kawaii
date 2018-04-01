@@ -2,19 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
-import KawaiiWrapper from '../common/wrapper/KawaiiWrapper';
-import * as Constants from '../constants';
-
-const { KAWAII_MOODS } = Constants;
+import Wrapper from '../common/wrapper/Wrapper';
 
 const Browser = ({ size, text, showTextOnHover, color, mood }) => (
-  <KawaiiWrapper
+  <Wrapper
     style={{ width: size * 1.44, height: size }}
     showTextOnHover={showTextOnHover}
     text={text}
     width={size * 1.44}
     height={size}
     color={color}
+    speechBubbleTop={size / 4}
   >
     <svg
       width={size * 1.44}
@@ -50,7 +48,7 @@ const Browser = ({ size, text, showTextOnHover, color, mood }) => (
         <Face mood={mood} transform="translate(67 63)" />
       </g>
     </svg>
-  </KawaiiWrapper>
+  </Wrapper>
 );
 
 Browser.propTypes = {
@@ -58,7 +56,7 @@ Browser.propTypes = {
    * Size of the width
    */
   size: PropTypes.number,
-  mood: PropTypes.oneOf([KAWAII_MOODS]),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
    * Hex color
    */

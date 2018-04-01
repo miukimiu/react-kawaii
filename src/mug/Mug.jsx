@@ -2,19 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
-import KawaiiWrapper from '../common/wrapper/KawaiiWrapper';
-import * as Constants from '../constants';
-
-const { KAWAII_MOODS } = Constants;
+import Wrapper from '../common/wrapper/Wrapper';
 
 const Mug = ({ size, text, showTextOnHover, color, mood }) => (
-  <KawaiiWrapper
+  <Wrapper
     style={{ width: size * 1.5, height: size }}
     showTextOnHover={showTextOnHover}
     text={text}
     width={size * 1.5}
     height={size}
     color={color}
+    speechBubbleTop={size / 7}
   >
     <svg
       width={size * 1.5}
@@ -36,7 +34,7 @@ const Mug = ({ size, text, showTextOnHover, color, mood }) => (
         <Face mood={mood} transform="translate(71 42)" />
       </g>
     </svg>
-  </KawaiiWrapper>
+  </Wrapper>
 );
 
 Mug.propTypes = {
@@ -44,7 +42,7 @@ Mug.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf([KAWAII_MOODS]),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
    * Set the text to show on the speech bubble
    */
@@ -65,6 +63,7 @@ Mug.defaultProps = {
   color: '#A6E191',
   showTextOnHover: true,
   text: null,
+  speechBubbleTop: true,
 };
 
 export default Mug;

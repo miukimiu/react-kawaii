@@ -1,5 +1,5 @@
-On this example the _Planet_ has the mood <b>happy</b>. You can see the code and play with it. Try to change the mood to any other.
+In this example the _Planet_ has the mood <b>happy</b>. You can see the code and play with it. Try to change the mood to any other.
 
 ```
-<Planet size={220} mood="happy" color="#FCCB7E" text="Blue" showTextOnHover={false} />
+<Planet size={220} mood="happy" color="#FCCB7E" text="I'm a planet!" showTextOnHover={false} />
 ```
