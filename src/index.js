@@ -6,14 +6,4 @@ import Mug from './mug/Mug';
 import Planet from './planet/Planet';
 import SpeechBubble from './speechBubble/SpeechBubble';
 
-export {
-  Browser,
-  CreditCard,
-  Ghost,
-  IceCream,
-  Mug,
-  Planet,
-  SpeechBubble,
-};
-
-export * from './constants';
+export { Browser, CreditCard, Ghost, IceCream, Mug, Planet, SpeechBubble };

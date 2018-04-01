@@ -23,7 +23,7 @@ const Browser = ({ size, text, showTextOnHover, color, mood }) => (
     >
       <g id="kawaii-browser">
         <g id="kawaii-browser__body" fillRule="nonzero">
-          <path d={paths.shape} id="kawaii-browser__shape" fill="#61DDBC" />
+          <path d={paths.shape} id="kawaii-browser__shape" fill={color} />
           <path
             d={paths.shadow}
             id="kawaii-browser__shadow"
