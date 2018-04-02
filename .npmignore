@@ -29,6 +29,8 @@ node_modules
 dist
 dist/*
 styleguide
+src
+docs
 .publish
 test
 *.tgz
