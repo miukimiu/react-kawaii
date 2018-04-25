@@ -7,11 +7,11 @@ class Wrapper extends Component {
   constructor(props) {
     super(props);
     this.state = { hover: false };
-    this.mouseOver = this.mouseOver.bind(this);
+    this.handleMouseHover = this.handleMouseHover.bind(this);
   }
 
-  mouseOver() {
-    this.setState({ hover: !this.state.hover });
+  handleMouseHover(hover) {
+    return () => this.setState({ hover });
   }
 
   render() {
@@ -19,8 +19,8 @@ class Wrapper extends Component {
       <div
         style={this.props.style}
         className="Wrapper"
-        onMouseOver={this.mouseOver}
-        onMouseOut={this.mouseOver}
+        onMouseOver={this.handleMouseHover(true)}
+        onMouseLeave={this.handleMouseHover(false)}
         hoverState={this.state.hover}
         showTextOnHover={this.props.showTextOnHover}
         text={this.props.text}
