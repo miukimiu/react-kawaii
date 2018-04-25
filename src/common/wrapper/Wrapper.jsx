@@ -21,9 +21,6 @@ class Wrapper extends Component {
         className="Wrapper"
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOver}
-        hoverState={this.state.hover}
-        showTextOnHover={this.props.showTextOnHover}
-        text={this.props.text}
         width={this.props.width}
         height={this.props.height}
         color={this.props.color}
