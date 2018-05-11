@@ -14,7 +14,7 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 
 ## Install
 
-`npm install --save-dev react-kawaii`
+`npm install --save react-kawaii`
 
 ### How to use
 
@@ -64,3 +64,4 @@ Available components:
 * [SaraVieira](https://github.com/SaraVieira)
 * [kombucha](https://github.com/kombucha)
 * [codenakama](https://github.com/codenakama)
+* [yuanchuan](https://github.com/yuanchuan)
