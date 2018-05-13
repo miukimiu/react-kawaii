@@ -4,15 +4,12 @@ import paths from './paths';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const SpeechBubble = ({ size, text, showTextOnHover, color, mood }) => (
+const SpeechBubble = ({ size, color, mood }) => (
   <Wrapper
     style={{ width: size, height: size }}
-    showTextOnHover={showTextOnHover}
-    text={text}
     width={size}
     height={size}
     color={color}
-    speechBubbleTop={size / 3.5}
   >
     <svg
       width={size}
@@ -58,14 +55,7 @@ SpeechBubble.propTypes = {
    * */
   size: PropTypes.number,
   mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
-  /**
-   * Set the text to show on the speech bubble
-   */
-  text: PropTypes.string,
-  /**
-   * Set as true to show the speech bubble on hover, as false to show text by default
-   */
-  showTextOnHover: PropTypes.bool,
+
   /**
    * Hex color
    */
@@ -76,8 +66,6 @@ SpeechBubble.defaultProps = {
   size: 150,
   mood: 'blissful',
   color: '#83D1FB',
-  showTextOnHover: true,
-  text: null,
 };
 
 export default SpeechBubble;

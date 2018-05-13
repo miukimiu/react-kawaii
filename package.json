@@ -61,6 +61,7 @@
     "lint-staged": "^3.4.1",
     "postcss": "^5.2.17",
     "prettier": "^1.9.2",
+    "prop-types": "^15.6.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-styleguidist": "^6.1.0",

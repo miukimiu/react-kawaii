@@ -4,15 +4,12 @@ import paths from './paths';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const IceCream = ({ size, text, showTextOnHover, color, mood }) => (
+const IceCream = ({ size, color, mood }) => (
   <Wrapper
     style={{ width: size * 0.5, height: size }}
-    showTextOnHover={showTextOnHover}
-    text={text}
     width={size * 0.5}
     height={size}
     color={color}
-    speechBubbleTop={size / 3.5}
   >
     <svg
       width={size * 0.5}
@@ -49,22 +46,12 @@ IceCream.propTypes = {
    * Hex color
    */
   color: PropTypes.string,
-  /**
-   * Set the text to show on the speech bubble
-   */
-  text: PropTypes.string,
-  /**
-   * Set as true to show the speech bubble on hover, as false to show text by default
-   */
-  showTextOnHover: PropTypes.bool,
 };
 
 IceCream.defaultProps = {
   size: 300,
   mood: 'blissful',
   color: '#FDA7DC',
-  showTextOnHover: true,
-  text: null,
 };
 
 export default IceCream;
