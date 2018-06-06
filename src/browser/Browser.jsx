@@ -4,15 +4,12 @@ import paths from './paths';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Browser = ({ size, text, showTextOnHover, color, mood }) => (
+const Browser = ({ size, color, mood }) => (
   <Wrapper
     style={{ width: size * 1.44, height: size }}
-    showTextOnHover={showTextOnHover}
-    text={text}
     width={size * 1.44}
     height={size}
     color={color}
-    speechBubbleTop={size / 4}
   >
     <svg
       width={size * 1.44}
@@ -61,22 +58,12 @@ Browser.propTypes = {
    * Hex color
    */
   color: PropTypes.string,
-  /**
-   * Set the text to show on the speech bubble
-   */
-  text: PropTypes.string,
-  /**
-   * Set as true to show the speech bubble on hover, as false to show text by default
-   */
-  showTextOnHover: PropTypes.bool,
 };
 
 Browser.defaultProps = {
   size: 180,
   mood: 'blissful',
   color: '#FDA7DC',
-  showTextOnHover: true,
-  text: null,
 };
 
 export default Browser;

@@ -4,15 +4,12 @@ import paths from './paths';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Mug = ({ size, text, showTextOnHover, color, mood }) => (
+const Mug = ({ size, color, mood }) => (
   <Wrapper
     style={{ width: size * 1.5, height: size }}
-    showTextOnHover={showTextOnHover}
-    text={text}
     width={size * 1.5}
     height={size}
     color={color}
-    speechBubbleTop={size / 7}
   >
     <svg
       width={size * 1.5}
@@ -44,14 +41,6 @@ Mug.propTypes = {
   size: PropTypes.number,
   mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
-   * Set the text to show on the speech bubble
-   */
-  text: PropTypes.string,
-  /**
-   * Set as true to show the speech bubble on hover, as false to show text by default
-   */
-  showTextOnHover: PropTypes.bool,
-  /**
    * Hex color
    */
   color: PropTypes.string,
@@ -61,9 +50,6 @@ Mug.defaultProps = {
   size: 170,
   mood: 'blissful',
   color: '#A6E191',
-  showTextOnHover: true,
-  text: null,
-  speechBubbleTop: true,
 };
 
 export default Mug;

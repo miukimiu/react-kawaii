@@ -4,15 +4,12 @@ import paths from './paths';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Ghost = ({ size, text, showTextOnHover, color, mood }) => (
+const Ghost = ({ size, color, mood }) => (
   <Wrapper
     style={{ width: size * 0.77, height: size }}
-    showTextOnHover={showTextOnHover}
-    text={text}
     width={size * 0.77}
     height={size}
     color={color}
-    speechBubbleTop={size / 3.5}
   >
     <svg
       width={size * 0.77}
@@ -44,14 +41,6 @@ Ghost.propTypes = {
   size: PropTypes.number,
   mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
-   * Set the text to show on the speech bubble
-   */
-  text: PropTypes.string,
-  /**
-   * Set as true to show the speech bubble on hover, as false to show text by default
-   */
-  showTextOnHover: PropTypes.bool,
-  /**
    * Hex color
    */
   color: PropTypes.string,
@@ -61,8 +50,6 @@ Ghost.defaultProps = {
   size: 240,
   mood: 'blissful',
   color: '#E0E4E8',
-  showTextOnHover: true,
-  text: null,
 };
 
 export default Ghost;

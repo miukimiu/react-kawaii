@@ -4,15 +4,12 @@ import paths from './paths';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const CreditCard = ({ size, text, showTextOnHover, color, mood }) => (
+const CreditCard = ({ size, color, mood }) => (
   <Wrapper
     style={{ width: size * 1.38, height: size }}
-    showTextOnHover={showTextOnHover}
-    text={text}
     width={size * 1.38}
     height={size}
     color={color}
-    speechBubbleTop={size / 4}
   >
     <svg
       width={size * 1.38}
@@ -49,14 +46,6 @@ CreditCard.propTypes = {
   size: PropTypes.number,
   mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
-   * Set the text to show on the speech bubble
-   */
-  text: PropTypes.string,
-  /**
-   * Set as true to show the speech bubble on hover, as false to show text by default
-   */
-  showTextOnHover: PropTypes.bool,
-  /**
    * Hex color
    */
   color: PropTypes.string,
@@ -66,8 +55,6 @@ CreditCard.defaultProps = {
   size: 200,
   mood: 'blissful',
   color: '#83D1FB',
-  showTextOnHover: true,
-  text: null,
 };
 
 export default CreditCard;
