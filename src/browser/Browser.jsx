@@ -10,7 +10,6 @@ const Browser = ({ size, color, mood }) => (
     width={size * 1.44}
     height={size}
     color={color}
-    spee
   >
     <svg
       width={size * 1.44}
