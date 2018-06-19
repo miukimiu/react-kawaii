@@ -68,7 +68,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-style-proptype": "^3.2.1"
+  },
   "engines": {
     "node": ">=7.4.0",
     "npm": ">=4.0.5"
