@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import stylePropType from 'react-style-proptype';
 import './style.css';
 
 const Wrapper = ({ style, color, children }) => (
-  <div style={style} className="Wrapper" color={color}>
+  <div style={style} className="kawaii-wrapper" color={color}>
     {children}
   </div>
 );
 
 Wrapper.propTypes = {
-  style: PropTypes.string.isRequired,
+  style: stylePropType.isRequired,
   children: PropTypes.element.isRequired,
   /**
    * Hex color
