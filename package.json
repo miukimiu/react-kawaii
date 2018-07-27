@@ -1,10 +1,11 @@
 {
   "name": "react-kawaii",
   "version": "0.4.0",
-  "description": "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
+  "description":
+    "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register,css:nullCompiler.js  ./test/**/*.spec.js",
+    "test": "",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "build": "webpack -p --progress",
@@ -42,7 +43,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
@@ -56,7 +57,7 @@
     "eslint-plugin-react": "^6.10.0",
     "extract-text-webpack-plugin": "^2.0.0-rc.1",
     "file-loader": "^0.9.0",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "^2.22.0",
     "lint-staged": "^3.4.1",
     "postcss": "^5.2.17",
@@ -64,12 +65,13 @@
     "prop-types": "^15.6.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-styleguidist": "^6.1.0",
+    "react-styleguidist": "^7.1.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0"
   },
   "dependencies": {
-    "react-style-proptype": "^3.2.1"
+    "react-style-proptype": "^3.2.1",
+    "styled-components": "^3.3.3"
   },
   "engines": {
     "node": ">=7.4.0",
