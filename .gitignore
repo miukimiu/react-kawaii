@@ -30,7 +30,8 @@ dist
 dist/*
 lib
 .publish
-styleguide
+styleguide/build
+styleguide/index.html
 *.tgz
 
 _PROJECT

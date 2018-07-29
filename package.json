@@ -1,8 +1,7 @@
 {
   "name": "react-kawaii",
   "version": "0.4.0",
-  "description":
-    "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
+  "description": "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
   "main": "lib/index.js",
   "scripts": {
     "test": "",
@@ -48,7 +47,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1",
-    "css-loader": "^0.26.1",
+    "css-loader": "^0.26.4",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
@@ -63,14 +62,18 @@
     "postcss": "^5.2.17",
     "prettier": "^1.9.2",
     "prop-types": "^15.6.1",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
     "react-styleguidist": "^7.1.1",
-    "style-loader": "^0.13.1",
+    "style-loader": "^0.13.2",
     "webpack": "^2.2.0"
   },
   "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-flexbox-grid": "^2.1.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-style-proptype": "^3.2.1",
+    "remcalc": "^1.0.10",
     "styled-components": "^3.3.3"
   },
   "engines": {
