@@ -8,6 +8,7 @@ const Section = styled.section`
   display: flex;
   padding: ${remcalc(20)} 0;
   background: #2b3847;
+  color: #fff;
 `;
 
 const Footer = () => (

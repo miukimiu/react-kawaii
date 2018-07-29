@@ -5,27 +5,22 @@ module.exports = {
   pagePerSection: true,
   sections: [
     {
-      name: 'LandingPage',
-      content: 'docs/LandingPage.md',
-      description: 'landing',
+      name: 'React Kawaii',
+      content: 'docs/ReactKawaii.md',
+      description: 'Welcome',
+    },
+    {
+      name: 'Getting Started',
+      content: 'docs/GetStarted.md',
+      description: 'lorem ipsum',
     },
     {
       name: 'Components',
       components: './src/**/[A-Z]*.jsx',
       exampleMode: 'expand',
       usageMode: 'expand'
-      // components: () => [
-      //   './src/browser/Browser.jsx',
-      //   './src/creditCard/CreditCard.jsx',
-      //   './src/ghost/Ghost.jsx',
-      //   './src/iceCream/IceCream.jsx',
-      //   './src/mug/Mug.jsx',
-      //   './src/planet/Planet.jsx',
-      //   './src/speechBubble/SpeechBubble.jsx',
-      // ],
     },
   ],
-
   skipComponentsWithoutExample: true,
   template: {
    head: {
@@ -51,4 +46,5 @@ module.exports = {
 		StyleGuideRenderer: path.join(__dirname, 'styleguide/components/StyleGuide'),
     SectionRenderer: path.join(__dirname, 'styleguide/components/Section')
 	},
+  styleguideDir: 'styleguide/publish'
 }

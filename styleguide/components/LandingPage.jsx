@@ -13,7 +13,7 @@ injectGlobal`
   html {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
     font-size: 120.5%;
-    color: #3A3F49;
+    color: #545775;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -34,8 +34,8 @@ injectGlobal`
 
     /* Copy & Lists */
     p {
-      font-size: ${remcalc(16)};
-      line-height: 1.5rem;
+      font-size: ${remcalc(17)};
+      line-height: 1.5;
       margin-top: 0.5rem;
       margin-bottom: 0;
     }
@@ -62,19 +62,25 @@ injectGlobal`
       margin-bottom: 1.5rem;
     }
     /* Headings */
+    h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-
       margin-top: 1.5rem;
       margin-bottom: 0;
       line-height: 1.5rem;
     }
+    h1 {
+      font-size: ${remcalc(32)};
+      line-height: ${remcalc(28 * 1.5)};
+      margin-top: 2rem;
+      margin-bottom: ${remcalc(10)};;
+    }
     h2 {
       font-size: ${remcalc(28)};
-      line-height: 3rem;
+      line-height: ${remcalc(28 * 1.3)};
       margin-top: 2rem;
     }
     h3 {

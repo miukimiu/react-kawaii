@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import paths from './paths';
-import Face from '../common/face/Face';
-import Wrapper from '../common/wrapper/Wrapper';
+import React from "react";
+import PropTypes from "prop-types";
+import paths from "./paths";
+import Face from "../common/face/Face";
+import Wrapper from "../common/wrapper/Wrapper";
 
 const Planet = ({ size, color, mood }) => (
   <Wrapper
@@ -54,17 +54,17 @@ Planet.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
+  mood: PropTypes.oneOf(["sad", "shocked", "happy", "blissful", "lovestruck"]),
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 Planet.defaultProps = {
-  size: 150,
-  mood: 'blissful',
-  color: '#FCCB7E',
+  size: 190,
+  mood: "blissful",
+  color: "#FCCB7E"
 };
 
 export default Planet;

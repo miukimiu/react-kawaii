@@ -2,42 +2,53 @@ import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 import remcalc from "remcalc";
-import logo from "../assets/logo.svg";
-
-const Section = styled.section`
-  display: flex;
-  padding: ${remcalc(20)} ${remcalc(40)};
-  background: #fff;
-`;
+import { IceCream, Ghost, Planet } from "../../../src";
+import Section from "./partials/Section";
+import ImageContainer from "./partials/ImageContainer";
 
 const UseCases = () => (
-  <Section>
+  <Section color="#fff">
     <Grid>
       <Row>
-        <Col xs={12}>A text here</Col>
-      </Row>
-      <Row>
-        <Col xs={12} md={6}>
-          Use Case A Text
-        </Col>
-        <Col xs={12} md={6}>
-          Use Case A IMG
+        <Col xs={12}>
+          <h1>For multiple scenarios</h1>
+          <p>
+            No more boring wep apps! The React Kawaii library was created with
+            one thing in mind.
+          </p>
         </Col>
       </Row>
       <Row>
         <Col xs={12} md={6}>
-          Use Case B IMG
+          <ImageContainer start="500" end="800">
+            <IceCream mood="shocked" />
+          </ImageContainer>
         </Col>
         <Col xs={12} md={6}>
-          Use Case B Text
+          <h2>Error States</h2>
+          <p>Lorem ipsum</p>
         </Col>
       </Row>
       <Row>
         <Col xs={12} md={6}>
-          Use Case C IMG
+          <h2>Empty States</h2>
+          <p>Lorem ipsum</p>
         </Col>
         <Col xs={12} md={6}>
-          Use Case C Text
+          <ImageContainer start="900" end="1400">
+            <Ghost />
+          </ImageContainer>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} md={6}>
+          <ImageContainer start="1500" end="2000">
+            <Planet />
+          </ImageContainer>
+        </Col>
+        <Col xs={12} md={6}>
+          <h2>Animations</h2>
+          <p>Lorem ipsum</p>
         </Col>
       </Row>
     </Grid>

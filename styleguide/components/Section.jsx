@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
 import PropTypes from "prop-types";
 import Styled from "rsg-components/Styled";
 import SectionHeading from "rsg-components/SectionHeading";
@@ -15,40 +16,46 @@ const styles = ({ fontFamily, color, space }) => ({
   }
 });
 
-export function SectionRenderer({
-  name,
-  depth,
-  slug,
-  classes,
-  pagePerSection,
-  allProps,
-  description,
-  content,
-  sections,
-  components
-}) {
+export function SectionRenderer(allProps) {
+  const {
+    classes,
+    name,
+    slug,
+    content,
+    components,
+    sections,
+    depth,
+    description,
+    pagePerSection
+  } = allProps;
   return (
     <div>
-      {slug === "landingpage" ? (
+      {slug === "react-kawaii" ? (
         <LandingPage />
       ) : (
-        <section className={classes.root}>
-          {name && (
-            <SectionHeading
-              depth={depth}
-              id={slug}
-              slotName="sectionToolbar"
-              pagePerSection={pagePerSection}
-              slotProps={allProps}
-            >
-              {name}
-            </SectionHeading>
-          )}
-          {description && <Markdown text={description} />}
-          {content}
-          {sections}
-          {components}
-        </section>
+        <Grid>
+          <Row>
+            <Col xs={12}>
+              <section className={classes.root}>
+                {name && (
+                  <SectionHeading
+                    depth={depth}
+                    id={slug}
+                    slotName="sectionToolbar"
+                    pagePerSection={pagePerSection}
+                    slotProps={allProps}
+                  >
+                    {name}
+                  </SectionHeading>
+                )}
+                {description && <Markdown text={description} />}
+                {content}
+                {sections}
+                {components}
+              </section>
+            </Col>
+          </Row>
+        </Grid>
       )}
     </div>
   );
