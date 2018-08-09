@@ -13,8 +13,8 @@ const UseCases = () => (
         <Col xs={12}>
           <h1>For multiple scenarios</h1>
           <p>
-            No more boring wep apps! The React Kawaii library was created with
-            one thing in mind.
+            No more boring apps! The React Kawaii library was created with one
+            thing in mind. Make your app fun and cute!
           </p>
         </Col>
       </Row>

@@ -15,10 +15,6 @@ const Wave = styled.img`
   z-index: 0;
 `;
 
-// const Wave = styled(Grid)`
-//   position: relative;
-// `;
-
 const Tester = () => (
   <Section height={600} color="#E7F6FF">
     <Wave src={topWaves} />
