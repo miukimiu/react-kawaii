@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 import remcalc from "remcalc";
-import Section from "./partials/Section";
+import Section from "../common/Section";
 
 const Install = () => (
   <Section color="#fff">

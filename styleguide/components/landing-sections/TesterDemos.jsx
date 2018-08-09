@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 import remcalc from "remcalc";
-import logo from "../assets/logo.svg";
+import logo from "../assets/images/logo.svg";
 
 const Logo = styled.div`
   margin-right: ${remcalc(20)};

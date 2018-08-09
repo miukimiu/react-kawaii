@@ -3,8 +3,10 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 import remcalc from "remcalc";
 import TesterDemos from "./TesterDemos";
-import Section from "./partials/Section";
-import topWaves from "../assets/top-waves.svg";
+import Section from "../common/Section";
+import BottomWave from "../common/Wave";
+import topWaves from "../assets/images/top-waves.svg";
+import homeWave from "../assets/images/home-wave.svg";
 
 const Wave = styled.img`
   position: absolute;
@@ -30,6 +32,7 @@ const Tester = () => (
         </Col>
       </Row>
     </Grid>
+    <BottomWave src={homeWave} />
   </Section>
 );
 

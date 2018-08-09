@@ -3,10 +3,11 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import Plx from "react-plx";
 import styled from "styled-components";
 import remcalc from "remcalc";
-import icon from "../assets/kawaii-icon.svg";
-import cloud from "../assets/cloud.svg";
-import shadow from "../assets/shadow.svg";
-import homeWave from "../assets/home-wave.svg";
+import Wave from "../common/Wave";
+import icon from "../assets/images/kawaii-icon.svg";
+import cloud from "../assets/images/cloud.svg";
+import shadow from "../assets/images/shadow.svg";
+import homeWave from "../assets/images/home-wave.svg";
 
 const Section = styled.section`
   position: relative;
@@ -112,14 +113,6 @@ const ShadowAnim = [
   }
 ];
 
-const HomeWave = styled.img`
-  position: absolute;
-  bottom: 0;
-  left: -1%;
-  width: 102%;
-  height: auto;
-`;
-
 const Home = () => (
   <Section>
     <Grid>
@@ -150,8 +143,7 @@ const Home = () => (
         </Col>
       </Row>
     </Grid>
-
-    <HomeWave src={homeWave} />
+    <Wave src={homeWave} />
   </Section>
 );
 

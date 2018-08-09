@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import remcalc from "remcalc";
 import Plx from "react-plx";
-import backCloud from "../../assets/back-cloud.svg";
+import backCloud from "../assets/images/back-cloud.svg";
 
 const Container = styled.div`
   display: flex;
