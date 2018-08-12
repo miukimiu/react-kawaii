@@ -8,9 +8,13 @@ import Section from "../common/Section";
 const Contribute = () => (
   <Section color="#fff">
     <Grid>
-      <Row>
-        <Col xs={12} md={6}>
+      <Row center="xs">
+        <Col xs={12} md={8}>
           <h2>Contribute</h2>
+          <p>
+            Be part of the awesome people who already contributed to this
+            project.
+          </p>
         </Col>
       </Row>
     </Grid>

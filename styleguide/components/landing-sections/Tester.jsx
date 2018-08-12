@@ -15,13 +15,28 @@ const Wave = styled.img`
   z-index: 0;
 `;
 
+const Box = styled.div`
+  background: #2b3847;
+  border-radius: 4px;
+  max-width: ${remcalc(800)};
+  min-height: ${remcalc(400)};
+  width: 100%;
+  color: #fff;
+  display: inline-flex;
+`;
+
 const Tester = () => (
-  <Section height={600} color="#E7F6FF">
+  <Section height={1000} color="#E7F6FF">
     <Wave src={topWaves} />
     <Grid>
-      <Row>
-        <Col xs={12}>
+      <Row center="xs">
+        <Col xs={12} className="text-center">
           <h2>Try it out</h2>
+          <p>
+            You can see how easy it is to use this library! Just set the props
+            and you are done!
+          </p>
+          <Box>Here</Box>
         </Col>
         <Col xs={12}>
           <TesterDemos />

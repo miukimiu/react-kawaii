@@ -120,9 +120,10 @@ const Home = () => (
         <Col xs={12} md={4}>
           <h1>Cute React SVG Components</h1>
           <p>
-            React Kawaii is a library of cute SVG illustrations (react
-            components). Ideal if you want to give some cuteness and personality
-            to your react application.
+            React Kawaii is a library of cute illustrations that are easily
+            customisable. They are ideal to give some cuteness and personality
+            to your ReactJS application. Just pick an illustration and set the
+            mood and it's done!
           </p>
         </Col>
         <Col xs={12} md={8}>

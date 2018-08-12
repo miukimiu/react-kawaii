@@ -22,9 +22,7 @@ const Nav = styled.nav`
 const TesterDemos = () => (
   <Grid>
     <Row>
-      <Col xs={12} md={6}>
-        TesterDemos
-      </Col>
+      <Col xs={12} md={6} />
     </Row>
   </Grid>
 );

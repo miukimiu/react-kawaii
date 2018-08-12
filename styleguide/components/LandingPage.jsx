@@ -13,7 +13,7 @@ injectGlobal`
   html {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
     font-size: 120.5%;
-    color: #545775;
+    color: #2B3847;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -97,20 +97,8 @@ injectGlobal`
     h6 {
       font-size: 0.3535rem;
     }
-    .lead {
-      font-size: ${remcalc(34)};
-    }
-    .text-top {
-      margin-top: 0;
-    }
-    .text-small {
-      font-size: ${remcalc(13)};
-    }
-    .light {
-      color: #fff;
-    }
-    .text-light {
-      font-weight: 300;
+    .text-center {
+      text-align: center;
     }
   } // #root
 
