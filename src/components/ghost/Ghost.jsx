@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
+import getUniqueId from '../../utils/getUniqueId';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
@@ -28,7 +29,11 @@ const Ghost = ({ size, color, mood }) => (
             fill="#000000"
           />
         </g>
-        <Face mood={mood} transform="translate(34 57)" />
+        <Face
+          mood={mood}
+          transform="translate(34 57)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -43,13 +48,13 @@ Ghost.propTypes = {
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 Ghost.defaultProps = {
   size: 240,
   mood: 'blissful',
-  color: '#E0E4E8',
+  color: '#E0E4E8'
 };
 
 export default Ghost;

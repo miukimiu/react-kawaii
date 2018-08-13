@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 
-const Face = ({ mood, ...rest }) => (
+const Face = ({ mood, uniqueId, ...rest }) => (
   <g id="kawaii-face" {...rest}>
     <defs>
       <path d={paths.defs} id="kawaii-face__path-1" />
@@ -13,7 +13,7 @@ const Face = ({ mood, ...rest }) => (
           id="kawaii-face__mouth__joy"
           transform="translate(0.000000, 1.000000)"
         >
-          <mask id="kawaii-face__mask-2" fill="white">
+          <mask id={`kawaii-face__mask-2-${uniqueId}`} fill="white">
             <use xlinkHref="#kawaii-face__path-1" />
           </mask>
           <use
@@ -25,7 +25,7 @@ const Face = ({ mood, ...rest }) => (
             d={paths.tongue}
             id="kawaii-face__tongue"
             fill="#E74144"
-            mask="url(#kawaii-face__mask-2)"
+            mask={`url(#kawaii-face__mask-2-${uniqueId}`}
             transform="translate(15.000000, 11.431885) scale(1, -1)
             translate(-15.000000, -11.431885)"
           />
@@ -100,11 +100,11 @@ const Face = ({ mood, ...rest }) => (
 );
 
 Face.propTypes = {
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck'])
 };
 
 Face.defaultProps = {
-  mood: 'blissful',
+  mood: 'blissful'
 };
 
 export default Face;

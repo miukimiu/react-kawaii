@@ -1,8 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import paths from "./paths";
-import Face from "../common/face/Face";
-import Wrapper from "../common/wrapper/Wrapper";
+import React from 'react';
+import PropTypes from 'prop-types';
+import paths from './paths';
+import Face from '../common/face/Face';
+import getUniqueId from '../../utils/getUniqueId';
+import Wrapper from '../common/wrapper/Wrapper';
 
 const Planet = ({ size, color, mood }) => (
   <Wrapper
@@ -43,7 +44,11 @@ const Planet = ({ size, color, mood }) => (
             xlinkHref="#kawaii-planet__shadow--path"
           />
         </g>
-        <Face mood={mood} transform="translate(34 57)" />
+        <Face
+          mood={mood}
+          transform="translate(34 57)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -54,7 +59,7 @@ Planet.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf(["sad", "shocked", "happy", "blissful", "lovestruck"]),
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
   /**
    * Hex color
    */
@@ -63,8 +68,8 @@ Planet.propTypes = {
 
 Planet.defaultProps = {
   size: 190,
-  mood: "blissful",
-  color: "#FCCB7E"
+  mood: 'blissful',
+  color: '#FCCB7E'
 };
 
 export default Planet;

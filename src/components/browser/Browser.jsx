@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
+import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const Browser = ({ size, color, mood }) => (
@@ -42,7 +43,11 @@ const Browser = ({ size, color, mood }) => (
             </g>
           </g>
         </g>
-        <Face mood={mood} transform="translate(67 63)" />
+        <Face
+          mood={mood}
+          transform="translate(67 63)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -57,13 +62,13 @@ Browser.propTypes = {
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 Browser.defaultProps = {
   size: 180,
   mood: 'blissful',
-  color: '#FDA7DC',
+  color: '#FDA7DC'
 };
 
 export default Browser;

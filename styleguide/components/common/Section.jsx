@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import remcalc from "remcalc";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
 
 const StyledSection = styled.section`
   position: relative;
@@ -30,7 +30,7 @@ Section.defaultProps = {
 };
 
 Section.propTypes = {
-  classes: PropTypes.object.isRequired
+  height: PropTypes.number
 };
 
 export default Section;

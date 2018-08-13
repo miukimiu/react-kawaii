@@ -1,15 +1,10 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
-import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import remcalc from "remcalc";
 import Section from "../common/Section";
 
 const codeString = "npm i --save react-kawaii";
-
-const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
-  padding: 20px;
-`;
 
 const Code = styled.div`
   background: #2b3847;

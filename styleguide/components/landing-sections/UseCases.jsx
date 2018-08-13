@@ -1,10 +1,10 @@
-import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from "styled-components";
-import remcalc from "remcalc";
-import { IceCream, Ghost, Planet } from "../../../src";
-import Section from "../common/Section";
-import ImageContainer from "../common/ImageContainer";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
+import { IceCream, Ghost, Planet } from '../../../src';
+import Section from '../common/Section';
+import ImageContainer from '../common/ImageContainer';
 
 const UseCases = () => (
   <Section color="#fff">

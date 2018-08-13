@@ -1,12 +1,15 @@
-import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from "styled-components";
-import remcalc from "remcalc";
-import TesterDemos from "./TesterDemos";
-import Section from "../common/Section";
-import BottomWave from "../common/Wave";
-import topWaves from "../assets/images/top-waves.svg";
-import homeWave from "../assets/images/home-wave.svg";
+import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
+import TesterDemos from './TesterDemos';
+import Section from '../common/Section';
+import BottomWave from '../common/Wave';
+import ColorSelector from './ColorSelector';
+import MoodSelector from './MoodSelector';
+import { Ghost } from '../../../src';
+import topWaves from '../assets/images/top-waves.svg';
+import homeWave from '../assets/images/home-wave.svg';
 
 const Wave = styled.img`
   position: absolute;
@@ -23,28 +26,83 @@ const Box = styled.div`
   width: 100%;
   color: #fff;
   display: inline-flex;
+
+  span {
+    width: 50%;
+  }
+  .properties {
+    width: 50%;
+  }
+  .preview {
+    background: #fff;
+  }
 `;
 
-const Tester = () => (
-  <Section height={1000} color="#E7F6FF">
-    <Wave src={topWaves} />
-    <Grid>
-      <Row center="xs">
-        <Col xs={12} className="text-center">
-          <h2>Try it out</h2>
-          <p>
-            You can see how easy it is to use this library! Just set the props
-            and you are done!
-          </p>
-          <Box>Here</Box>
-        </Col>
-        <Col xs={12}>
-          <TesterDemos />
-        </Col>
-      </Row>
-    </Grid>
-    <BottomWave src={homeWave} />
-  </Section>
-);
+class Tester extends Component {
+  state = {
+    activeMood: 'blissful',
+    activeColor: '#FCCB7E',
+    activeSize: 240
+  };
+
+  onUpdateColor = value => {
+    this.setState({
+      activeColor: value
+    });
+  };
+
+  onUpdateMood = value => {
+    this.setState({
+      activeMood: value
+    });
+  };
+
+  render() {
+    console.log('active color parent', this.state.activeColor);
+
+    const { activeMood, activeColor } = this.state;
+
+    return (
+      <Section height={1000} color="#E7F6FF">
+        <Wave src={topWaves} />
+        <Grid>
+          <Row center="xs">
+            <Col xs={12} className="text-center">
+              <h2>Try it out</h2>
+              <p>
+                You can see how easy it is to use this library! Just set the
+                props and you are done!
+              </p>
+              <Box>
+                <span className="properties">
+                  <h4>Mood</h4>
+                  <MoodSelector
+                    onUpdateMood={this.onUpdateMood}
+                    activeMood={activeMood}
+                  />
+                  <h4>Color</h4>
+                  <ColorSelector
+                    onUpdateColor={this.onUpdateColor}
+                    activeColor={activeColor}
+                  />
+                  <p>Dropdown</p>
+                  <h4>Size</h4>
+                  <p>Dropdown</p>
+                </span>
+                <span className="preview">
+                  <Ghost color={activeColor} />
+                </span>
+              </Box>
+            </Col>
+            <Col xs={12}>
+              <TesterDemos />
+            </Col>
+          </Row>
+        </Grid>
+        <BottomWave src={homeWave} />
+      </Section>
+    );
+  }
+}
 
 export default Tester;

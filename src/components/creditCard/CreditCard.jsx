@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
+import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const CreditCard = ({ size, color, mood }) => (
@@ -33,7 +34,11 @@ const CreditCard = ({ size, color, mood }) => (
             d="M0 17h198v27H0z"
           />
         </g>
-        <Face mood={mood} transform="translate(66 73)" />
+        <Face
+          mood={mood}
+          transform="translate(66 73)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -48,13 +53,13 @@ CreditCard.propTypes = {
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 CreditCard.defaultProps = {
   size: 200,
   mood: 'blissful',
-  color: '#83D1FB',
+  color: '#83D1FB'
 };
 
 export default CreditCard;

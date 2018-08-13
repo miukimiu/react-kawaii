@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
+import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const SpeechBubble = ({ size, color, mood }) => (
@@ -43,7 +44,11 @@ const SpeechBubble = ({ size, color, mood }) => (
             xlinkHref="#kawaii-speechBubble__shadow--path"
           />
         </g>
-        <Face mood={mood} transform="translate(34 57)" />
+        <Face
+          mood={mood}
+          transform="translate(34 57)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -59,13 +64,13 @@ SpeechBubble.propTypes = {
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 SpeechBubble.defaultProps = {
   size: 150,
   mood: 'blissful',
-  color: '#83D1FB',
+  color: '#83D1FB'
 };
 
 export default SpeechBubble;

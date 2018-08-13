@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
+import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const IceCream = ({ size, color, mood }) => (
@@ -30,7 +31,11 @@ const IceCream = ({ size, color, mood }) => (
             opacity=".1"
           />
         </g>
-        <Face mood={mood} transform="translate(22.000000, 81.000000)" />
+        <Face
+          mood={mood}
+          transform="translate(22.000000, 81.000000)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -45,13 +50,13 @@ IceCream.propTypes = {
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 IceCream.defaultProps = {
   size: 300,
   mood: 'blissful',
-  color: '#FDA7DC',
+  color: '#FDA7DC'
 };
 
 export default IceCream;

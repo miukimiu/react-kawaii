@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
+import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const Mug = ({ size, color, mood }) => (
@@ -28,7 +29,11 @@ const Mug = ({ size, color, mood }) => (
             opacity=".1"
           />
         </g>
-        <Face mood={mood} transform="translate(71 42)" />
+        <Face
+          mood={mood}
+          transform="translate(71 42)"
+          uniqueId={getUniqueId()}
+        />
       </g>
     </svg>
   </Wrapper>
@@ -43,13 +48,13 @@ Mug.propTypes = {
   /**
    * Hex color
    */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 Mug.defaultProps = {
   size: 170,
   mood: 'blissful',
-  color: '#A6E191',
+  color: '#A6E191'
 };
 
 export default Mug;
