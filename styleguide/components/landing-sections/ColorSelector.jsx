@@ -5,6 +5,7 @@ import remcalc from 'remcalc';
 const ColorBox = styled.div`
   height: ${remcalc(20)};
   width: ${remcalc(20)};
+  margin: 0 ${remcalc(4)}
   border-radius: 3px;
   background: ${props => props.color};
   display: inline-flex;

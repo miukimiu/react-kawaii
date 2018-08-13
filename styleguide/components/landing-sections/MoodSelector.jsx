@@ -3,12 +3,18 @@ import styled from 'styled-components';
 import remcalc from 'remcalc';
 
 const MoodBox = styled.div`
-  padding: ${remcalc(10)};
-  margin-right: ${remcalc(5)}
+  padding: ${remcalc(4)} ${remcalc(8)};
+  margin: ${remcalc(5)}
   border-radius: 3px;
   display: inline-flex;
   background: ${props => (props.mood === props.active ? '#A6E191' : '#E0E4E8')};
   font-size: ${remcalc(14)};
+  cursor: pointer;
+  transition: .5s ease;
+
+  &:hover {
+    background: #A6E191;
+  }
 `;
 
 class MoodSelector extends Component {

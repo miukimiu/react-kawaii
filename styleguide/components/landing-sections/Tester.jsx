@@ -7,6 +7,7 @@ import Section from '../common/Section';
 import BottomWave from '../common/Wave';
 import ColorSelector from './ColorSelector';
 import MoodSelector from './MoodSelector';
+import SizeSelector from './SizeSelector';
 import { Ghost } from '../../../src';
 import topWaves from '../assets/images/top-waves.svg';
 import homeWave from '../assets/images/home-wave.svg';
@@ -42,7 +43,7 @@ class Tester extends Component {
   state = {
     activeMood: 'blissful',
     activeColor: '#FCCB7E',
-    activeSize: 240
+    activeSize: 200
   };
 
   onUpdateColor = value => {
@@ -57,10 +58,17 @@ class Tester extends Component {
     });
   };
 
+  onUpdateSize = value => {
+    this.setState({
+      activeSize: value
+    });
+  };
+
   render() {
     console.log('active color parent', this.state.activeColor);
+    console.log('active mood parent', this.state.activeMood);
 
-    const { activeMood, activeColor } = this.state;
+    const { activeMood, activeColor, activeSize } = this.state;
 
     return (
       <Section height={1000} color="#E7F6FF">
@@ -87,10 +95,17 @@ class Tester extends Component {
                   />
                   <p>Dropdown</p>
                   <h4>Size</h4>
-                  <p>Dropdown</p>
+                  <SizeSelector
+                    onUpdateSize={this.onUpdateSize}
+                    activeSize={activeSize}
+                  />
                 </span>
                 <span className="preview">
-                  <Ghost color={activeColor} />
+                  <Ghost
+                    color={activeColor}
+                    mood={activeMood}
+                    size={activeSize}
+                  />
                 </span>
               </Box>
             </Col>
