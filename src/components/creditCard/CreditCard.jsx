@@ -5,12 +5,13 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const CreditCard = ({ size, color, mood }) => (
+const CreditCard = ({ size, color, mood, className }) => (
   <Wrapper
     style={{ width: size * 1.38, height: size }}
     width={size * 1.38}
     height={size}
     color={color}
+    className={className}
   >
     <svg
       width={size * 1.38}

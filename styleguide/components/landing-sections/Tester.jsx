@@ -39,6 +39,10 @@ const Box = styled.div`
   }
 `;
 
+const StyledGhost = styled(Ghost)`
+  justify-self: center;
+`;
+
 class Tester extends Component {
   state = {
     activeMood: 'blissful',
@@ -101,7 +105,7 @@ class Tester extends Component {
                   />
                 </span>
                 <span className="preview">
-                  <Ghost
+                  <StyledGhost
                     color={activeColor}
                     mood={activeMood}
                     size={activeSize}

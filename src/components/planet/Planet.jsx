@@ -5,12 +5,13 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Planet = ({ size, color, mood }) => (
+const Planet = ({ size, color, mood, className }) => (
   <Wrapper
     style={{ width: size, height: size }}
     width={size}
     height={size}
     color={color}
+    className={className}
   >
     <svg
       width={size}

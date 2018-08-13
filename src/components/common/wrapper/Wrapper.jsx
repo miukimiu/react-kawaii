@@ -1,14 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import stylePropType from "react-style-proptype";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import stylePropType from 'react-style-proptype';
+import styled from 'styled-components';
 
 const KawaiiWrapper = styled.div`
   position: relative;
 `;
 
-const Wrapper = ({ style, color, children }) => (
-  <KawaiiWrapper color={color}>{children}</KawaiiWrapper>
+const Wrapper = ({ style, color, children, className }) => (
+  <KawaiiWrapper color={color} className={className}>
+    {children}
+  </KawaiiWrapper>
 );
 
 Wrapper.propTypes = {
@@ -22,8 +24,8 @@ Wrapper.propTypes = {
 
 Wrapper.defaultProps = {
   size: 120,
-  mood: "blissful",
-  color: "#FDA7DC"
+  mood: 'blissful',
+  color: '#FDA7DC'
 };
 
 export default Wrapper;

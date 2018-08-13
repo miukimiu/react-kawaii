@@ -5,12 +5,13 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Mug = ({ size, color, mood }) => (
+const Mug = ({ size, color, mood, className }) => (
   <Wrapper
     style={{ width: size * 1.5, height: size }}
     width={size * 1.5}
     height={size}
     color={color}
+    className={className}
   >
     <svg
       width={size * 1.5}

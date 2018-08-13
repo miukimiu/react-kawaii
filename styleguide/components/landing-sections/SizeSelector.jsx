@@ -7,7 +7,7 @@ const SizeBox = styled.div`
   margin: ${remcalc(5)}
   border-radius: 3px;
   display: inline-flex;
-  background: ${props => (props.mood === props.active ? '#A6E191' : '#E0E4E8')};
+  background: ${props => (props.size === props.active ? '#83D1FB' : '#E0E4E8')};
   font-size: ${remcalc(14)};
   cursor: pointer;
   transition: .5s ease;

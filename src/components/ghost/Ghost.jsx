@@ -5,12 +5,13 @@ import getUniqueId from '../../utils/getUniqueId';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Ghost = ({ size, color, mood }) => (
+const Ghost = ({ size, color, mood, className }) => (
   <Wrapper
     style={{ width: size * 0.77, height: size }}
     width={size * 0.77}
     height={size}
     color={color}
+    className={className}
   >
     <svg
       width={size * 0.77}

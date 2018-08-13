@@ -1,8 +1,8 @@
-import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from "styled-components";
-import remcalc from "remcalc";
-import logo from "../assets/images/logo.svg";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
+import logo from '../assets/images/logo.svg';
 
 const Logo = styled.div`
   margin-right: ${remcalc(20)};
@@ -22,7 +22,16 @@ const Nav = styled.nav`
 const TesterDemos = () => (
   <Grid>
     <Row>
-      <Col xs={12} md={6} />
+      <Col xs={12} md={6}>
+        <h2>Demos</h2>
+        <ul>
+          <li>
+            <a href="https://codesandbox.io/s/23rk7j098j">
+              Searching with a Kawaii Animation
+            </a>
+          </li>
+        </ul>
+      </Col>
     </Row>
   </Grid>
 );
