@@ -1,21 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import remcalc from 'remcalc';
-
-const MoodBox = styled.div`
-  padding: ${remcalc(4)} ${remcalc(8)};
-  margin: ${remcalc(5)}
-  border-radius: 3px;
-  display: inline-flex;
-  background: ${props => (props.mood === props.active ? '#A6E191' : '#E0E4E8')};
-  font-size: ${remcalc(14)};
-  cursor: pointer;
-  transition: .5s ease;
-
-  &:hover {
-    background: #A6E191;
-  }
-`;
+import Tag from './Tag';
 
 class MoodSelector extends Component {
   setMood = value => {
@@ -25,42 +9,34 @@ class MoodSelector extends Component {
     const { activeMood } = this.props;
     return (
       <div>
-        <MoodBox
+        <Tag
           active={activeMood}
-          mood="blissful"
+          text="blissful"
           onClick={() => this.setMood('blissful')}
         >
           Blissful
-        </MoodBox>
-        <MoodBox
-          active={activeMood}
-          mood="lovestruck"
-          onClick={() => this.setMood('lovestruck')}
-        >
+        </Tag>
+        <Tag active={activeMood} onClick={() => this.setMood('lovestruck')}>
           Lovestruck
-        </MoodBox>
+        </Tag>
 
-        <MoodBox
+        <Tag
           active={activeMood}
-          mood="happy"
+          text="happy"
           onClick={() => this.setMood('happy')}
         >
           Happy
-        </MoodBox>
-        <MoodBox
-          active={activeMood}
-          mood="sad"
-          onClick={() => this.setMood('sad')}
-        >
+        </Tag>
+        <Tag active={activeMood} text="sad" onClick={() => this.setMood('sad')}>
           Sad
-        </MoodBox>
-        <MoodBox
+        </Tag>
+        <Tag
           active={activeMood}
-          mood="shocked"
+          text="shocked"
           onClick={() => this.setMood('shocked')}
         >
           Shocked
-        </MoodBox>
+        </Tag>
       </div>
     );
   }

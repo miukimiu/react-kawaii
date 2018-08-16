@@ -26,8 +26,6 @@ Temporary Items
 .apdisk
 
 node_modules
-dist
-dist/*
 styleguide
 src
 docs

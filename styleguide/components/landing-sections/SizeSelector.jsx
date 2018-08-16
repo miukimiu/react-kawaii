@@ -1,52 +1,24 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import remcalc from 'remcalc';
-
-const SizeBox = styled.div`
-  padding: ${remcalc(4)} ${remcalc(8)};
-  margin: ${remcalc(5)}
-  border-radius: 3px;
-  display: inline-flex;
-  background: ${props => (props.size === props.active ? '#83D1FB' : '#E0E4E8')};
-  font-size: ${remcalc(14)};
-  cursor: pointer;
-  transition: .5s ease;
-
-  &:hover {
-    background: #A6E191;
-  }
-`;
+import Tag from './Tag';
 
 class SizeSelector extends Component {
   setSize = value => {
     this.props.onUpdateSize(value);
   };
   render() {
-    const { activeMood } = this.props;
+    const { activeSize } = this.props;
     return (
       <div>
-        <SizeBox
-          active={activeMood}
-          size={140}
-          onClick={() => this.setSize(140)}
-        >
+        <Tag active={activeSize} text={140} onClick={() => this.setSize(140)}>
           Small
-        </SizeBox>
-        <SizeBox
-          active={activeMood}
-          size={180}
-          onClick={() => this.setSize(180)}
-        >
+        </Tag>
+        <Tag active={activeSize} text={180} onClick={() => this.setSize(180)}>
           Medium
-        </SizeBox>
+        </Tag>
 
-        <SizeBox
-          active={activeMood}
-          size={200}
-          onClick={() => this.setSize(200)}
-        >
+        <Tag active={activeSize} text={200} onClick={() => this.setSize(200)}>
           Large
-        </SizeBox>
+        </Tag>
       </div>
     );
   }

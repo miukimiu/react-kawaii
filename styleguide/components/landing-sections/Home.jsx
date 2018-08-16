@@ -1,13 +1,13 @@
-import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import Plx from "react-plx";
-import styled from "styled-components";
-import remcalc from "remcalc";
-import Wave from "../common/Wave";
-import icon from "../assets/images/kawaii-icon.svg";
-import cloud from "../assets/images/cloud.svg";
-import shadow from "../assets/images/shadow.svg";
-import homeWave from "../assets/images/home-wave.svg";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import Plx from 'react-plx';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
+import Wave from '../common/Wave';
+import icon from '../assets/images/kawaii-icon.svg';
+import cloud from '../assets/images/cloud.svg';
+import shadow from '../assets/images/shadow.svg';
+import homeWave from '../assets/images/home-wave.svg';
 
 const Section = styled.section`
   position: relative;
@@ -55,15 +55,15 @@ const CloudA = [
       {
         startValue: 1,
         endValue: 1.1,
-        property: "scale"
+        property: 'scale',
       },
       {
         startValue: 0,
         endValue: -100,
-        property: "translateY"
-      }
-    ]
-  }
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const CloudB = [
@@ -74,15 +74,15 @@ const CloudB = [
       {
         startValue: 1,
         endValue: 1.2,
-        property: "scale"
+        property: 'scale',
       },
       {
         startValue: 0,
         endValue: -200,
-        property: "translateY"
-      }
-    ]
-  }
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const IconAnim = [
@@ -93,10 +93,10 @@ const IconAnim = [
       {
         startValue: 0,
         endValue: 200,
-        property: "translateY"
-      }
-    ]
-  }
+        property: 'translateY',
+      },
+    ],
+  },
 ];
 
 const ShadowAnim = [
@@ -107,17 +107,17 @@ const ShadowAnim = [
       {
         startValue: 1,
         endValue: 1.1,
-        property: "scale"
-      }
-    ]
-  }
+        property: 'scale',
+      },
+    ],
+  },
 ];
 
 const Home = () => (
   <Section>
     <Grid>
       <Row>
-        <Col xs={12} md={4}>
+        <Col xs={12} lg={4}>
           <h1>Cute React SVG Components</h1>
           <p>
             React Kawaii is a library of cute illustrations that are easily
@@ -126,7 +126,7 @@ const Home = () => (
             mood and it's done!
           </p>
         </Col>
-        <Col xs={12} md={8}>
+        <Col xs={12} lg={8}>
           <KawaiiIllustration>
             <Plx className="shadow" parallaxData={ShadowAnim}>
               <img src={shadow} />

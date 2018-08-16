@@ -6,9 +6,9 @@ import remcalc from 'remcalc';
 const StyledSection = styled.section`
   position: relative;
   display: flex;
-  min-height: ${props => props.height}px;
+  min-height: ${props => remcalc(props.height)};
   background: ${props => props.color};
-  padding: ${remcalc(20)} ${remcalc(40)};
+  padding: ${props => (props.padding ? props.padding : '20px 40px')};
 
   > div {
     position: relative;
@@ -19,18 +19,18 @@ const StyledSection = styled.section`
   }
 `;
 
-const Section = ({ children, height, color }) => (
-  <StyledSection height={height} color={color}>
+const Section = ({ children, height, color, padding }) => (
+  <StyledSection height={height} color={color} padding={padding}>
     {children}
   </StyledSection>
 );
 
 Section.defaultProps = {
-  height: 600
+  height: 600,
 };
 
 Section.propTypes = {
-  height: PropTypes.number
+  height: PropTypes.number,
 };
 
 export default Section;

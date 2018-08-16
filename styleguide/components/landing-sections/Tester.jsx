@@ -24,6 +24,7 @@ const Box = styled.div`
   border-radius: 4px;
   max-width: ${remcalc(800)};
   min-height: ${remcalc(400)};
+  margin-top: ${remcalc(20)};
   width: 100%;
   color: #fff;
   display: inline-flex;
@@ -36,6 +37,9 @@ const Box = styled.div`
   }
   .preview {
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -47,69 +51,51 @@ class Tester extends Component {
   state = {
     activeMood: 'blissful',
     activeColor: '#FCCB7E',
-    activeSize: 200
+    activeSize: 200,
   };
 
   onUpdateColor = value => {
     this.setState({
-      activeColor: value
+      activeColor: value,
     });
   };
 
   onUpdateMood = value => {
     this.setState({
-      activeMood: value
+      activeMood: value,
     });
   };
 
   onUpdateSize = value => {
     this.setState({
-      activeSize: value
+      activeSize: value,
     });
   };
 
   render() {
-    console.log('active color parent', this.state.activeColor);
-    console.log('active mood parent', this.state.activeMood);
-
     const { activeMood, activeColor, activeSize } = this.state;
 
     return (
-      <Section height={1000} color="#E7F6FF">
+      <Section height={1000} color="#E7F6FF" padding="180px 40px 100px">
         <Wave src={topWaves} />
         <Grid>
           <Row center="xs">
             <Col xs={12} className="text-center">
               <h2>Try it out</h2>
               <p>
-                You can see how easy it is to use this library! Just set the
-                props and you are done!
+                You can see how easy it is to use this library! Just set the props and you are done!
               </p>
               <Box>
                 <span className="properties">
                   <h4>Mood</h4>
-                  <MoodSelector
-                    onUpdateMood={this.onUpdateMood}
-                    activeMood={activeMood}
-                  />
+                  <MoodSelector onUpdateMood={this.onUpdateMood} activeMood={activeMood} />
                   <h4>Color</h4>
-                  <ColorSelector
-                    onUpdateColor={this.onUpdateColor}
-                    activeColor={activeColor}
-                  />
-                  <p>Dropdown</p>
+                  <ColorSelector onUpdateColor={this.onUpdateColor} activeColor={activeColor} />
                   <h4>Size</h4>
-                  <SizeSelector
-                    onUpdateSize={this.onUpdateSize}
-                    activeSize={activeSize}
-                  />
+                  <SizeSelector onUpdateSize={this.onUpdateSize} activeSize={activeSize} />
                 </span>
                 <span className="preview">
-                  <StyledGhost
-                    color={activeColor}
-                    mood={activeMood}
-                    size={activeSize}
-                  />
+                  <StyledGhost color={activeColor} mood={activeMood} size={activeSize} />
                 </span>
               </Box>
             </Col>

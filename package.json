@@ -9,7 +9,7 @@
     "styleguide:build": "styleguidist build",
     "build": "webpack -p --progress",
     "prepublish": "npm run build",
-    "deploy": "gh-pages -d styleguide/publish",
+    "deploy": "gh-pages -d styleguide/build",
     "lint": "eslint src/**/*.jsx",
     "lint:fix": "eslint --fix src/**/*.jsx"
   },

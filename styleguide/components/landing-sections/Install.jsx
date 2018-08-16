@@ -1,10 +1,10 @@
-import React from "react";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import styled from "styled-components";
-import remcalc from "remcalc";
-import Section from "../common/Section";
+import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
+import Section from '../common/Section';
 
-const codeString = "npm i --save react-kawaii";
+const codeString = 'npm i --save react-kawaii';
 
 const Code = styled.div`
   background: #2b3847;
@@ -15,7 +15,7 @@ const Code = styled.div`
 `;
 
 const Install = () => (
-  <Section color="#fff">
+  <Section color="#fff" height="300">
     <Grid>
       <Row center="xs">
         <Col xs={12} className="text-center">
