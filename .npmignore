@@ -42,6 +42,7 @@ npm-debug.log
 .eslintrc
 .editorconfig
 .gitignore
+.vscode
 
 #js
 config.js
