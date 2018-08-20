@@ -15,7 +15,7 @@ const Code = styled.div`
 `;
 
 const Install = () => (
-  <Section color="#fff" height="300">
+  <Section color="#fff" height={300}>
     <Grid>
       <Row center="xs">
         <Col xs={12} className="text-center">

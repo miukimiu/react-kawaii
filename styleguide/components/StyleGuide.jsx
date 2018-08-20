@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Logo from "rsg-components/Logo";
-import logoImg from "./assets/images/logo.svg";
-import Markdown from "rsg-components/Markdown";
-import Styled from "rsg-components/Styled";
-import cx from "classnames";
-import Ribbon from "rsg-components/Ribbon";
-import Version from "rsg-components/Version";
-import Footer from "./common/Footer";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Logo from './Logo';
+import logoImg from './assets/images/logo.svg';
+import Markdown from 'rsg-components/Markdown';
+import Styled from 'rsg-components/Styled';
+import cx from 'classnames';
+import Ribbon from 'rsg-components/Ribbon';
+import Version from 'rsg-components/Version';
+import Footer from './common/Footer';
 
 const styles = ({
   color,
@@ -27,39 +27,36 @@ const styles = ({
       paddingLeft: 0
     }
   },
-  // content: {
-  //   // maxWidth,
-  //   padding: [[space[2], space[4]]],
-  //   margin: [[0, "auto"]],
-  //   [mq.small]: {
-  //     padding: space[2]
-  //   },
-  //   display: "block"
-  // },
+
+  main: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh'
+  },
   sidebar: {
-    backgroundColor: "#fff",
-    border: [[color.border, "solid"]],
+    backgroundColor: '#fff',
+    border: [[color.border, 'solid']],
     borderWidth: [[0, 1, 0, 0]],
-    position: "fixed",
+    position: 'fixed',
     top: 0,
     left: 0,
     bottom: 0,
     width: sidebarWidth,
-    overflow: "auto",
-    "-webkit-overflow-scrolling": "touch",
+    overflow: 'auto',
+    '-webkit-overflow-scrolling': 'touch',
     [mq.small]: {
-      position: "static",
-      width: "auto",
+      position: 'static',
+      width: 'auto',
       borderWidth: [[1, 0, 0, 0]],
       paddingBottom: space[0]
     }
   },
   logo: {
     padding: space[2],
-    borderBottom: [[1, color.border, "solid"]]
+    borderBottom: [[1, color.border, 'solid']]
   },
   footer: {
-    display: "block",
+    display: 'block',
     color: color.light,
     fontFamily: fontFamily.base,
     fontSize: fontSize.small
@@ -77,22 +74,19 @@ export function StyleGuideRenderer({
 }) {
   return (
     <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
-      <main>
+      <main className={classes.main}>
         {children}
         <Footer />
       </main>
       {hasSidebar && (
         <div className={classes.sidebar}>
           <div className={classes.logo}>
-            <Logo>
-              <img src={logoImg} />
-            </Logo>
+            <Logo />
             {version && <Version>{version}</Version>}
           </div>
           {toc}
         </div>
       )}
-      <Ribbon />
     </div>
   );
 }

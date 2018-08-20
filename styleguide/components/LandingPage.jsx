@@ -1,11 +1,11 @@
-import React from "react";
-import { injectGlobal } from "styled-components";
-import remcalc from "remcalc";
-import Home from "./landing-sections/Home";
-import UseCases from "./landing-sections/UseCases";
-import Tester from "./landing-sections/Tester";
-import Install from "./landing-sections/Install";
-import Contribute from "./landing-sections/Contribute";
+import React from 'react';
+import { injectGlobal } from 'styled-components';
+import remcalc from 'remcalc';
+import Home from './landing-sections/Home';
+import UseCases from './landing-sections/UseCases';
+import Tester from './landing-sections/Tester';
+import Install from './landing-sections/Install';
+import Contribute from './landing-sections/Contribute';
 
 injectGlobal`
   /*! http://devinhunt.github.io/typebase.css/ v0.1.0 | MIT License */
@@ -13,7 +13,8 @@ injectGlobal`
   html {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
     font-size: 120.5%;
-    color: #2B3847;
+    // color: #2B3847;
+    color: #4B4E6A;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -26,12 +27,14 @@ injectGlobal`
   }
 
   #rsg-root {
-    a {
-      // font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
-      font-weight: 600 !important;
-      color: #6168B5;
+    main {
+      a {
+        // font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
+        font-weight: 600 !important;
+        color: #6168B5;
+      }
     }
-
+    
     /* Copy & Lists */
     p {
       font-size: ${remcalc(17)};

@@ -33,17 +33,21 @@ module.exports = {
    }
  },
   theme: {
-		baseBackground: '#fff',
-		link: '#888FDC',
-		linkHover: '#3E458F',
-		border: '#D0DAE4',
-    sidebarBackground: '#fff',
+    
+    color: {
+      link: '#4B4E6A',
+      linkHover: '#2B3847',
+      baseBackground: '#fff',
+      border: '#D0DAE4',
+      sidebarBackground: '#fff',
+    },
     fontFamily: {
       base: '"Source Sans Pro", sans-serif'
     }
 	},
   styleguideComponents: {
-		StyleGuideRenderer: path.join(__dirname, 'styleguide/components/StyleGuide'),
+    StyleGuideRenderer: path.join(__dirname, 'styleguide/components/StyleGuide'),
+    SectionsRenderer: path.join(__dirname, 'styleguide/components/Sections'),
     SectionRenderer: path.join(__dirname, 'styleguide/components/Section')
 	},
   styleguideDir: 'styleguide/publish'

@@ -4,33 +4,23 @@ import styled from 'styled-components';
 import remcalc from 'remcalc';
 import logo from '../assets/images/logo.svg';
 
-const Logo = styled.div`
-  margin-right: ${remcalc(20)};
-`;
-
-const Header = styled.div`
-  display: flex;
-  padding: ${remcalc(20)} 0;
-`;
-
-const Nav = styled.nav`
-  flex: 1;
-  justify-content: flex-end;
-  display: flex;
+const Ul = styled.ul`
+  list-style: none;
+  text-align: center;
 `;
 
 const TesterDemos = () => (
   <Grid>
     <Row>
-      <Col xs={12} md={6}>
+      <Col xs={12}>
         <h2>Demos</h2>
-        <ul>
+        <Ul>
           <li>
             <a href="https://codesandbox.io/s/23rk7j098j">
               Searching with a Kawaii Animation
             </a>
           </li>
-        </ul>
+        </Ul>
       </Col>
     </Row>
   </Grid>
