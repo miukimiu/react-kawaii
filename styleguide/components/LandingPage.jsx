@@ -12,8 +12,7 @@ injectGlobal`
   /* Setup */
   html {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif !important;
-    font-size: 120.5%;
-    // color: #2B3847;
+    font-size: 122%;
     color: #4B4E6A;
     -webkit-font-smoothing: antialiased;
   }
@@ -34,14 +33,7 @@ injectGlobal`
         color: #6168B5;
       }
     }
-    
     /* Copy & Lists */
-    p {
-      font-size: ${remcalc(17)};
-      line-height: 1.5;
-      margin-top: 0.5rem;
-      margin-bottom: 0;
-    }
     ul,
     ol {
       margin-top: 1.5rem;
@@ -100,21 +92,26 @@ injectGlobal`
     h6 {
       font-size: 0.3535rem;
     }
+    .text-right {
+      text-align: right;
+    }
     .text-center {
       text-align: center;
+    }
+    .cm-s-base16-light span.cm-string {
+      color: #4B4E6A;
     }
   } // #root
 
 `;
 
 const LandingPage = () => (
-  <React.Fragment>
+  <div className="landingPage">
     <Home />
     <UseCases />
     <Tester />
     <Install />
-    <Contribute />
-  </React.Fragment>
+  </div>
 );
 
 export default LandingPage;

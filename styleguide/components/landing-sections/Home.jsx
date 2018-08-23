@@ -4,6 +4,7 @@ import Plx from 'react-plx';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 import Wave from '../common/Wave';
+import Text from '../common/Text';
 import icon from '../assets/images/kawaii-icon.svg';
 import cloud from '../assets/images/cloud.svg';
 import shadow from '../assets/images/shadow.svg';
@@ -55,15 +56,15 @@ const CloudA = [
       {
         startValue: 1,
         endValue: 1.1,
-        property: 'scale',
+        property: 'scale'
       },
       {
         startValue: 0,
         endValue: -100,
-        property: 'translateY',
-      },
-    ],
-  },
+        property: 'translateY'
+      }
+    ]
+  }
 ];
 
 const CloudB = [
@@ -74,15 +75,15 @@ const CloudB = [
       {
         startValue: 1,
         endValue: 1.2,
-        property: 'scale',
+        property: 'scale'
       },
       {
         startValue: 0,
         endValue: -200,
-        property: 'translateY',
-      },
-    ],
-  },
+        property: 'translateY'
+      }
+    ]
+  }
 ];
 
 const IconAnim = [
@@ -93,10 +94,10 @@ const IconAnim = [
       {
         startValue: 0,
         endValue: 200,
-        property: 'translateY',
-      },
-    ],
-  },
+        property: 'translateY'
+      }
+    ]
+  }
 ];
 
 const ShadowAnim = [
@@ -107,10 +108,10 @@ const ShadowAnim = [
       {
         startValue: 1,
         endValue: 1.1,
-        property: 'scale',
-      },
-    ],
-  },
+        property: 'scale'
+      }
+    ]
+  }
 ];
 
 const Home = () => (
@@ -119,12 +120,12 @@ const Home = () => (
       <Row>
         <Col xs={12} lg={4}>
           <h1>Cute React SVG Components</h1>
-          <p>
+          <Text>
             React Kawaii is a library of cute illustrations that are easily
             customisable. They are ideal to give some cuteness and personality
             to your ReactJS application. Just pick an illustration and set the
             mood and it's done!
-          </p>
+          </Text>
         </Col>
         <Col xs={12} lg={8}>
           <KawaiiIllustration>

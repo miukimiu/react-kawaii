@@ -7,6 +7,7 @@ import logo from '../assets/images/logo.svg';
 const Ul = styled.ul`
   list-style: none;
   text-align: center;
+  padding-left: 0;
 `;
 
 const TesterDemos = () => (

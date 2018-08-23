@@ -16,7 +16,11 @@ class MoodSelector extends Component {
         >
           Blissful
         </Tag>
-        <Tag active={activeMood} onClick={() => this.setMood('lovestruck')}>
+        <Tag
+          active={activeMood}
+          text="lovestruck"
+          onClick={() => this.setMood('lovestruck')}
+        >
           Lovestruck
         </Tag>
 

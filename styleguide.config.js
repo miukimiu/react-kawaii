@@ -3,8 +3,7 @@ const path = require('path')
 module.exports = {
   title: 'React Kawaii',
   pagePerSection: true,
-  sections: [
-    {
+  sections: [{
       name: 'React Kawaii',
       content: 'docs/ReactKawaii.md',
       description: 'Welcome',
@@ -12,7 +11,6 @@ module.exports = {
     {
       name: 'Getting Started',
       content: 'docs/GetStarted.md',
-      description: 'lorem ipsum',
     },
     {
       name: 'Components',
@@ -23,17 +21,15 @@ module.exports = {
   ],
   skipComponentsWithoutExample: true,
   template: {
-   head: {
-     links: [
-       {
-         rel: 'stylesheet',
-         href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'
-       }
-     ]
-   }
- },
+    head: {
+      links: [{
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'
+      }]
+    }
+  },
   theme: {
-    
+
     color: {
       link: '#4B4E6A',
       linkHover: '#2B3847',
@@ -44,11 +40,12 @@ module.exports = {
     fontFamily: {
       base: '"Source Sans Pro", sans-serif'
     }
-	},
+  },
   styleguideComponents: {
     StyleGuideRenderer: path.join(__dirname, 'styleguide/components/StyleGuide'),
     SectionsRenderer: path.join(__dirname, 'styleguide/components/Sections'),
-    SectionRenderer: path.join(__dirname, 'styleguide/components/Section')
-	},
+    SectionRenderer: path.join(__dirname, 'styleguide/components/Section'),
+    "slots/IsolateButton": path.join(__dirname, 'styleguide/components/IsolateButton')
+  },
   styleguideDir: 'styleguide/publish'
 }

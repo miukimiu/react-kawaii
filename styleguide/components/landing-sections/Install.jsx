@@ -23,6 +23,9 @@ const Install = () => (
         </Col>
         <Col xs={12} sm={8} className="text-center">
           <Code>{codeString}</Code>
+          <p>
+            See how you can <a href="/#/Getting%20Started">get started</a>
+          </p>
         </Col>
       </Row>
     </Grid>

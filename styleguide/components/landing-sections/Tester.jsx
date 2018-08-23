@@ -5,6 +5,7 @@ import remcalc from 'remcalc';
 import TesterDemos from './TesterDemos';
 import Section from '../common/Section';
 import BottomWave from '../common/Wave';
+import Text from '../common/Text';
 import ColorSelector from './ColorSelector';
 import MoodSelector from './MoodSelector';
 import SizeSelector from './SizeSelector';
@@ -83,10 +84,10 @@ class Tester extends Component {
           <Row center="xs">
             <Col xs={12} className="text-center">
               <h2>Try it out</h2>
-              <p>
+              <Text>
                 You can see how easy it is to use this library! Just set the
                 props and you are done!
-              </p>
+              </Text>
               <Box>
                 <span className="properties">
                   <h4>Mood</h4>
