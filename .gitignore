@@ -26,11 +26,10 @@ Temporary Items
 .apdisk
 
 node_modules
-dist
-dist/*
+
 lib
 .publish
-styleguide
+styleguide/build
 *.tgz
 
 _PROJECT

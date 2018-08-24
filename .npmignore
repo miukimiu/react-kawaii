@@ -26,8 +26,6 @@ Temporary Items
 .apdisk
 
 node_modules
-dist
-dist/*
 styleguide
 src
 docs
@@ -44,6 +42,7 @@ npm-debug.log
 .eslintrc
 .editorconfig
 .gitignore
+.vscode
 
 #js
 config.js
