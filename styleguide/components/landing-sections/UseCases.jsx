@@ -1,7 +1,5 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import styled from 'styled-components';
-import remcalc from 'remcalc';
 import { IceCream, Ghost, Planet } from '../../../src';
 import Section from '../common/Section';
 import ImageContainer from '../common/ImageContainer';
@@ -39,7 +37,7 @@ const UseCases = () => (
         </Col>
       </Row>
       <Row>
-        <Col md={12} lg={6}>
+        <Col md={12} lg={6} last="xs" first="lg">
           <h2>Empty States</h2>
           <Text>
             When you are building an app you have to think about those moments

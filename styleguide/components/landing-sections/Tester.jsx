@@ -31,11 +31,22 @@ const Box = styled.div`
   color: #fff;
   display: inline-flex;
 
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   span {
     width: 50%;
+    padding: ${remcalc(20)};
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
   .properties {
-    width: 50%;
+    /* width: 50%; */
   }
   .preview {
     background: #fff;
@@ -78,7 +89,7 @@ class Tester extends Component {
     const { activeMood, activeColor, activeSize } = this.state;
 
     return (
-      <Section height={1000} color="#E7F6FF" padding="200px 40px 100px">
+      <Section height={1000} color="#E7F6FF" padding="200px 20px 100px">
         <Wave src={topWaves} />
         <Grid>
           <Row center="xs">

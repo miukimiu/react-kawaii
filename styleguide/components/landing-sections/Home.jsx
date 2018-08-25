@@ -17,6 +17,16 @@ const Section = styled.section`
   background: #cdecfe;
   min-height: ${remcalc(640)};
   padding: ${remcalc(40)};
+
+  @media (max-width: 600px) {
+    p {
+      margin-bottom: ${remcalc(40)};
+    }
+  }
+
+  @media (max-width: 1000px) {
+    min-height: ${remcalc(900)};
+  }
 `;
 
 const KawaiiIllustration = styled.div`
@@ -28,6 +38,12 @@ const KawaiiIllustration = styled.div`
     position: absolute;
     top: 0px;
     z-index: 1;
+
+    @media (max-width: 1000px) {
+      img {
+        width: 100%;
+      }
+    }
   }
   .icon {
     position: absolute;
@@ -118,7 +134,7 @@ const Home = () => (
   <Section>
     <Grid>
       <Row>
-        <Col xs={12} lg={4}>
+        <Col xs={12} lg={5}>
           <h1>Cute React SVG Components</h1>
           <Text>
             React Kawaii is a library of cute illustrations that are easily
@@ -127,7 +143,7 @@ const Home = () => (
             mood and it's done!
           </Text>
         </Col>
-        <Col xs={12} lg={8}>
+        <Col xs={12} lg={7}>
           <KawaiiIllustration>
             <Plx className="shadow" parallaxData={ShadowAnim}>
               <img src={shadow} />
