@@ -17,9 +17,7 @@ const Footer = styled.footer`
   align-items: flex-end;
 
   > div > div > div {
-    @media (max-width: 1000px) {
-      padding-top: ${remcalc(5)};
-    }
+    padding-top: ${remcalc(5)};
   }
 
   @media (max-width: 1000px) {
