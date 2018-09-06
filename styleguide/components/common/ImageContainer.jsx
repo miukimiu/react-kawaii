@@ -1,15 +1,24 @@
-import React from "react";
-import styled from "styled-components";
-import remcalc from "remcalc";
-import Plx from "react-plx";
-import backCloud from "../assets/images/back-cloud.svg";
+import React from 'react';
+import styled from 'styled-components';
+import remcalc from 'remcalc';
+import Plx from 'react-plx';
+import backCloud from '../assets/images/back-cloud.svg';
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    margin: ${remcalc(80)} 0 ${remcalc(80)};
+  }
 
   .kawaii-container {
     position: absolute;
+  }
+
+  img {
+    width: 100%;
   }
 `;
 
@@ -22,7 +31,7 @@ const UseCases = ({ children, start, end }) => {
         {
           startValue: 0,
           endValue: -30,
-          property: "translateY"
+          property: 'translateY'
         }
       ]
     }
@@ -36,7 +45,7 @@ const UseCases = ({ children, start, end }) => {
         {
           startValue: 0,
           endValue: 30,
-          property: "translateY"
+          property: 'translateY'
         }
       ]
     }

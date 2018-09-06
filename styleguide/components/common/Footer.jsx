@@ -16,8 +16,26 @@ const Footer = styled.footer`
   height: ${remcalc(180)};
   align-items: flex-end;
 
+  > div > div > div {
+    padding-top: ${remcalc(5)};
+  }
+
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
+
   .generated {
     text-align: right;
+
+    @media (max-width: 1000px) {
+      text-align: center;
+    }
+  }
+
+  .text-right {
+    @media (max-width: 1000px) {
+      text-align: center !important;
+    }
   }
 
   > div {

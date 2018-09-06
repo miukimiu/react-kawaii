@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Logo from './Logo';
-import logoImg from './assets/images/logo.svg';
-import Markdown from 'rsg-components/Markdown';
 import Styled from 'rsg-components/Styled';
 import cx from 'classnames';
-import Ribbon from 'rsg-components/Ribbon';
+import Sidebar from './common/Sidebar';
+import ToggleMenu from './common/ToggleMenu';
 import Version from 'rsg-components/Version';
 import Footer from './common/Footer';
+import menuIcon from './assets/images/menu.svg';
+import menuClose from './assets/images/close.svg';
 
 const styles = ({
   color,
@@ -63,32 +64,51 @@ const styles = ({
   }
 });
 
-export function StyleGuideRenderer({
-  classes,
-  title,
-  version,
-  homepageUrl,
-  children,
-  toc,
-  hasSidebar
-}) {
-  return (
-    <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
-      <main className={classes.main}>
-        {children}
-        <Footer />
-      </main>
-      {hasSidebar && (
-        <div className={classes.sidebar}>
-          <div className={classes.logo}>
-            <Logo />
-            {version && <Version>{version}</Version>}
-          </div>
-          {toc}
-        </div>
-      )}
-    </div>
-  );
+class StyleGuideRenderer extends Component {
+  state = {
+    menuActive: false
+  };
+  render() {
+    const {
+      classes,
+      title,
+      version,
+      homepageUrl,
+      children,
+      toc,
+      hasSidebar
+    } = this.props;
+
+    const toggleMenu = () => {
+      this.setState({ menuActive: !this.state.menuActive });
+    };
+
+    return (
+      <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
+        <main className={classes.main}>
+          <ToggleMenu>
+            <a onClick={toggleMenu}>
+              <img src={menuIcon} className="menu" />
+            </a>
+          </ToggleMenu>
+          {children}
+          <Footer />
+        </main>
+        {hasSidebar && (
+          <Sidebar menuActive={this.state.menuActive}>
+            <a onClick={toggleMenu}>
+              <img src={menuClose} className="close" />
+            </a>
+            <div className={classes.logo}>
+              <Logo />
+              {version && <Version>{version}</Version>}
+            </div>
+            {toc}
+          </Sidebar>
+        )}
+      </div>
+    );
+  }
 }
 
 StyleGuideRenderer.propTypes = {

@@ -10,6 +10,10 @@ const StyledSection = styled.section`
   background: ${props => props.color};
   padding: ${props => (props.padding ? props.padding : '20px 40px')};
 
+  @media (max-width: 600px) {
+    padding: ${props => (props.padding ? props.padding : '20px 20px')};
+  }
+
   > div {
     position: relative;
 
@@ -26,11 +30,11 @@ const Section = ({ children, height, color, padding }) => (
 );
 
 Section.defaultProps = {
-  height: 600,
+  height: 600
 };
 
 Section.propTypes = {
-  height: PropTypes.number,
+  height: PropTypes.number
 };
 
 export default Section;

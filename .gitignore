@@ -29,7 +29,7 @@ node_modules
 
 lib
 .publish
-styleguide/build
+styleguide/publish
 *.tgz
 
 _PROJECT

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import PropTypes from 'prop-types';
 import Styled from 'rsg-components/Styled';
 import SectionHeading from 'rsg-components/SectionHeading';
 import Markdown from 'rsg-components/Markdown';
 import LandingPage from './LandingPage';
+import Wrapper from './common/Wrapper';
 
 const styles = ({ fontFamily, color, space }) => ({
   headingSpacer: {
@@ -33,7 +34,7 @@ export function SectionRenderer(allProps) {
       {slug === 'react-kawaii' ? (
         <LandingPage />
       ) : (
-        <Grid>
+        <Wrapper>
           <Row>
             <Col xs={12}>
               <section className={classes.root}>
@@ -55,7 +56,7 @@ export function SectionRenderer(allProps) {
               </section>
             </Col>
           </Row>
-        </Grid>
+        </Wrapper>
       )}
     </React.Fragment>
   );
