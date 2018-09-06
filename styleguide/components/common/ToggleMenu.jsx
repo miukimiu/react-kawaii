@@ -5,10 +5,9 @@ const ToggleMenu = styled.div`
   display: none;
 
   @media (max-width: 600px) {
-    display: grid;
+    display: block;
     z-index: 999;
     width: 100%;
-    height: ${remcalc(60)};
 
     .menu {
       position: fixed;

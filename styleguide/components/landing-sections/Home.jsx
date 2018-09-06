@@ -19,7 +19,6 @@ const Section = styled.section`
   padding: ${remcalc(40)};
 
   @media (max-width: 600px) {
-    padding-top: 0;
     p {
       margin-bottom: ${remcalc(40)};
     }
