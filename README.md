@@ -30,17 +30,17 @@ So you want to help developing some cute UI components?
 
 If you want to develop a component
 
-* `npm i`
+- `npm i`
 
-* `npm run styleguide`
+- `npm run styleguide`
 
 If you want to build
 
-* `npm run styleguide:build`
+- `npm run styleguide:build`
 
 ## Documentation
 
-See https://miukimiu.github.io/react-kawaii/ and try to edit sample code.
+See https://react-kawaii.now.sh/
 
 ### Components
 
@@ -48,20 +48,20 @@ All the components are SVG illustrations. You can pick different moods: sad, sho
 
 Available components:
 
-* [x] Browser - A cute browser
-* [x] CreditCard - A cute credit card
-* [x] Ghost - A cute ghost
-* [x] IceCream - A cute ice-cream
-* [x] Mug - A cute mug
-* [x] Planet - A cute planet
-* [x] SpeechBubble - A cute speech bubble
-* [x] More Kawaii components coming soon...
+- [x] Browser - A cute browser
+- [x] CreditCard - A cute credit card
+- [x] Ghost - A cute ghost
+- [x] IceCream - A cute ice-cream
+- [x] Mug - A cute mug
+- [x] Planet - A cute planet
+- [x] SpeechBubble - A cute speech bubble
+- [x] More Kawaii components coming soon...
 
 ## Contributors
 
-* [miukimiu](https://github.com/miukimiu)
-* [aliciacatalina](https://github.com/aliciacatalina)
-* [SaraVieira](https://github.com/SaraVieira)
-* [kombucha](https://github.com/kombucha)
-* [codenakama](https://github.com/codenakama)
-* [yuanchuan](https://github.com/yuanchuan)
+- [miukimiu](https://github.com/miukimiu)
+- [aliciacatalina](https://github.com/aliciacatalina)
+- [SaraVieira](https://github.com/SaraVieira)
+- [kombucha](https://github.com/kombucha)
+- [codenakama](https://github.com/codenakama)
+- [yuanchuan](https://github.com/yuanchuan)
