@@ -8,7 +8,7 @@ const Face = ({ mood, uniqueId, ...rest }) => (
       <path d={paths.defs} id="kawaii-face__path-1" />
     </defs>
     <g id="kawaii-face__mouth" transform="translate(18.000000, 16.000000)">
-      {(mood === 'blissful' || mood === 'lovestruck') && (
+      {(mood === 'blissful' || mood === 'lovestruck' || mood === 'excited') && (
         <g
           id="kawaii-face__mouth__joy"
           transform="translate(0.000000, 1.000000)"
@@ -76,7 +76,7 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           <path d={paths.bliss2} id="Fill-5" />
         </g>
       )}
-      {(mood === 'happy' || mood === 'sad' || mood === 'shocked') && (
+      {(mood === 'happy' || mood === 'sad' || mood === 'shocked' || mood === 'excited') && (
         <g
           id="kawaii-face__eyes__circle"
           transform="translate(1.000000, 2.000000)"
@@ -100,7 +100,7 @@ const Face = ({ mood, uniqueId, ...rest }) => (
 );
 
 Face.propTypes = {
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck'])
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited'])
 };
 
 Face.defaultProps = {
