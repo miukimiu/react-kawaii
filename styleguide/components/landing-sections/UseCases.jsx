@@ -4,6 +4,16 @@ import { IceCream, Ghost, Planet } from '../../../src';
 import Section from '../common/Section';
 import ImageContainer from '../common/ImageContainer';
 import Text from '../common/Text';
+import PlanetAnimation from '../animations/PlanetAnimation';
+
+
+const animationExample = () => {
+  let openEyes = true;
+  setInterval(() => openEyes = !openEyes, 1000)
+  return openEyes ? "excited" : "happy";
+};
+
+const planetMood = animationExample();
 
 const UseCases = () => (
   <Section color="#fff">
@@ -59,7 +69,7 @@ const UseCases = () => (
       <Row>
         <Col md={12} lg={6}>
           <ImageContainer start="1500" end="2000">
-            <Planet />
+            <PlanetAnimation/>
           </ImageContainer>
         </Col>
         <Col md={12} lg={6}>
