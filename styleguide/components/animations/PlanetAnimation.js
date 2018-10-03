@@ -14,12 +14,6 @@ class PlanetAnimation extends Component {
     }, 1500);
   }
 
-
-  shouldComponentUpdate(nextState) {
-    if (this.state.openEyes !== nextState.openEyes) return true;
-    return false;
-  }
-
   render() {
     return (
       <Planet mood={this.state.openEyes ? "blissful" : "excited"} />
