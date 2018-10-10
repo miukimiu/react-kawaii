@@ -65,3 +65,4 @@ Available components:
 - [kombucha](https://github.com/kombucha)
 - [codenakama](https://github.com/codenakama)
 - [yuanchuan](https://github.com/yuanchuan)
+- [khendrikse](https://github.com/khendrikse)
