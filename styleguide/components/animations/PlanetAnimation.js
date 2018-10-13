@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
 import Planet from '../../../src/components/planet/Planet';
-import { styler, tween, merge, action } from 'popmotion';
-import { interpolate } from 'flubber';
+import { styler, tween, merge, action, easing, keyframes } from 'popmotion';
 
 class PlanetAnimation extends Component {
   constructor(props) {
     super(props);
 
     this.planetRef = React.createRef();
-    this.myRef = React.createRef();
   }
 
   componentDidMount() {
-    console.log('compdidm planet', this.planetRef.current);
-    console.log('compdidm myRef?', this.myRef.current);
-
     const mouth = styler(
-      this.planetRef.current.getElementById('kawaii-face__path-1')
+      this.planetRef.current.querySelector('#Combined-Shape')
     );
-    const tongue = styler(document.getElementById('kawaii-face__tongue'));
+    const tongue = styler(
+      this.planetRef.current.querySelector('#kawaii-face__tongue')
+    );
     const eyeLeft = styler(
-      document.querySelector('#kawaii-face__eyes__arc path:first-child')
+      this.planetRef.current.querySelector(
+        '#kawaii-face__eyes__arc path:first-child'
+      )
     );
     const eyeRight = styler(
-      document.querySelector('#kawaii-face__eyes__arc path:last-child')
+      this.planetRef.current.querySelector(
+        '#kawaii-face__eyes__arc path:last-child'
+      )
     );
+    const body = styler(this.planetRef.current.querySelector('svg'));
 
     const showEye = tween({
       from: { scaleY: 0, opacity: 1 },
@@ -58,6 +60,19 @@ class PlanetAnimation extends Component {
       duration: 300,
       flip: 1
     });
+
+    keyframes({
+      values: [
+        { originX: 0, originY: 0, rotate: 0 },
+        { rotate: 8 },
+        { rotate: 0 },
+        { rotate: -10 },
+        { rotate: 0 }
+      ],
+      duration: 3000,
+      ease: easing.linear,
+      loop: Infinity
+    }).start(body.set);
 
     const eyeLeftAction = action(({ complete }) => {
       showEye.start({
@@ -105,20 +120,10 @@ class PlanetAnimation extends Component {
     merge(eyeLeftAction, eyeRightAction, mouthAction, tongueAction).start();
   }
 
-  onMouseOver = () => {
-    console.log('over');
-
-    console.log('null pk?', this.planetRef.current);
-    console.log('myRef pk?', this.myRef.current);
-  };
-
   render() {
-    console.log('render planet', this.planetRef.current);
-    console.log('render myRef?', this.myRef.current);
-
     return (
-      <div ref={this.myRef}>
-        <Planet ref={this.planetRef} color="red" />
+      <div ref={this.planetRef}>
+        <Planet />
       </div>
     );
   }

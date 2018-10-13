@@ -5,14 +5,8 @@ import getUniqueId from '../../utils/getUniqueId';
 import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Ghost = React.forwardRef(({ size, color, mood, className }, ref) => (
-  <Wrapper
-    style={{ width: size * 0.77, height: size }}
-    width={size * 0.77}
-    height={size}
-    color={color}
-    className={className}
-  >
+const Ghost = ({ size, color, mood, className }) => (
+  <Wrapper className={className}>
     <svg
       width={size * 0.77}
       height={size}
@@ -38,7 +32,7 @@ const Ghost = React.forwardRef(({ size, color, mood, className }, ref) => (
       </g>
     </svg>
   </Wrapper>
-));
+);
 
 Ghost.propTypes = {
   /**

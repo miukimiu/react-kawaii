@@ -5,7 +5,7 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Mug = React.forwardRef(({ size, color, mood, className }, ref) => (
+const Mug = ({ size, color, mood, className }) => (
   <Wrapper classNames={className}>
     <svg
       width={size * 1.5}
@@ -32,7 +32,7 @@ const Mug = React.forwardRef(({ size, color, mood, className }, ref) => (
       </g>
     </svg>
   </Wrapper>
-));
+);
 
 Mug.propTypes = {
   /**

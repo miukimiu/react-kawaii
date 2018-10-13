@@ -5,14 +5,8 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const CreditCard = React.forwardRef(({ size, color, mood, className }, ref) => (
-  <Wrapper
-    style={{ width: size * 1.38, height: size }}
-    width={size * 1.38}
-    height={size}
-    color={color}
-    className={className}
-  >
+const CreditCard = ({ size, color, mood, className }) => (
+  <Wrapper className={className}>
     <svg
       width={size * 1.38}
       height={size}
@@ -43,7 +37,7 @@ const CreditCard = React.forwardRef(({ size, color, mood, className }, ref) => (
       </g>
     </svg>
   </Wrapper>
-));
+);
 
 CreditCard.propTypes = {
   /**
