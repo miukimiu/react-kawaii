@@ -45,7 +45,14 @@ Ghost.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
+  mood: PropTypes.oneOf([
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
+    'excited'
+  ]),
   /**
    * Hex color
    */

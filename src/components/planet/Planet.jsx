@@ -60,7 +60,14 @@ Planet.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited']),
+  mood: PropTypes.oneOf([
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
+    'excited'
+  ]),
   /**
    * Hex color
    */

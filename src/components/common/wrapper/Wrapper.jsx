@@ -7,11 +7,21 @@ const KawaiiWrapper = styled.div`
   position: relative;
 `;
 
-const Wrapper = ({ style, color, children, className }) => (
-  <KawaiiWrapper color={color} className={className}>
-    {children}
-  </KawaiiWrapper>
-);
+class Wrapper extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { color, children, className } = this.props;
+
+    return (
+      <KawaiiWrapper color={color} className={className}>
+        {children}
+      </KawaiiWrapper>
+    );
+  }
+}
 
 Wrapper.propTypes = {
   style: stylePropType.isRequired,
