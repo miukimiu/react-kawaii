@@ -1,11 +1,11 @@
 import React from 'react';
-import { injectGlobal } from 'styled-components';
 import remcalc from 'remcalc';
-import Home from './landing-sections/Home';
-import UseCases from './landing-sections/UseCases';
-import Tester from './landing-sections/Tester';
-import Install from './landing-sections/Install';
+import { injectGlobal } from 'styled-components';
 import Contribute from './landing-sections/Contribute';
+import Home from './landing-sections/Home';
+import Install from './landing-sections/Install';
+import Tester from './landing-sections/Tester';
+import UseCases from './landing-sections/UseCases';
 
 injectGlobal`
   /*! http://devinhunt.github.io/typebase.css/ v0.1.0 | MIT License */
@@ -108,12 +108,60 @@ injectGlobal`
 
 `;
 
+const contributors = [
+  {
+    name: 'Elizabet Oliveira',
+    githubUsername: 'miukimiu',
+    githubUrl: 'https://github.com/miukimiu',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/2750668?s=460&v=4'
+  },
+  {
+    name: 'Alicia Catalina',
+    githubUsername: 'aliciacatalina',
+    githubUrl: 'https://github.com/aliciacatalina',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/1421493?s=460&v=4'
+  },
+  {
+    name: 'Sara Vieira',
+    githubUsername: 'SaraVieira',
+    githubUrl: 'https://github.com/SaraVieira',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/1051509?s=400&v=4'
+  },
+  {
+    name: 'Vincent Lemeunier',
+    githubUsername: 'kombucha',
+    githubUrl: 'https://github.com/kombucha',
+    imageUrl: 'https://avatars0.githubusercontent.com/u/1584370?s=460&v=4'
+  },
+  {
+    name: 'Ricardo Abreu',
+    githubUsername: 'codenakama',
+    githubUrl: 'https://github.com/codenakama',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/5193050?s=460&v=4'
+  },
+  {
+    name: 'Yuan Chuan',
+    githubUsername: 'yuanchuan',
+    githubUrl: 'https://github.com/yuanchuan',
+    imageUrl: 'https://avatars3.githubusercontent.com/u/250426?s=460&v=4'
+  },
+  {
+    name: 'Karin Hendrikse',
+    githubUsername: 'khendrikse',
+    githubUrl: 'https://github.com/khendrikse',
+    imageUrl: 'https://avatars3.githubusercontent.com/u/30577427?s=460&v=4'
+  }
+];
+
 const LandingPage = () => (
   <div className="landingPage">
     <Home />
     <UseCases />
     <Tester />
     <Install />
+    <Contribute
+      contributors={contributors.map((c, index) => ({ ...c, id: index + 1 }))}
+    />
   </div>
 );
 
