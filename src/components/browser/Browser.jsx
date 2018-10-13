@@ -6,13 +6,7 @@ import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const Browser = ({ size, color, mood, className }) => (
-  <Wrapper
-    style={{ width: size * 1.44, height: size }}
-    width={size * 1.44}
-    height={size}
-    color={color}
-    className={className}
-  >
+  <Wrapper classNames={className}>
     <svg
       width={size * 1.44}
       height={size}
@@ -59,7 +53,14 @@ Browser.propTypes = {
    * Size of the width
    */
   size: PropTypes.number,
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck']),
+  mood: PropTypes.oneOf([
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
+    'excited'
+  ]),
   /**
    * Hex color
    */

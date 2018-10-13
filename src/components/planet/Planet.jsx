@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import paths from './paths';
 import Face from '../common/face/Face';
@@ -6,13 +6,7 @@ import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const Planet = ({ size, color, mood, className }) => (
-  <Wrapper
-    style={{ width: size, height: size }}
-    width={size}
-    height={size}
-    color={color}
-    className={className}
-  >
+  <Wrapper classNames={className}>
     <svg
       width={size}
       height={size}
@@ -60,7 +54,14 @@ Planet.propTypes = {
    * Size of the width
    * */
   size: PropTypes.number,
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited']),
+  mood: PropTypes.oneOf([
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
+    'excited'
+  ]),
   /**
    * Hex color
    */

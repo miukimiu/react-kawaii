@@ -21,6 +21,11 @@ const TesterDemos = () => (
               Searching with a Kawaii Animation
             </a>
           </li>
+          <li>
+            <a href="https://codesandbox.io/s/z397wo86p3">
+              Animating a Kawaii with Popmotion
+            </a>
+          </li>
         </Ul>
       </Col>
     </Row>

@@ -101,6 +101,9 @@ injectGlobal`
     .cm-s-base16-light span.cm-string {
       color: #4B4E6A;
     }
+    .landingPage {
+      overflow: hidden;
+    }
   } // #root
 
 `;
