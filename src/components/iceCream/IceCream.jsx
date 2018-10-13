@@ -5,7 +5,7 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const IceCream = ({ size, color, mood, className }) => (
+const IceCream = React.forwardRef(({ size, color, mood, className }, ref) => (
   <Wrapper
     style={{ width: size * 0.5, height: size }}
     width={size * 0.5}
@@ -40,7 +40,7 @@ const IceCream = ({ size, color, mood, className }) => (
       </g>
     </svg>
   </Wrapper>
-);
+));
 
 IceCream.propTypes = {
   /**

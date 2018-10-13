@@ -5,14 +5,8 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Browser = ({ size, color, mood, className }) => (
-  <Wrapper
-    style={{ width: size * 1.44, height: size }}
-    width={size * 1.44}
-    height={size}
-    color={color}
-    className={className}
-  >
+const Browser = React.forwardRef(({ size, color, mood, className }, ref) => (
+  <Wrapper classNames={className}>
     <svg
       width={size * 1.44}
       height={size}
@@ -52,7 +46,7 @@ const Browser = ({ size, color, mood, className }) => (
       </g>
     </svg>
   </Wrapper>
-);
+));
 
 Browser.propTypes = {
   /**

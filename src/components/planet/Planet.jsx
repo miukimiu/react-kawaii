@@ -5,14 +5,8 @@ import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
-const Planet = ({ size, color, mood, className }) => (
-  <Wrapper
-    style={{ width: size, height: size }}
-    width={size}
-    height={size}
-    color={color}
-    className={className}
-  >
+const Planet = React.forwardRef(({ size, color, mood, className }, ref) => (
+  <Wrapper classNames={className}>
     <svg
       width={size}
       height={size}
@@ -20,6 +14,7 @@ const Planet = ({ size, color, mood, className }) => (
       viewBox="0 0 134 134"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      ref={ref}
     >
       <defs>
         <path d={paths.shape} id="kawaii-planet__shape--path" />
@@ -53,7 +48,7 @@ const Planet = ({ size, color, mood, className }) => (
       </g>
     </svg>
   </Wrapper>
-);
+));
 
 Planet.propTypes = {
   /**
