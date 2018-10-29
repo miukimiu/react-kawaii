@@ -1,0 +1,8 @@
+{
+  "alias": ["react-kawaii"],
+  "type": "static",
+  "static": {
+    "public": "styleguide/publish"
+  },
+  "files": ["styleguide/publish"]
+}

@@ -29,7 +29,6 @@ node_modules
 
 lib
 .publish
-styleguide/publish
 *.tgz
 
 _PROJECT
