@@ -66,3 +66,6 @@ Available components:
 - [codenakama](https://github.com/codenakama)
 - [yuanchuan](https://github.com/yuanchuan)
 - [khendrikse](https://github.com/khendrikse)
+- [Italox](https://github.com/Italox)
+- [Vinnl](https://github.com/Vinnl)
+- [eliasparis](https://github.com/eliasparis)

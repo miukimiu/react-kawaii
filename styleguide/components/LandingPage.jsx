@@ -150,6 +150,24 @@ const contributors = [
     githubUsername: 'khendrikse',
     githubUrl: 'https://github.com/khendrikse',
     imageUrl: 'https://avatars3.githubusercontent.com/u/30577427?s=460&v=4'
+  },
+  {
+    name: 'Italo Aurelio',
+    githubUsername: 'Italox',
+    githubUrl: 'https://github.com/Italox',
+    imageUrl: 'https://avatars2.githubusercontent.com/u/11761170?s=460&v=4'
+  },
+  {
+    name: 'Vincent',
+    githubUsername: 'Vinnl',
+    githubUrl: 'https://github.com/Vinnl',
+    imageUrl: 'https://avatars0.githubusercontent.com/u/4251?s=460&v=4'
+  },
+  {
+    name: 'eliasparis',
+    githubUsername: 'eliasparis',
+    githubUrl: 'https://github.com/eliasparis',
+    imageUrl: 'https://avatars2.githubusercontent.com/u/13252924?s=460&v=4'
   }
 ];
 
