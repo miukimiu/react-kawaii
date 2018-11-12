@@ -1,4 +1,9 @@
 const path = require('path')
+const MiniHtmlWebpackPlugin = require('mini-html-webpack-plugin');
+const {
+  generateCSSReferences,
+  generateJSReferences
+} = MiniHtmlWebpackPlugin;
 
 module.exports = {
   title: 'React Kawaii',
@@ -22,6 +27,12 @@ module.exports = {
   skipComponentsWithoutExample: true,
   template: {
     head: {
+      meta: [
+        {
+          name: 'description',
+          content: 'Cute React SVG Components'
+        },
+      ],
       links: [{
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'

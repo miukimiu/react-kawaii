@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 import Logo from './Logo';
 import Styled from 'rsg-components/Styled';
@@ -9,6 +10,9 @@ import Version from 'rsg-components/Version';
 import Footer from './common/Footer';
 import menuIcon from './assets/images/menu.svg';
 import menuClose from './assets/images/close.svg';
+
+ReactGA.initialize('UA-33231065-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const styles = ({
   color,
