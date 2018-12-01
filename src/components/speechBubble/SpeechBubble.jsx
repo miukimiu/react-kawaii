@@ -62,7 +62,8 @@ SpeechBubble.propTypes = {
     'happy',
     'blissful',
     'lovestruck',
-    'excited'
+    'excited',
+    'ko'
   ]),
 
   /**
