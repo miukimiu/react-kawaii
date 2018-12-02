@@ -44,7 +44,7 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           fill="#000000"
         />
       )}
-      {mood === 'sad' && (
+      {(mood === 'sad' || mood === 'ko') && (
         <path
           d={paths.sad}
           id="kawaii-face__mouth__sad"
@@ -95,12 +95,22 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           <path d={paths.lovestruck2} id="Shape" />
         </g>
       )}
+      {mood === 'ko' && (
+        <g
+          id="kawaii-face__eyes__ko"
+          transform="translate(1.500000, 1.000000)"
+          fillRule="nonzero"
+        >
+          <path d={paths.ko1} id="Cross" />
+          <path d={paths.ko2} id="Cross" />
+        </g>
+      )}
     </g>
   </g>
 );
 
 Face.propTypes = {
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited'])
+  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited', 'ko'])
 };
 
 Face.defaultProps = {

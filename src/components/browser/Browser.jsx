@@ -59,7 +59,8 @@ Browser.propTypes = {
     'happy',
     'blissful',
     'lovestruck',
-    'excited'
+    'excited',
+    'ko'
   ]),
   /**
    * Hex color
@@ -69,7 +70,7 @@ Browser.propTypes = {
 
 Browser.defaultProps = {
   size: 180,
-  mood: 'blissful',
+  mood: 'ko',
   color: '#FDA7DC'
 };
 
