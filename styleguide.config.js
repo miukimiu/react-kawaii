@@ -1,28 +1,26 @@
-const path = require('path')
+const path = require('path');
 const MiniHtmlWebpackPlugin = require('mini-html-webpack-plugin');
-const {
-  generateCSSReferences,
-  generateJSReferences
-} = MiniHtmlWebpackPlugin;
+const { generateCSSReferences, generateJSReferences } = MiniHtmlWebpackPlugin;
 
 module.exports = {
   title: 'React Kawaii',
   pagePerSection: true,
-  sections: [{
+  sections: [
+    {
       name: 'React Kawaii',
       content: 'docs/ReactKawaii.md',
-      description: 'Welcome',
+      description: 'Welcome'
     },
     {
       name: 'Getting Started',
-      content: 'docs/GetStarted.md',
+      content: 'docs/GetStarted.md'
     },
     {
       name: 'Components',
       components: './src/**/[A-Z]*.jsx',
       exampleMode: 'expand',
       usageMode: 'expand'
-    },
+    }
   ],
   skipComponentsWithoutExample: true,
   template: {
@@ -31,32 +29,40 @@ module.exports = {
         {
           name: 'description',
           content: 'Cute React SVG Components'
-        },
+        }
       ],
-      links: [{
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'
-      }]
+      links: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'
+        }
+      ]
     }
   },
   theme: {
-
     color: {
       link: '#4B4E6A',
       linkHover: '#2B3847',
       baseBackground: '#fff',
       border: '#D0DAE4',
-      sidebarBackground: '#fff',
+      sidebarBackground: '#fff'
     },
     fontFamily: {
       base: '"Source Sans Pro", sans-serif'
     }
   },
   styleguideComponents: {
-    StyleGuideRenderer: path.join(__dirname, 'styleguide/components/StyleGuide'),
+    StyleGuideRenderer: path.join(
+      __dirname,
+      'styleguide/components/StyleGuide'
+    ),
     SectionsRenderer: path.join(__dirname, 'styleguide/components/Sections'),
     SectionRenderer: path.join(__dirname, 'styleguide/components/Section'),
-    "slots/IsolateButton": path.join(__dirname, 'styleguide/components/IsolateButton')
+    'slots/IsolateButton': path.join(
+      __dirname,
+      'styleguide/components/IsolateButton'
+    )
   },
   styleguideDir: 'styleguide/publish'
-}
+};
