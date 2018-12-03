@@ -1,8 +1,5 @@
 {
-  "alias": ["react-kawaii"],
-  "type": "static",
-  "static": {
-    "public": "styleguide/publish"
-  },
-  "files": ["styleguide/publish"]
+  "version": 2,
+  "name": "react-kawaii",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }

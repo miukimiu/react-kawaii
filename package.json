@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "",
-    "now-start": "styleguidist build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "npm-build": "webpack -p --progress",
