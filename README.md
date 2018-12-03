@@ -48,6 +48,7 @@ All the components are SVG illustrations. You can pick different moods: sad, sho
 
 Available components:
 
+- [x] Backpack - A cute backpack
 - [x] Browser - A cute browser
 - [x] CreditCard - A cute credit card
 - [x] Ghost - A cute ghost
