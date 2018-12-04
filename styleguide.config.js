@@ -64,5 +64,5 @@ module.exports = {
       'styleguide/components/IsolateButton'
     )
   },
-  styleguideDir: 'styleguide/publish'
+  styleguideDir: 'build/react-kawaii'
 };
