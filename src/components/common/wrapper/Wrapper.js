@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const Wrapper = styled.div`
-  position: relative;
-`;
+function Wrapper(props) {
+  return React.createElement('div', {
+    ...props,
+    style: { position: 'relative', ...(props.style || {}) }
+  });
+}
 
 export default Wrapper;
