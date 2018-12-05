@@ -6,7 +6,7 @@ import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const SpeechBubble = ({ size, color, mood, className }) => (
-  <Wrapper classNames={className}>
+  <Wrapper className={className}>
     <svg
       width={size}
       height={size}
