@@ -103,7 +103,7 @@ class StyleGuideRenderer extends Component {
             <a onClick={toggleMenu}>
               <img src={menuClose} className="close" />
             </a>
-            <div className={classes.logo}>
+            <div className={`${classes.logo} logo`}>
               <Logo />
               {version && <Version>{version}</Version>}
             </div>
