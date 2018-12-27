@@ -52,7 +52,7 @@ const UseCases = () => (
           <Text>
             When you are building an app you have to think about those moments
             when there is no content. When the user lands in your app for the
-            first time, and there is nothing there. Or when he achieves
+            first time, and there is nothing there. Or when they achieve
             something, and it's a moment of success.
           </Text>
           <Text>
