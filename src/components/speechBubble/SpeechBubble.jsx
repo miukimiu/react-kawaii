@@ -8,42 +8,35 @@ import Wrapper from '../common/wrapper/Wrapper';
 const SpeechBubble = ({ size, color, mood, className }) => (
   <Wrapper className={className}>
     <svg
-      width={size}
+      width={size * 1.3}
       height={size}
-      version="1.1"
-      viewBox="0 0 134 134"
+      viewBox="0 0 186 143"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <defs>
-        <path d={paths.shape} id="kawaii-speechBubble__shape--path" />
-        <path d={paths.shadow} id="kawaii-speechBubble__shadow--path" />
-      </defs>
-      <g id="Kawaii-speechBubble">
-        <g id="Kawaii-speechBubble__body">
-          <mask fill="#fff">
-            <use xlinkHref="#kawaii-speechBubble__shape--path" />
-          </mask>
-          <use
-            id="Kawaii-speechBubble__shape"
-            fill={color}
-            xlinkHref="#kawaii-speechBubble__shape--path"
-          />
-          <mask fill="#fff">
-            <use xlinkHref="#kawaii-speechBubble__shadow--path" />
-          </mask>
-          <use
-            id="Kawaii-speechBubble__shadow"
-            fill="#000"
-            opacity=".1"
-            xlinkHref="#kawaii-speechBubble__shadow--path"
-          />
+      <g id="Kawaii-Builder" fill="none" fillRule="evenodd">
+        <g id="Kawaii-speechBubble" transform="translate(-27 -57)">
+          <g id="kawaii-speechBubble" transform="translate(27 57)">
+            <path
+              d={paths.body}
+              id="kawaii-speechBubble_body"
+              fill={color}
+              fillRule="nonzero"
+            />
+            <path
+              d={paths.shadow}
+              id="kawaii-speechBubble_shadow"
+              fill="#121212"
+              fillRule="nonzero"
+              opacity="0.07"
+            />
+            <Face
+              mood={mood}
+              transform="translate(60 46)"
+              uniqueId={getUniqueId()}
+            />
+          </g>
         </g>
-        <Face
-          mood={mood}
-          transform="translate(34 57)"
-          uniqueId={getUniqueId()}
-        />
       </g>
     </svg>
   </Wrapper>
@@ -71,8 +64,8 @@ SpeechBubble.propTypes = {
 };
 
 SpeechBubble.defaultProps = {
-  size: 150,
-  mood: 'blissful',
+  size: 220,
+  mood: 'happy',
   color: '#83D1FB'
 };
 

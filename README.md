@@ -50,6 +50,7 @@ Available components:
 
 - [x] Backpack - A cute backpack
 - [x] Browser - A cute browser
+- [x] Cat - A cute cat
 - [x] CreditCard - A cute credit card
 - [x] Ghost - A cute ghost
 - [x] IceCream - A cute ice-cream
