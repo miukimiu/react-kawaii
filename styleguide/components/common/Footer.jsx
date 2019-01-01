@@ -74,7 +74,7 @@ export default () => (
       </Row>
       <Row>
         <Col xs={12} lg={6}>
-          Crafted by <a href="http://www.miukimiu.com/">Miuki Miu</a> 2018 MIT
+          Crafted by <a href="http://www.miukimiu.com/">Miuki Miu</a> {(new Date()).getFullYear()} MIT
         </Col>
         <Col xs={12} lg={6} className="text-right">
           Generated with{' '}
