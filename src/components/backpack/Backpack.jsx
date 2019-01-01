@@ -96,7 +96,6 @@ const Backpack = ({ size, color, mood, className }) => (
             transform="translate(36 70)"
             uniqueId={getUniqueId()}
           />
-
           <path
             id="main-compartment__top"
             fill="#121212"
