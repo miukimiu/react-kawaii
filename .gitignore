@@ -35,3 +35,4 @@ _PROJECT
 npm-debug.log
 
 build/react-kawaii
+yarn.lock
