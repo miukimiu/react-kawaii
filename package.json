@@ -6,8 +6,6 @@
   "module": "lib/es/index.js",
   "scripts": {
     "test": "",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
     "npm-build": "webpack -p --progress && babel src --out-dir lib/es --sourceMaps",
     "precommit": "pretty-quick --staged",
     "prepublish": "npm run npm-build"
@@ -64,7 +62,6 @@
     "react-ga": "^2.5.3",
     "react-plx": "^1.3.7",
     "react-style-proptype": "^3.2.1",
-    "react-styleguidist": "^8.0.6",
     "remcalc": "^1.0.10",
     "style-loader": "^0.23.1",
     "styled-components": "^4.1.2",

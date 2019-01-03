@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Svg, { G, Path, Use, Defs, Mask } from 'react-native-svg';
 import paths from './paths';
 import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
-
-import Svg, { G, Path, Use, Defs, Mask } from 'react-native-svg';
 
 const Planet = ({ size, color, mood, className }) => (
   <Wrapper className={className}>
@@ -60,9 +59,6 @@ const Planet = ({ size, color, mood, className }) => (
 );
 
 Planet.propTypes = {
-  /**
-   * Size of the width
-   * */
   size: PropTypes.number,
   mood: PropTypes.oneOf([
     'sad',
@@ -73,9 +69,6 @@ Planet.propTypes = {
     'excited',
     'ko'
   ]),
-  /**
-   * Hex color
-   */
   color: PropTypes.string
 };
 

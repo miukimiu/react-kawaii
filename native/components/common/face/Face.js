@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import paths from 'react-native-kawaii/src/components/common/face/paths';
-
 import { Circle, Ellipse, G, Path, Use, Defs, Mask } from 'react-native-svg';
+import paths from 'react-native-kawaii/src/components/common/face/paths';
 
 const Face = ({ mood, uniqueId, ...rest }) => (
   <G id="kawaii-face" {...rest}>

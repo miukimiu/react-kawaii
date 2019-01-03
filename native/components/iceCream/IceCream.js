@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Svg, { G, Path } from 'react-native-svg';
 import paths from './paths';
 import Face from '../common/face/Face';
 import getUniqueId from '../../utils/getUniqueId';
 import Wrapper from '../common/wrapper/Wrapper';
-
-import Svg, { G, Path } from 'react-native-svg';
 
 const IceCream = ({ size, color, mood, className }) => (
   <Wrapper className={className}>
