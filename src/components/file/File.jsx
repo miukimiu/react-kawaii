@@ -25,7 +25,8 @@ const File = ({ size, color, mood, className }) => (
           />
           <path
             id="kawaii-file__fold"
-            fill="#97DDCF"
+            fill="#000"
+            opacity=".2"
             d="M70.1445,0 L70.1445,22.641 C70.1445,29.387 75.6135,34.855 82.3595,34.855 L104.9995,34.855 L70.1445,0"
           />
         </g>
