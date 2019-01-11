@@ -10,7 +10,8 @@ module.exports = {
     filename: 'index.js',
     library: ['react-kawaii'],
     libraryTarget: 'umd',
-    publicPath: '/lib/'
+    publicPath: '/lib/',
+    globalObject: `typeof self !== 'undefined' ? self : this`,
   },
   module: {
     rules: [
