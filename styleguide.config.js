@@ -23,6 +23,10 @@ module.exports = {
     }
   ],
   skipComponentsWithoutExample: true,
+  getComponentPathLine: pathname => {
+    const { name } = path.parse(pathname)
+    return `import { ${name} } from 'react-kawaii'`
+  },
   template: {
     head: {
       meta: [
