@@ -8,6 +8,7 @@ import SpeechBubble from './components/speechBubble/SpeechBubble';
 import Backpack from './components/backpack/Backpack';
 import Cat from './components/cat/Cat';
 import File from './components/file/File';
+import Alert from './components/alert/Alert';
 
 export {
   Browser,
@@ -19,5 +20,6 @@ export {
   Planet,
   SpeechBubble,
   Backpack,
-  File
+  File,
+  Alert
 };
