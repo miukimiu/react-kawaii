@@ -54,7 +54,7 @@ const Alert = ({ bsStyle, children }) => (
 );
 
 Alert.propTypes = {
-  bsStyle: PropTypes.string
+  bsStyle: PropTypes.oneOf(Object.keys(bsStyleToMood))
 }
 
 export default Alert;
