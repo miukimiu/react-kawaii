@@ -24,8 +24,8 @@ module.exports = {
   ],
   skipComponentsWithoutExample: true,
   getComponentPathLine: pathname => {
-    const { name } = path.parse(pathname)
-    return `import { ${name} } from 'react-kawaii'`
+    const { name } = path.parse(pathname);
+    return `import { ${name} } from 'react-kawaii'`;
   },
   template: {
     head: {
@@ -68,5 +68,6 @@ module.exports = {
       'styleguide/components/IsolateButton'
     )
   },
-  styleguideDir: 'build/react-kawaii'
+  styleguideDir: 'build/react-kawaii',
+  serverPort: 8210
 };

@@ -52,6 +52,7 @@ Available components:
 - [x] Browser - A cute browser
 - [x] Cat - A cute cat
 - [x] CreditCard - A cute credit card
+- [x] File - A cute file
 - [x] Ghost - A cute ghost
 - [x] IceCream - A cute ice-cream
 - [x] Mug - A cute mug
@@ -71,3 +72,5 @@ Available components:
 - [Italox](https://github.com/Italox)
 - [Vinnl](https://github.com/Vinnl)
 - [eliasparis](https://github.com/eliasparis)
+- [uselessdev](https://github.com/uselessdev)
+- [serotonyn](https://github.com/serotonyn)
