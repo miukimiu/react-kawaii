@@ -1,14 +1,14 @@
-import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Plx from 'react-plx';
-import styled from 'styled-components';
-import remcalc from 'remcalc';
-import Wave from './wave.styled';
-import Text from './text';
-import icon from '../images/kawaii-icon.svg';
-import cloud from '../images/cloud.svg';
-import shadow from '../images/shadow.svg';
-import homeWave from '../images/home-wave.svg';
+import React from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
+import Plx from 'react-plx'
+import styled from 'styled-components'
+import remcalc from 'remcalc'
+import Wave from './wave.styled'
+import Text from './text'
+import icon from '../images/kawaii-icon.svg'
+import cloud from '../images/cloud.svg'
+import shadow from '../images/shadow.svg'
+import homeWave from '../images/home-wave.svg'
 
 const Section = styled.section`
   position: relative;
@@ -27,7 +27,7 @@ const Section = styled.section`
   @media (max-width: 1000px) {
     min-height: ${remcalc(900)};
   }
-`;
+`
 
 const KawaiiIllustration = styled.div`
   position: relative;
@@ -62,7 +62,7 @@ const KawaiiIllustration = styled.div`
     right: 20px;
     z-index: 2;
   }
-`;
+`
 
 const CloudA = [
   {
@@ -72,16 +72,16 @@ const CloudA = [
       {
         startValue: 1,
         endValue: 1.1,
-        property: 'scale'
+        property: 'scale',
       },
       {
         startValue: 0,
         endValue: -100,
-        property: 'translateY'
-      }
-    ]
-  }
-];
+        property: 'translateY',
+      },
+    ],
+  },
+]
 
 const CloudB = [
   {
@@ -91,16 +91,16 @@ const CloudB = [
       {
         startValue: 1,
         endValue: 1.2,
-        property: 'scale'
+        property: 'scale',
       },
       {
         startValue: 0,
         endValue: -200,
-        property: 'translateY'
-      }
-    ]
-  }
-];
+        property: 'translateY',
+      },
+    ],
+  },
+]
 
 const IconAnim = [
   {
@@ -110,11 +110,11 @@ const IconAnim = [
       {
         startValue: 0,
         endValue: 200,
-        property: 'translateY'
-      }
-    ]
-  }
-];
+        property: 'translateY',
+      },
+    ],
+  },
+]
 
 const ShadowAnim = [
   {
@@ -124,11 +124,11 @@ const ShadowAnim = [
       {
         startValue: 1,
         endValue: 1.1,
-        property: 'scale'
-      }
-    ]
-  }
-];
+        property: 'scale',
+      },
+    ],
+  },
+]
 
 const Home = () => (
   <Section>
@@ -163,6 +163,6 @@ const Home = () => (
     </Grid>
     <Wave src={homeWave} />
   </Section>
-);
+)
 
-export default Home;
+export default Home

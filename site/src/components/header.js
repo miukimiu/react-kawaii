@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import remcalc from 'remcalc';
-import PropTypes from 'prop-types';
-import logo from '../images/reactKawaii-text-logo.svg';
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
+import remcalc from 'remcalc'
+import PropTypes from 'prop-types'
+import logo from '../images/reactKawaii-text-logo.svg'
 
 const HeaderEl = styled.header`
   position: fixed;
@@ -49,7 +49,7 @@ const HeaderEl = styled.header`
     padding: 0;
     list-style: none;
   }
-`;
+`
 
 const Header = () => (
   <HeaderEl>
@@ -71,6 +71,6 @@ const Header = () => (
       </ul>
     </nav>
   </HeaderEl>
-);
+)
 
-export default Header;
+export default Header
