@@ -58,5 +58,17 @@ export const contributors = [
     githubUsername: 'eliasparis',
     githubUrl: 'https://github.com/eliasparis',
     imageUrl: 'https://avatars2.githubusercontent.com/u/13252924?s=460&v=4'
+  },
+  {
+    name: 'uselessdev',
+    githubUsername: 'uselessdev',
+    githubUrl: 'https://github.com/uselessdev',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/6943919?s=400&v=4'
+  },
+  {
+    name: 'serotonyn',
+    githubUsername: 'serotonyn',
+    githubUrl: 'https://github.com/serotonyn',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/22910212?s=400&v=4'
   }
 ];
