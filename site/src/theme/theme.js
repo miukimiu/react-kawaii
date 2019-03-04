@@ -4,7 +4,8 @@ const theme = {
   bg: 'white',
   text: '#4B4E6A',
   sky: '#cdecfe',
-  dark: '#2b3847'
-};
+  dark: '#2b3847',
+  border: '#EBEDF0',
+}
 
-export default theme;
+export default theme

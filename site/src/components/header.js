@@ -1,9 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import remcalc from 'remcalc'
-import PropTypes from 'prop-types'
-import logo from '../images/reactKawaii-text-logo.svg'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import remcalc from 'remcalc';
+import logo from '../images/reactKawaii-text-logo.svg';
 
 const HeaderEl = styled.header`
   position: fixed;
@@ -11,9 +10,10 @@ const HeaderEl = styled.header`
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: ${props => props.theme.sky};
+  background-color: white;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid ${props => props.theme.border};
 
   .nav {
     flex-direction: row;
@@ -49,7 +49,7 @@ const HeaderEl = styled.header`
     padding: 0;
     list-style: none;
   }
-`
+`;
 
 const Header = () => (
   <HeaderEl>
@@ -71,6 +71,6 @@ const Header = () => (
       </ul>
     </nav>
   </HeaderEl>
-)
+);
 
-export default Header
+export default Header;
