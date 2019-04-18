@@ -50,10 +50,10 @@ class MoodSelector extends Component {
         </Tag>
         <Tag
           active={activeMood}
-          text="Ko"
+          text="KO"
           onClick={() => this.setMood('ko')}
         >
-          Ko
+          KO
         </Tag>
       </div>
     );
