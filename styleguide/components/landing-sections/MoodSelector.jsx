@@ -48,6 +48,13 @@ class MoodSelector extends Component {
         >
           Shocked
         </Tag>
+        <Tag
+          active={activeMood}
+          text="Ko"
+          onClick={() => this.setMood('ko')}
+        >
+          Ko
+        </Tag>
       </div>
     );
   }
