@@ -8,9 +8,9 @@ import Wrapper from '../common/wrapper/Wrapper';
 const File = ({ size, color, mood, className }) => (
   <Wrapper className={className}>
     <svg
-      width={size * 1.38}
+      width={size * 0.68}
       height={size}
-      viewBox="0 0 198 153"
+      viewBox="0 0 105 153"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
@@ -32,7 +32,7 @@ const File = ({ size, color, mood, className }) => (
         </g>
         <Face
           mood={mood}
-          transform="translate(21 73)"
+          transform="translate(20 66)"
           uniqueId={getUniqueId()}
         />
       </g>
