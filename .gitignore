@@ -34,5 +34,5 @@ lib
 _PROJECT
 npm-debug.log
 
-build/react-kawaii
+build
 yarn.lock
