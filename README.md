@@ -7,6 +7,7 @@
 React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.
 
 [![Version](https://img.shields.io/npm/v/react-kawaii.svg?style=flat-square)](https://www.npmjs.com/package/react-kawaii)
+![npm](https://img.shields.io/npm/dt/react-kawaii.svg)
 
 ## Example
 
@@ -14,7 +15,17 @@ React Kawaii is a library of cute SVG illustrations (react components). Ideal if
 
 ## Install
 
-`npm install --save react-kawaii`
+With npm:
+
+```sh
+npm install --save react-kawaii
+```
+
+With yarn:
+
+```sh
+yarn add react-kawaii
+```
 
 ### How to use
 
@@ -23,6 +34,37 @@ import { Planet } from 'react-kawaii';
 
 const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
 ```
+
+### How to use with React Native
+
+```javascript
+import { Planet } from 'react-kawaii/native';
+
+const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
+```
+
+Depending on your `react` and `react-native` version, you might need to to install the package
+[react-native-svg](https://github.com/react-native-community/react-native-svg):
+
+With npm:
+
+```sh
+npm install react-native-svg
+```
+
+With yarn:
+
+```sh
+yarn add react-native-svg
+```
+
+Link react-native:
+
+```sh
+react-native link react-native-svg
+```
+
+Read the react-native-svg [documentation](https://github.com/react-native-community/react-native-svg) in case you need help.
 
 ## Development
 
