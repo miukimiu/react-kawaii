@@ -32,6 +32,9 @@ docs
 .publish
 test
 *.tgz
+build
+native
+sketch
 
 _PROJECT
 npm-debug.log
