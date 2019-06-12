@@ -32,9 +32,9 @@ docs
 .publish
 test
 *.tgz
-build
-native
 sketch
+build
+native/
 
 _PROJECT
 npm-debug.log

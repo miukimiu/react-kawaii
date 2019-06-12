@@ -38,7 +38,7 @@ const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
 ### How to use with React Native
 
 ```javascript
-import { Planet } from 'react-kawaii/native';
+import { Planet } from 'react-kawaii/lib/native/es';
 
 const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
 ```
