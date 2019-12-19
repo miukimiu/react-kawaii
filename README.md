@@ -93,6 +93,7 @@ Available components:
 - [x] Backpack - A cute backpack
 - [x] Browser - A cute browser
 - [x] Cat - A cute cat
+- [x] Chocolate - A cute chocolate
 - [x] CreditCard - A cute credit card
 - [x] File - A cute file
 - [x] Ghost - A cute ghost
