@@ -7,49 +7,105 @@ import Wrapper from '../common/wrapper/Wrapper';
 
 const Chocolate = ({ size, color, mood, className }) => (
 	<Wrapper className={className}>
-		<svg
-		xmlns="http://www.w3.org/2000/svg"
-		height={size}
-		width={size} 
-		viewBox="0 0 512 512" >
-			<path
-				id="kawaii-choco-background"
-				d={paths.choco_background} 
-				fill="#853913"/>
-			<path 
-				id="kawaii-choco-right-half" 
-				d={paths.choco_right_half} 
-				fill="#6e2e08"/>
-			<path 
-				id="kawaii-choco-middle-rect" 
-				d={paths.choco_middle_rect} 
-				fill="#6e2e08"/>
-			<path 
-				id="kawaii-choco-right-darker-square" 
-				d={paths.choco_right_darker_square} 
-				fill="#5c2707"/>
-			<path 
-				id="kawaii-paper-main" 
-				d={paths.paper_main} 
-				fill={color}/>
-			<path 
-				id="kawaii-paper-right" 
-				d={paths.paper_right} 
-				fill="#121212"
-				opacity="0.15"/>
-			<path 
-				id="kawaii-lapel-main" 
-				d={paths.lapel_main} 
-				fill="#121212"
-				opacity="0.15"/>
-			<path 
-				id="kawaii-lapel-right-darker" 
-				d={paths.lapel_right_darker} 
-				fill="#121212"
-				opacity="0.15"/>
+	    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 114 211"
+    >
+      <g id="chocolate">
+        <path
+          id="body"
+          fill="#8E5434"
+          d={paths.choco_background}
+        ></path>
+        <g id="bars">
+          <g id="choco-inner_1">
+            <path
+              id="Union"
+              fill="#fff"
+              fillOpacity="0.1"
+              fillRule="evenodd"
+              d={paths.choco_inner_1}
+              clipRule="evenodd"
+            ></path>
+          </g>
+          <g id="choco-inner_2">
+            <path
+              id="Union_2"
+              fill="#fff"
+              fillOpacity="0.1"
+              fillRule="evenodd"
+              d={paths.choco_inner_2}
+              clipRule="evenodd"
+            ></path>
+          </g>
+          <g id="choco-inner_3">
+            <path
+              id="Union_3"
+              fill="#fff"
+              fillOpacity="0.1"
+              fillRule="evenodd"
+              d={paths.choco_inner_3}
+              clipRule="evenodd"
+            ></path>
+          </g>
+          <g id="choco-inner_4">
+            <path
+              id="Union_4"
+              fill="#fff"
+              fillOpacity="0.1"
+              fillRule="evenodd"
+              d={paths.choco_inner_4}
+              clipRule="evenodd"
+            ></path>
+          </g>
+          <g id="choco-inner_5">
+            <path
+              id="Union_5"
+              fill="#fff"
+              fillOpacity="0.1"
+              fillRule="evenodd"
+              d={paths.choco_inner_5}
+              clipRule="evenodd"
+            ></path>
+          </g>
+          <g id="choco-inner_6">
+            <path
+              id="Union_6"
+              fill="#fff"
+              fillOpacity="0.1"
+              fillRule="evenodd"
+              d={paths.choco_inner_6}
+              clipRule="evenodd"
+            ></path>
+          </g>
+        </g>
+        <g id="Group 15">
+          <path
+            id="paper"
+            fill={color}
+            d={paths.paper}
+          ></path>
+          <g id="paper-folded">
+            <path
+              id="Vector"
+              fill={color}
+              d={paths.paper_folded}
+            ></path>
+            <path
+              id="Vector_2"
+              fill="#000"
+              fillOpacity="0.15"
+              d="M0 125.016h102.305L114 92.5 0 125.016z"
+            ></path>
+          </g>
+        </g>
+      </g>
 			<Face
 				mood={mood}
-				transform="translate(69 108) scale(2.2, 2.2)"
+				transform="translate(25 150)"
 				uniqueId={getUniqueId()}
 			/>
 		</svg>
