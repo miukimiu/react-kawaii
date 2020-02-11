@@ -8,11 +8,13 @@ import IceCream from './components/iceCream/IceCream';
 import Mug from './components/mug/Mug';
 import Planet from './components/planet/Planet';
 import SpeechBubble from './components/speechBubble/SpeechBubble';
+import Chocolate from './components/chocolate/Chocolate';
 
 export {
   Backpack,
   Browser,
   Cat,
+  Chocolate,
   CreditCard,
   File,
   Ghost,
