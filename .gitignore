@@ -36,3 +36,5 @@ npm-debug.log
 
 build
 yarn.lock
+
+.now

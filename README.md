@@ -105,15 +105,4 @@ Available components:
 
 ## Contributors
 
-- [miukimiu](https://github.com/miukimiu)
-- [aliciacatalina](https://github.com/aliciacatalina)
-- [SaraVieira](https://github.com/SaraVieira)
-- [kombucha](https://github.com/kombucha)
-- [codenakama](https://github.com/codenakama)
-- [yuanchuan](https://github.com/yuanchuan)
-- [khendrikse](https://github.com/khendrikse)
-- [Italox](https://github.com/Italox)
-- [Vinnl](https://github.com/Vinnl)
-- [eliasparis](https://github.com/eliasparis)
-- [uselessdev](https://github.com/uselessdev)
-- [serotonyn](https://github.com/serotonyn)
+Thanks to everyone who has contributed to this project! You can find the contributors list [here](https://github.com/miukimiu/react-kawaii/graphs/contributors).

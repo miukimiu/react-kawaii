@@ -8,6 +8,7 @@
     "test": "",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
+    "now-build": "styleguidist build",
     "lib:build": "webpack -p --progress && babel src --out-dir lib/es/ --sourceMaps && babel native --out-dir lib/native/ --sourceMaps",
     "precommit": "pretty-quick --staged",
     "prepublish": "npm run lib:build"

@@ -6,20 +6,16 @@ import Face from '../common/face/Face';
 import Wrapper from '../common/wrapper/Wrapper';
 
 const Chocolate = ({ size, color, mood, className }) => (
-	<Wrapper className={className}>
-	    <svg
+  <Wrapper className={className}>
+    <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
+      width={size * 0.54}
       height={size}
       fill="none"
       viewBox="0 0 114 211"
     >
       <g id="chocolate">
-        <path
-          id="body"
-          fill="#8E5434"
-          d={paths.choco_background}
-        ></path>
+        <path id="body" fill="#8E5434" d={paths.choco_background}></path>
         <g id="bars">
           <g id="choco-inner_1">
             <path
@@ -83,17 +79,9 @@ const Chocolate = ({ size, color, mood, className }) => (
           </g>
         </g>
         <g id="Group 15">
-          <path
-            id="paper"
-            fill={color}
-            d={paths.paper}
-          ></path>
+          <path id="paper" fill={color} d={paths.paper}></path>
           <g id="paper-folded">
-            <path
-              id="Vector"
-              fill={color}
-              d={paths.paper_folded}
-            ></path>
+            <path id="Vector" fill={color} d={paths.paper_folded}></path>
             <path
               id="Vector_2"
               fill="#000"
@@ -103,13 +91,13 @@ const Chocolate = ({ size, color, mood, className }) => (
           </g>
         </g>
       </g>
-			<Face
-				mood={mood}
-				transform="translate(25 150)"
-				uniqueId={getUniqueId()}
-			/>
-		</svg>
-	</Wrapper>
+      <Face
+        mood={mood}
+        transform="translate(25 150)"
+        uniqueId={getUniqueId()}
+      />
+    </svg>
+  </Wrapper>
 );
 
 Chocolate.propTypes = {
