@@ -46,8 +46,8 @@ const Cat = ({ size, color, mood, className }) => (
             fill={color}
             fillRule="nonzero"
           >
-            <path d="M55.949.205s27.948 51.641 2 53.898" id="arm-r" />
-            <path d="M13.641.205s-27.949 51.641-2 53.898" id="arm-l" />
+            <path d="M55.949.205s27.948 51.641 2 53.898" />
+            <path d="M13.641.205s-27.949 51.641-2 53.898" />
           </g>
           <g
             id="kawaii-cat_arms-shadow"
@@ -56,8 +56,8 @@ const Cat = ({ size, color, mood, className }) => (
             fillRule="nonzero"
             opacity="0.25"
           >
-            <path d="M55.949.205s27.948 51.641 2 53.898" id="arm-r" />
-            <path d="M13.641.205s-27.949 51.641-2 53.898" id="arm-l" />
+            <path d="M55.949.205s27.948 51.641 2 53.898" />
+            <path d="M13.641.205s-27.949 51.641-2 53.898" />
           </g>
           <path
             d={paths.body}

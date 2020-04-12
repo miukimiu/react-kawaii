@@ -59,8 +59,8 @@ const Face = ({ mood, uniqueId, ...rest }) => (
       fill="#000000"
       opacity="0.2"
     >
-      <circle id="Oval" cx="3" cy="3" r="3" />
-      <circle id="Oval" cx="63" cy="3" r="3" />
+      <circle cx="3" cy="3" r="3" />
+      <circle cx="63" cy="3" r="3" />
     </g>
     <g
       id="kawaii-face__eyes"
@@ -72,17 +72,20 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           id="kawaii-face__eyes__arc"
           transform="translate(1.000000, 0.000000)"
         >
-          <path d={paths.bliss1} id="Fill-5" />
-          <path d={paths.bliss2} id="Fill-5" />
+          <path d={paths.bliss1} />
+          <path d={paths.bliss2} />
         </g>
       )}
-      {(mood === 'happy' || mood === 'sad' || mood === 'shocked' || mood === 'excited') && (
+      {(mood === 'happy' ||
+        mood === 'sad' ||
+        mood === 'shocked' ||
+        mood === 'excited') && (
         <g
           id="kawaii-face__eyes__circle"
           transform="translate(1.000000, 2.000000)"
         >
-          <circle id="Oval-3" cx="4.5" cy="4.5" r="4.5" />
-          <circle id="Oval-3" cx="56.5" cy="4.5" r="4.5" />
+          <circle cx="4.5" cy="4.5" r="4.5" />
+          <circle cx="56.5" cy="4.5" r="4.5" />
         </g>
       )}
       {mood === 'lovestruck' && (
@@ -110,7 +113,15 @@ const Face = ({ mood, uniqueId, ...rest }) => (
 );
 
 Face.propTypes = {
-  mood: PropTypes.oneOf(['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited', 'ko'])
+  mood: PropTypes.oneOf([
+    'sad',
+    'shocked',
+    'happy',
+    'blissful',
+    'lovestruck',
+    'excited',
+    'ko'
+  ])
 };
 
 Face.defaultProps = {

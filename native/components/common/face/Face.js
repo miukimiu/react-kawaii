@@ -61,8 +61,8 @@ const Face = ({ mood, uniqueId, ...rest }) => (
       fill="#000000"
       opacity="0.2"
     >
-      <Circle id="Oval" cx="3" cy="3" r="3" />
-      <Circle id="Oval" cx="63" cy="3" r="3" />
+      <Circle cx="3" cy="3" r="3" />
+      <Circle cx="63" cy="3" r="3" />
     </G>
     <G
       id="kawaii-face__eyes"
@@ -74,8 +74,8 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           id="kawaii-face__eyes__arc"
           transform="translate(1.000000, 0.000000)"
         >
-          <Path d={paths.bliss1} id="Fill-5" />
-          <Path d={paths.bliss2} id="Fill-5" />
+          <Path d={paths.bliss1} />
+          <Path d={paths.bliss2} />
         </G>
       )}
       {(mood === 'happy' ||
@@ -86,8 +86,8 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           id="kawaii-face__eyes__circle"
           transform="translate(1.000000, 2.000000)"
         >
-          <Circle id="Oval-3" cx="4.5" cy="4.5" r="4.5" />
-          <Circle id="Oval-3" cx="56.5" cy="4.5" r="4.5" />
+          <Circle cx="4.5" cy="4.5" r="4.5" />
+          <Circle cx="56.5" cy="4.5" r="4.5" />
         </G>
       )}
       {mood === 'lovestruck' && (
@@ -96,8 +96,8 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           transform="translate(0.000000, 2.000000)"
           fillRule="nonzero"
         >
-          <Path d={paths.lovestruck1} id="Shape" />
-          <Path d={paths.lovestruck2} id="Shape" />
+          <Path d={paths.lovestruck1} />
+          <Path d={paths.lovestruck2} />
         </G>
       )}
       {mood === 'ko' && (
@@ -106,8 +106,8 @@ const Face = ({ mood, uniqueId, ...rest }) => (
           transform="translate(1.500000, 1.000000)"
           fillRule="nonzero"
         >
-          <Path d={paths.ko1} id="Cross" />
-          <Path d={paths.ko2} id="Cross" />
+          <Path d={paths.ko1} />
+          <Path d={paths.ko2} />
         </G>
       )}
     </G>
