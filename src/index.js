@@ -3,6 +3,7 @@ import Browser from './components/browser/Browser';
 import Cat from './components/cat/Cat';
 import CreditCard from './components/creditCard/CreditCard';
 import File from './components/file/File';
+import Folder from './components/folder/Folder';
 import Ghost from './components/ghost/Ghost';
 import IceCream from './components/iceCream/IceCream';
 import Mug from './components/mug/Mug';
@@ -17,6 +18,7 @@ export {
   Chocolate,
   CreditCard,
   File,
+  Folder,
   Ghost,
   IceCream,
   Mug,
