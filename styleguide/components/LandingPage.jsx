@@ -77,6 +77,24 @@ const contributors = [
     githubUsername: 'serotonyn',
     githubUrl: 'https://github.com/serotonyn',
     imageUrl: 'https://avatars1.githubusercontent.com/u/22910212?s=400&v=4'
+  },
+  {
+    name: 'pducolin',
+    githubUsername: 'pducolin',
+    githubUrl: 'https://github.com/pducolin',
+    imageUrl: 'https://avatars0.githubusercontent.com/u/45568537?s=400&u=0da2353f210ef4d1e81508ca1e005e51f0025df1&v=4'
+  },
+  {
+    name: 'Sue',
+    githubUsername: 'sioanis',
+    githubUrl: 'https://github.com/sioanis',
+    imageUrl: 'https://avatars2.githubusercontent.com/u/3586765?s=400&u=180553463632d778daef0c3ecf70b34f7aff8226&v=4'
+  },
+  {
+    name: 'Oliver Lang',
+    githubUsername: 'LangOliver',
+    githubUrl: 'https://github.com/LangOliver',
+    imageUrl: 'https://avatars1.githubusercontent.com/u/2932505?s=400&u=b0281a21a31ce6a2b3a5dba66496e7d1601faa8a&v=4'
   }
 ];
 
