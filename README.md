@@ -96,6 +96,7 @@ Available components:
 - [x] Chocolate - A cute chocolate
 - [x] CreditCard - A cute credit card
 - [x] File - A cute file
+- [x] Folder - A cute folder
 - [x] Ghost - A cute ghost
 - [x] IceCream - A cute ice-cream
 - [x] Mug - A cute mug
