@@ -38,3 +38,5 @@ build
 yarn.lock
 
 .now
+
+.idea
