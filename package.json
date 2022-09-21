@@ -8,8 +8,7 @@
     "test": "",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "now-build": "styleguidist build",
-    "lib:build": "webpack -p --progress && babel src --out-dir lib/es/ --sourceMaps && babel native --out-dir lib/native/ --sourceMaps",
+    "lib:build": "webpack -p --progress && babel src --out-dir lib/es/ && babel native --out-dir lib/native/",
     "precommit": "pretty-quick --staged",
     "prepare": "npm run lib:build"
   },
@@ -52,7 +51,7 @@
     "eslint-config-prettier": "^3.6.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "popmotion": "^8.5.3",

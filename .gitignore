@@ -40,3 +40,4 @@ yarn.lock
 .now
 
 .idea
+.vercel
