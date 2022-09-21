@@ -8,8 +8,7 @@
     "test": "",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "now-build": "styleguidist build",
-    "lib:build": "webpack -p --progress && babel src --out-dir lib/es/ --sourceMaps && babel native --out-dir lib/native/ --sourceMaps",
+    "lib:build": "webpack -p --progress && babel src --out-dir lib/es/ && babel native --out-dir lib/native/",
     "precommit": "pretty-quick --staged",
     "prepare": "npm run lib:build"
   },
@@ -49,18 +48,18 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "eslint": "^5.3.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "popmotion": "^8.5.3",
     "postcss": "^7.0.6",
     "prettier": "^1.14.2",
     "pretty-quick": "^1.6.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-flexbox-grid": "^2.1.2",
     "react-ga": "^2.5.3",
     "react-plx": "^1.3.7",
@@ -69,14 +68,14 @@
     "remcalc": "^1.0.10",
     "style-loader": "^0.23.1",
     "styled-components": "^4.1.2",
-    "webpack": "^4.27.0",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "prop-types": "^15.6.2"
   },
   "peerDependencies": {
-    "react": "15.3.0 - 16.x"
+    "react": "15.3.0 - 18.x"
   },
   "engines": {
     "node": ">=7.4.0",

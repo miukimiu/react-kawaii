@@ -38,3 +38,6 @@ build
 yarn.lock
 
 .now
+
+.idea
+.vercel
