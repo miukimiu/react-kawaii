@@ -2,11 +2,12 @@
   "name": "react-kawaii",
   "version": "0.18.0",
   "description": "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
-  "main": "lib/index.js",
+  "main": "lib",
+  "types": "lib",
   "module": "lib/es/index.js",
   "scripts": {
     "test": "",
-    "build": "webpack -p --progress && babel src --out-dir lib/es/ && babel native --out-dir lib/native/",
+    "build": "tsc",
     "precommit": "pretty-quick --staged",
     "prepare": "npm run build"
   },
@@ -42,6 +43,7 @@
     "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.18.6",
     "autoprefixer": "^9.4.2",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
@@ -67,7 +69,9 @@
     "remcalc": "^1.0.10",
     "style-loader": "^0.23.1",
     "styled-components": "^4.1.2",
-    "webpack": "^4.46.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.3",
+    "webpack": "5.40.0",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
