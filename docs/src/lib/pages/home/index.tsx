@@ -5,7 +5,7 @@ import CTASection from "lib/components/samples/CTASection";
 import SomeImage from "lib/components/samples/SomeImage";
 import SomeText from "lib/components/samples/SomeText";
 
-import { Backpack } from "react-kawaii";
+import { Browser } from "react-kawaii";
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
       <SomeText />
       <SomeImage />
       <CTASection />
-      <Backpack size={200} mood="happy" color="#83D1FB" />
+      <Browser />
     </Flex>
   );
 };

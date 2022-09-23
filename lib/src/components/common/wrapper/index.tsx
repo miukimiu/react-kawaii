@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { createElement } from 'react';
 
 function Wrapper(props: any) {
-  return React.createElement('div', {
+  return createElement('div', {
     ...props,
     style: { position: 'relative', ...(props.style || {}) }
   });
