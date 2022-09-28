@@ -1,15 +1,21 @@
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text, useColorModeValue } from "@chakra-ui/react";
 
-const Footer = () => {
+const Footer = ({ ...rest }) => {
   return (
-    <Flex as="footer" width="full" justifyContent="center">
-      <Text fontSize="sm" color="gray.500">
-        {new Date().getFullYear()} -{" "}
-        <Link href="https://sznm.dev" isExternal rel="noopener noreferrer">
-          sznm.dev
-        </Link>
-      </Text>
-    </Flex>
+    <Box
+      borderTop={1}
+      borderStyle={"solid"}
+      borderColor={useColorModeValue("gray.200", "gray.900")}
+    >
+      <Flex as="footer" width="full" justifyContent="center" {...rest}>
+        <Text fontSize="sm" color="gray.500">
+          {new Date().getFullYear()} -{" "}
+          <Link href="https://sznm.dev" isExternal rel="noopener noreferrer">
+            sznm.dev
+          </Link>
+        </Text>
+      </Flex>
+    </Box>
   );
 };
 
