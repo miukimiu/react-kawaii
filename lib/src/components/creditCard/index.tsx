@@ -1,8 +1,7 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import paths from './paths';
 import Face from '../common/face';
 import getUniqueId from '../../utils/getUniqueId';
-import Wrapper from '../common/wrapper';
 import { KawaiiProps } from '../../types';
 
 const CreditCard: FunctionComponent<KawaiiProps> = ({
@@ -11,37 +10,28 @@ const CreditCard: FunctionComponent<KawaiiProps> = ({
   color = '#83D1FB',
   ...rest
 }) => (
-  <Wrapper {...rest}>
-    <svg
-      width={size * 1.38}
-      height={size}
-      viewBox="0 0 198 143"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
-      <g id="kawaii-creditCard">
-        <g id="kawaii-creditCard__body" fillRule="nonzero">
-          <path d={paths.shape} id="kawaii-creditCard__shape" fill={color} />
-          <path
-            d={paths.shadow}
-            id="kawaii-creditCard__shadow"
-            fill="#000"
-            opacity=".1"
-          />
-          <path
-            id="kawaii-creditCard__stripe"
-            fill="#000"
-            d="M0 17h198v27H0z"
-          />
-        </g>
-        <Face
-          mood={mood}
-          transform="translate(66 73)"
-          uniqueId={getUniqueId()}
+  <svg
+    width={size * 1.38}
+    height={size}
+    viewBox="0 0 198 143"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    {...rest}
+  >
+    <g id="kawaii-creditCard">
+      <g id="kawaii-creditCard__body" fillRule="nonzero">
+        <path d={paths.shape} id="kawaii-creditCard__shape" fill={color} />
+        <path
+          d={paths.shadow}
+          id="kawaii-creditCard__shadow"
+          fill="#000"
+          opacity=".1"
         />
+        <path id="kawaii-creditCard__stripe" fill="#000" d="M0 17h198v27H0z" />
       </g>
-    </svg>
-  </Wrapper>
+      <Face mood={mood} transform="translate(66 73)" uniqueId={getUniqueId()} />
+    </g>
+  </svg>
 );
 
 export default CreditCard;

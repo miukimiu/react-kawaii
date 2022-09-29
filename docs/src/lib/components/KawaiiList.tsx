@@ -15,7 +15,7 @@ import {
   PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
+  Flex,
   Button,
 } from "@chakra-ui/react";
 import { CirclePicker } from "react-color";
@@ -118,50 +118,61 @@ export const KawaiiList: FunctionComponent = () => {
   ];
 
   return (
-    <Container maxWidth="container.xl" px={{ base: 4 }}>
-      <HStack spacing={8}>
-        <Input placeholder="medium size" size="md" />
+    <>
+      <Box
+        borderBottom={1}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+        width="100%"
+      >
+        <Container maxWidth="container.xl" px={{ base: 4 }} py="4">
+          <HStack spacing={8}>
+            <Input placeholder="medium size" size="md" />
 
-        <Popover>
-          <PopoverTrigger>
-            <Button borderRadius="50%" background={color}></Button>
-          </PopoverTrigger>
-          <PopoverContent>
-            <PopoverArrow />
-            <PopoverCloseButton />
-            <PopoverHeader>Color</PopoverHeader>
-            <PopoverBody>
-              <CirclePicker
-                colors={colors}
-                color={color}
-                onChangeComplete={onChangeComplete}
-              />
-            </PopoverBody>
-          </PopoverContent>
-        </Popover>
-      </HStack>
+            <Popover>
+              <PopoverTrigger>
+                <Button borderRadius="50%" background={color}></Button>
+              </PopoverTrigger>
+              <PopoverContent>
+                <PopoverArrow />
+                <PopoverCloseButton />
+                <PopoverHeader>Color</PopoverHeader>
+                <PopoverBody>
+                  <CirclePicker
+                    colors={colors}
+                    color={color}
+                    onChangeComplete={onChangeComplete}
+                  />
+                </PopoverBody>
+              </PopoverContent>
+            </Popover>
+          </HStack>
+        </Container>
+      </Box>
 
-      <SimpleGrid columns={4} spacing={10}>
-        {list.map((item) => (
-          <Box
-            maxW={"320px"}
-            w={"full"}
-            bg={useColorModeValue("white", "gray.900")}
-            boxShadow={"2xl"}
-            rounded={"lg"}
-            p={6}
-            textAlign={"center"}
-          >
-            <Box margin="0 auto" display="inline-flex">
-              {item.component}
+      <Container maxWidth="container.xl" px={{ base: 4 }}>
+        <SimpleGrid columns={4} spacing={10}>
+          {list.map((item) => (
+            <Box
+              maxW={"320px"}
+              w={"full"}
+              bg={useColorModeValue("white", "gray.900")}
+              boxShadow={"2xl"}
+              rounded={"lg"}
+              p={6}
+              textAlign={"center"}
+            >
+              <Box margin="0 auto" display="inline-flex">
+                {item.component}
+              </Box>
+
+              <Heading fontSize={"2xl"} fontFamily={"body"}>
+                {item.name}
+              </Heading>
             </Box>
-
-            <Heading fontSize={"2xl"} fontFamily={"body"}>
-              {item.name}
-            </Heading>
-          </Box>
-        ))}
-      </SimpleGrid>
-    </Container>
+          ))}
+        </SimpleGrid>
+      </Container>
+    </>
   );
 };

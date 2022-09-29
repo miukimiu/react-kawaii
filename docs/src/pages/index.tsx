@@ -1,12 +1,11 @@
 import { Flex } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
-import CTASection from "lib/components/samples/CTASection";
-import SomeImage from "lib/components/samples/SomeImage";
-import SomeText from "lib/components/samples/SomeText";
-import Hero from "lib/components/Hero";
-import { KawaiiList } from "lib/components/KawaiiList";
-
+import CTASection from "../lib/components/samples/CTASection";
+import SomeImage from "../lib/components/samples/SomeImage";
+import Hero from "../lib/components/Hero";
+import Contributors from "lib/components/Contributors";
+import KawaiiPreview from "lib/components/KawaiiPreview";
 import { Browser } from "react-kawaii";
 
 const Home = () => {
@@ -22,10 +21,8 @@ const Home = () => {
     >
       <NextSeo title="Home" />
       <Hero />
-      <KawaiiList />
-      <SomeImage />
-      <CTASection />
-      <Browser />
+      <Contributors />
+      <KawaiiPreview />
     </Flex>
   );
 };

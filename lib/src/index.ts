@@ -11,6 +11,10 @@ import Planet from './components/planet';
 import SpeechBubble from './components/speechBubble';
 import Chocolate from './components/chocolate';
 
+import { MOODS } from './constants';
+
+import { KawaiiProps } from './types';
+
 export {
   Backpack,
   Browser,
@@ -23,5 +27,7 @@ export {
   IceCream,
   Mug,
   Planet,
-  SpeechBubble
+  SpeechBubble,
+  MOODS,
+  KawaiiProps
 };

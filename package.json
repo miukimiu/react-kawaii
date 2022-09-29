@@ -3,5 +3,10 @@
   "workspaces": [
     "lib",
     "docs"
-  ]
+  ],
+  "scripts": {
+    "dev": "yarn workspace react-kawaii-docs dev",
+    "build": "yarn workspace react-kawaii-docs build",
+    "build:lib": "yarn workspace react-kawaii build"
+  }
 }
