@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { Ghost, KawaiiProps, MOODS } from "react-kawaii";
 import { CirclePicker } from "react-color";
+import { css } from "@emotion/react";
 
 const COLORS = ["#FCCB7E", "#A6E191", "#FDA7DC", "#E0E4E8", "#83D1FB"];
 
@@ -69,7 +70,15 @@ export const KawaiiPreview = () => {
               Color
             </Heading>
 
-            <Box paddingBottom="8">
+            <Box
+              paddingBottom="8"
+              justifyContent="center"
+              css={css`
+                .circle-picker {
+                  justify-content: center;
+                }
+              `}
+            >
               <CirclePicker
                 colors={COLORS}
                 color={activeColor}

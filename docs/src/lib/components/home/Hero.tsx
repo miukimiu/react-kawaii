@@ -27,7 +27,7 @@ const Hero = () => {
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
               lineHeight={1.1}
-              fontWeight={600}
+              fontWeight={700}
               fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
             >
               <Text
@@ -47,11 +47,11 @@ const Hero = () => {
                 Cute React SVG
               </Text>
               <br />
-              <Text as={"span"} color={"purple.400"}>
+              <Text as={"span"} color={"purple.500"}>
                 components
               </Text>
             </Heading>
-            <Text color={"gray.500"}>
+            <Text fontSize={"xl"}>
               React Kawaii is a library of cute SVG illustrations. Perfect if
               you want to give some cuteness to your react application.
             </Text>
@@ -65,8 +65,8 @@ const Hero = () => {
                 fontWeight={"normal"}
                 px={6}
                 colorScheme={"purple"}
-                bg={"purple.400"}
-                _hover={{ bg: "purple.500" }}
+                bg={"purple.500"}
+                _hover={{ bg: "purple.600" }}
               >
                 Get started
               </Button>

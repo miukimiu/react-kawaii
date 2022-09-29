@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
-import { KawaiiList } from "../lib/components/KawaiiList";
+import { KawaiiList } from "../lib/components/components/KawaiiList";
 
 const Components = () => {
   return (

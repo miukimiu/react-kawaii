@@ -1,12 +1,10 @@
 import { Flex } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
-import CTASection from "../lib/components/samples/CTASection";
-import SomeImage from "../lib/components/samples/SomeImage";
-import Hero from "../lib/components/Hero";
-import Contributors from "lib/components/Contributors";
-import KawaiiPreview from "lib/components/KawaiiPreview";
-import { Browser } from "react-kawaii";
+import Hero from "../lib/components/home/Hero";
+import Contributors from "lib/components/home/Contributors";
+import KawaiiPreview from "lib/components/home/KawaiiPreview";
+import UseCases from "lib/components/home/UseCases";
 
 const Home = () => {
   return (
@@ -21,6 +19,7 @@ const Home = () => {
     >
       <NextSeo title="Home" />
       <Hero />
+      <UseCases />
       <Contributors />
       <KawaiiPreview />
     </Flex>
