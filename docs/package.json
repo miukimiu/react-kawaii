@@ -28,7 +28,8 @@
     "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-kawaii": "^0.18.0"
+    "react-kawaii": "^0.18.0",
+    "react-scroll-parallax": "^3.3.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.1.0",

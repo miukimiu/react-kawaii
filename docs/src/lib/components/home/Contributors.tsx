@@ -1,11 +1,13 @@
 import React from "react";
 import {
-  Box,
-  Flex,
+  Stack,
+  Text,
   Heading,
   SimpleGrid,
   Container,
   Avatar,
+  Box,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 const contributorsList = [
@@ -105,18 +107,36 @@ const contributorsList = [
 ];
 
 const Contributors = () => {
+  const marginYSpace = 40;
+
   return (
-    <Container maxWidth="container.xl" px={{ base: 4 }}>
-      <SimpleGrid columns={6} spacing={2}>
-        {contributorsList.map((item) => (
-          <Avatar
-            src={item.imageUrl}
-            name={`${item.name} - ${item.githubUsername}`}
-            title={`${item.name} - ${item.githubUsername}`}
-          />
-        ))}
-      </SimpleGrid>
-    </Container>
+    <Box background={useColorModeValue("blue.50", "gray.900")} width="100%">
+      <Container maxWidth="container.xl" px={{ base: 4 }}>
+        <Stack
+          spacing={4}
+          as={Container}
+          maxW={"4xl"}
+          textAlign={"center"}
+          mb={marginYSpace / 2}
+        >
+          <Heading fontSize={"4xl"}>For multiple scenarios</Heading>
+          <Text fontSize={"xl"}>
+            No more boring apps! The React Kawaii library was created with one
+            thing in mind, make your app fun and cute!
+          </Text>
+        </Stack>
+
+        <SimpleGrid columns={6} spacing={2} mb={marginYSpace}>
+          {contributorsList.map((item) => (
+            <Avatar
+              src={item.imageUrl}
+              name={`${item.name} - ${item.githubUsername}`}
+              title={`${item.name} - ${item.githubUsername}`}
+            />
+          ))}
+        </SimpleGrid>
+      </Container>
+    </Box>
   );
 };
 
