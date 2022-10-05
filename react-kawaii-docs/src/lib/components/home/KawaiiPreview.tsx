@@ -23,7 +23,12 @@ import { COLORS, SPACES } from "../../constants";
 export const KawaiiPreview = () => {
   const [activeMood, setActiveMood] = useState<KawaiiProps["mood"]>("happy");
   const [activeColor, setActiveColor] = useState(COLORS[0]);
-  const [activeSize, setActiveSize] = useState(200);
+  const [activeSize, setActiveSize] = useState(240);
+
+  const sliderConfig = {
+    min: 160,
+    max: 320,
+  };
 
   const onChangeComplete = (color: any) => {
     setActiveColor(color.hex);
@@ -33,6 +38,7 @@ export const KawaiiPreview = () => {
     mt: "2",
     ml: "-2.5",
     fontSize: "sm",
+    color: useColorModeValue("gray.100", "white"),
   };
 
   return (
@@ -51,13 +57,15 @@ export const KawaiiPreview = () => {
           </Text>
         </Stack>
 
-        <SimpleGrid columns={2} borderRadius="md" overflow="hidden" minH={400}>
-          <Box
-            background={useColorModeValue("gray.700", "gray.900")}
+        <SimpleGrid columns={2} borderRadius="md" overflow="hidden" minH={440}>
+          <Flex
+            background={useColorModeValue("gray.700", "gray.800")}
             padding={10}
             height="100%"
+            alignItems={"center"}
+            justifyContent={"center"}
           >
-            <Flex direction={"column"} alignItems="center">
+            <Flex direction={"column"} alignItems="center" maxW="80">
               <Heading as="h3" size="md" color="white" paddingBottom="4">
                 Mood
               </Heading>
@@ -110,37 +118,29 @@ export const KawaiiPreview = () => {
                 <Slider
                   aria-label="slider-ex-6"
                   onChange={(val) => setActiveSize(val)}
-                  min={50}
-                  max={200}
+                  min={sliderConfig.min}
+                  max={sliderConfig.max}
                 >
-                  <SliderMark value={100} {...labelStyles}>
-                    100
+                  <SliderMark value={160} {...labelStyles}>
+                    160
                   </SliderMark>
-                  <SliderMark value={150} {...labelStyles}>
-                    150
+                  <SliderMark value={240} {...labelStyles}>
+                    240
                   </SliderMark>
-                  <SliderMark value={200} {...labelStyles}>
-                    200
+                  <SliderMark value={320} {...labelStyles}>
+                    320
                   </SliderMark>
-                  <SliderMark
-                    value={activeSize}
-                    textAlign="center"
-                    bg="blue.500"
-                    color="white"
-                    mt="-10"
-                    ml="-5"
-                    w="12"
-                  >
-                    {activeSize}
-                  </SliderMark>
+
                   <SliderTrack>
-                    <SliderFilledTrack />
+                    <SliderFilledTrack
+                      bg={useColorModeValue("purple.500", "purple.300")}
+                    />
                   </SliderTrack>
                   <SliderThumb />
                 </Slider>
               </Box>
             </Flex>
-          </Box>
+          </Flex>
           <Flex
             px={4}
             height="100%"

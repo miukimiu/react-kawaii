@@ -1,10 +1,11 @@
 export const COLORS = [
   "#FCCB7E",
+
+  "#83D1FB",
   "#A6E191",
   "#FDA7DC",
+  "#dac4f7",
   "#E0E4E8",
-  "#83D1FB",
-  "dac4f7",
 ];
 
 export const SPACES = {
