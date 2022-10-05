@@ -20,8 +20,8 @@ const Home = () => {
       <NextSeo title="Home" />
       <Hero />
       <UseCases />
-      <Contributors />
       <KawaiiPreview />
+      <Contributors />
     </Flex>
   );
 };

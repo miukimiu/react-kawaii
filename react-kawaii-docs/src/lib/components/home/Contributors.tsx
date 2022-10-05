@@ -9,6 +9,7 @@ import {
   Box,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { SPACES } from "../../constants";
 
 const contributorsList = [
   {
@@ -107,17 +108,15 @@ const contributorsList = [
 ];
 
 const Contributors = () => {
-  const marginYSpace = 40;
-
   return (
-    <Box background={useColorModeValue("blue.50", "gray.900")} width="100%">
-      <Container maxWidth="container.xl" px={{ base: 4 }}>
+    <Box width="100%">
+      <Container maxWidth="container.xl" px={{ base: 4 }} py={SPACES.marginY}>
         <Stack
           spacing={4}
           as={Container}
           maxW={"4xl"}
           textAlign={"center"}
-          mb={marginYSpace / 2}
+          pb={SPACES.marginY / 2}
         >
           <Heading fontSize={"4xl"}>For multiple scenarios</Heading>
           <Text fontSize={"xl"}>
@@ -126,7 +125,7 @@ const Contributors = () => {
           </Text>
         </Stack>
 
-        <SimpleGrid columns={6} spacing={2} mb={marginYSpace}>
+        <SimpleGrid columns={6} spacing={2}>
           {contributorsList.map((item) => (
             <Avatar
               key={item.githubUsername}

@@ -10,20 +10,17 @@ import {
 import { IceCream, Ghost, Planet } from "react-kawaii";
 import CloudContainer from "./CloudContainer";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { SPACES } from "../../constants";
 
 const UseCases = () => {
-  const marginYSpace = 40;
-  const spacing = 16;
-
   return (
     <ParallaxProvider>
-      <Container maxWidth="container.xl" px={{ base: 4 }}>
+      <Container maxWidth="container.xl" px={{ base: 4 }} my={SPACES.marginY}>
         <Stack
-          spacing={4}
           as={Container}
           maxW={"4xl"}
           textAlign={"center"}
-          my={marginYSpace}
+          pb={SPACES.marginY / 2}
         >
           <Heading fontSize={"4xl"}>For multiple scenarios</Heading>
           <Text fontSize={"xl"}>
@@ -32,7 +29,11 @@ const UseCases = () => {
           </Text>
         </Stack>
 
-        <SimpleGrid columns={[1, 2]} spacing={spacing} mb={marginYSpace}>
+        <SimpleGrid
+          columns={[1, 2]}
+          spacing={SPACES.gutterX}
+          mb={SPACES.marginY}
+        >
           <Box>
             <CloudContainer kawaii={<IceCream mood="shocked" />} />
           </Box>
@@ -52,7 +53,11 @@ const UseCases = () => {
           </Box>
         </SimpleGrid>
 
-        <SimpleGrid columns={[1, 2]} spacing={spacing} mb={marginYSpace}>
+        <SimpleGrid
+          columns={[1, 2]}
+          spacing={SPACES.gutterX}
+          mb={SPACES.marginY}
+        >
           <Box>
             <Stack spacing={4} as={Container} maxW={"4xl"}>
               <Heading fontSize={"4xl"}>Empty States</Heading>
@@ -73,7 +78,7 @@ const UseCases = () => {
           </Box>
         </SimpleGrid>
 
-        <SimpleGrid columns={[1, 2]} spacing={spacing} mb={marginYSpace}>
+        <SimpleGrid columns={[1, 2]} spacing={SPACES.gutterX}>
           <Box>
             <CloudContainer kawaii={<Planet />} />
           </Box>

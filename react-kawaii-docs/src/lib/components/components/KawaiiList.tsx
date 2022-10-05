@@ -17,6 +17,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { CirclePicker } from "react-color";
+import { COLORS } from "../../constants";
 
 const Backpack = React.lazy(
   () => import("react-kawaii/lib/components/backpack")
@@ -40,31 +41,8 @@ const SpeechBubble = React.lazy(
   () => import("react-kawaii/lib/components/speechBubble")
 );
 
-const colors = [
-  "#A6E191",
-  "#40407a",
-  "#706fd3",
-  "#f7f1e3",
-  "#34ace0",
-  "#2c2c54",
-  "#474787",
-  "#aaa69d",
-  "#227093",
-  "#218c74",
-  "#ff5252",
-  "#ff793f",
-  "#d1ccc0",
-  "#ffb142",
-  "#ffda79",
-  "#b33939",
-  "#cd6133",
-  "#84817a",
-  "#cc8e35",
-  "#ccae62",
-];
-
 export const KawaiiList: FunctionComponent = () => {
-  const [color, setColor] = useState(colors[0]);
+  const [color, setColor] = useState(COLORS[0]);
 
   const onChangeComplete = (color: any) => {
     setColor(color.hex);
@@ -137,7 +115,7 @@ export const KawaiiList: FunctionComponent = () => {
                 <PopoverHeader>Color</PopoverHeader>
                 <PopoverBody>
                   <CirclePicker
-                    colors={colors}
+                    colors={COLORS}
                     color={color}
                     onChangeComplete={onChangeComplete}
                   />

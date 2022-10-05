@@ -11,17 +11,18 @@ import {
   createIcon,
   IconProps,
   useColorModeValue,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { HeroIllustration } from "./HeroIllustration";
+import { SPACES } from "../../constants";
 
 const Hero = () => {
   return (
     <Box background={useColorModeValue("blue.50", "gray.900")} width="100%">
-      <Container maxWidth="container.xl" px={{ base: 4 }}>
-        <Stack
+      <Container maxWidth="container.xl" px={{ base: 4 }} py={SPACES.marginY}>
+        {/* <Stack
           align={"center"}
-          spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 28 }}
+          spacing={SPACES.gutterX}
           direction={{ base: "column", md: "row" }}
         >
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
@@ -81,7 +82,52 @@ const Hero = () => {
           >
             <HeroIllustration />
           </Flex>
-        </Stack>
+        </Stack> */}
+        <SimpleGrid columns={[1, 2]} spacing={SPACES.gutterX}>
+          <Box>
+            <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+              <Heading
+                lineHeight={1.1}
+                fontWeight={700}
+                fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+              >
+                <Text as={"span"} position={"relative"}>
+                  Cute React SVG
+                </Text>
+                <br />
+                <Text
+                  as={"span"}
+                  color={useColorModeValue("purple.500", "purple.300")}
+                >
+                  components
+                </Text>
+              </Heading>
+              <Text fontSize={"xl"}>
+                React Kawaii is a library of cute SVG illustrations. Perfect if
+                you want to give some cuteness to your react application.
+              </Text>
+              <Stack
+                spacing={{ base: 4, sm: 6 }}
+                direction={{ base: "column", sm: "row" }}
+              >
+                <Button
+                  rounded={"full"}
+                  size={"lg"}
+                  fontWeight={"normal"}
+                  px={6}
+                  colorScheme={"purple"}
+                  bg={useColorModeValue("purple.500", "purple.300")}
+                  _hover={{ bg: useColorModeValue("purple.600", "purple.400") }}
+                >
+                  Get started
+                </Button>
+              </Stack>
+            </Stack>
+          </Box>
+          <Box>
+            <HeroIllustration />
+          </Box>
+        </SimpleGrid>
       </Container>
     </Box>
   );
