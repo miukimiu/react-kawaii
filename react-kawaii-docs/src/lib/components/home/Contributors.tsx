@@ -129,6 +129,7 @@ const Contributors = () => {
         <SimpleGrid columns={6} spacing={2} mb={marginYSpace}>
           {contributorsList.map((item) => (
             <Avatar
+              key={item.githubUsername}
               src={item.imageUrl}
               name={`${item.name} - ${item.githubUsername}`}
               title={`${item.name} - ${item.githubUsername}`}

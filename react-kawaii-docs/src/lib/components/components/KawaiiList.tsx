@@ -12,10 +12,8 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  Flex,
   Button,
 } from "@chakra-ui/react";
 import { CirclePicker } from "react-color";
@@ -154,6 +152,7 @@ export const KawaiiList: FunctionComponent = () => {
         <SimpleGrid columns={4} spacing={10}>
           {list.map((item) => (
             <Box
+              key={item.name}
               maxW={"320px"}
               w={"full"}
               bg={useColorModeValue("white", "gray.900")}

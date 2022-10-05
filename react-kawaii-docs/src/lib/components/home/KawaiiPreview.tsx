@@ -5,7 +5,6 @@ import {
   Heading,
   SimpleGrid,
   Container,
-  VStack,
   Tag,
   useColorModeValue,
   SliderMark,
@@ -57,6 +56,7 @@ export const KawaiiPreview = () => {
             >
               {MOODS.map((mood) => (
                 <Tag
+                  key={mood}
                   as="button"
                   colorScheme={mood === activeMood ? "purple" : "gray"}
                   onClick={() => setActiveMood(mood)}
