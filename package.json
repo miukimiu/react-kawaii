@@ -1,8 +1,8 @@
 {
   "private": true,
   "workspaces": [
-    "src",
-    "src-docs"
+    "react-kawaii",
+    "react-kawaii-docs"
   ],
   "scripts": {
     "dev": "yarn workspace react-kawaii-docs dev",

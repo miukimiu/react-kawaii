@@ -1,0 +1,5 @@
+/* TEAM */
+Your title: React Kawaii
+Site:https://miukimiu.github.io/react-kawaii/
+Twitter: @miuki_miu
+Location: Dublin, Ireland.
