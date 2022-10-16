@@ -95,6 +95,7 @@ Available components:
 - [x] Cat - A cute cat
 - [x] Chocolate - A cute chocolate
 - [x] CreditCard - A cute credit card
+- [x] Dog - A cute dog
 - [x] File - A cute file
 - [x] Folder - A cute folder
 - [x] Ghost - A cute ghost
