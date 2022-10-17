@@ -9,7 +9,7 @@ const Backpack = ({ size, color, mood, className }) => (
   <Wrapper className={className}>
     <svg
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={size * 0.63}
+      width={size * 0.65}
       height={size}
       viewBox="0 0 138 218"
     >
