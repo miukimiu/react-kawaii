@@ -11,7 +11,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <Box margin="0 auto" transition="0.5s ease-out" height="100vh">
-      <Box display={"flex"} flexDirection="column">
+      <Box display={"flex"} flexDirection="column" height="100%">
         <Header />
         <Box as="main" flex={1}>
           {children}

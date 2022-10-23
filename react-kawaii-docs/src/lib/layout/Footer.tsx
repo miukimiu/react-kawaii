@@ -6,6 +6,7 @@ const Footer = ({ ...rest }) => {
       borderTop={1}
       borderStyle={"solid"}
       borderColor={useColorModeValue("gray.200", "gray.900")}
+      padding={4}
     >
       <Flex as="footer" width="full" justifyContent="center" {...rest}>
         <Text fontSize="sm" color="gray.500">
