@@ -1,31 +1,9 @@
 import React from "react";
-
-const Backpack = React.lazy(
-  () => import("react-kawaii/lib/components/backpack")
-);
-const Browser = React.lazy(() => import("react-kawaii/lib/components/browser"));
-const Cat = React.lazy(() => import("react-kawaii/lib/components/cat"));
-const Chocolate = React.lazy(
-  () => import("react-kawaii/lib/components/chocolate")
-);
-const CreditCard = React.lazy(
-  () => import("react-kawaii/lib/components/creditCard")
-);
-const Folder = React.lazy(() => import("react-kawaii/lib/components/folder"));
-const Ghost = React.lazy(() => import("react-kawaii/lib/components/ghost"));
-const IceCream = React.lazy(
-  () => import("react-kawaii/lib/components/iceCream")
-);
-const Mug = React.lazy(() => import("react-kawaii/lib/components/mug"));
-const Planet = React.lazy(() => import("react-kawaii/lib/components/planet"));
-const SpeechBubble = React.lazy(
-  () => import("react-kawaii/lib/components/speechBubble")
-);
+import * as Kawaii from "react-kawaii";
 
 type ComponentProps = {
   color: string;
 }
-
 
 export const getComponentsList = ({ color }: ComponentProps) => {
 
@@ -34,43 +12,43 @@ export const getComponentsList = ({ color }: ComponentProps) => {
   return [
     {
       name: "Backpack",
-      component: <Backpack {...props} />,
+      component: <Kawaii.Backpack {...props} />,
     },
     {
       name: "Browser",
-      component: <Browser {...props} />,
+      component: <Kawaii.Browser {...props} />,
     },
     {
       name: "Cat",
-      component: <Cat {...props} />,
+      component: <Kawaii.Cat {...props} />,
     },
     {
       name: "Chocolate",
-      component: <Chocolate {...props} />,
+      component: <Kawaii.Chocolate {...props} />,
     },
     {
       name: "Folder",
-      component: <Folder {...props} />,
+      component: <Kawaii.Folder {...props} />,
     },
     {
       name: "Ghost",
-      component: <Ghost {...props} />,
+      component: <Kawaii.Ghost {...props} />,
     },
     {
       name: "IceCream",
-      component: <IceCream {...props} />,
+      component: <Kawaii.IceCream {...props} />,
     },
     {
       name: "Mug",
-      component: <Mug {...props} />,
+      component: <Kawaii.Mug {...props} />,
     },
     {
       name: "Planet",
-      component: <Planet {...props} />,
+      component: <Kawaii.Planet {...props} />,
     },
     {
       name: "SpeechBubble",
-      component: <SpeechBubble {...props} />,
+      component: <Kawaii.SpeechBubble {...props} />,
     },
   ];
 };
