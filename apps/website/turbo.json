@@ -1,0 +1,10 @@
+{
+  "extends": ["//"],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["./**", "!.next/**", "!.turbo/**"],
+      "outputs": [".next/**", "!.next/cache/**", "public/mdx/**"]
+    }
+  }
+}

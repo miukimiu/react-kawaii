@@ -1,0 +1,37 @@
+{
+  "name": "react-kawaii",
+  "private": true,
+  "version": "0.18.0",
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "jest",
+    "tsc": "tsc --noEmit",
+    "generate-illustrations": "tsx ./scripts/generate.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/theme": "^3.3.1",
+    "@chakra-ui/theme-tools": "^2.1.2",
+    "@chakra-ui/theme-utils": "^2.0.21"
+  },
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "eslint-config": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.4.5",
+    "@types/jest": "^29.5.12",
+    "glob": "^10.3.10",
+    "jest": "^29.7.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "change-case": "^5.4.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

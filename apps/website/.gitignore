@@ -1,0 +1,51 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+
+# vercel
+.vercel
+
+.eslintcache
+*.tsbuildinfo
+
+# idea IDE
+/.idea
+/.iml
+.iml
+*.iml
+
+# mdx images are copied to public during build
+/public/mdx/**
+/public/robots.txt
+/public/sitemap.xml
+/public/sitemap-*.xml

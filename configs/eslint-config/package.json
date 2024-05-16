@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "=8.57.0",
+    "eslint-config-next": "^14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-check-file": "^2.8.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "typescript": "^5.4.5"
+  }
+}
