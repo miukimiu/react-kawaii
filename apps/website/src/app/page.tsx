@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <Flex direction="column" align="center" justify="center" minHeight="70vh" gap="4" mb="8" w="full">
+    <Flex direction="column" align="center" justify="center" minHeight="70vh" gap="4" mb="8" width="full">
       <KawaiiList />
     </Flex>
   );

@@ -22,8 +22,8 @@ const subProjects = projects
     return { ...project, packageJson };
   });
 
-const EXCLUDE_FROM_LINT = ['tsconfig', 'eslint-config'];
-const EXCLUDE_FROM_TSC = ['tsconfig', 'eslint-config'];
+const EXCLUDE_FROM_LINT = ['tsconfig', 'eslint-config-react-kawaii'];
+const EXCLUDE_FROM_TSC = ['tsconfig', 'eslint-config-react-kawaii'];
 
 const errors: string[] = [];
 for (const subProject of subProjects) {

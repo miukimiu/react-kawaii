@@ -107,14 +107,14 @@ importers:
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
-      eslint-config:
+      eslint-config-react-kawaii:
         specifier: workspace:*
-        version: link:../../configs/eslint-config
+        version: link:../../configs/eslint-config-react-kawaii
       tsconfig:
         specifier: workspace:*
         version: link:../../configs/tsconfig
 
-  configs/eslint-config:
+  configs/eslint-config-react-kawaii:
     devDependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.8.0
@@ -192,9 +192,9 @@ importers:
       change-case:
         specifier: ^5.4.3
         version: 5.4.3
-      eslint-config:
+      eslint-config-react-kawaii:
         specifier: workspace:*
-        version: link:../../configs/eslint-config
+        version: link:../../configs/eslint-config-react-kawaii
       glob:
         specifier: ^10.3.10
         version: 10.3.10

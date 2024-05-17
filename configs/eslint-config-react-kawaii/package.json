@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config",
+  "name": "eslint-config-react-kawaii",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {

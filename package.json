@@ -1,8 +1,7 @@
 {
-  
-    "name": "react-kawaii",
-    "version": "0.18.0",
-    "description": "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
+  "name": "react-kawaii",
+  "version": "0.18.0",
+  "description": "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -15,10 +14,7 @@
     "format-check": "prettier --check \"./**/*.{ts,tsx,css,json,md,yml,yaml}\"",
     "format-write": "prettier --write \"./**/*.{ts,tsx,css,json,md,yml,yaml}\"",
     "check-subprojects": "tsx scripts/checkSubprojects.ts",
-    "prepare": "husky",
-    "openapi-gen": "pnpm run --filter frontend openapi-gen",
-    "generate-icons": "pnpm --filter @internal/icons generate-icons & prettier --write \"./packages/icons/src/icons/*.tsx\"",
-    "generate-illustrations": "pnpm --filter @internal/illustrations generate-illustrations & prettier --write \"./packages/illustrations/src/emptyStates/components/*.tsx\""
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",

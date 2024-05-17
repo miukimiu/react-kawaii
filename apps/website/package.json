@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start --port ${PORT-3002}",
     "lint": "eslint .",
-    "tsc": "tsc --noEmit",
-    "chakra-types-gen": "chakra-cli tokens ../../packages/theme/src/chakra.ts",
-    "postinstall": "pnpm run chakra-types-gen"
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
@@ -35,7 +33,7 @@
     "@types/react-dom": "18.3.0",
     "@types/react-syntax-highlighter": "^15.5.13",
     "dotenv": "^16.4.5",
-    "eslint-config": "workspace:*",
+    "eslint-config-react-kawaii": "workspace:*",
     "tsconfig": "workspace:*"
   },
   "engines": {

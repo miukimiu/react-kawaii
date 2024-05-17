@@ -1,10 +1,11 @@
 'use client';
+
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
-import { Box, Container, Flex, IconButton, Link } from '@radix-ui/themes';
+import { Container, Flex, IconButton, Link } from '@radix-ui/themes';
 import { useTheme } from 'next-themes';
 
 export const Header = () => {
-  const { theme, systemTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const isDarkTheme = theme === 'dark';
 
