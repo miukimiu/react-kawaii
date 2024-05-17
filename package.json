@@ -14,7 +14,9 @@
     "format-check": "prettier --check \"./**/*.{ts,tsx,css,json,md,yml,yaml}\"",
     "format-write": "prettier --write \"./**/*.{ts,tsx,css,json,md,yml,yaml}\"",
     "check-subprojects": "tsx scripts/checkSubprojects.ts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "changeset": "changeset",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "keywords": [],
   "author": "",
@@ -50,5 +52,8 @@
   "engines": {
     "node": "18.x",
     "pnpm": "8.x"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1"
   }
 }

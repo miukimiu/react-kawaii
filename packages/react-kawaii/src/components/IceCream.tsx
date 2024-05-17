@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const IceCream: FunctionComponent<KawaiiProps> = ({
+export const IceCream: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const IceCream: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '93.38 96.26';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill="#FCCB7E"
         d="M121.311 209.66h-3.243c-3.566 0-6.484-2.887-6.484-6.416v-25.662h16.211v25.662c0 3.529-2.918 6.416-6.484 6.416Z"
@@ -39,12 +31,7 @@ const IceCream: FunctionComponent<KawaiiProps> = ({
         opacity={0.1}
       />
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default IceCream;

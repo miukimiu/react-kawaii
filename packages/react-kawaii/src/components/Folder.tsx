@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const Folder: FunctionComponent<KawaiiProps> = ({
+export const Folder: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const Folder: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '87 110.66';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill={color}
         d="M69.88 82.612c-8.58-.036-11.55 6.564-11.55 12.834-.33 14.19-.33 60.72-.33 60.72 0 6.6 2.97 13.2 10.23 13.49h101.64c8.052.027 12.857-5.669 12.87-13.49v-45.87c0-5.28-.33-14.52-.33-14.52.33-6.6-4.29-12.87-13.53-13.2 0 0-64.35.036-64.35 0 0 0-22.44.036-22.44 0H69.88v.036Z"
@@ -38,12 +30,7 @@ const Folder: FunctionComponent<KawaiiProps> = ({
         opacity={0.6}
       />
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default Folder;

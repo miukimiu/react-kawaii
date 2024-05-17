@@ -2,10 +2,9 @@ import { FunctionComponent } from 'react';
 import { DEFAULT_PROPS } from '../constants';
 import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
-import getUniqueId from '../utils/getUniqueId';
-import Face from './common/face';
+import { Face } from './common/face';
 
-const Chocolate: FunctionComponent<KawaiiProps> = ({
+export const Chocolate: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -35,5 +34,3 @@ const Chocolate: FunctionComponent<KawaiiProps> = ({
     </svg>
   );
 };
-
-export default Chocolate;

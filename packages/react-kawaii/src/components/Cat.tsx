@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const Cat: FunctionComponent<KawaiiProps> = ({
+export const Cat: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const Cat: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '93.83 86.36';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...rest}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...rest}>
       <path
         fill={color}
         d="m106.135 177.521 2.49 3.974s-6.063 5.22-13.53 6.746c-5.381 1.124-24.533 2.569-24.533-16.783 0-19.353 13.49-22.565 7.388-6.224 0 0-2.208 6.866.642 11.484 2.851 4.617 11.002 8.712 18.39 4.898l9.153-4.095Z"
@@ -41,18 +33,12 @@ const Cat: FunctionComponent<KawaiiProps> = ({
         d="M136.851 137.41s21.882 40.432 1.565 42.198Zm-33.125 0s-21.882 40.432-1.565 42.198Z"
         opacity={0.25}
       />
-      <path
-        fill={color}
-        d="M120.068 137.41h16.702s17.586 51.553-4.818 51.272h-11.884"
-      />
+      <path fill={color} d="M120.068 137.41h16.702s17.586 51.553-4.818 51.272h-11.884" />
       <path
         fill={color}
         d="M120.349 137.41h-16.582s-17.586 51.553 4.818 51.272h11.804m35.653-130.609c-6.584-4.537-11.282-16.341-11.282-16.341l-4.175 3.654s1.204-13.893-2.088-10.6c-3.293 3.292-12.326 10.439-12.326 10.439s1.646-8.793 0-7.147c-1.606 1.606-8.352 15.498-21.481 25.897 7.428-5.822 17.225-11.282 29.711-16.622 8.432 3.613 15.619 7.106 21.641 10.72Z"
       />
-      <path
-        fill={color}
-        d="M146.447 52.452s17.264-6.143 19.633-5.26c2.329.884 5.581 10.239 0 19.353"
-      />
+      <path fill={color} d="M146.447 52.452s17.264-6.143 19.633-5.26c2.329.884 5.581 10.239 0 19.353" />
       <path
         fill={color}
         fillRule="evenodd"
@@ -108,12 +94,7 @@ const Cat: FunctionComponent<KawaiiProps> = ({
         fill="#121212"
       />
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default Cat;

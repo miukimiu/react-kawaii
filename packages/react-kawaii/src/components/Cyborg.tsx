@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const Cyborg: FunctionComponent<KawaiiProps> = ({
+export const Cyborg: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const Cyborg: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '94.66 77.2';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill={color}
         fillRule="evenodd"
@@ -139,12 +131,7 @@ const Cyborg: FunctionComponent<KawaiiProps> = ({
         />
       </mask>
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default Cyborg;

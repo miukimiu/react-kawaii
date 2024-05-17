@@ -2,10 +2,9 @@ import { FunctionComponent } from 'react';
 import { DEFAULT_PROPS } from '../constants';
 import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
-import getUniqueId from '../utils/getUniqueId';
-import Face from './common/face';
+import { Face } from './common/face';
 
-const CreditCard: FunctionComponent<KawaiiProps> = ({
+export const CreditCard: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -33,5 +32,3 @@ const CreditCard: FunctionComponent<KawaiiProps> = ({
     </svg>
   );
 };
-
-export default CreditCard;

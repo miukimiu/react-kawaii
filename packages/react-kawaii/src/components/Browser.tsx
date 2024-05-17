@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const Browser: FunctionComponent<KawaiiProps> = ({
+export const Browser: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const Browser: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '93.58 115.38';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill={color}
         d="M199.67 122.166V83.164c-.002-9.99-8.186-18.166-18.191-18.164l-123.292.004C48.184 65.004 40 73.18 40 83.17v73.614l.044-.008c.322 2.904 2.829 18.249 19.777 18.249 18.72 0 115.623 1.102 122.23 0 6.608-1.101 17.619-3.303 17.619-18.721v-34.138Z"
@@ -40,14 +32,7 @@ const Browser: FunctionComponent<KawaiiProps> = ({
         fill="#fff"
         d="M175.121 76.433a2.717 2.717 0 0 0 2.719-2.715c0-1.5-1.217-2.716-2.719-2.716a2.718 2.718 0 0 0-2.719 2.716c0 1.5 1.218 2.715 2.719 2.715Zm8.973 0a2.718 2.718 0 0 0 2.719-2.715c0-1.5-1.218-2.716-2.719-2.716a2.717 2.717 0 0 0-2.719 2.716c0 1.5 1.217 2.715 2.719 2.715Z"
       />
-      <rect
-        width={116.585}
-        height={8.448}
-        x={50.419}
-        y={69.506}
-        fill="#fff"
-        rx={4.224}
-      />
+      <rect width={116.585} height={8.448} x={50.419} y={69.506} fill="#fff" rx={4.224} />
       <mask
         id="Browser_svg__a"
         width={25}
@@ -67,12 +52,7 @@ const Browser: FunctionComponent<KawaiiProps> = ({
         />
       </mask>
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default Browser;

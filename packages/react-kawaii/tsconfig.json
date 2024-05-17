@@ -1,6 +1,15 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "images.d.ts"],
-  "exclude": ["node_modules"]
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "declaration": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["./**/*.ts", "./**/*.tsx"]
 }

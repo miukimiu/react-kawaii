@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const HumanCat: FunctionComponent<KawaiiProps> = ({
+export const HumanCat: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const HumanCat: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '93.2 77.66';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill={color}
         d="M131.512 169.581a6.26 6.26 0 0 1 0-12.52c17.908 0 19.715-7.544 22.994-21.238 2.977-12.425 6.68-27.887 25.461-37.166a6.26 6.26 0 0 1 5.545 11.225c-13.518 6.679-16.099 17.452-18.831 28.858-1.754 7.321-3.567 14.892-8.512 20.794-5.664 6.76-14.383 10.047-26.657 10.047Z"
@@ -89,12 +81,7 @@ const HumanCat: FunctionComponent<KawaiiProps> = ({
         clipRule="evenodd"
       />
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default HumanCat;

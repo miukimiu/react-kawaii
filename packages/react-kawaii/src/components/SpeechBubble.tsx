@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const SpeechBubble: FunctionComponent<KawaiiProps> = ({
+export const SpeechBubble: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const SpeechBubble: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '91.61 108.57';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill={color}
         d="M199.986 85.631c-.002-9.147-8.202-16.633-18.227-16.631l-123.536.004C48.2 69.004 40 76.49 40 85.637v67.402l.044-.007c.323 2.659 2.835 16.71 19.816 16.71h30.48l-.084 18.618s.069 1.555.417 1.998c.348.444 1.225 1.523 3.203 1.623 1.978.1 2.01-.228 2.36-.267.35-.038 5.519-3.611 5.519-3.611l25.756-18.361s51.382.524 54.821 0c6.621-1.009 17.654-3.025 17.654-17.142V85.632Z"
@@ -33,12 +25,7 @@ const SpeechBubble: FunctionComponent<KawaiiProps> = ({
         opacity={0.07}
       />
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default SpeechBubble;

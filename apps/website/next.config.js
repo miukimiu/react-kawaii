@@ -4,11 +4,6 @@ const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   // Optionally, add any other Next.js config below
   reactStrictMode: true,
-  experimental: {
-    serverComponentsExternalPackages: ['mdx-bundler'],
-    optimizePackageImports: ['shiki'],
-    outputFileTracingIgnores: ['**/*/rehypeImages.ts']
-  },
   images: {
     domains: [],
     dangerouslyAllowSVG: true

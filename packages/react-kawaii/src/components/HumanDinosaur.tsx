@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'react';
-import getUniqueId from '../utils/getUniqueId';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const HumanCat: FunctionComponent<KawaiiProps> = ({
+export const HumanDinosaur: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -15,14 +14,7 @@ const HumanCat: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '97.66 123.76';
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         fill={color}
         fillRule="evenodd"
@@ -92,12 +84,7 @@ const HumanCat: FunctionComponent<KawaiiProps> = ({
           clipRule="evenodd"
         />
       </mask>
-      <g
-        fill="#fff"
-        fillRule="evenodd"
-        clipRule="evenodd"
-        mask="url(#HumanDinosaur_svg__a)"
-      >
+      <g fill="#fff" fillRule="evenodd" clipRule="evenodd" mask="url(#HumanDinosaur_svg__a)">
         <path d="M92.082 161.887s4.326-12.205 7.802-12.205 7.802 12.205 7.802 12.205H92.082Zm15.093 1.625s4.326-12.204 7.802-12.204 7.802 12.204 7.802 12.204h-15.604Z" />
         <path d="M120.228 163.512s4.326-12.204 7.803-12.204c3.476 0 7.802 12.204 7.802 12.204h-15.605Z" />
         <path d="M134.913 161.887s4.326-12.205 7.802-12.205c3.477 0 7.803 12.205 7.803 12.205h-15.605Zm-42.831-55.718s4.326 12.204 7.802 12.204 7.802-12.204 7.802-12.204H92.082Z" />
@@ -106,12 +93,7 @@ const HumanCat: FunctionComponent<KawaiiProps> = ({
         <path d="M134.913 106.169s4.326 12.204 7.802 12.204c3.477 0 7.803-12.204 7.803-12.204h-15.605Z" />
       </g>
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default HumanCat;

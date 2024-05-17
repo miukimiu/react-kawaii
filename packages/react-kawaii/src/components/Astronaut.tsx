@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
-import { KawaiiProps } from '../types';
 import { DEFAULT_PROPS } from '../constants';
-import Face from './common/face';
+import { KawaiiProps } from '../types';
 import { getFaceScale } from '../utils/getFaceScale';
+import { Face } from './common/face';
 
-const Astronaut: FunctionComponent<KawaiiProps> = ({
+export const Astronaut: FunctionComponent<KawaiiProps> = ({
   size = 240,
   mood = 'blissful',
   color = '#A6E191',
@@ -14,14 +14,7 @@ const Astronaut: FunctionComponent<KawaiiProps> = ({
   const figmaFaceXYPosition = '99.82 67.77';
 
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 240 240"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg width={size} height={size} viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -96,13 +89,7 @@ const Astronaut: FunctionComponent<KawaiiProps> = ({
         d="M192.036 156.016C188.198 157.413 183.957 155.442 182.564 151.614C181.17 147.785 183.152 143.549 186.99 142.153C190.827 140.756 195.068 142.727 196.461 146.555C197.855 150.384 195.873 154.62 192.036 156.016Z"
         fill={color}
       />
-      <rect
-        x={134.854}
-        y={169.797}
-        width={6.82929}
-        height={35.8538}
-        fill={color}
-      />
+      <rect x={134.854} y={169.797} width={6.82929} height={35.8538} fill={color} />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -122,13 +109,7 @@ const Astronaut: FunctionComponent<KawaiiProps> = ({
         d="M150.675 217.033H125.407C123.358 217.033 121.765 218.627 121.765 220.676V220.676C121.765 222.724 123.358 224.318 125.407 224.318H150.675C152.724 224.318 154.318 222.724 154.318 220.676V220.676C154.09 218.627 152.496 217.033 150.675 217.033Z"
         fill={color}
       />
-      <rect
-        x={97.2929}
-        y={169.797}
-        width={6.82929}
-        height={35.8538}
-        fill={color}
-      />
+      <rect x={97.2929} y={169.797} width={6.82929} height={35.8538} fill={color} />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -243,12 +224,7 @@ const Astronaut: FunctionComponent<KawaiiProps> = ({
         />
       </mask>
 
-      <Face
-        mood={mood}
-        transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`}
-      />
+      <Face mood={mood} transform={`translate(${figmaFaceXYPosition}) scale(${figmaFaceScale})`} />
     </svg>
   );
 };
-
-export default Astronaut;
