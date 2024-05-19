@@ -6,7 +6,6 @@ import { KawaiiProps, MOODS } from 'react-kawaii';
 import { COLORS } from '../../constants';
 import { KawaiiListGrid } from './KawaiiListGrid';
 import { KawaiiListToolbar } from './KawaiiListToolbar';
-import './kawaiiList.css';
 
 export const KawaiiList = () => {
   const colors = [...COLORS];
@@ -21,7 +20,7 @@ export const KawaiiList = () => {
 
   return (
     <Container size="4">
-      <Flex gap="8" width="100%" px="4" direction="column">
+      <Flex gap="4" width="100%" direction="column">
         <KawaiiListToolbar
           colors={colors}
           color={color}

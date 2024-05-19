@@ -12,12 +12,13 @@ export const Chocolate: FunctionComponent<KawaiiProps> = ({
 } = DEFAULT_PROPS) => {
   const figmaFaceScale = getFaceScale(53.99);
   const figmaFaceXYPosition = '93 156.26';
+  const chocolateFillColor = '#8C6A57';
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>
       <path
         d="M166.389 201.19a4 4 0 0 1-4 4H78a4 4 0 0 1-4-4V39a4 4 0 0 1 4-4h84.389a4 4 0 0 1 4 4v162.19Z"
-        fill="#8E5434"
+        fill={chocolateFillColor}
       />
       <path
         fillRule="evenodd"

@@ -10,8 +10,8 @@ export const Folder: FunctionComponent<KawaiiProps> = ({
   color = '#A6E191',
   ...props
 } = DEFAULT_PROPS) => {
-  const figmaFaceScale = getFaceScale(66);
-  const figmaFaceXYPosition = '87 110.66';
+  const figmaFaceScale = getFaceScale(52);
+  const figmaFaceXYPosition = '94 116';
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 240 240" fill="none" {...props}>

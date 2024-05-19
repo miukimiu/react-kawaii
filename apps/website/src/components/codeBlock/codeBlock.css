@@ -1,0 +1,24 @@
+.codeBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #011627; /* night owl bg color */
+  padding: var(--space-2);
+  border-radius: var(--radius-3);
+}
+
+.codeBlock pre {
+  padding: 0 !important;
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 14px !important;
+}
+
+.copyButton {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor: pointer;
+}

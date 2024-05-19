@@ -2,10 +2,23 @@
   --default-font-family: var(--font-inter) !important;
 }
 
+.light .radix-themes {
+  --color-background: #f9f4fe;
+  --color-card: #fff;
+  --color-illustration-bg: #f7efff;
+}
+
+/* seed: #6e56cf */
+.dark .radix-themes {
+  --color-background: #0f0733;
+  --color-card: #2d2353;
+  --color-illustration-bg: #473d72;
+}
+
 .wrapper {
   position: relative;
 }
-
+/* 
 .wrapper:after {
   content: '';
   width: 100%;
@@ -23,4 +36,4 @@
     rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat scroll 0% 0%;
   z-index: -1;
   opacity: 0.1;
-}
+} */

@@ -1,7 +1,7 @@
 'use client';
 
 import { DimensionsIcon, FaceIcon } from '@radix-ui/react-icons';
-import { Button, Flex, Popover, Select, Slider } from '@radix-ui/themes';
+import { Button, ButtonProps, Flex, Popover, Select, Slider, Text } from '@radix-ui/themes';
 import { Circle } from '@uiw/react-color';
 import { FC } from 'react';
 import { capitalizeFirstLetter } from '~/utils/capitalizeFirstLetter';
@@ -28,12 +28,19 @@ export const KawaiiListToolbar: FC<KawaiiListToolbar> = ({
   setMood,
   setSize
 }) => {
+  const accentButtonColor = 'violet';
+  const buttonStyles: ButtonProps = {
+    variant: 'soft',
+    color: accentButtonColor,
+    highContrast: true
+  };
+
   return (
     <Flex className="kawaiiListToolbar" gap="4" position="sticky" top="0">
       <Flex direction="column" gap="1">
         <Popover.Root>
           <Popover.Trigger>
-            <Button variant="soft" color="gray" highContrast>
+            <Button {...buttonStyles}>
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px">
                 <circle cx="50" cy="50" r="50" fill={color} />
               </svg>
@@ -50,10 +57,10 @@ export const KawaiiListToolbar: FC<KawaiiListToolbar> = ({
 
       <Flex direction="column" gap="1">
         <Select.Root defaultValue={mood} onValueChange={setMood}>
-          <Select.Trigger variant="soft" color="gray">
-            <Flex as="span" align="center" gap="2">
+          <Select.Trigger variant="soft" color={accentButtonColor}>
+            <Flex as="span" align="center" gap="2" minWidth="100px">
               <FaceIcon />
-              {capitalizeFirstLetter(mood)}
+              <Text weight="medium">{capitalizeFirstLetter(mood)}</Text>
             </Flex>
           </Select.Trigger>
           <Select.Content>
@@ -72,18 +79,24 @@ export const KawaiiListToolbar: FC<KawaiiListToolbar> = ({
       <Flex direction="column" gap="1">
         <Popover.Root>
           <Popover.Trigger>
-            <Button variant="soft" color="gray" highContrast>
+            <Button {...buttonStyles}>
               <DimensionsIcon />
               Adjust size
             </Button>
           </Popover.Trigger>
-          <Popover.Content width="360px">
+          <Popover.Content width="280px">
             <Flex gap="3">
               <Slider min={100} max={280} value={size} onValueChange={setSize} />
             </Flex>
           </Popover.Content>
         </Popover.Root>
       </Flex>
+
+      <Button color={accentButtonColor} variant="soft">
+        Test
+      </Button>
+
+      <Button color={accentButtonColor}>Test</Button>
     </Flex>
   );
 };

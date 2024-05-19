@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${baloo.variable}`}>
       <body>
         <NextThemesProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Theme accentColor="crimson" grayColor="slate">
+          <Theme accentColor="violet" grayColor="slate">
             <Flex className="wrapper" direction="column" minHeight="100vh" width="full">
               <Header />
               <main>{children}</main>

@@ -1,3 +1,33 @@
-.kawaiiGrid {
+.kawaiiListGrid {
   flex: 1;
+}
+
+.kawaiiListGridCard {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.kawaiiListGridCard:hover {
+  transform: scale(1.05);
+}
+
+.kawaiiListGridCard:hover .kawaiiListGridCard_openModal {
+  opacity: 100;
+}
+
+.kawaiiListGridCard_openModal {
+  opacity: 0;
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.kawaiiListGridCard__img {
+  background: var(--color-card);
+  width: 100%;
+  border-radius: var(--radius-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

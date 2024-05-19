@@ -5,3 +5,24 @@ export const DEFAULT_PROPS = {
   mood: 'blissful',
   color: '#FFD882'
 } as const;
+
+export const PROPS_DATA = [
+  {
+    name: 'size',
+    type: 'number | string',
+    description: 'Size of the SVG.',
+    default: DEFAULT_PROPS.size
+  },
+  {
+    name: 'color',
+    type: 'string',
+    description: 'Color of the SVG.',
+    default: DEFAULT_PROPS.color
+  },
+  {
+    name: 'mood',
+    type: 'KawaiiMood',
+    description: 'Mood of the Kawaii face.',
+    default: DEFAULT_PROPS.mood
+  }
+];

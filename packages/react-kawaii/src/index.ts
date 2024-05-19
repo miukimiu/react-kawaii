@@ -15,6 +15,6 @@ export { Mug } from './components/Mug';
 export { Planet } from './components/Planet';
 export { SpeechBubble } from './components/SpeechBubble';
 
-export { MOODS } from './constants';
+export { DEFAULT_PROPS, MOODS, PROPS_DATA } from './constants';
 
 export type { KawaiiProps } from './types';
