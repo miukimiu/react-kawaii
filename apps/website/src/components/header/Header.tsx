@@ -9,7 +9,7 @@ export const Header = () => {
         <Flex justify="between" px="4" gap="4">
           <Flex gap="4" align="center">
             <Link href="#">
-              <Text weight="medium" size="5" color="gray" highContrast>
+              <Text weight="medium" size="5" color="gray" highContrast style={{ fontFamily: 'var(--font-baloo)' }}>
                 React Kawaii
               </Text>
             </Link>
