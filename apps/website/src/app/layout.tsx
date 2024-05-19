@@ -1,8 +1,11 @@
 import { Flex, Theme } from '@radix-ui/themes';
+import '@radix-ui/themes/styles.css';
 import { Metadata } from 'next';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Baloo_2, Inter } from 'next/font/google';
+import 'reset-css';
 import { Header } from '~/components/header/Header';
+import '../global.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -10,10 +13,11 @@ const inter = Inter({
   display: 'swap'
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const baloo = Baloo_2({
+  weight: ['800'],
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-jetbrains-mono'
+  variable: '--font-baloo'
 });
 
 export const metadata: Metadata = {
@@ -34,13 +38,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${baloo.variable}`}>
       <body>
         <NextThemesProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Theme accentColor="indigo">
-            <Flex direction="column" minHeight="100vh" width="full">
+          <Theme accentColor="crimson" grayColor="slate">
+            <Flex className="wrapper" direction="column" minHeight="100vh" width="full">
               <Header />
-              <Flex direction="column">{children}</Flex>
+              <main>{children}</main>
             </Flex>
           </Theme>
         </NextThemesProvider>

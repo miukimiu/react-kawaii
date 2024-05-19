@@ -1,32 +1,27 @@
-'use client';
-
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
-import { Container, Flex, IconButton, Link } from '@radix-ui/themes';
-import { useTheme } from 'next-themes';
+import { Button, Container, Flex, Link, Text } from '@radix-ui/themes';
+import { ButtonGitHubStars } from '~/components/button/ButtonGithubStars';
+import { ButtonThemeToggle } from '~/components/button/ButtonThemeToggle';
 
 export const Header = () => {
-  const { theme, setTheme } = useTheme();
-
-  const isDarkTheme = theme === 'dark';
-
   return (
-    <Flex height="64px">
+    <Flex width="100%" height="64px" align="center">
       <Container size="4">
-        <Flex justify="between">
-          <Flex>
-            <Link href="#">React Kawaii</Link>
+        <Flex justify="between" px="4" gap="4">
+          <Flex gap="4" align="center">
+            <Link href="#">
+              <Text weight="medium" size="5" color="gray" highContrast>
+                React Kawaii
+              </Text>
+            </Link>
+
+            <Button color="gray" variant="soft" size="1">
+              <Text weight="bold">v.0.18.0</Text>
+            </Button>
           </Flex>
 
-          <Flex>
-            <Link href="#">GitHub</Link>
-
-            <IconButton
-              onClick={() => {
-                setTheme(isDarkTheme ? 'light' : 'dark');
-              }}
-            >
-              {isDarkTheme ? <SunIcon width="18" height="18" /> : <MoonIcon width="18" height="18" />}
-            </IconButton>
+          <Flex gap="4">
+            <ButtonGitHubStars />
+            <ButtonThemeToggle />
           </Flex>
         </Flex>
       </Container>
