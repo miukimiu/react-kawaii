@@ -1,0 +1,13 @@
+.kawaiiGrid {
+  flex: 1;
+}
+
+.kawaiiListCard__img {
+  background: var(--background);
+  width: 100%;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

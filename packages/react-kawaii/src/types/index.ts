@@ -1,15 +1,16 @@
+import { SVGProps } from 'react';
 import { MOODS } from '../constants';
 
-export type KawaiiMoood = typeof MOODS[number];
+export type KawaiiMood = (typeof MOODS)[number];
 
-export type KawaiiProps = {
+export type KawaiiProps = SVGProps<SVGSVGElement> & {
   size?: number | string;
   color?: string;
-  mood?: KawaiiMoood;
+  mood?: KawaiiMood;
 };
 
 export type KawaiiFaceProps = {
-  mood?: KawaiiMoood;
+  mood?: KawaiiMood;
   uniqueId?: string;
   transform?: string;
 };

@@ -1,12 +1,4 @@
-export const MOODS = [
-  'sad',
-  'shocked',
-  'happy',
-  'blissful',
-  'lovestruck',
-  'excited',
-  'ko'
-] as const;
+export const MOODS = ['sad', 'shocked', 'happy', 'blissful', 'lovestruck', 'excited', 'ko'] as const;
 
 export const DEFAULT_PROPS = {
   size: 240,
