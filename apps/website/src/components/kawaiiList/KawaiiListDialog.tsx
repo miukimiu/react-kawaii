@@ -16,10 +16,10 @@ type KawaiiListDialogProps = {
 
 export const KawaiiListDialog: FC<KawaiiListDialogProps> = ({ children, title, kawaiiProps }) => {
   const codeString = `
-  import { ${title} } from ‘react-kawaii’;
+  import { ${title} } from "react-kawaii";
 
   const Example = () => (
-    <Planet size={${kawaiiProps.size}} mood="${kawaiiProps.mood}" color="${kawaiiProps.color}" />
+    <${title} size={${kawaiiProps.size}} mood="${kawaiiProps.mood}" color="${kawaiiProps.color}" />
   );
   `;
 
@@ -29,11 +29,8 @@ export const KawaiiListDialog: FC<KawaiiListDialogProps> = ({ children, title, k
 
       <Dialog.Content maxWidth="650px">
         <Dialog.Title>{title}</Dialog.Title>
-        <Dialog.Description size="2" mb="4">
-          Make changes to your profile.
-        </Dialog.Description>
 
-        <CodeBlock code={codeString} language="jsx" />
+        <CodeBlock code={codeString} />
 
         <Flex direction="column" gap="3">
           <Table.Root>

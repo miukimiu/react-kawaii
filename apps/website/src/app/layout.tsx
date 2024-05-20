@@ -1,4 +1,4 @@
-import { Flex, Theme } from '@radix-ui/themes';
+import { Box, Flex, Theme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import { Metadata } from 'next';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
@@ -39,10 +39,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${baloo.variable}`}>
-      <body>
+      <body className="body">
         <NextThemesProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Theme accentColor="violet" grayColor="slate">
+          <Theme accentColor="violet" grayColor="gray">
             <Flex className="wrapper" direction="column" minHeight="100vh" width="full">
+              <Box className="top-gradient" />
               <Header />
               <main>{children}</main>
             </Flex>

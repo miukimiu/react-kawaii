@@ -2,38 +2,179 @@
   --default-font-family: var(--font-inter) !important;
 }
 
-.light .radix-themes {
-  --color-background: #f9f4fe;
-  --color-card: #fff;
-  --color-illustration-bg: #f7efff;
-}
-
-/* seed: #6e56cf */
-.dark .radix-themes {
-  --color-background: #0f0733;
-  --color-card: #2d2353;
-  --color-illustration-bg: #473d72;
-}
-
 .wrapper {
   position: relative;
 }
-/* 
-.wrapper:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  display: flex;
+
+.top-gradient {
   position: absolute;
-  left: 0;
-  top: 0;
-  background: radial-gradient(at 18% 99%, rgb(223, 229, 113) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 97% 8%, rgb(118, 249, 173) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 79% 82%, rgb(233, 109, 131) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 96% 10%, rgb(222, 81, 251) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 42% 20%, rgb(116, 240, 251) 0px, transparent 50%) repeat scroll 0% 0%,
-    radial-gradient(at 4% 49%, rgb(203, 88, 218) 0px, transparent 50%) repeat scroll 0% 0%,
-    rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat scroll 0% 0%;
+  left: 0px;
+  right: 0px;
+  height: 480px;
+  width: 100%;
+  opacity: 0.6;
+  background: linear-gradient(to bottom, var(--accent-4), transparent);
   z-index: -1;
-  opacity: 0.1;
-} */
+}
+
+/* 
+**************
+Dark theme 
+**************
+*/
+.dark .body,
+.dark-theme .body {
+  --violet-1: #11101a;
+  --violet-2: #181624;
+  --violet-3: #262141;
+  --violet-4: #312858;
+  --violet-5: #3b3166;
+  --violet-6: #463b73;
+  --violet-7: #544987;
+  --violet-8: #6759a5;
+  --violet-9: #6f60b3;
+  --violet-10: #62549f;
+  --violet-11: #b5a9fe;
+  --violet-12: #e1defb;
+
+  --violet-a1: #12d90005;
+  --violet-a2: #b4f4000b;
+  --violet-a3: #b9b4fe20;
+  --violet-a4: #9c86ff3b;
+  --violet-a5: #9e89fd4c;
+  --violet-a6: #a690fe5b;
+  --violet-a7: #a794ff72;
+  --violet-a8: #a48ffe96;
+  --violet-a9: #a28effa6;
+  --violet-a10: #a28dfe8f;
+  --violet-a11: #b6aafffe;
+  --violet-a12: #e5e2fefb;
+
+  --violet-contrast: #fff;
+  --violet-surface: #1f202380;
+  --violet-indicator: #6f60b3;
+  --violet-track: #6f60b3;
+}
+
+.dark .body,
+.dark-theme .body {
+  --gray-1: #13111b;
+  --gray-2: #1a1822;
+  --gray-3: #24212e;
+  --gray-4: #2b273a;
+  --gray-5: #332d44;
+  --gray-6: #3c3651;
+  --gray-7: #4a4264;
+  --gray-8: #645887;
+  --gray-9: #726698;
+  --gray-10: #7f73a6;
+  --gray-11: #b6adda;
+  --gray-12: #eeedf6;
+
+  --gray-a1: #1400e405;
+  --gray-a2: #9d88ef0d;
+  --gray-a3: #baa6f91a;
+  --gray-a4: #b09cfc27;
+  --gray-a5: #b79cfd32;
+  --gray-a6: #b7a2ff40;
+  --gray-a7: #b8a2fe55;
+  --gray-a8: #baa2fd7c;
+  --gray-a9: #bea9ff8e;
+  --gray-a10: #c2affe9e;
+  --gray-a11: #d4cafed7;
+  --gray-a12: #f6f5fef6;
+
+  --gray-contrast: #ffffff;
+  --gray-surface: rgba(0, 0, 0, 0.05);
+  --gray-indicator: #726698;
+  --gray-track: #726698;
+}
+
+.dark .body,
+.dark-theme .body,
+:is(.dark, .dark-theme) :where(.radix-themes:not(.light, .light-theme)) {
+  --color-background: #131217;
+  --color-code-bg: var(--gray-4);
+}
+
+/* 
+**************
+Light theme 
+**************
+*/
+:root,
+.light .body,
+.light-theme .body {
+  --gray-1: #fcfcff;
+  --gray-2: #faf9fe;
+  --gray-3: #f0eff9;
+  --gray-4: #e9e6f4;
+  --gray-5: #e1def0;
+  --gray-6: #dad6ea;
+  --gray-7: #d0cbe3;
+  --gray-8: #bdb7d7;
+  --gray-9: #8f89a8;
+  --gray-10: #847f9c;
+  --gray-11: #656178;
+  --gray-12: #211d2e;
+
+  --gray-a1: #0000ff03;
+  --gray-a2: #2b00d506;
+  --gray-a3: #1000a010;
+  --gray-a4: #1f008f19;
+  --gray-a5: #18008c21;
+  --gray-a6: #19007d29;
+  --gray-a7: #19007634;
+  --gray-a8: #16007248;
+  --gray-a9: #0d004376;
+  --gray-a10: #0a003a80;
+  --gray-a11: #0700259e;
+  --gray-a12: #050013e2;
+
+  --gray-contrast: #ffffff;
+  --gray-surface: #ffffffcc;
+  --gray-indicator: #8f89a8;
+  --gray-track: #8f89a8;
+}
+
+:root,
+.light .body,
+.light-theme .body {
+  --violet-1: #fcfcfe;
+  --violet-2: #f9f9ff;
+  --violet-3: #f2f1ff;
+  --violet-4: #e7e6ff;
+  --violet-5: #dddaff;
+  --violet-6: #d0cbff;
+  --violet-7: #bdb7f7;
+  --violet-8: #a49bee;
+  --violet-9: #6f56cf;
+  --violet-10: #624cb5;
+  --violet-11: #6550b9;
+  --violet-12: #31255e;
+
+  --violet-a1: #0000aa03;
+  --violet-a2: #0000ff06;
+  --violet-a3: #1300ff0e;
+  --violet-a4: #0b00ff19;
+  --violet-a5: #1500ff25;
+  --violet-a6: #1900ff34;
+  --violet-a7: #1600e348;
+  --violet-a8: #1700d464;
+  --violet-a9: #2600b7a9;
+  --violet-a10: #200096b3;
+  --violet-a11: #1f0099af;
+  --violet-a12: #0e0043da;
+
+  --violet-contrast: #fff;
+  --violet-surface: #f8f8ffcc;
+  --violet-indicator: #6f56cf;
+  --violet-track: #6f56cf;
+}
+
+:root,
+.light .body,
+.light-theme .body {
+  --color-background: #fff;
+  --color-code-bg: var(--violet-2);
+}

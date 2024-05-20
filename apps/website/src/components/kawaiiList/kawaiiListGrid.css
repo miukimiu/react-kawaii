@@ -21,10 +21,10 @@
   top: var(--space-3);
   right: var(--space-3);
   transition: opacity 0.3s ease-in-out;
+  color: var(--gray-9);
 }
 
 .kawaiiListGridCard__img {
-  background: var(--color-card);
   width: 100%;
   border-radius: var(--radius-5);
   display: flex;

@@ -1,7 +1,13 @@
 .kawaiiListToolbar {
-  background-color: var(--color-card);
+  z-index: 999;
+}
+
+.kawaiiListToolbar__card {
   padding: var(--space-4);
-  border-radius: var(--radius-5);
+  display: flex;
+  overflow: hidden;
+  gap: var(--space-4);
+  width: 100%;
 }
 
 .kawaiiListToolbar__colorPopover .w-color-circle {
