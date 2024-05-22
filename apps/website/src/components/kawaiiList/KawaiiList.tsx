@@ -2,7 +2,7 @@
 
 import { Container, Flex } from '@radix-ui/themes';
 import React, { useState } from 'react';
-import { KawaiiProps, MOODS } from 'react-kawaii';
+import { MOODS } from 'react-kawaii';
 import { COLORS } from '../../constants';
 import { KawaiiListGrid } from './KawaiiListGrid';
 import { KawaiiListToolbar } from './KawaiiListToolbar';
@@ -31,7 +31,7 @@ export const KawaiiList = () => {
           size={size}
           setSize={setSize}
         />
-        <KawaiiListGrid color={color} mood={mood as KawaiiProps['mood']} size={size[0]} />
+        <KawaiiListGrid color={color} mood={mood} size={size[0]} />
       </Flex>
     </Container>
   );
