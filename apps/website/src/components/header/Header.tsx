@@ -1,4 +1,4 @@
-import { Button, Container, Flex, Link, Text } from '@radix-ui/themes';
+import { Button, Container, Flex, Text } from '@radix-ui/themes';
 import NextImage from 'next/image';
 import NextLink from 'next/link';
 import { ButtonGitHubStars } from '~/components/button/ButtonGithubStars';
