@@ -31,8 +31,12 @@
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
     "@chakra-ui/styled-system": "^2.9.2",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.3",
     "@types/chroma-js": "^2.4.4",
     "@types/lodash": "^4.17.4",
+    "@types/mdx": "^2.0.13",
     "@types/react": "^18.3.1",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-dom": "18.3.0",

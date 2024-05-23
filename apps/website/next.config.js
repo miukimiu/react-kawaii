@@ -1,3 +1,5 @@
+const withMDX = require('@next/mdx')();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Configure pageExtensions to include md and mdx
@@ -8,9 +10,11 @@ const nextConfig = {
     domains: [],
     dangerouslyAllowSVG: true
   },
+
   webpack: (config) => {
     config.externals = [
       ...config.externals,
+
       {
         'utf-8-validate': 'commonjs utf-8-validate',
         bufferutil: 'commonjs bufferutil'
@@ -21,4 +25,4 @@ const nextConfig = {
   }
 };
 
-module.exports = nextConfig;
+module.exports = withMDX(nextConfig);

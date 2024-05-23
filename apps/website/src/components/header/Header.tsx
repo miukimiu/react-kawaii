@@ -11,7 +11,7 @@ export const Header = () => {
       <Container size="4">
         <Flex justify="between" px="4" gap="4">
           <Flex gap="4" align="center">
-            <NextLink href="/" className="logo">
+            <NextLink href="/" className="header__logo">
               <NextImage src="/logo.svg" alt="Postgres" width={40} height={40} />
               <Text weight="medium" size="5" color="gray" highContrast style={{ fontFamily: 'var(--font-baloo)' }}>
                 React Kawaii
@@ -23,7 +23,14 @@ export const Header = () => {
             </Button>
           </Flex>
 
-          <Flex gap="4">
+          <Flex gap="6">
+            <Flex gap="4">
+              <NextLink href="/get-started" className="header__link">
+                <Text weight="medium" size="3" color="gray" highContrast>
+                  Get Started
+                </Text>
+              </NextLink>
+            </Flex>
             <ButtonGitHubStars />
             <ButtonThemeToggle />
           </Flex>
