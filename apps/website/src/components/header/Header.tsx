@@ -35,7 +35,10 @@ export const Header = () => {
                 md: 'flex'
               }}
             >
-              <NextLink href="/get-started" className="header__link">
+              <NextLink
+                href="https://github.com/miukimiu/react-kawaii/blob/main/packages/react-kawaii/README.md"
+                className="header__link"
+              >
                 <Text weight="medium" size="3" color="gray" highContrast>
                   Get Started
                 </Text>
