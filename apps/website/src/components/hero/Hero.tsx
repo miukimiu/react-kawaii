@@ -6,17 +6,10 @@ import './hero.css';
 
 export const Hero = () => {
   return (
-    <Container size="2" className="hero" pb="8">
-      <Box px="4">
-        <Flex direction="column" align="center" justify="center" gap="4" minHeight="240px">
-          <Heading
-            as="h1"
-            align="center"
-            size={{
-              initial: '8',
-              lg: '9'
-            }}
-          >
+    <Container size="2" className="hero">
+      <Box px="4" py="8">
+        <Flex direction="column" align="center" justify="center" gap="4">
+          <Heading as="h1" align="center" size="8">
             Cute illustrations for React Apps
           </Heading>
           <Text size="4" align="center">
@@ -28,7 +21,9 @@ export const Hero = () => {
             href="https://github.com/miukimiu/react-kawaii/blob/main/packages/react-kawaii/README.md"
             className="header__link"
           >
-            <Button size="3">Get started</Button>
+            <Button size="3" className="hero__getStartedBtn">
+              Get started
+            </Button>
           </NextLink>
         </Flex>
       </Box>

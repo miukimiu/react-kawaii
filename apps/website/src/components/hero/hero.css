@@ -1,3 +1,7 @@
 .hero h1 {
   font-family: var(--font-baloo);
 }
+
+.hero__getStartedBtn {
+  cursor: pointer;
+}
