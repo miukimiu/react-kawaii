@@ -3,7 +3,6 @@ import { useTheme } from 'next-themes';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { TbCopy } from 'react-icons/tb';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import language from 'react-syntax-highlighter/dist/esm/languages/hljs/1c';
 import { nightOwl, oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './codeBlock.css';
 
@@ -23,7 +22,7 @@ export const CodeBlock = ({ code, language = 'jsx' }: CodeBlockProps) => {
         </CopyToClipboard>
       </IconButton>
 
-      <SyntaxHighlighter language={language} style={codeblockTheme}>
+      <SyntaxHighlighter language={language} style={codeblockTheme} wrapLines={true}>
         {code}
       </SyntaxHighlighter>
     </div>

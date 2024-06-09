@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Flex className="wrapper" direction="column" minHeight="100vh" width="full">
               <Box className="top-gradient" />
               <Header />
-              <main>{children}</main>
+              <Box px="4">{children}</Box>
             </Flex>
           </Theme>
         </NextThemesProvider>

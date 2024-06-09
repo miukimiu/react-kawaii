@@ -1,7 +1,7 @@
 'use client';
 
 import { DimensionsIcon } from '@radix-ui/react-icons';
-import { Button, ButtonProps, Card, Flex, Popover, Select, Slider, Text } from '@radix-ui/themes';
+import { Box, Button, ButtonProps, Card, Flex, Popover, Select, Slider, Text } from '@radix-ui/themes';
 import { Circle } from '@uiw/react-color';
 import { FC } from 'react';
 import { TbRobotFace } from 'react-icons/tb';
@@ -46,7 +46,16 @@ export const KawaiiListToolbar: FC<KawaiiListToolbar> = ({
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px">
                   <circle cx="50" cy="50" r="50" fill={color} />
                 </svg>
-                Color
+
+                <Box
+                  as="span"
+                  display={{
+                    initial: 'none',
+                    xs: 'inline-block'
+                  }}
+                >
+                  Color
+                </Box>
               </Button>
             </Popover.Trigger>
             <Popover.Content className="kawaiiListToolbar__colorPopover">
@@ -60,9 +69,18 @@ export const KawaiiListToolbar: FC<KawaiiListToolbar> = ({
         <Flex direction="column" gap="1">
           <Select.Root defaultValue={mood} onValueChange={setMood}>
             <Select.Trigger variant="soft" color={accentButtonColor}>
-              <Flex as="span" align="center" gap="2" minWidth="100px">
+              <Flex as="span" align="center" gap="2">
                 <TbRobotFace />
-                <Text weight="medium">{capitalizeFirstLetter(mood)}</Text>
+
+                <Box
+                  as="span"
+                  display={{
+                    initial: 'none',
+                    xs: 'inline-block'
+                  }}
+                >
+                  <Text weight="medium">{capitalizeFirstLetter(mood)}</Text>
+                </Box>
               </Flex>
             </Select.Trigger>
             <Select.Content>
@@ -83,7 +101,15 @@ export const KawaiiListToolbar: FC<KawaiiListToolbar> = ({
             <Popover.Trigger>
               <Button {...buttonStyles}>
                 <DimensionsIcon />
-                Adjust size
+                <Box
+                  as="span"
+                  display={{
+                    initial: 'none',
+                    xs: 'inline-block'
+                  }}
+                >
+                  Adjust size
+                </Box>
               </Button>
             </Popover.Trigger>
             <Popover.Content width="280px">
