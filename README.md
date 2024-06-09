@@ -1,6 +1,13 @@
 # React Kawaii
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-logo@2x.png"alt="React Kawaii Logo">
+</p>
+
+
 Welcome to **React Kawaii**! This repository contains both the website and the React package.
+
+React Kawaii is an open source library of cute SVG illustrations. Perfect if you want to give some cuteness to your React App.
 
 ## Website
 
