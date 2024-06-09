@@ -3,7 +3,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "version": "0.18.0",
+  "version": "1.0.0",
   "scripts": {
     "lint": "eslint ./src",
     "test": "jest",
