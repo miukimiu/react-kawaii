@@ -12,7 +12,7 @@ React Kawaii is an open source library of cute SVG illustrations. Perfect if you
 ## Example
 
 <p align="center">
-  <img src="https://github.com/miukimiu/react-kawaii/blob/master/docs/images/react-kawaii-example.gif?raw=true" alt="React Kawaii Example">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-example.gif?raw=true" alt="React Kawaii Example">
 </p>
 
 ## Install

@@ -9,6 +9,12 @@ Welcome to **React Kawaii**! This repository contains both the website and the R
 
 React Kawaii is an open source library of cute SVG illustrations. Perfect if you want to give some cuteness to your React App.
 
+## Example
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-example.gif?raw=true" alt="React Kawaii Example">
+</p>
+
 ## Website
 
 The website for React Kawaii is located in the `apps/website` directory. It serves as a documentation hub and may also include demos, tutorials, and other resources related to the project.
