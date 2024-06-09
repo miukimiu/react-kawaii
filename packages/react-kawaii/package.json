@@ -36,5 +36,8 @@
     "tsconfig": "workspace:*",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
