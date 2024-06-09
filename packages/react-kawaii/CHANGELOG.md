@@ -1,5 +1,11 @@
 # react-kawaii
 
+## 1.1.0
+
+### Minor Changes
+
+- ba8ae2d: Minor changes to improve README
+
 ## 1.0.0
 
 ### Major Changes

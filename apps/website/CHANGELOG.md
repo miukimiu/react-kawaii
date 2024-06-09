@@ -1,5 +1,12 @@
 # website
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [ba8ae2d]
+  - react-kawaii@1.1.0
+
 ## 0.0.2
 
 ### Patch Changes
