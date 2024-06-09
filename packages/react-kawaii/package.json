@@ -4,6 +4,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "version": "1.0.0",
+  "homepage": "https://github.com/miukimiu/react-kawaii#readme",
   "scripts": {
     "lint": "eslint ./src",
     "test": "jest",
