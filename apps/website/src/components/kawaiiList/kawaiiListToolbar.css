@@ -1,0 +1,22 @@
+.kawaiiListToolbar {
+  z-index: 999;
+}
+
+.kawaiiListToolbar__card {
+  padding: var(--space-4);
+  display: flex;
+  overflow: hidden;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.kawaiiListToolbar__colorPopover .w-color-circle {
+  display: flex !important;
+  gap: var(--space-2);
+}
+
+.kawaiiListToolbar__colorPopover .w-color-circle-point {
+  width: var(--space-5) !important;
+  height: var(--space-5) !important;
+  border-radius: 50% !important;
+}

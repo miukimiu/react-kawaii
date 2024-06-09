@@ -2,85 +2,58 @@
   "name": "react-kawaii",
   "version": "0.18.0",
   "description": "React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.",
-  "main": "lib/index.js",
-  "module": "lib/es/index.js",
+  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "lib:build": "webpack -p --progress && babel src --out-dir lib/es/ && babel native --out-dir lib/native/",
-    "precommit": "pretty-quick --staged",
-    "prepare": "npm run lib:build"
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "dev": "turbo run dev --filter website",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "tsc": "turbo run tsc",
+    "format-check": "prettier --check \"./**/*.{ts,tsx,css,json,md,yml,yaml}\"",
+    "format-write": "prettier --write \"./**/*.{ts,tsx,css,json,md,yml,yaml}\"",
+    "check-subprojects": "tsx scripts/checkSubprojects.ts",
+    "prepare": "husky",
+    "changeset": "changeset",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/miukimiu/react-kawaii.git"
-  },
-  "keywords": [
-    "library",
-    "react",
-    "component",
-    "svg",
-    "illustration",
-    "kawaii",
-    "icon",
-    "ui",
-    "animation",
-    "icons",
-    "cute",
-    "mbe",
-    "cartoons",
-    "design"
-  ],
-  "author": "Miukimiu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/miukimiu/react-kawaii/issues"
-  },
-  "homepage": "https://github.com/miukimiu/react-kawaii#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.2.1",
-    "@babel/preset-env": "^7.2.0",
-    "@babel/preset-react": "^7.0.0",
-    "autoprefixer": "^9.4.2",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^1.0.1",
-    "eslint": "^5.3.0",
-    "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "popmotion": "^8.5.3",
-    "postcss": "^7.0.6",
-    "prettier": "^1.14.2",
-    "pretty-quick": "^1.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-flexbox-grid": "^2.1.2",
-    "react-ga": "^2.5.3",
-    "react-icons": "^4.4.0",
-    "react-plx": "^1.3.7",
-    "react-style-proptype": "^3.2.1",
-    "react-styleguidist": "^8.0.6",
-    "remcalc": "^1.0.10",
-    "style-loader": "^0.23.1",
-    "styled-components": "^4.1.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.1.2"
+    "@types/prettier": "^2.7.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "=2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "tsx": "^4.9.3",
+    "turbo": "^1.13.3",
+    "typescript": "^5.4.5"
   },
-  "dependencies": {
-    "prop-types": "^15.6.2"
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "npx prettier --config=.prettierrc.precommit.js --write"
+    ],
+    "*.{css,json,md,yml,yaml}": [
+      "npx prettier --write"
+    ]
   },
-  "peerDependencies": {
-    "react": "15.3.0 - 18.x"
+  "pnpm": {
+    "overrides": {
+      "@mdx-js/esbuild": "3.0.0",
+      "@mdx-js/mdx": "3.0.0",
+      "remark-mdx": "3.0.0",
+      "remark-parse": "11.0.0",
+      "remark-stringify": "11.0.0",
+      "unified": "11.0.4"
+    }
   },
   "engines": {
-    "node": ">=7.4.0",
-    "npm": ">=4.0.5"
+    "node": "18.x",
+    "pnpm": "8.x"
   },
-  "sideEffects": false
+  "dependencies": {
+    "@changesets/cli": "^2.27.1"
+  }
 }

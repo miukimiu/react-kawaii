@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.workingDirectories": [
+    {
+      "pattern": "./packages/*"
+    },
+    {
+      "pattern": "./apps/*"
+    }
+  ]
+}

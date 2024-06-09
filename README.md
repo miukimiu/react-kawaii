@@ -1,109 +1,64 @@
 # React Kawaii
 
-<div align="center" markdown="1">
-  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/master/docs/images/react-kawaii-logo%402x.png" width="450">
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-logo@2x.png"alt="React Kawaii Logo">
+</p>
 
-React Kawaii is a library of cute SVG illustrations (react components). Ideal if you want to give some cuteness and personality to your react application.
 
-[![Version](https://img.shields.io/npm/v/react-kawaii.svg?style=flat-square)](https://www.npmjs.com/package/react-kawaii)
-![npm](https://img.shields.io/npm/dt/react-kawaii.svg)
+Welcome to **React Kawaii**! This repository contains both the website and the React package.
+
+React Kawaii is an open source library of cute SVG illustrations. Perfect if you want to give some cuteness to your React App.
 
 ## Example
 
-# ![React Kawaii Example](https://github.com/miukimiu/react-kawaii/blob/master/docs/images/react-kawaii-example.gif?raw=true)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-example.gif?raw=true" alt="React Kawaii Example">
+</p>
 
-## Install
+## Website
 
-With npm:
+The website for React Kawaii is located in the `apps/website` directory. It serves as a documentation hub and may also include demos, tutorials, and other resources related to the project.
 
-```sh
-npm install --save react-kawaii
-```
+To start the website locally:
 
-With yarn:
+1. Navigate to the `apps/website` directory.
+2. Install dependencies with `pnpm install`.
+3. Run the development server with `pnpm start`.
 
-```sh
-yarn add react-kawaii
-```
+## React Package
 
-### How to use
+The React package, named `react-kawaii`, is located in the `packages/react-kawaii` directory. It contains the source code for the React components.
 
-```javascript
-import { Planet } from 'react-kawaii';
+To use the `react-kawaii` package in your projects:
 
-const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
-```
+1. Install it from npm or yarn:
 
-### How to use with React Native
+   ```
+   npm install --save react-kawaii
+   ```
 
-```javascript
-import { Planet } from 'react-kawaii/lib/native/';
+   or
 
-const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
-```
+   ```
+   yarn add react-kawaii
+   ```
 
-Depending on your `react` and `react-native` version, you might need to to install the package
-[react-native-svg](https://github.com/react-native-community/react-native-svg):
+2. Import the components you need in your React application:
 
-With npm:
+   ```javascript
+   import { Planet } from 'react-kawaii';
 
-```sh
-npm install react-native-svg
-```
+   const MyComponent = () => {
+     return <Planet size={200} mood="blissful" color="#FDA7DC" />;
+   }
+   ```
 
-With yarn:
+For detailed documentation and usage examples, visit the [React Kawaii documentation website](https://react-kawaii.vercel.app).
 
-```sh
-yarn add react-native-svg
-```
+## Contributing
 
-Link react-native:
+Contributions to React Kawaii are welcome! Feel free to open issues or pull requests if you have any suggestions, bug fixes, or improvements.
 
-```sh
-react-native link react-native-svg
-```
+## License
 
-Read the react-native-svg [documentation](https://github.com/react-native-community/react-native-svg) in case you need help.
-
-## Development
-
-So you want to help developing some cute UI components?
-
-If you want to develop a component
-
-- `npm i`
-
-- `npm run styleguide`
-
-If you want to build
-
-- `npm run styleguide:build`
-
-## Documentation
-
-See https://react-kawaii.now.sh/
-
-### Components
-
-All the components are SVG illustrations. You can pick different moods: sad, shocked, happy, blissful and lovestruck. You can also choose a color to your Kawaii and the size.
-
-Available components:
-
-- [x] Backpack - A cute backpack
-- [x] Browser - A cute browser
-- [x] Cat - A cute cat
-- [x] Chocolate - A cute chocolate
-- [x] CreditCard - A cute credit card
-- [x] File - A cute file
-- [x] Folder - A cute folder
-- [x] Ghost - A cute ghost
-- [x] IceCream - A cute ice-cream
-- [x] Mug - A cute mug
-- [x] Planet - A cute planet
-- [x] SpeechBubble - A cute speech bubble
-- [x] More Kawaii components coming soon...
-
-## Contributors
-
-Thanks to everyone who has contributed to this project! You can find the contributors list [here](https://github.com/miukimiu/react-kawaii/graphs/contributors).
+This project is licensed under the [MIT License](LICENSE).

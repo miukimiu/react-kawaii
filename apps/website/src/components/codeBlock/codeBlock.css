@@ -1,0 +1,31 @@
+.codeBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--color-code-bg);
+  padding: var(--space-2);
+  border-radius: var(--radius-3);
+  max-width: 100%; /* Ensure the container doesn't overflow horizontally */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.codeBlock pre {
+  padding: 0 !important;
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 14px !important;
+}
+
+.codeBlock code {
+  background-color: transparent !important;
+  white-space: pre-wrap !important;
+}
+
+.codeBlockCopyButton {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  cursor: pointer;
+}

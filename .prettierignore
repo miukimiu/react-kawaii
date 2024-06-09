@@ -1,11 +1,10 @@
 node_modules/
 .eslintcache
 .next/
-tsconfig.tsbuildinfo
-*.code-workspace
+public/
+**/.contentlayer
+**/.content
 
 # turbo
 .turbo
 .vercel
-
-**/.DS_Store
