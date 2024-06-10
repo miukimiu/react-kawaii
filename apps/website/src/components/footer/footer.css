@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+  padding-block: var(--space-4);
+}
+
+.footer p {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer a {
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.footer a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.footer svg {
+  width: var(--space-4);
+  height: var(--space-4);
+}

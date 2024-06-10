@@ -20,6 +20,7 @@ export const Hero = () => {
           <NextLink
             href="https://github.com/miukimiu/react-kawaii/blob/main/packages/react-kawaii/README.md"
             className="header__link"
+            target="_blank"
           >
             <Button size="3" className="hero__getStartedBtn">
               Get started

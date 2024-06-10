@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { Baloo_2, Inter } from 'next/font/google';
 import 'reset-css';
+import { Footer } from '~/components/footer/Footer'; // Import the Footer component
 import { Header } from '~/components/header/Header';
 import '../global.css';
 
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Box className="top-gradient" />
               <Header />
               <Box px="4">{children}</Box>
+              <Footer />
             </Flex>
           </Theme>
         </NextThemesProvider>

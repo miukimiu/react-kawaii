@@ -38,6 +38,7 @@ export const Header = () => {
               <NextLink
                 href="https://github.com/miukimiu/react-kawaii/blob/main/packages/react-kawaii/README.md"
                 className="header__link"
+                target="_blank"
               >
                 <Text weight="medium" size="3" color="gray" highContrast>
                   Get Started
