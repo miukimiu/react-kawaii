@@ -1,18 +1,13 @@
 # React Kawaii
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-logo@2x.png"alt="React Kawaii Logo">
-</p>
-
 React Kawaii is an open source library of cute SVG illustrations. Perfect if you want to give some cuteness to your React App.
 
 [![Version](https://img.shields.io/npm/v/react-kawaii.svg?style=flat-square)](https://www.npmjs.com/package/react-kawaii)
 ![npm](https://img.shields.io/npm/dt/react-kawaii.svg)
 
-## Example
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-example.gif?raw=true" alt="React Kawaii Example">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-logo@2x.png"alt="React Kawaii Logo">
 </p>
 
 ## Install
@@ -38,6 +33,13 @@ import { Planet } from 'react-kawaii';
 
 const Example = () => <Planet size={200} mood="blissful" color="#FDA7DC" />;
 ```
+
+## Example
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/miukimiu/react-kawaii/main/images/react-kawaii-example.gif?raw=true" alt="React Kawaii Example">
+</p>
+
 
 ## Development
 
