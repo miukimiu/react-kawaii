@@ -16,9 +16,6 @@
   "exports": {
     ".": "./src/index.ts"
   },
-  "dependencies": {
-    "@chakra-ui/react": "^2.8.2"
-  },
   "devDependencies": {
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
