@@ -10,7 +10,7 @@ export const PROPS_DATA = [
   {
     name: 'size',
     type: 'number | string',
-    description: 'Size of the SVG.',
+    description: 'Size of the SVG in px.',
     default: DEFAULT_PROPS.size
   },
   {
@@ -22,7 +22,7 @@ export const PROPS_DATA = [
   {
     name: 'mood',
     type: 'KawaiiMood',
-    description: 'Mood of the Kawaii face.',
+    description: `Mood of the Kawaii face. Choose one of: ${MOODS.map((mood) => `"${mood}"`).join(', ')}`,
     default: DEFAULT_PROPS.mood
   }
 ];
