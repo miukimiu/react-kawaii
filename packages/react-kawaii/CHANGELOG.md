@@ -1,5 +1,11 @@
 # react-kawaii
 
+## 1.3.1
+
+### Patch Changes
+
+- 062df0c: Remove chakra-ui from dependencies
+
 ## 1.3.0
 
 ### Minor Changes
