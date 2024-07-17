@@ -1,5 +1,8 @@
 # React Kawaii
 
+[![Version](https://img.shields.io/npm/v/react-kawaii.svg?style=flat-square)](https://www.npmjs.com/package/react-kawaii)
+![npm](https://img.shields.io/npm/dt/react-kawaii.svg)
+
 Welcome to **React Kawaii**! This repository contains both the website and the React package.
 
 React Kawaii is an open source library of cute SVG illustrations. Perfect if you want to give some cuteness to your React App.
