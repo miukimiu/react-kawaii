@@ -1,7 +1,3 @@
-.radix-themes {
-  --default-font-family: var(--font-inter) !important;
-}
-
 .wrapper {
   position: relative;
 }
