@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       'React Kawaii is an open source library of cute SVG illustrations. Perfect if you want to give some cuteness to your React App.',
     images: [
       {
-        url: 'https://react-kawaii.vercel.app//images/react-kawaii-open-graph.png',
+        url: 'https://react-kawaii.vercel.app/images/react-kawaii-open-graph.png',
         width: 1200,
         height: 630
       }
