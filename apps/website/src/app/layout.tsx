@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Box, Flex, Theme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import { Metadata } from 'next';
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Theme>
         </NextThemesProvider>
       </body>
+      <GoogleAnalytics gaId="G-M8VMBQE25E" />
     </html>
   );
 }
