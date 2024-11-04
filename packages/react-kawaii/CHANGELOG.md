@@ -1,5 +1,11 @@
 # react-kawaii
 
+## 1.4.0
+
+### Minor Changes
+
+- 714b0a7: Fix error with import KawaiiProps
+
 ## 1.3.1
 
 ### Patch Changes
