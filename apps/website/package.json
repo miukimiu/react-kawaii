@@ -48,9 +48,5 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-syntax-highlighter": "^15.5.0",
     "tsconfig": "workspace:*"
-  },
-  "engines": {
-    "node": "18.x",
-    "pnpm": "8.x"
   }
 }

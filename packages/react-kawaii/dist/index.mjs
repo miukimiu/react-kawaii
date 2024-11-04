@@ -3326,7 +3326,7 @@ var PROPS_DATA = [
     {
         name: "size",
         type: "number | string",
-        description: "Size of the SVG.",
+        description: "Size of the SVG in px.",
         default: DEFAULT_PROPS.size
     },
     {
@@ -3338,7 +3338,9 @@ var PROPS_DATA = [
     {
         name: "mood",
         type: "KawaiiMood",
-        description: "Mood of the Kawaii face.",
+        description: "Mood of the Kawaii face. Choose one of: ".concat(MOODS.map(function(mood) {
+            return '"'.concat(mood, '"');
+        }).join(", ")),
         default: DEFAULT_PROPS.mood
     }
 ];
