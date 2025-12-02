@@ -17,4 +17,4 @@ export { SpeechBubble } from './components/SpeechBubble';
 
 export { DEFAULT_PROPS, MOODS, PROPS_DATA } from './constants';
 
-export type { KawaiiProps } from './types';
+export type { KawaiiFaceProps, KawaiiMood, KawaiiProps } from './types';
